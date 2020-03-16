@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="sr-Cyrl">
+  <head>
+    <meta charset="utf-8" />
+    <title>Координатни систем &#8212; Седми разред</title>
+    <link rel="stylesheet" href="_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/activecode.css" />
+    <link rel="stylesheet" type="text/css" href="_static/codemirror.css" />
+    <link rel="stylesheet" type="text/css" href="_static/clickable.css" />
+    <link rel="stylesheet" type="text/css" href="_static/pytutor.css" />
+    <link rel="stylesheet" type="text/css" href="_static/modal-basic.css" />
+    <link rel="stylesheet" type="text/css" href="_static/datafile.css" />
+    <link rel="stylesheet" type="text/css" href="_static/dragndrop.css" />
+    <link rel="stylesheet" type="text/css" href="_static/fitb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/matrixeq.css" />
+    <link rel="stylesheet" type="text/css" href="_static/parsons.css" />
+    <link rel="stylesheet" type="text/css" href="_static/lib/prettify.css" />
+    <link rel="stylesheet" type="text/css" href="_static/poll.css" />
+    <link rel="stylesheet" type="text/css" href="_static/showEval.css" />
+    <link rel="stylesheet" type="text/css" href="_static/tabbedstuff.css" />
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="_static/video.css" />
+    <link rel="stylesheet" type="text/css" href="_static/karel.css" />
+    <link rel="stylesheet" type="text/css" href="_static/notes.css" />
+    <link rel="stylesheet" href="_static/user-highlights.css" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-4.0.0-dist/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/flatly.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/petlja.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/runestonebase.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <script type="text/javascript" src="_static/jquery.highlight.js"></script>
+    <script type="text/javascript" src="_static/bookfuncs.js"></script>
+    <script type="text/javascript" src="_static/codemirror.js"></script>
+    <script type="text/javascript" src="_static/xml.js"></script>
+    <script type="text/javascript" src="_static/css.js"></script>
+    <script type="text/javascript" src="_static/python.js"></script>
+    <script type="text/javascript" src="_static/htmlmixed.js"></script>
+    <script type="text/javascript" src="_static/javascript.js"></script>
+    <script type="text/javascript" src="_static/jquery_i18n/CLDRPluralRuleParser.js"></script>
+    <script type="text/javascript" src="_static/jquery_i18n/jquery.i18n.js"></script>
+    <script type="text/javascript" src="_static/jquery_i18n/jquery.i18n.messagestore.js"></script>
+    <script type="text/javascript" src="_static/jquery_i18n/jquery.i18n.fallbacks.js"></script>
+    <script type="text/javascript" src="_static/jquery_i18n/jquery.i18n.language.js"></script>
+    <script type="text/javascript" src="_static/jquery_i18n/jquery.i18n.parser.js"></script>
+    <script type="text/javascript" src="_static/jquery_i18n/jquery.i18n.emitter.js"></script>
+    <script type="text/javascript" src="_static/jquery_i18n/jquery.i18n.emitter.bidi.js"></script>
+    <script type="text/javascript" src="_static/activecode-i18n.en.js"></script>
+    <script type="text/javascript" src="_static/activecode-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="_static/skulpt.min.js"></script>
+    <script type="text/javascript" src="_static/skulpt-stdlib.js"></script>
+    <script type="text/javascript" src="_static/activecode.js"></script>
+    <script type="text/javascript" src="_static/clike.js"></script>
+    <script type="text/javascript" src="_static/timed_activecode.js"></script>
+    <script type="text/javascript" src="_static/animationbase.js"></script>
+    <script type="text/javascript" src="_static/mchoice.js"></script>
+    <script type="text/javascript" src="_static/timedmc.js"></script>
+    <script type="text/javascript" src="_static/timed.js"></script>
+    <script type="text/javascript" src="_static/mchoice-i18n.en.js"></script>
+    <script type="text/javascript" src="_static/mchoice-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="_static/clickable.js"></script>
+    <script type="text/javascript" src="_static/timedclickable.js"></script>
+    <script type="text/javascript" src="_static/d3.v2.min.js"></script>
+    <script type="text/javascript" src="_static/jquery.ba-bbq.min.js"></script>
+    <script type="text/javascript" src="_static/jquery.jsPlumb-1.3.10-all-min.js"></script>
+    <script type="text/javascript" src="_static/pytutor.js"></script>
+    <script type="text/javascript" src="_static/codelens.js"></script>
+    <script type="text/javascript" src="_static/datafile.js"></script>
+    <script type="text/javascript" src="_static/dragndrop.js"></script>
+    <script type="text/javascript" src="_static/timeddnd.js"></script>
+    <script type="text/javascript" src="_static/dragndrop-i18n.en.js"></script>
+    <script type="text/javascript" src="_static/dragndrop-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="_static/fitb.js"></script>
+    <script type="text/javascript" src="_static/timedfitb.js"></script>
+    <script type="text/javascript" src="_static/fitb-i18n.en.js"></script>
+    <script type="text/javascript" src="_static/fitb-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="_static/matrixeq.js"></script>
+    <script type="text/javascript" src="_static/lib/prettify.js"></script>
+    <script type="text/javascript" src="_static/lib/hammer.min.js"></script>
+    <script type="text/javascript" src="_static/parsons.js"></script>
+    <script type="text/javascript" src="_static/parsons-i18n.en.js"></script>
+    <script type="text/javascript" src="_static/parsons-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="_static/timedparsons.js"></script>
+    <script type="text/javascript" src="_static/poll.js"></script>
+    <script type="text/javascript" src="_static/reveal.js"></script>
+    <script type="text/javascript" src="_static/shortanswer.js"></script>
+    <script type="text/javascript" src="_static/timed_shortanswer.js"></script>
+    <script type="text/javascript" src="_static/showEval.js"></script>
+    <script type="text/javascript" src="_static/tabbedstuff.js"></script>
+    <script type="text/javascript" src="_static/runestonevideo.js"></script>
+    <script type="text/javascript" src="_static/karelCorner.js"></script>
+    <script type="text/javascript" src="_static/karelRobot.js"></script>
+    <script type="text/javascript" src="_static/karelWorld.js"></script>
+    <script type="text/javascript" src="_static/karelRobotDrawer.js"></script>
+    <script type="text/javascript" src="_static/karelUI.js"></script>
+    <script type="text/javascript" src="_static/karel.js"></script>
+    <script type="text/javascript" src="_static/karel-i18n.en.js"></script>
+    <script type="text/javascript" src="_static/karel-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="_static/notes.js"></script>
+    <script type="text/javascript" src="_static/pygamelib-init.js"></script>
+    <script type="text/javascript" src="_static/blockly/blockly_compressed.js"></script>
+    <script type="text/javascript" src="_static/blockly/blocks_compressed.js"></script>
+    <script type="text/javascript" src="_static/blockly/python_compressed.js"></script>
+    <script type="text/javascript" src="_static/blockly/msg-sr.js"></script>
+    <script type="text/javascript" src="_static/blockpy/utilities.js"></script>
+    <script type="text/javascript" src="_static/blockpy/python_errors.js"></script>
+    <script type="text/javascript" src="_static/blockpy/ast_node_visitor.js"></script>
+    <script type="text/javascript" src="_static/blockpy/abstract_interpreter.js"></script>
+    <script type="text/javascript" src="_static/blockpy/pytifa.js"></script>
+    <script type="text/javascript" src="_static/blockpy/abstract_interpreter_definitions.js"></script>
+    <script type="text/javascript" src="_static/blockpy/python_to_blockly.js"></script>
+    <script type="text/javascript" src="_static/blockpy/imported.js"></script>
+    <script type="text/javascript" src="_static/blockpy/blocks/class.js"></script>
+    <script type="text/javascript" src="_static/blockpy/blocks/comment.js"></script>
+    <script type="text/javascript" src="_static/blockpy/blocks/comprehensions.js"></script>
+    <script type="text/javascript" src="_static/blockpy/blocks/dict.js"></script>
+    <script type="text/javascript" src="_static/blockpy/blocks/if.js"></script>
+    <script type="text/javascript" src="_static/blockpy/blocks/io.js"></script>
+    <script type="text/javascript" src="_static/blockpy/blocks/lists.js"></script>
+    <script type="text/javascript" src="_static/blockpy/blocks/sets.js"></script>
+    <script type="text/javascript" src="_static/blockpy/blocks/loops.js"></script>
+    <script type="text/javascript" src="_static/blockpy/blocks/parking.js"></script>
+    <script type="text/javascript" src="_static/blockpy/blocks/tuple.js"></script>
+    <script type="text/javascript" src="_static/blockpy/blocks/turtles.js"></script>
+    <script type="text/javascript" src="_static/blockpy/blocks/text.js"></script>
+    <script type="text/javascript" src="_static/blockpy-modal.js"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="_static/jquery-ui-1.10.3.custom.min.js"></script>
+    <script type="text/javascript" src="_static/jquery-fix.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-4.0.0-dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
+    <script type="text/javascript" src="_static/waypoints.min.js"></script>
+    <script type="text/javascript" src="_static/rangy-core.js"></script>
+    <script type="text/javascript" src="_static/rangy-textrange.js"></script>
+    <script type="text/javascript" src="_static/rangy-cssclassapplier.js"></script>
+    <script type="text/javascript" src="_static/user-highlights.js"></script>
+    <script type="text/javascript" src="_static/jquery.idle-timer.js"></script>
+    <script type="text/javascript" src="_static/processing-1.4.1.min.js"></script>
+    <script type="text/javascript" src="_static/jquery.hotkey.js"></script>
+    <script type="text/javascript" src="_static/jquery-migrate-1.2.1.min.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+<link rel="shortcut icon" href="_static/favicon.ico" type="image/ico" />
+
+<script type="text/javascript">
+  eBookConfig = {};
+  eBookConfig.host = 'http://127.0.0.1:8000' ? 'http://127.0.0.1:8000' : 'http://127.0.0.1:8000';
+  eBookConfig.app = eBookConfig.host+'/runestone';
+  eBookConfig.ajaxURL = eBookConfig.app+'/ajax/';
+  eBookConfig.course = 'Online_Nastava_VII';
+  eBookConfig.logLevel = 0;
+  eBookConfig.loginRequired = false;
+  eBookConfig.build_info = "";
+  eBookConfig.isLoggedIn = false;
+  eBookConfig.useRunestoneServices = false;
+  eBookConfig.python3 = false;
+  eBookConfig.basecourse = 'Online_Nastava_VII';
+  eBookConfig.runestone_version = '3.1.1';
+  eBookConfig.imagesDir = '_images/';
+  eBookConfig.staticDir = '_static/';
+  if(typeof(Sk) != "undefined")
+      Sk.imgPath = eBookConfig.imagesDir;
+</script>
+
+<div id="fb-root"></div>
+
+
+
+  </head><body>
+
+
+<!-- Begin navbar -->
+
+<nav id="navbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+
+  <div class="container">
+
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+     <img src="_static/img/logo.png" style="width:80px; height: 80px;"> 
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="margin-top: 10px; margin-left: 25px;">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="./">Седми разред</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<br/>
+
+
+<div class="container col-md-12" id="continue-reading"></div>
+
+<div class="container col-md-8 col-md-offset-2" id="main-content">
+  
+  <div class="section" id="id1">
+<h1>Координатни систем<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<p>Координатни систем ти је већ познат из математике, али чим погледаш слику испод, одмах ћеш приметити да је координатни систем који ћемо од сада користити у Пајгејму окренут „наопако”. Координатни почетак налази се у горњем левом углу прозора, а не у доњем левом, на шта си можда навикао/навикла радећи математику. Не дозволи да те ово збуни - све функционише потпуно исто као и до сада - и овај координатни систем има и <span class="math notranslate nohighlight">\(x\)</span> и <span class="math notranslate nohighlight">\(y\)</span> осу, и овде <span class="math notranslate nohighlight">\(x\)</span> оса расте са лева на десно, и овде је свака тачка одређена помоћу њених вредности на <span class="math notranslate nohighlight">\(x\)</span> и <span class="math notranslate nohighlight">\(y\)</span> оси, једина разлика је то што <span class="math notranslate nohighlight">\(y\)</span> оса расте одозго на доле, а не одоздо на горе, како је до сада било у математици.</p>
+<p>Погледај тачку <span class="math notranslate nohighlight">\(A(5, 3)\)</span> која се налази доле на слици. Она је од леве ивице екрана удаљена 5 и зато кажемо да је вредност њене <span class="math notranslate nohighlight">\(x\)</span> координате <span class="math notranslate nohighlight">\(5\)</span>. Од горње ивице је удаљена 3 и зато кажемо да је вредност њене <span class="math notranslate nohighlight">\(y\)</span> координате <span class="math notranslate nohighlight">\(3\)</span>. Положај сваке тачке одређен је уређеним паром ових вредности. Када кажемо да је неки пар уређен, то значи да је у том пару важан <strong>редослед његових елемената</strong>. У нашем случају, за сваку тачку ће се увек прво изразити вредност њене <span class="math notranslate nohighlight">\(x\)</span> координате, а онда вредност њене <span class="math notranslate nohighlight">\(y\)</span> координате.</p>
+<a class="reference internal image-reference" href="_images/koordinatni_sistem.png"><img alt="_images/koordinatni_sistem.png" class="align-center" src="_images/koordinatni_sistem.png" style="width: 400px;" /></a>
+<p>Ако бисмо подигли тачку <span class="math notranslate nohighlight">\(A(5, 3)\)</span> за 1 на горе и задржали њену <span class="math notranslate nohighlight">\(x\)</span> координату, тада би нове координате тачке <span class="math notranslate nohighlight">\(A\)</span> биле <span class="math notranslate nohighlight">\(A(5, 2)\)</span>. Ако бисмо тачку <span class="math notranslate nohighlight">\(A\)</span> са тренутне позиције померили (транслирали) на доле за 2 нове координате би јој биле <span class="math notranslate nohighlight">\(A(5, 4)\)</span>. Положај свих објеката (тачака, дужи, кругова и слично) на прозору одређује се њиховим координатама у координатом систему прозора. Ово је јако важно зато што ћемо у <strong>дословно сваком програму у коме користимо Пајгејм морати да одређујемо положај одређених објеката у прозору</strong>.</p>
+
+    <div data-component="reveal" id="napomena_pixel"   data-showtitle="Напомена" data-hidetitle="Сакриј прозор">
+    <p>Јединица мере помоћу које ћемо изражавати сва растојања је пиксел. Дужину прозора, дужину линија које цртамо, растојање између елемената у оквиру прозора изражаваћемо у пикселима.</p>
+
+    </div>
+    <p>Наредни програм ће ти олакшати да схватиш координате. Померај миша и
+прати пажљиво како се координате мењају. Прозор по ком се миш креће је
+димензије 300 пута 300 пискела. У врху прозора пише колико је <span class="math notranslate nohighlight">\(x\)</span> и
+колико је <span class="math notranslate nohighlight">\(y\)</span>, а изнад миша пише уређен пар координата (у загради су
+уписане обе координате и то прво координата <span class="math notranslate nohighlight">\(x\)</span>, а онда <span class="math notranslate nohighlight">\(y\)</span>). Покрени
+програм дугметом „Прикажи пример”.</p>
+
+<div data-childcomponent="nauci_koordinate" class="course-box course-box-problem course-content">
+
+<textarea data-component="activecode" id=nauci_koordinate data-lang="python" 
+      data-timelimit=25000    
+    data-audio=''   
+           data-playtask="true"   data-modaloutput="true" data-hidehistory=true
+     data-includehsrc="# -*- acsection: general-init -*-
+import pygame as pg
+
+# uključivanje rada biblioteke PyGame
+pg.init()
+
+# postavljamo naslov prozora
+pg.display.set_caption(&quot;Pygame&quot;)
+# određujemo dimenzije prozora
+(sirina, visina) = (300, 300)
+# prikazujemo prozor tih dimenzija
+prozor = pg.display.set_mode((sirina, visina))
+
+def tekst(s, x, y):
+    # font kojim će biti prikazan tekst
+    font = pg.font.SysFont(&quot;Arial&quot;, 25)
+    tekst = font.render(s, True, pg.Color(&quot;red&quot;))
+    # određujemo veličinu tog teksta (da bismo mogli da ga centriramo)
+    (sirina_teksta, visina_teksta) = (tekst.get_width(), tekst.get_height())
+    # položaj određujemo tako da tekst bude centriran
+    (x, y) = (x - sirina_teksta * (x / sirina), y - visina_teksta * (y / visina))
+    # prikazujemo sličicu na odgovarajućem mestu na ekranu
+    prozor.blit(tekst, (x, y))
+# -*- acsection: main -*-
+
+# -*- acsection: after-main -*-
+# petlja obrade događaja - čekamo dok korisnik ne isključi prozor
+while True:
+    dogadjaj = pg.event.wait()
+
+    if dogadjaj.type == pg.QUIT:
+        break
+    elif dogadjaj.type == pg.MOUSEMOTION:
+        # bojimo pozadinu prozora u belo
+        prozor.fill(pg.Color(&quot;white&quot;))
+        (x, y) = dogadjaj.pos
+        pg.draw.line(prozor, pg.Color(&quot;black&quot;), (x, 0), (x, visina))
+        pg.draw.line(prozor, pg.Color(&quot;black&quot;), (0, y), (sirina, y))
+        s = &quot;(&quot; + str(x) + &quot;, &quot; + str(y) + &quot;)&quot;
+        tekst(s, x, y)
+        s = &quot;x: &quot; + str(x) + &quot; &quot; + &quot;y: &quot; + str(y)
+        pg.display.set_caption(s)
+        # osvežavamo sadržaj prozora i tako prikazujemo ono što smo nacrtali
+        pg.display.update()
+
+# isključivanje rada biblioteke PyGame
+pg.quit()
+"  >
+
+
+</textarea>
+</div>
+</div>
+
+
+  
+      <div class="col-md-12">
+<ul class="pager">
+</ul>
+
+<!-- <ul class="pager"> -->
+    <!-- -->
+    <!-- -->
+<!-- </ul> -->
+
+<script type="text/javascript">
+
+  $('#relations-prev').tooltip({'placement':'right', 'selector': '', 'delay': { show: 100, hide: 50}});
+  $('#relations-next').tooltip({'placement':'left', 'selector': '', 'delay': { show: 100, hide: 50}});
+
+</script>
+</div>
+  
+</div>
+<footer class="footer col-md-12">
+    <div class="container text-center">
+        <div class="text-center">
+            <hr>
+            <p class="text-muted">
+                <span class="text-center">&copy; 2020 <a href="https://petlja.org">Petlja.org</a> 
+                  <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0; vertical-align: text-bottom" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /></a>
+                  (Created using  <a href="https://pypi.org/project/Sphinx/">Sphinx</a>, <a href="http://runestoneinteractive.org/">RunestoneComponents</a> and <a href="https://github.com/Petlja/PetljaDoc">PetljaDoc</a>)</span>
+            </p>
+        </div>
+    </div>
+</footer>
+
+
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-32029811-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+
+  </body>
+</html>
