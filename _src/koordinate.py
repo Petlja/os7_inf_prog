@@ -38,7 +38,7 @@ while True:
         pg.draw.line(prozor, pg.Color("black"), (0, y), (sirina, y))
         s = "(" + str(x) + ", " + str(y) + ")"
         tekst(s, x, y)
-        s = "x: " + str(x) + " " + "y: " + str(y)
+        s = "x: " + str(x) + " " + "y: " + str(y)+ " Pronadji tacke (0, 0), (150, 150), (150, 10), (280, 10), (10, 150), (280, 150)"
         pg.display.set_caption(s)
         # osvežavamo sadržaj prozora i tako prikazujemo ono što smo nacrtali
         pg.display.update()

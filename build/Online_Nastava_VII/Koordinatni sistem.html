@@ -217,7 +217,14 @@
 <p>Ако бисмо подигли тачку <span class="math notranslate nohighlight">\(A(5, 3)\)</span> за 1 на горе и задржали њену <span class="math notranslate nohighlight">\(x\)</span> координату, тада би нове координате тачке <span class="math notranslate nohighlight">\(A\)</span> биле <span class="math notranslate nohighlight">\(A(5, 2)\)</span>. Ако бисмо тачку <span class="math notranslate nohighlight">\(A\)</span> са тренутне позиције померили (транслирали) на доле за 2 нове координате би јој биле <span class="math notranslate nohighlight">\(A(5, 4)\)</span>. Положај свих објеката (тачака, дужи, кругова и слично) на прозору одређује се њиховим координатама у координатом систему прозора. Ово је јако важно зато што ћемо у <strong>дословно сваком програму у коме користимо Пајгејм морати да одређујемо положај одређених објеката у прозору</strong>.</p>
 
     <div data-component="reveal" id="napomena_pixel"   data-showtitle="Напомена" data-hidetitle="Сакриј прозор">
-    <p>Јединица мере помоћу које ћемо изражавати сва растојања је пиксел. Дужину прозора, дужину линија које цртамо, растојање између елемената у оквиру прозора изражаваћемо у пикселима.</p>
+    
+    <div class="course-box course-box-info">
+        <div class="course-content">
+            <p>
+<p>Напомена</p>
+<p>Јединица мере помоћу које ћемо изражавати сва растојања је пиксел. Дужину прозора, дужину линија које цртамо, растојање између елемената у оквиру прозора изражаваћемо у пикселима.</p>
+
+    </p></div></div>
 
     </div>
     <p>Наредни програм ће ти олакшати да схватиш координате. Померај миша и
@@ -225,7 +232,7 @@
 димензије 300 пута 300 пискела. У врху прозора пише колико је <span class="math notranslate nohighlight">\(x\)</span> и
 колико је <span class="math notranslate nohighlight">\(y\)</span>, а изнад миша пише уређен пар координата (у загради су
 уписане обе координате и то прво координата <span class="math notranslate nohighlight">\(x\)</span>, а онда <span class="math notranslate nohighlight">\(y\)</span>). Покрени
-програм дугметом „Прикажи пример”.</p>
+програм дугметом „Прикажи пример”. Пробај да пронађеш тачке (0, 0), (150, 150), (150, 10), (280, 10), (10, 150), (280, 150)</p>
 
 <div data-childcomponent="nauci_koordinate" class="course-box course-box-problem course-content">
 
@@ -273,7 +280,7 @@ while True:
         pg.draw.line(prozor, pg.Color(&quot;black&quot;), (0, y), (sirina, y))
         s = &quot;(&quot; + str(x) + &quot;, &quot; + str(y) + &quot;)&quot;
         tekst(s, x, y)
-        s = &quot;x: &quot; + str(x) + &quot; &quot; + &quot;y: &quot; + str(y)
+        s = &quot;x: &quot; + str(x) + &quot; &quot; + &quot;y: &quot; + str(y)+ &quot; Pronadji tacke (0, 0), (150, 150), (150, 10), (280, 10), (10, 150), (280, 150)&quot;
         pg.display.set_caption(s)
         # osvežavamo sadržaj prozora i tako prikazujemo ono što smo nacrtali
         pg.display.update()
@@ -284,6 +291,15 @@ pg.quit()
 
 
 </textarea>
+</div>
+<div class="section" id="id2">
+<h2>Најважније из ове лекције<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Положај свих објеката у Пајгејм прозору (линије, облици, слике…) одређен је њиховим координатама у координатном систему.</p></li>
+<li><p>Координатни систем Пајгејм прозора разликује се од оног са којим си  се до сада срео/срела само по томе што је <span class="math notranslate nohighlight">\(y\)</span> оса „наопака” - расте одозго на доле.</p></li>
+<li><p>Свака тачка у координатном систему одређена је помоћу два броја - вредности њене <span class="math notranslate nohighlight">\(x\)</span> координате, а онда њене <span class="math notranslate nohighlight">\(y\)</span> координате.</p></li>
+<li><p>Редослед навођења ових координата је увек исти - прво се наводи <span class="math notranslate nohighlight">\(x\)</span>, а онда <span class="math notranslate nohighlight">\(y\)</span> координата (пар бројева који увек имају исти редослед назива се уређеним паром)</p></li>
+</ul>
 </div>
 </div>
 
