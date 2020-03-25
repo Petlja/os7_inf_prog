@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="sr-Cyrl">
   <head>
     <meta charset="utf-8" />
-    <title>Пре првог часа &#8212; Седми разред</title>
+    <title>Координатни систем - квиз &#8212; Седми разред</title>
     <link rel="stylesheet" href="_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/activecode.css" />
@@ -210,121 +210,165 @@
 <div class="container col-md-8 col-md-offset-2" id="main-content">
   
   <div class="section" id="id1">
-<h1>Пре првог часа<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
-<p>Здраво,</p>
-<p>Добродошли у Петљину онлајн учионицу где смо за тебе припремили часове програмирања за седми разред уз програмски језик Пајтон и библиотеку Пајгејм.</p>
-<p>Очекуј да ти наши онлајн часови неће одузети више времена него што би ти требало да у школи савладаш ове ствари (да знаш, у школу рачунамо и домаћи). У свакој лекцији пред тобом ће бити текст који треба да прочиташ, имаћеш прилику да се опробаш у неколико задатака у којима ћеш писати и допуњавати код припремљен за тебе, а затим ћеш моћи да погледаш видео о томе шта си научио/научила. На крају, након сваке целине, моћи ћеш да провериш своје знање решавајући неколико кратких питања.</p>
-<p>Пре него што пређемо на први час, хајде да погледамо шта ћемо уопште овде радити, шта је то Пајгејм, како изгледају програми написани уз помоћ Пајгејма и зашто је важно да се овим бавиш.</p>
+<h1>Координатни систем - квиз<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<p>Провери своје познавање координатног система тако што ћеш одговорити на следећа питања</p>
 <div class="section" id="id2">
-<h2>Шта ћеш учити и шта са тим?<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
-<p>Испод се налази један програм у коме је употребљен Пајгејм. Пробај да га покренеш и да видиш шта ће се десити.</p>
-
-<div data-childcomponent="pygame_osnovni_primer_dogadjaji_pygamebg" class="course-box course-box-problem course-content">
-
-<textarea data-component="activecode" id=pygame_osnovni_primer_dogadjaji_pygamebg data-lang="python" 
-      data-timelimit=25000    
-    data-audio=''   
-              data-modaloutput="true" data-hidehistory=true
-       data-enablecopy="true">
-import pygame as pg
-import pygamebg
-(sirina, visina) = (400, 400)
-prozor = pygamebg.open_window(sirina, visina, "Pygame")
-prozor.fill(pg.Color("white"))
-pg.draw.line(prozor, pg.Color("black"), (100, 100), (300, 300), 5)
-pygamebg.wait_loop()
-</textarea>
+<h2>Питање 1.<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<p>Следећом наредбом се у прозору црта правоугаоник:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">pygame</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">rect</span><span class="p">(</span><span class="n">prozor</span><span class="p">,</span> <span class="n">pygame</span><span class="o">.</span><span class="n">Color</span><span class="p">(</span><span class="s2">&quot;red&quot;</span><span class="p">),</span> <span class="p">(</span><span class="mi">200</span><span class="p">,</span> <span class="mi">230</span><span class="p">,</span> <span class="mi">250</span><span class="p">,</span> <span class="mi">270</span><span class="p">))</span>
+</pre></div>
 </div>
-<p>На екрану се отворио прозор и у њему је била видљива једна дуж. Ништа импресивно, знамо, али да би могао/могла да напредујеш, мораћеш прво да савладаш основне кораке, то јест да научиш како да отвориш прозор, одредиш му боју позадине, у њему нацрташ линије, геометријске облике, подесиш да се они крећу, сударају, одбијају и сл.</p>
-<p>Временом, када савладаш основе и уложиш довољно труда, моћи ћеш да направиш и нешто овако:</p>
+<p>Које су његове димензије?</p>
 
-    <div  id="oej7DQQjSfY" class="ytvideo"  style="text-align: center; margin: 15px; cursor:pointer;">
-        <div style="background-image: url('https://img.youtube.com/vi/oej7DQQjSfY/mqdefault.jpg'); background-repeat: no-repeat;background-position: center; height: 210px; width: 310px; margin: 0 auto; border: 1px solid #20c997">
-            <img src="/_static/images/play_button.svg" style="margin-top: 78px;" /> 
-        </div>
-      
+            <div class="course-box course-box-question course-content">
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="kvadrat">
+            <p>Q-75: Изабери тачан одговор:</p>
 
-        </div>
-    <div id="modal-oej7DQQjSfY" class="ytvideoclose" style="display: none; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background-color: rgba(128, 182, 128, 0.3); z-index: 10000;">
-        <div style="background-color: white; position: fixed; top: 4vh; left: 5vw; width:  90vw; height:  90vh; z-index: 100;" id="YTmodal-oej7DQQjSfY">
-        </div>
-    </div>
-    
-    
-    <p>Игрице из овог видеа направљене су помоћу библиотеке Пајгејм у програмском језику Пајтон, и управо је коришћење ове библиотеке тема наредних часова. Наравно, ми ћемо се задржати на једноставнијим примерима, али и у оквиру ових материјала, имаћеш прилику да сам/сама направиш неке једноставније игре.</p>
-<p>Пајгејм свакако није најбоља библиотека за прављење игара, па ни друга најбоља, али немој то да јој замериш. Изабрали смо баш њу зато што ће ти помоћи да научиш да размишљаш о играма и графици као програмер/програмерка, а згодна је за учење програмирања и релативно брзо ћеш моћи да сам/сама направиш неке занимљиве пројекте. Игрицу коју смо ти показали у претходном видеу, аутор је направио за мање од 48 сати.</p>
+            <li data-component="answer"  id="kvadrat_opt_a">200 x 230</li><li data-component="feedback" id="kvadrat_opt_a">Нетачно</li>
+            
+            <li data-component="answer"  id="kvadrat_opt_b">50 x 40</li><li data-component="feedback" id="kvadrat_opt_b">Нетачно</li>
+            
+            <li data-component="answer" data-correct id="kvadrat_opt_c">250 x 270</li><li data-component="feedback" id="kvadrat_opt_c">Тачно</li>
+            
+            <li data-component="answer"  id="kvadrat_opt_d">30 x 20</li><li data-component="feedback" id="kvadrat_opt_d">Нетачно</li>
+            
 
-    <div data-component="reveal" id="napomena_podsetnik"   data-showtitle="Подсетник" data-hidetitle="Сакриј прозор">
-    
-    <div class="course-box course-box-info">
-        <div class="course-content">
-            <p>
-<p>Подсетник</p>
-<p>Иако користимо посебну библиотеку, и даље програмирамо у програмском језику Пајтон - све оно са чиме си се сусрео/сусрела прошле године је и даље важно - аритметика, наредбе (<code class="docutils literal notranslate"><span class="pre">if</span></code>, <code class="docutils literal notranslate"><span class="pre">if-else</span></code>, <code class="docutils literal notranslate"><span class="pre">if-elif-else</span></code>, <code class="docutils literal notranslate"><span class="pre">for</span></code>, <code class="docutils literal notranslate"><span class="pre">while</span></code>), функције тј. процедуре (оне уграђене попут <code class="docutils literal notranslate"><span class="pre">min</span></code> или <code class="docutils literal notranslate"><span class="pre">abs</span></code> и оне које ти дефинишеш помоћу <code class="docutils literal notranslate"><span class="pre">def</span></code>), листе (попут <code class="docutils literal notranslate"><span class="pre">[1,</span> <span class="pre">2,</span> <span class="pre">3]</span></code>), ниске тј. стрингови (<code class="docutils literal notranslate"><span class="pre">&quot;Zdravo&quot;</span></code> тј. <code class="docutils literal notranslate"><span class="pre">'Zdravo'</span></code>), уређени парови и торке (попут <code class="docutils literal notranslate"><span class="pre">(3,</span> <span class="pre">4)</span></code>), речници (попут <code class="docutils literal notranslate"><span class="pre">{&quot;Pera&quot;:</span> <span class="pre">5,</span> <span class="pre">&quot;Ana&quot;:</span> <span class="pre">4}</span></code>) и слично. Ако си било који од тих појмова заборавио/заборавила, требало би да их обновиш, што брзо можеш да урадиш помоћу нашег <a class="reference external" href="https://petljamediastorage.blob.core.windows.net/root/Media/Default/Help/cheatsheet.pdf">Синтаксног подсетника за Пајтон</a>, а, ако имаш више времена или потребу да нешто детаљније прођеш, можеш да се вратиш на наш приручник <a class="reference external" href="https://petlja.org/biblioteka/r/kursevi/prirucnik-python">Програмирање у Пајтону, приручник за шести разред</a>.</p>
-
-    </p></div></div>
-
-    </div>
-    </div>
+            </ul>
+            </div>
+            </div>
 <div class="section" id="id3">
-<h2>Основна структура програма<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
-<p>Када кажемо да користимо неку библиотеку, то значи да у своје програме укључујемо скуп унапред припремљених, тематски обједињених елеманата (на пример функција или вредности) који ће нам олакшати програмирање. И Пајгејм je, тако, библиотека која садржи низ елемената намењених програмирању 2д графике и, наравно, прављењу игара. Не оптерећуј се дефиницијом тога шта је Пајгејм библиотека - оно што је важно да разумеш је да <strong>и даље програмираш у Пајтону, али да сада у свој код укључујеш елементе који нису део „обичног” Пајтона (т.ј. Пајтонове стандардне библиотеке).</strong></p>
+<h2>Питање 2.<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<p>Шта се исцртава следећом наредбом?</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">pygame</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">ellipse</span><span class="p">(</span><span class="n">prozor</span><span class="p">,</span> <span class="n">pygame</span><span class="o">.</span><span class="n">Color</span><span class="p">(</span><span class="s2">&quot;orange&quot;</span><span class="p">),</span> <span class="p">(</span><span class="mi">120</span><span class="p">,</span> <span class="mi">80</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">40</span><span class="p">),</span> <span class="mi">1</span><span class="p">)</span>
+</pre></div>
+</div>
+
+            <div class="course-box course-box-question course-content">
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="krugkruznica">
+            <p>Q-76: Изабери тачан одговор:</p>
+
+            <li data-component="answer"  id="krugkruznica_opt_a">Круг попуњен бојом</li><li data-component="feedback" id="krugkruznica_opt_a">Нетачно</li>
+            
+            <li data-component="answer" data-correct id="krugkruznica_opt_b">Кружница - линија</li><li data-component="feedback" id="krugkruznica_opt_b">Тачно</li>
+            
+            <li data-component="answer"  id="krugkruznica_opt_c">Елипса (општи случај) попуњена бојом</li><li data-component="feedback" id="krugkruznica_opt_c">Нетачно</li>
+            
+            <li data-component="answer"  id="krugkruznica_opt_d">Елипса (општи случај) - линија</li><li data-component="feedback" id="krugkruznica_opt_d">Нетачно</li>
+            
+
+            </ul>
+            </div>
+            </div>
 <div class="section" id="id4">
-<h3>Како изгледају Пајгејм програми<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
-<p>Хајде да поново погледамо онај неимпресивни програм који црта једну дуж, само што је овог пута код пропраћен коментарима и подељен на целине. Обрати пажњу на коментаре у коду испод (ово што је обележено знаком <code class="docutils literal notranslate"><span class="pre">#</span></code>)</p>
-
-<div data-childcomponent="pygame_osnovni_primer_dogadjaji_pygamebg_ponovo" class="course-box course-box-problem course-content">
-
-<textarea data-component="activecode" id=pygame_osnovni_primer_dogadjaji_pygamebg_ponovo data-lang="python" 
-      data-timelimit=25000    
-    data-audio=''   
-              data-modaloutput="true" data-hidehistory=true
-       data-enablecopy="true">
-# -*- acsection: general-init -*-
-# uključujemo biblioteke
-import pygame as pg
-import pygamebg
-
-# otvaramo prozor
-(sirina, visina) = (400, 400)
-prozor = pygamebg.open_window(sirina, visina, "Pygame")
-# -*- acsection: main -*-
-
-# bojimo pozadinu prozora u belo
-prozor.fill(pg.Color("white"))
-
-# crtamo crnu duž od tačke (100, 100) do tačke (300, 300) debljine 5
-pg.draw.line(prozor, pg.Color("black"), (100, 100), (300, 300), 5)
-
-# -*- acsection: after-main -*-
-# prikazujemo prozor i čekamo da ga korisnik isključi
-pygamebg.wait_loop()
-</textarea>
+<h2>Питање 3.<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<p>Шта ће бити приказано покретањем наредног програма?</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pygame</span><span class="o">,</span> <span class="nn">pygamebg</span>
+<span class="n">prozor</span> <span class="o">=</span> <span class="n">pygamebg</span><span class="o">.</span><span class="n">open_window</span><span class="p">(</span><span class="mi">800</span><span class="p">,</span> <span class="mi">600</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">)</span>
+<span class="n">prozor</span><span class="o">.</span><span class="n">fill</span><span class="p">(</span><span class="n">pygame</span><span class="o">.</span><span class="n">Color</span><span class="p">(</span><span class="s2">&quot;white&quot;</span><span class="p">))</span>
+<span class="n">pygame</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">rect</span><span class="p">(</span><span class="n">prozor</span><span class="p">,</span> <span class="n">pygame</span><span class="o">.</span><span class="n">Color</span><span class="p">(</span><span class="s2">&quot;red&quot;</span><span class="p">),</span> <span class="p">(</span><span class="mi">40</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">40</span><span class="p">))</span>
+<span class="n">pygame</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">rect</span><span class="p">(</span><span class="n">prozor</span><span class="p">,</span> <span class="n">pygame</span><span class="o">.</span><span class="n">Color</span><span class="p">(</span><span class="s2">&quot;blue&quot;</span><span class="p">),</span> <span class="p">(</span><span class="mi">80</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">40</span><span class="p">))</span>
+<span class="n">pygamebg</span><span class="o">.</span><span class="n">wait_loop</span><span class="p">()</span>
+</pre></div>
 </div>
-<p>Вероватно ћеш прво приметити да постоји разлика између ових сивих делова и овог централног, белог дела. Код од малопре смо разложили на неке основне целине које се појављују у готово сваком Пајгејм програму са којим ћеш се срести на наредним часовима. Да бисмо уопште писали код помоћу Пајгејма неопходно је да прво укључимо потребне библиотеке. Затим, морамо да отворимо прозор одређених димензија. То ће у скоро сваком од наредних програма бити исто, тако да смо решили да тај део засивимо и нећемо очекивати од тебе да се бавиш кодом који је тамнији. Исто тако, на крају кода, налазиће се команде којима затварамо прозор - не треба ни да их анализираш, нити да их
-мењаш.</p>
-<p>Оно што ће бити главни фокус твог рада је овај бели део у средини. У том делу, налазиће се код помоћу кога ћеш цртати облике, контролисати кретање објеката у прозору, укључивати слике, уређивати интеракцију између нацртаних објеката и много тога другог што ћеш видети у наредних неколико часова.</p>
-<p>Можеш погледати следећи видео, који ће ти послужити као резиме овог уводног дела.</p>
+<p>Упиши ознаку једног од понуђених одговора који сматраш тачним.</p>
+<ol class="arabic">
+<li><img alt="_images/pg_figure_kvadrati11.png" src="_images/pg_figure_kvadrati11.png" />
+</li>
+<li><img alt="_images/pg_figure_kvadrati12.png" src="_images/pg_figure_kvadrati12.png" />
+</li>
+<li><img alt="_images/pg_figure_kvadrati13.png" src="_images/pg_figure_kvadrati13.png" />
+</li>
+<li><img alt="_images/pg_figure_kvadrati14.png" src="_images/pg_figure_kvadrati14.png" />
+</li>
+</ol>
 
-    <div  id="w83BS2PSp18" class="ytvideo"  style="text-align: center; margin: 15px; cursor:pointer;">
-        <div style="background-image: url('https://img.youtube.com/vi/w83BS2PSp18/mqdefault.jpg'); background-repeat: no-repeat;background-position: center; height: 210px; width: 310px; margin: 0 auto; border: 1px solid #20c997">
-            <img src="/_static/images/play_button.svg" style="margin-top: 78px;" /> 
-        </div>
-      
+            <div class="course-box course-box-question course-content">
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="kvadrat1">
+            <p>Q-77: Изабери тачан одговор:</p>
 
-        </div>
-    <div id="modal-w83BS2PSp18" class="ytvideoclose" style="display: none; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background-color: rgba(128, 182, 128, 0.3); z-index: 10000;">
-        <div style="background-color: white; position: fixed; top: 4vh; left: 5vw; width:  90vw; height:  90vh; z-index: 100;" id="YTmodal-w83BS2PSp18">
-        </div>
-    </div>
-    
-    
-    </div>
-</div>
+            <li data-component="answer"  id="kvadrat1_opt_a">Слика 1</li><li data-component="feedback" id="kvadrat1_opt_a">Нетачно</li>
+            
+            <li data-component="answer" data-correct id="kvadrat1_opt_b">Слика 2</li><li data-component="feedback" id="kvadrat1_opt_b">Тачно</li>
+            
+            <li data-component="answer"  id="kvadrat1_opt_c">Слика 3</li><li data-component="feedback" id="kvadrat1_opt_c">Нетачно</li>
+            
+            <li data-component="answer"  id="kvadrat1_opt_d">Слика 4</li><li data-component="feedback" id="kvadrat1_opt_d">Нетачно</li>
+            
+
+            </ul>
+            </div>
+            </div>
 <div class="section" id="id5">
-<h2>Ако желиш да сазнаш више<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
-<p>Ако ипак желиш да научиш шта значе наредбе у помоћном („сивом”) делу кода и ако желиш да научиш како изгледају Пајгејм програми у којима се не користи библиотека PyGameBg, онда ти саветујемо да прочиташ текст <a class="reference external" href="https://petlja.org/biblioteka/r/lekcije/pygame-prirucnik/crtanje-cas1_strukturaprograma">Испод хаубе: основна структура PyGame програма</a>. Наравно, ако желиш да научиш још нешто о библиотеци Пајгејм, то можеш видети у нашем <a class="reference external" href="https://petlja.org/biblioteka/r/lekcije/pygame-prirucnik/pygame">Приручнику за седми разред</a>.</p>
+<h2>Питање 4.<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+<p>Којом наредбом се може исцртати правоугаоник, у који је уписана елипса задата наредбом</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">pygame</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">ellipse</span><span class="p">(</span><span class="n">prozor</span><span class="p">,</span> <span class="n">pygame</span><span class="o">.</span><span class="n">Color</span><span class="p">(</span><span class="s2">&quot;black&quot;</span><span class="p">),</span> <span class="p">(</span><span class="mi">280</span><span class="p">,</span> <span class="mi">240</span><span class="p">,</span> <span class="mi">80</span><span class="p">,</span> <span class="mi">40</span><span class="p">),</span> <span class="mi">1</span><span class="p">)</span>
+</pre></div>
 </div>
+
+            <div class="course-box course-box-question course-content">
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="elipsa_pravougaonik">
+            <p>Q-78: Изабери тачан одговор:</p>
+
+            <li data-component="answer" data-correct id="elipsa_pravougaonik_opt_a">pygame.draw.rect(prozor, pygame.Color("red"), (280, 240, 80, 40), 1)</li><li data-component="feedback" id="elipsa_pravougaonik_opt_a">Тачно</li>
+            
+            <li data-component="answer"  id="elipsa_pravougaonik_opt_b">pygame.draw.rect(prozor, pygame.Color("red"), (280, 240, 160, 80), 1)</li><li data-component="feedback" id="elipsa_pravougaonik_opt_b">Нетачно</li>
+            
+            <li data-component="answer"  id="elipsa_pravougaonik_opt_c">pygame.draw.rect(prozor, pygame.Color("red"), (280, 240, 360, 280), 1)</li><li data-component="feedback" id="elipsa_pravougaonik_opt_c">Нетачно</li>
+            
+            <li data-component="answer"  id="elipsa_pravougaonik_opt_d">pygame.draw.rect(prozor, pygame.Color("red"), (200, 200, 160, 80), 1)</li><li data-component="feedback" id="elipsa_pravougaonik_opt_d">Нетачно</li>
+            
+
+            </ul>
+            </div>
+            </div>
+<div class="section" id="id6">
+<h2>Питање 5.<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
+<p>Следећом наредбом се у прозору црта једна кружница:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">pygame</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">circle</span><span class="p">(</span><span class="n">prozor</span><span class="p">,</span> <span class="n">pygame</span><span class="o">.</span><span class="n">Color</span><span class="p">(</span><span class="s2">&quot;blue&quot;</span><span class="p">),</span> <span class="p">(</span><span class="mi">150</span><span class="p">,</span> <span class="mi">150</span><span class="p">),</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Међу понуђеним тврђењима означи тачна.</p>
+
+            <div class="course-box course-box-question course-content">
+            <ul data-component="multiplechoice" data-multipleanswers="true"  id="krug1">
+            <p>Q-79: Изабери тачан одговор:</p>
+
+            <li data-component="answer"  id="krug1_opt_a">Полупречник кружнице је 150.</li><li data-component="feedback" id="krug1_opt_a">Нетачно</li>
+            
+            <li data-component="answer" data-correct id="krug1_opt_b">Полупречник кружнице је 100.</li><li data-component="feedback" id="krug1_opt_b">Тачно</li>
+            
+            <li data-component="answer"  id="krug1_opt_c">Центар кружнице је у тачки са координатама (100,1).</li><li data-component="feedback" id="krug1_opt_c">Нетачно</li>
+            
+            <li data-component="answer" data-correct id="krug1_opt_d">Ако су ширина и висина прозора по 150 пиксела, кружница ће бити делимично видљива.</li><li data-component="feedback" id="krug1_opt_d">Тачно</li>
+            
+
+            </ul>
+            </div>
+            </div>
+<div class="section" id="id7">
+<h2>Питање 6.<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h2>
+<p>Нека је квадрат дефинисан следећом наредбом.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">pygame</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">rect</span><span class="p">(</span><span class="n">prozor</span><span class="p">,</span> <span class="n">pygame</span><span class="o">.</span><span class="n">Color</span><span class="p">(</span><span class="s2">&quot;black&quot;</span><span class="p">),</span> <span class="p">(</span><span class="mi">300</span><span class="p">,</span> <span class="mi">300</span><span class="p">,</span> <span class="mi">600</span><span class="p">,</span> <span class="mi">600</span><span class="p">),</span> <span class="mi">1</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Уколико је круг уписан у квадрат, које су координате центра круга, а чему је једнака дужина полупречника круга?</p>
+
+            <div class="course-box course-box-question course-content">
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="krug2">
+            <p>Q-80: Изабери тачан одговор:</p>
+
+            <li data-component="answer"  id="krug2_opt_a">Координате центра су (300, 300), а полупречник је једнак 600.</li><li data-component="feedback" id="krug2_opt_a">Нетачно</li>
+            
+            <li data-component="answer"  id="krug2_opt_b">Координате центра су (300, 300), а полупречник је једнак 300.</li><li data-component="feedback" id="krug2_opt_b">Нетачно</li>
+            
+            <li data-component="answer" data-correct id="krug2_opt_c">Координате центра су (600, 600), а полупречник је једнак 300.</li><li data-component="feedback" id="krug2_opt_c">Тачно</li>
+            
+            <li data-component="answer"  id="krug2_opt_d">Ниједан од понуђених одговора није тачан.</li><li data-component="feedback" id="krug2_opt_d">Нетачно</li>
+            
+
+            </ul>
+            </div>
+            </div>
 </div>
 
 
