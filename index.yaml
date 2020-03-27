@@ -1,0 +1,117 @@
+ime: Sedmi razred
+dBalias: sedmi-laza #moze sta god autor zeli, najbolje je neka kombinacija ime autora ime kursa, kako bi u bazi znali da li kreiramo novi kurs ili updatujemo postojeci
+logo: 7ologo.png
+nauciti:
+  - Кроз ове лекције упознаћете се са програмирањем 2Д графике у програмском језику Python уз помоћ библиотеке PyGame. Ово библиотека је намењена прављењу рачунарских игара, али је истовремено погодна за учење програмирања и савладавање основних концепата рачунарске, дводимензионалне графике. Научићете како да користите програмирање да бисте нацртали неке основне облике, затим како да нацртате неке занимљивије елементе коришћењем петљи, како да направите анимације и, на крају, како да очитавате и искористите догађаје миша и тастатуре. Ово су све вештине неопходне да бисте направили неке једноставне рачунарске игре.
+potrebno:
+  - Познавање основа Python-а (на нивоу шестог разреда)
+linkovi: #opciono
+sadrzaj:
+  - Цртање – Координате, боје дужи
+  - Цртање – кругови, правоугаоници, елипсе
+  - Цртање – израчунавање координата
+  - Цртање – релативно задавање координата
+  - Цртање помоћу петљи – Понављање облика
+  - Цртање помоћу петљи – Гранање
+  - Цртање помоћу петљи – Угњежђене петље
+  - Анимације
+  - Анимације кретања
+  - Анимације више објеката
+  - Догађаји – Догађаји миша и тастатуре
+  - Комбиновање анимација и догађаја
+  - Примери игара
+lekcije:
+  - tip: section
+    ime: Пре него што почнемо
+    order: 1 #kod sekcije postoji u suprotnom prazan
+    content: #kod sekcije prazan, kod html-a, quiz-a i pdf-a putanja do file-a, kod yt link
+    opis:  #opcioni - samo kod sekcije kako bi se u sadrzaju videlo objasnjenje (ako vec nije naveden sadrzaj gore)
+    alias: uvod
+  - tip: html
+    ime: Пре првог часа
+    order: 
+    content: index.html  #kod sekcije prazan, kod html-a, quiz-a i pdf-a putanja do file-a, kod yt link
+    opis: #prazan
+    alias: uvod #edinstven-alias-u-okviru-kursa1
+  - tip: section
+    ime: Час 1
+    order: 2 #kod sekcije postoji u suprotnom prazan
+    content: #kod sekcije prazan, kod html-a, quiz-a i pdf-a putanja do file-a, kod yt link
+    opis:  #opcioni - samo kod sekcije kako bi se u sadrzaju videlo objasnjenje (ako vec nije naveden sadrzaj gore)
+    alias: cas1
+  - tip: html
+    ime: Координатни систем
+    order: 
+    content: koordinatni_sistem.html  #kod sekcije prazan, kod html-a, quiz-a i pdf-a putanja do file-a, kod yt link
+    opis: #prazan
+    alias: lekcija_1.1 #edinstven-alias-u-okviru-kursa1
+  - tip: video
+    ime: Координатни систем
+    order: 
+    content: https://www.youtube.com/embed/LCq7cZb4qgk  #kod sekcije prazan, kod html-a, quiz-a i pdf-a putanja do file-a, kod yt link
+    opis: #prazan
+    alias: video1 #edinstven-alias-u-okviru-kursa1
+  - tip: quiz
+    ime: Координатни систем - квиз
+    order: 
+    content: koordinatni_sistem_kviz.html
+    opis: 2, 1, 1, 0, 3, 3, 1, 024, 4, 0 #koristimo ovo polje da se izlistaju svi odgovori 
+    alias: test1
+  - tip: html
+    ime: Задавање боја
+    order: 
+    content: boje.html  #kod sekcije prazan, kod html-a, quiz-a i pdf-a putanja do file-a, kod yt link
+    opis: #prazan
+    alias: lekcija_1.2 #edinstven-alias-u-okviru-kursa1
+  - tip: video
+    ime: Задавање боја
+    order: 
+    content: https://www.youtube.com/embed/uHWYCXWQyM4  #kod sekcije prazan, kod html-a, quiz-a i pdf-a putanja do file-a, kod yt link
+    opis: #prazan
+    alias: video2 #edinstven-alias-u-okviru-kursa1
+  - tip: quiz
+    ime: Задавање боја - квиз
+    order: 
+    content: boje_kviz.html
+    opis: 4, 514, 1, 0, 2, 1 #koristimo ovo polje da se izlistaju svi odgovori 
+    alias: test2
+ - tip: html
+    ime: Дужи
+    order: 
+    content: duzi.html  #kod sekcije prazan, kod html-a, quiz-a i pdf-a putanja do file-a, kod yt link
+    opis: #prazan
+    alias: lekcija_1.3 #edinstven-alias-u-okviru-kursa1
+  - tip: quiz
+    ime: Дужи - квиз
+    order: 
+    content: duzi_kviz.html
+    opis: 1, 2, 3, 3, 0, 2, 2 #koristimo ovo polje da se izlistaju svi odgovori 
+    alias: test3
+  - tip: section
+    ime: Час 2
+    order: 3 #kod sekcije postoji u suprotnom prazan
+    content: #kod sekcije prazan, kod html-a, quiz-a i pdf-a putanja do file-a, kod yt link
+    opis:  #opcioni - samo kod sekcije kako bi se u sadrzaju videlo objasnjenje (ako vec nije naveden sadrzaj gore)
+    alias: cas2
+  - tip: html
+    ime: Други час
+    order: 
+    content: drugi_cas.html  #kod sekcije prazan, kod html-a, quiz-a i pdf-a putanja do file-a, kod yt link
+    opis: #prazan
+    alias: lekcija_2.1 #edinstven-alias-u-okviru-kursa1
+   - tip: html
+    ime: Видео кругови, правоугаоници, елипсе
+    order: 
+    content: drugi_cas_video.html  #kod sekcije prazan, kod html-a, quiz-a i pdf-a putanja do file-a, kod yt link
+    opis: #prazan
+    alias: lekcija_2.2 #edinstven-alias-u-okviru-kursa1
+  - tip: quiz
+    ime: Други час - квиз
+    order: 
+    content: drugi_cas_kviz.html
+    opis: 2, 1, 1, 0, 13, 2 #koristimo ovo polje da se izlistaju svi odgovori 
+    alias: test4
+
+
+
+

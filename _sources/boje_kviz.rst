@@ -129,13 +129,13 @@
 
 .. mchoice:: pygame_quiz_ljubicasta
    :answer_a: црвена и зелена
-   :answer_b: плава и црвена
-   :answer_c: зелена и плава
-   :answer_d: црвена, зелена и плава
-   :correct: b
    :feedback_a: Покушај поново
+   :answer_b: плава и црвена
    :feedback_b: Тачно
+   :answer_c: зелена и плава
    :feedback_c: Покушај поново
+   :answer_d: црвена, зелена и плава
    :feedback_d: Покушај поново
+   :correct: b
    
    Које боје се мешају да би се добила љубичаста боја?

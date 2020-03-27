@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="sr-Cyrl">
   <head>
     <meta charset="utf-8" />
-    <title>Координатни систем - квиз &#8212; Седми разред</title>
+    <title>Координатни систем &#8212; Седми разред</title>
     <link rel="stylesheet" href="_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/activecode.css" />
@@ -210,165 +210,97 @@
 <div class="container col-md-8 col-md-offset-2" id="main-content">
   
   <div class="section" id="id1">
-<h1>Координатни систем - квиз<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
-<p>Провери своје познавање координатног система тако што ћеш одговорити на следећа питања</p>
+<h1>Координатни систем<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<p>Координатни систем ти је већ познат из математике, али чим погледаш слику испод, одмах ћеш приметити да је координатни систем који ћемо од сада користити у Пајгејму окренут „наопако”. Координатни почетак налази се у горњем левом углу прозора, а не у доњем левом, на шта си можда навикао/навикла радећи математику. Не дозволи да те ово збуни - све функционише потпуно исто као и до сада - и овај координатни систем има и <span class="math notranslate nohighlight">\(x\)</span> и <span class="math notranslate nohighlight">\(y\)</span> осу, и овде <span class="math notranslate nohighlight">\(x\)</span> оса расте са лева на десно, и овде је свака тачка одређена помоћу њених вредности на <span class="math notranslate nohighlight">\(x\)</span> и <span class="math notranslate nohighlight">\(y\)</span> оси, једина разлика је то што <span class="math notranslate nohighlight">\(y\)</span> оса расте одозго на доле, а не одоздо на горе, како је до сада било у математици.</p>
+<p>Погледај тачку <span class="math notranslate nohighlight">\(A(5, 3)\)</span> која се налази доле на слици. Она је од леве ивице екрана удаљена 5 и зато кажемо да је вредност њене <span class="math notranslate nohighlight">\(x\)</span> координате <span class="math notranslate nohighlight">\(5\)</span>. Од горње ивице је удаљена 3 и зато кажемо да је вредност њене <span class="math notranslate nohighlight">\(y\)</span> координате <span class="math notranslate nohighlight">\(3\)</span>. Положај сваке тачке одређен је уређеним паром ових вредности. Када кажемо да је неки пар уређен, то значи да је у том пару важан <strong>редослед његових елемената</strong>. У нашем случају, за сваку тачку ће се увек прво изразити вредност њене <span class="math notranslate nohighlight">\(x\)</span> координате, а онда вредност њене <span class="math notranslate nohighlight">\(y\)</span> координате.</p>
+<a class="reference internal image-reference" href="_images/koordinatni_sistem.png"><img alt="_images/koordinatni_sistem.png" class="align-center" src="_images/koordinatni_sistem.png" style="width: 400px;" /></a>
+<p>Ако бисмо подигли тачку <span class="math notranslate nohighlight">\(A(5, 3)\)</span> за 1 на горе и задржали њену <span class="math notranslate nohighlight">\(x\)</span> координату, тада би нове координате тачке <span class="math notranslate nohighlight">\(A\)</span> биле <span class="math notranslate nohighlight">\(A(5, 2)\)</span>. Ако бисмо тачку <span class="math notranslate nohighlight">\(A\)</span> са тренутне позиције померили (транслирали) на доле за 2 нове координате би јој биле <span class="math notranslate nohighlight">\(A(5, 4)\)</span>. Положај свих објеката (тачака, дужи, кругова и слично) на прозору одређује се њиховим координатама у координатом систему прозора. Ово је јако важно зато што ћемо у <strong>дословно сваком програму у коме користимо Пајгејм морати да одређујемо положај одређених објеката у прозору</strong>.</p>
+
+    <div data-component="reveal" id="napomena_pixel"   data-showtitle="Напомена" data-hidetitle="Сакриј прозор">
+    
+    <div class="course-box course-box-info">
+        <div class="course-content">
+            <p>
+<p>Напомена</p>
+<p>Јединица мере помоћу које ћемо изражавати сва растојања је пиксел. Дужину прозора, дужину линија које цртамо, растојање између елемената у оквиру прозора изражаваћемо у пикселима.</p>
+
+    </p></div></div>
+
+    </div>
+    <p>Наредни програм ће ти олакшати да схватиш координате. Померај миша и
+прати пажљиво како се координате мењају. Прозор по ком се миш креће је
+димензије 300 пута 300 пискела. У врху прозора пише колико је <span class="math notranslate nohighlight">\(x\)</span> и
+колико је <span class="math notranslate nohighlight">\(y\)</span>, а изнад миша пише уређен пар координата (у загради су
+уписане обе координате и то прво координата <span class="math notranslate nohighlight">\(x\)</span>, а онда <span class="math notranslate nohighlight">\(y\)</span>). Покрени
+програм дугметом „Прикажи пример”. Пробај да пронађеш тачке (0, 0), (150, 150), (150, 10), (280, 10), (10, 150), (280, 150)</p>
+
+<div data-childcomponent="nauci_koordinate" class="course-box course-box-problem course-content">
+
+<textarea data-component="activecode" id=nauci_koordinate data-lang="python" 
+      data-timelimit=25000    
+    data-audio=''   
+           data-playtask="true"   data-modaloutput="true" data-hidehistory=true
+     data-includehsrc="# -*- acsection: general-init -*-
+import pygame as pg
+
+# uključivanje rada biblioteke PyGame
+pg.init()
+
+# postavljamo naslov prozora
+pg.display.set_caption(&quot;Pygame&quot;)
+# određujemo dimenzije prozora
+(sirina, visina) = (300, 300)
+# prikazujemo prozor tih dimenzija
+prozor = pg.display.set_mode((sirina, visina))
+
+def tekst(s, x, y):
+    # font kojim će biti prikazan tekst
+    font = pg.font.SysFont(&quot;Arial&quot;, 25)
+    tekst = font.render(s, True, pg.Color(&quot;red&quot;))
+    # određujemo veličinu tog teksta (da bismo mogli da ga centriramo)
+    (sirina_teksta, visina_teksta) = (tekst.get_width(), tekst.get_height())
+    # položaj određujemo tako da tekst bude centriran
+    (x, y) = (x - sirina_teksta * (x / sirina), y - visina_teksta * (y / visina))
+    # prikazujemo sličicu na odgovarajućem mestu na ekranu
+    prozor.blit(tekst, (x, y))
+# -*- acsection: main -*-
+
+# -*- acsection: after-main -*-
+# petlja obrade događaja - čekamo dok korisnik ne isključi prozor
+while True:
+    dogadjaj = pg.event.wait()
+
+    if dogadjaj.type == pg.QUIT:
+        break
+    elif dogadjaj.type == pg.MOUSEMOTION:
+        # bojimo pozadinu prozora u belo
+        prozor.fill(pg.Color(&quot;white&quot;))
+        (x, y) = dogadjaj.pos
+        pg.draw.line(prozor, pg.Color(&quot;black&quot;), (x, 0), (x, visina))
+        pg.draw.line(prozor, pg.Color(&quot;black&quot;), (0, y), (sirina, y))
+        s = &quot;(&quot; + str(x) + &quot;, &quot; + str(y) + &quot;)&quot;
+        tekst(s, x, y)
+        s = &quot;x: &quot; + str(x) + &quot; &quot; + &quot;y: &quot; + str(y)+ &quot; Pronadji tacke (0, 0), (150, 150), (150, 10), (280, 10), (10, 150), (280, 150)&quot;
+        pg.display.set_caption(s)
+        # osvežavamo sadržaj prozora i tako prikazujemo ono što smo nacrtali
+        pg.display.update()
+
+# isključivanje rada biblioteke PyGame
+pg.quit()
+"  >
+
+
+</textarea>
+</div>
 <div class="section" id="id2">
-<h2>Питање 1.<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
-<p>Следећом наредбом се у прозору црта правоугаоник:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">pygame</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">rect</span><span class="p">(</span><span class="n">prozor</span><span class="p">,</span> <span class="n">pygame</span><span class="o">.</span><span class="n">Color</span><span class="p">(</span><span class="s2">&quot;red&quot;</span><span class="p">),</span> <span class="p">(</span><span class="mi">200</span><span class="p">,</span> <span class="mi">230</span><span class="p">,</span> <span class="mi">250</span><span class="p">,</span> <span class="mi">270</span><span class="p">))</span>
-</pre></div>
+<h2>Најважније из ове лекције<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Положај свих објеката у Пајгејм прозору (линије, облици, слике…) одређен је њиховим координатама у координатном систему.</p></li>
+<li><p>Координатни систем Пајгејм прозора разликује се од оног са којим си  се до сада срео/срела само по томе што је <span class="math notranslate nohighlight">\(y\)</span> оса „наопака” - расте одозго на доле.</p></li>
+<li><p>Свака тачка у координатном систему одређена је помоћу два броја - вредности њене <span class="math notranslate nohighlight">\(x\)</span> координате, а онда њене <span class="math notranslate nohighlight">\(y\)</span> координате.</p></li>
+<li><p>Редослед навођења ових координата је увек исти - прво се наводи <span class="math notranslate nohighlight">\(x\)</span>, а онда <span class="math notranslate nohighlight">\(y\)</span> координата (пар бројева који увек имају исти редослед назива се уређеним паром)</p></li>
+</ul>
 </div>
-<p>Које су његове димензије?</p>
-
-            <div class="course-box course-box-question course-content">
-            <ul data-component="multiplechoice" data-multipleanswers="false"  id="kvadrat">
-            <p>Q-6: Изабери тачан одговор:</p>
-
-            <li data-component="answer"  id="kvadrat_opt_a">200 x 230</li><li data-component="feedback" id="kvadrat_opt_a">Нетачно</li>
-            
-            <li data-component="answer"  id="kvadrat_opt_b">50 x 40</li><li data-component="feedback" id="kvadrat_opt_b">Нетачно</li>
-            
-            <li data-component="answer" data-correct id="kvadrat_opt_c">250 x 270</li><li data-component="feedback" id="kvadrat_opt_c">Тачно</li>
-            
-            <li data-component="answer"  id="kvadrat_opt_d">30 x 20</li><li data-component="feedback" id="kvadrat_opt_d">Нетачно</li>
-            
-
-            </ul>
-            </div>
-            </div>
-<div class="section" id="id3">
-<h2>Питање 2.<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
-<p>Шта се исцртава следећом наредбом?</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">pygame</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">ellipse</span><span class="p">(</span><span class="n">prozor</span><span class="p">,</span> <span class="n">pygame</span><span class="o">.</span><span class="n">Color</span><span class="p">(</span><span class="s2">&quot;orange&quot;</span><span class="p">),</span> <span class="p">(</span><span class="mi">120</span><span class="p">,</span> <span class="mi">80</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">40</span><span class="p">),</span> <span class="mi">1</span><span class="p">)</span>
-</pre></div>
-</div>
-
-            <div class="course-box course-box-question course-content">
-            <ul data-component="multiplechoice" data-multipleanswers="false"  id="krugkruznica">
-            <p>Q-7: Изабери тачан одговор:</p>
-
-            <li data-component="answer"  id="krugkruznica_opt_a">Круг попуњен бојом</li><li data-component="feedback" id="krugkruznica_opt_a">Нетачно</li>
-            
-            <li data-component="answer" data-correct id="krugkruznica_opt_b">Кружница - линија</li><li data-component="feedback" id="krugkruznica_opt_b">Тачно</li>
-            
-            <li data-component="answer"  id="krugkruznica_opt_c">Елипса (општи случај) попуњена бојом</li><li data-component="feedback" id="krugkruznica_opt_c">Нетачно</li>
-            
-            <li data-component="answer"  id="krugkruznica_opt_d">Елипса (општи случај) - линија</li><li data-component="feedback" id="krugkruznica_opt_d">Нетачно</li>
-            
-
-            </ul>
-            </div>
-            </div>
-<div class="section" id="id4">
-<h2>Питање 3.<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
-<p>Шта ће бити приказано покретањем наредног програма?</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pygame</span><span class="o">,</span> <span class="nn">pygamebg</span>
-<span class="n">prozor</span> <span class="o">=</span> <span class="n">pygamebg</span><span class="o">.</span><span class="n">open_window</span><span class="p">(</span><span class="mi">800</span><span class="p">,</span> <span class="mi">600</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">)</span>
-<span class="n">prozor</span><span class="o">.</span><span class="n">fill</span><span class="p">(</span><span class="n">pygame</span><span class="o">.</span><span class="n">Color</span><span class="p">(</span><span class="s2">&quot;white&quot;</span><span class="p">))</span>
-<span class="n">pygame</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">rect</span><span class="p">(</span><span class="n">prozor</span><span class="p">,</span> <span class="n">pygame</span><span class="o">.</span><span class="n">Color</span><span class="p">(</span><span class="s2">&quot;red&quot;</span><span class="p">),</span> <span class="p">(</span><span class="mi">40</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">40</span><span class="p">))</span>
-<span class="n">pygame</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">rect</span><span class="p">(</span><span class="n">prozor</span><span class="p">,</span> <span class="n">pygame</span><span class="o">.</span><span class="n">Color</span><span class="p">(</span><span class="s2">&quot;blue&quot;</span><span class="p">),</span> <span class="p">(</span><span class="mi">80</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">40</span><span class="p">))</span>
-<span class="n">pygamebg</span><span class="o">.</span><span class="n">wait_loop</span><span class="p">()</span>
-</pre></div>
-</div>
-<p>Упиши ознаку једног од понуђених одговора који сматраш тачним.</p>
-<ol class="arabic">
-<li><img alt="_images/pg_figure_kvadrati11.png" src="_images/pg_figure_kvadrati11.png" />
-</li>
-<li><img alt="_images/pg_figure_kvadrati12.png" src="_images/pg_figure_kvadrati12.png" />
-</li>
-<li><img alt="_images/pg_figure_kvadrati13.png" src="_images/pg_figure_kvadrati13.png" />
-</li>
-<li><img alt="_images/pg_figure_kvadrati14.png" src="_images/pg_figure_kvadrati14.png" />
-</li>
-</ol>
-
-            <div class="course-box course-box-question course-content">
-            <ul data-component="multiplechoice" data-multipleanswers="false"  id="kvadrat1">
-            <p>Q-8: Изабери тачан одговор:</p>
-
-            <li data-component="answer"  id="kvadrat1_opt_a">Слика 1</li><li data-component="feedback" id="kvadrat1_opt_a">Нетачно</li>
-            
-            <li data-component="answer" data-correct id="kvadrat1_opt_b">Слика 2</li><li data-component="feedback" id="kvadrat1_opt_b">Тачно</li>
-            
-            <li data-component="answer"  id="kvadrat1_opt_c">Слика 3</li><li data-component="feedback" id="kvadrat1_opt_c">Нетачно</li>
-            
-            <li data-component="answer"  id="kvadrat1_opt_d">Слика 4</li><li data-component="feedback" id="kvadrat1_opt_d">Нетачно</li>
-            
-
-            </ul>
-            </div>
-            </div>
-<div class="section" id="id5">
-<h2>Питање 4.<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
-<p>Којом наредбом се може исцртати правоугаоник, у који је уписана елипса задата наредбом</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">pygame</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">ellipse</span><span class="p">(</span><span class="n">prozor</span><span class="p">,</span> <span class="n">pygame</span><span class="o">.</span><span class="n">Color</span><span class="p">(</span><span class="s2">&quot;black&quot;</span><span class="p">),</span> <span class="p">(</span><span class="mi">280</span><span class="p">,</span> <span class="mi">240</span><span class="p">,</span> <span class="mi">80</span><span class="p">,</span> <span class="mi">40</span><span class="p">),</span> <span class="mi">1</span><span class="p">)</span>
-</pre></div>
-</div>
-
-            <div class="course-box course-box-question course-content">
-            <ul data-component="multiplechoice" data-multipleanswers="false"  id="elipsa_pravougaonik">
-            <p>Q-9: Изабери тачан одговор:</p>
-
-            <li data-component="answer" data-correct id="elipsa_pravougaonik_opt_a">pygame.draw.rect(prozor, pygame.Color("red"), (280, 240, 80, 40), 1)</li><li data-component="feedback" id="elipsa_pravougaonik_opt_a">Тачно</li>
-            
-            <li data-component="answer"  id="elipsa_pravougaonik_opt_b">pygame.draw.rect(prozor, pygame.Color("red"), (280, 240, 160, 80), 1)</li><li data-component="feedback" id="elipsa_pravougaonik_opt_b">Нетачно</li>
-            
-            <li data-component="answer"  id="elipsa_pravougaonik_opt_c">pygame.draw.rect(prozor, pygame.Color("red"), (280, 240, 360, 280), 1)</li><li data-component="feedback" id="elipsa_pravougaonik_opt_c">Нетачно</li>
-            
-            <li data-component="answer"  id="elipsa_pravougaonik_opt_d">pygame.draw.rect(prozor, pygame.Color("red"), (200, 200, 160, 80), 1)</li><li data-component="feedback" id="elipsa_pravougaonik_opt_d">Нетачно</li>
-            
-
-            </ul>
-            </div>
-            </div>
-<div class="section" id="id6">
-<h2>Питање 5.<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
-<p>Следећом наредбом се у прозору црта једна кружница:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">pygame</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">circle</span><span class="p">(</span><span class="n">prozor</span><span class="p">,</span> <span class="n">pygame</span><span class="o">.</span><span class="n">Color</span><span class="p">(</span><span class="s2">&quot;blue&quot;</span><span class="p">),</span> <span class="p">(</span><span class="mi">150</span><span class="p">,</span> <span class="mi">150</span><span class="p">),</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
-</pre></div>
-</div>
-<p>Међу понуђеним тврђењима означи тачна.</p>
-
-            <div class="course-box course-box-question course-content">
-            <ul data-component="multiplechoice" data-multipleanswers="true"  id="krug1">
-            <p>Q-10: Изабери тачан одговор:</p>
-
-            <li data-component="answer"  id="krug1_opt_a">Полупречник кружнице је 150.</li><li data-component="feedback" id="krug1_opt_a">Нетачно</li>
-            
-            <li data-component="answer" data-correct id="krug1_opt_b">Полупречник кружнице је 100.</li><li data-component="feedback" id="krug1_opt_b">Тачно</li>
-            
-            <li data-component="answer"  id="krug1_opt_c">Центар кружнице је у тачки са координатама (100,1).</li><li data-component="feedback" id="krug1_opt_c">Нетачно</li>
-            
-            <li data-component="answer" data-correct id="krug1_opt_d">Ако су ширина и висина прозора по 150 пиксела, кружница ће бити делимично видљива.</li><li data-component="feedback" id="krug1_opt_d">Тачно</li>
-            
-
-            </ul>
-            </div>
-            </div>
-<div class="section" id="id7">
-<h2>Питање 6.<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h2>
-<p>Нека је квадрат дефинисан следећом наредбом.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">pygame</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">rect</span><span class="p">(</span><span class="n">prozor</span><span class="p">,</span> <span class="n">pygame</span><span class="o">.</span><span class="n">Color</span><span class="p">(</span><span class="s2">&quot;black&quot;</span><span class="p">),</span> <span class="p">(</span><span class="mi">300</span><span class="p">,</span> <span class="mi">300</span><span class="p">,</span> <span class="mi">600</span><span class="p">,</span> <span class="mi">600</span><span class="p">),</span> <span class="mi">1</span><span class="p">)</span>
-</pre></div>
-</div>
-<p>Уколико је круг уписан у квадрат, које су координате центра круга, а чему је једнака дужина полупречника круга?</p>
-
-            <div class="course-box course-box-question course-content">
-            <ul data-component="multiplechoice" data-multipleanswers="false"  id="krug2">
-            <p>Q-11: Изабери тачан одговор:</p>
-
-            <li data-component="answer"  id="krug2_opt_a">Координате центра су (300, 300), а полупречник је једнак 600.</li><li data-component="feedback" id="krug2_opt_a">Нетачно</li>
-            
-            <li data-component="answer"  id="krug2_opt_b">Координате центра су (300, 300), а полупречник је једнак 300.</li><li data-component="feedback" id="krug2_opt_b">Нетачно</li>
-            
-            <li data-component="answer" data-correct id="krug2_opt_c">Координате центра су (600, 600), а полупречник је једнак 300.</li><li data-component="feedback" id="krug2_opt_c">Тачно</li>
-            
-            <li data-component="answer"  id="krug2_opt_d">Ниједан од понуђених одговора није тачан.</li><li data-component="feedback" id="krug2_opt_d">Нетачно</li>
-            
-
-            </ul>
-            </div>
-            </div>
 </div>
 
 
