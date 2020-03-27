@@ -32,7 +32,7 @@ lekcije:
     order: 
     content: index.html  #kod sekcije prazan, kod html-a, quiz-a i pdf-a putanja do file-a, kod yt link
     opis: #prazan
-    alias: uvod #edinstven-alias-u-okviru-kursa1
+    alias: uvod-lekcija #edinstven-alias-u-okviru-kursa1
   - tip: section
     ime: Час 1
     order: 2 #kod sekcije postoji u suprotnom prazan
@@ -75,7 +75,7 @@ lekcije:
     content: boje_kviz.html
     opis: 4, 514, 1, 0, 2, 1 #koristimo ovo polje da se izlistaju svi odgovori 
     alias: test2
- - tip: html
+  - tip: html
     ime: Дужи
     order: 
     content: duzi.html  #kod sekcije prazan, kod html-a, quiz-a i pdf-a putanja do file-a, kod yt link
@@ -99,7 +99,7 @@ lekcije:
     content: drugi_cas.html  #kod sekcije prazan, kod html-a, quiz-a i pdf-a putanja do file-a, kod yt link
     opis: #prazan
     alias: lekcija_2.1 #edinstven-alias-u-okviru-kursa1
-   - tip: html
+  - tip: html
     ime: Видео кругови, правоугаоници, елипсе
     order: 
     content: drugi_cas_video.html  #kod sekcije prazan, kod html-a, quiz-a i pdf-a putanja do file-a, kod yt link
