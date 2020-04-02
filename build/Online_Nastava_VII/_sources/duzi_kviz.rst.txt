@@ -6,14 +6,6 @@
 Питање 1.
 ~~~~~~~~~
 
-У ком положају ће бити дуж исцртана наредном командом?
-
-
-.. code-block:: python
-
-  pygame.draw.line(prozor, pg.Color("black"), (200, 200), (200, 300), 1)
-
-
 .. mchoice:: duz1
     :answer_a: Дуж ће бити постављена хоризонтално.
     :feedback_a: Нетачно    
@@ -23,18 +15,16 @@
     :feedback_c: Нетачно    
     :correct: b
     
+    У ком положају ће бити дуж исцртана наредном командом?
+
+    .. code-block:: python
+
+       pygame.draw.line(prozor, pg.Color("black"), (200, 200), (200, 300), 1)
+
     Изабери тачан одговор:
 
 Питање 2.
 ~~~~~~~~~
-
-Шта се исцртава помоћу следеће две наредбе?
-
-  .. code-block:: python
-
-    pygame.draw.line(prozor, pygame.Color("black"), (400, 350), (500, 350), 3)
-    pygame.draw.line(prozor, pygame.Color("black"), (450, 350), (450, 450), 3)
-
 
 .. mchoice:: dve_duzi
     :answer_a: Фигура у облику слова Г
@@ -47,36 +37,21 @@
     :feedback_d: Нетачно    
     :correct: c
     
+
+    Шта се исцртава помоћу следеће две наредбе?
+
+    .. code-block:: python
+
+       pygame.draw.line(prozor, pygame.Color("black"), (400, 350), (500, 350), 3)
+       pygame.draw.line(prozor, pygame.Color("black"), (450, 350), (450, 450), 3)
+
+
+
     Изабери тачан одговор:
 
 Питање 3.
 ~~~~~~~~~
 
-Нека је прозор димензија 300 x 300. Којом командом ће се исцртати вертикална линија (дебљине 2 пиксела) која дели површину прозора на два потпуно једнака дела?
-
-1) 
-
-  .. code-block:: python
-  
-    pygame.draw.line(prozor, pygame.Color("black"), (0, 150), (0, 150), 2)
-
-2) 
-
-  .. code-block:: python
-
-    pygame.draw.line(prozor, pygame.Color("black"), (0, 149), (0, 149), 2)
-
-3) 
-
-  .. code-block:: python
-
-    pygame.draw.line(prozor, pygame.Color("black"), (150, 0), (150, 300), 2)
-
-4) 
-
-  .. code-block:: python
-
-    pygame.draw.line(prozor, pygame.Color("black"), (149, 0), (149, 300), 2)
 
 
 .. mchoice:: polovina
@@ -90,16 +65,37 @@
     :feedback_d: Тачно
     :correct: d
     
+    Нека је прозор димензија 300 x 300. Којом командом ће се исцртати вертикална линија (дебљине 2 пиксела) која дели површину прозора на два потпуно једнака дела?
+
+    1) 
+
+    .. code-block:: python
+  
+       pygame.draw.line(prozor, pygame.Color("black"), (0, 150), (0, 150), 2)
+
+    2) 
+
+    .. code-block:: python
+
+       pygame.draw.line(prozor, pygame.Color("black"), (0, 149), (0, 149), 2)
+
+    3) 
+
+    .. code-block:: python
+
+       pygame.draw.line(prozor, pygame.Color("black"), (150, 0), (150, 300), 2)
+
+    4) 
+
+    .. code-block:: python
+
+       pygame.draw.line(prozor, pygame.Color("black"), (149, 0), (149, 300), 2)
+
+
     Изабери тачан одговор:
 
 Питање 4.
 ~~~~~~~~~
-
-Какву дуж исцртава следећа наредба?
-
-  .. code-block:: python
-
-    pygame.draw.line(prozor, pygame.Color("black"), (370, 500), (420, 500), 3)
 
 
 .. mchoice:: duz_duzina_pravac
@@ -114,19 +110,19 @@
     :feedback_d: Тачно
     :correct: ['d']
     
+
+    Какву дуж исцртава следећа наредба?
+
+    .. code-block:: python
+
+       pygame.draw.line(prozor, pygame.Color("black"), (370, 500), (420, 500), 3)
+
+
     Изабери тачан одговор:
 
 
 Питање 5.
 ~~~~~~~~~
-
-Шта представља последњи аргумент у следећем позиву функције draw (у овом случају број ``4``)?
-
-
-.. code-block:: python
-
-  pygame.draw.line(prozor, pg.Color("black"), (100, 350), (100, 450), 4)
-
 
 .. mchoice:: draw1
     :answer_a: Дебљину линије изражену у пикселима.
@@ -137,21 +133,17 @@
     :feedback_c: Нетачно    
     :correct: a
     
+    Шта представља последњи аргумент у следећем позиву функције draw (у овом случају број ``4``)?
+
+
+    .. code-block:: python
+
+       pygame.draw.line(prozor, pg.Color("black"), (100, 350), (100, 450), 4)
+
     Изабери тачан одговор:
 
 Питање 6.
 ~~~~~~~~~
-
-Следеће наредбе цртају једну црвену и једну црну дуж:
-
-  .. code-block:: python
-
-    pygame.draw.line(prozor, pygame.Color("red"), (a, b), (c, d), 3)
-    pygame.draw.line(prozor, pygame.Color("black"), (a, d), (c, b), 3)
-
-  .. image:: ../_images/pg_linije_dve_duzi_a.png
-
-Која од ових слика може да се добије извршавањем горе наведених наредби?
 
 
 .. mchoice:: duz_druga_dijagonala
@@ -165,30 +157,22 @@
     :feedback_d: Нетачно    
     :correct: c
     
+    Следеће наредбе цртају једну црвену и једну црну дуж:
+
+    .. code-block:: python
+
+       pygame.draw.line(prozor, pygame.Color("red"), (a, b), (c, d), 3)
+       pygame.draw.line(prozor, pygame.Color("black"), (a, d), (c, b), 3)
+
+    .. image:: ../_images/pg_linije_dve_duzi_a.png
+
+    Која од ових слика може да се добије извршавањем горе наведених наредби?
+
+
     Изабери тачан одговор:
 
 Питање 7.
 ~~~~~~~~~
-
-Која од наредних наредби исцртава дијагоналу прозора димензије 150 x 150?
-
-1) 
-
-  .. code-block:: python
-
-    pygame.draw.line(prozor, pygame.Color("black"), (0, 0), (0, 150), 1)
-
-2)
-
-  .. code-block:: python
-
-    pygame.draw.line(prozor, pygame.Color("black"), (150, 0), (150, 150), 1)
-
-3) 
-
-  .. code-block:: python
-  
-    pygame.draw.line(prozor, pygame.Color("black"), (0, 150), (150, 0), 1)
 
 
 .. mchoice:: dijag
@@ -200,4 +184,25 @@
     :feedback_c: Тачно
     :correct: c
     
+    Која од наредних наредби исцртава дијагоналу прозора димензије 150 x 150?
+
+    1) 
+
+    .. code-block:: python
+
+       pygame.draw.line(prozor, pygame.Color("black"), (0, 0), (0, 150), 1)
+
+    2)
+
+    .. code-block:: python
+
+       pygame.draw.line(prozor, pygame.Color("black"), (150, 0), (150, 150), 1)
+
+    3) 
+
+    .. code-block:: python
+  
+       pygame.draw.line(prozor, pygame.Color("black"), (0, 150), (150, 0), 1)
+
+
     Изабери тачан одговор:
