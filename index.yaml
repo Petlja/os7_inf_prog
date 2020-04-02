@@ -116,7 +116,7 @@ lekcije:
     order: 4 #kod sekcije postoji u suprotnom prazan
     content: #kod sekcije prazan, kod html-a, quiz-a i pdf-a putanja do file-a, kod yt link
     opis:  #opcioni - samo kod sekcije kako bi se u sadrzaju videlo objasnjenje (ako vec nije naveden sadrzaj gore)
-    alias: cas2
+    alias: cas3
   - tip: html
     ime: Тећи час
     order: 
@@ -135,6 +135,31 @@ lekcije:
     content: treci_cas_kviz.html
     opis: 2, 01, 0, 0, 13, 0 #koristimo ovo polje da se izlistaju svi odgovori 
     alias: test5
+  - tip: section
+    ime: Час 4
+    order: 5 #kod sekcije postoji u suprotnom prazan
+    content: #kod sekcije prazan, kod html-a, quiz-a i pdf-a putanja do file-a, kod yt link
+    opis:  #opcioni - samo kod sekcije kako bi se u sadrzaju videlo objasnjenje (ako vec nije naveden sadrzaj gore)
+    alias: cas4
+  - tip: html
+    ime: Четврти час
+    order: 
+    content: cetvrti_cas.html  #kod sekcije prazan, kod html-a, quiz-a i pdf-a putanja do file-a, kod yt link
+    opis: #prazan
+    alias: lekcija_4.1 #edinstven-alias-u-okviru-kursa1
+   - tip: html
+    ime: Видео - симетрично пресликавање, центрирани правоугаоници и елипсе 
+    order: 
+    content: cetvrti_cas_video.html  #kod sekcije prazan, kod html-a, quiz-a i pdf-a putanja do file-a, kod yt link
+    opis: #prazan
+    alias: lekcija_4.2 #edinstven-alias-u-okviru-kursa1
+  - tip: quiz
+    ime: Четврти час - квиз
+    order: 
+    content: cetvrti_cas_kviz.html
+    opis: 1, 0, 1, 0, 1, 3 #koristimo ovo polje da se izlistaju svi odgovori 
+    alias: test6
+
 
 
 
