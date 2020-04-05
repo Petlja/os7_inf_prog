@@ -123,7 +123,7 @@ lekcije:
     content: treci_cas.html  #kod sekcije prazan, kod html-a, quiz-a i pdf-a putanja do file-a, kod yt link
     opis: #prazan
     alias: lekcija_3.1 #edinstven-alias-u-okviru-kursa1
-   - tip: html
+  - tip: html
     ime: Видео многоуглови, комбиновање облика, приказ слике и текста
     order: 
     content: treci_cas_video.html  #kod sekcije prazan, kod html-a, quiz-a i pdf-a putanja do file-a, kod yt link
@@ -147,7 +147,7 @@ lekcije:
     content: cetvrti_cas.html  #kod sekcije prazan, kod html-a, quiz-a i pdf-a putanja do file-a, kod yt link
     opis: #prazan
     alias: lekcija_4.1 #edinstven-alias-u-okviru-kursa1
-   - tip: html
+  - tip: html
     ime: Видео - симетрично пресликавање, центрирани правоугаоници и елипсе 
     order: 
     content: cetvrti_cas_video.html  #kod sekcije prazan, kod html-a, quiz-a i pdf-a putanja do file-a, kod yt link
