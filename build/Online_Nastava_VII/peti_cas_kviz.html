@@ -216,21 +216,23 @@
 <h2>Питање 1.<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
 
             <div class="course-box course-box-question course-content">
-            <ul data-component="multiplechoice" data-multipleanswers="false"  id="krug_simetrija">
-            <p>Q-6: У прозору ширине 300 пиксела, нацртан је круг помоћу следеће функције:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">pygame</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">circle</span><span class="p">(</span><span class="n">prozor</span><span class="p">,</span> <span class="n">pygame</span><span class="o">.</span><span class="n">Color</span><span class="p">(</span><span class="s2">&quot;blue&quot;</span><span class="p">),</span> <span class="p">(</span><span class="mi">50</span><span class="p">,</span> <span class="mi">30</span><span class="p">),</span> <span class="mi">30</span><span class="p">)</span>
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="pomeranje_duzi">
+            <p>Q-124: Једна усправна дуж је нацртана наредбом</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">pygame</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">line</span><span class="p">(</span><span class="n">prozor</span><span class="p">,</span> <span class="n">pygame</span><span class="o">.</span><span class="n">Color</span><span class="p">(</span><span class="s2">&quot;black&quot;</span><span class="p">),</span> <span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y1</span><span class="p">),</span> <span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y2</span><span class="p">))</span>
 </pre></div>
 </div>
-<p>Која од понуђених функција црта њему симетричан кург у односу на вертикалну средину прозора?</p>
+<p>Којом наредбом ћемо нацртати исту такву дуж, померену 100 пиксела удесно?</p>
 <p>Изабери тачан одговор:</p>
 
-            <li data-component="answer"  id="krug_simetrija_opt_a">pygame.draw.circle(prozor, pygame.Color("blue"), (30, 50), 30)</li><li data-component="feedback" id="krug_simetrija_opt_a">Нетачно</li>
+            <li data-component="answer"  id="pomeranje_duzi_opt_a">pygame.draw.line(prozor, pygame.Color("black"), (x+100, y1+100), (x, y2))</li><li data-component="feedback" id="pomeranje_duzi_opt_a">Нетачно</li>
             
-            <li data-component="answer" data-correct id="krug_simetrija_opt_b">pygame.draw.circle(prozor, pygame.Color("blue"), (250, 30), 30)</li><li data-component="feedback" id="krug_simetrija_opt_b">Тачно</li>
+            <li data-component="answer"  id="pomeranje_duzi_opt_b">pygame.draw.line(prozor, pygame.Color("black"), (x+100, y1+100), (x+100, y2+100))</li><li data-component="feedback" id="pomeranje_duzi_opt_b">Нетачно</li>
             
-            <li data-component="answer"  id="krug_simetrija_opt_c">pygame.draw.circle(prozor, pygame.Color("blue"), (30, 250), 30)</li><li data-component="feedback" id="krug_simetrija_opt_c">Нетачно</li>
+            <li data-component="answer"  id="pomeranje_duzi_opt_c">pygame.draw.line(prozor, pygame.Color("black"), (x, y1+100), (x, y2+100))</li><li data-component="feedback" id="pomeranje_duzi_opt_c">Нетачно</li>
             
-            <li data-component="answer"  id="krug_simetrija_opt_d">pygame.draw.circle(prozor, pygame.Color("blue"), (30, 150), 30)</li><li data-component="feedback" id="krug_simetrija_opt_d">Нетачно</li>
+            <li data-component="answer" data-correct id="pomeranje_duzi_opt_d">pygame.draw.line(prozor, pygame.Color("black"), (x+100, y1), (x+100, y2))</li><li data-component="feedback" id="pomeranje_duzi_opt_d">Тачно</li>
+            
+            <li data-component="answer"  id="pomeranje_duzi_opt_e">pygame.draw.line(prozor, pygame.Color("black"), (x, y1), (x+100, y2+100))</li><li data-component="feedback" id="pomeranje_duzi_opt_e">Нетачно</li>
             
 
             </ul>
@@ -240,17 +242,21 @@
 <h2>Питање 2.<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
 
             <div class="course-box course-box-question course-content">
-            <ul data-component="multiplechoice" data-multipleanswers="true"  id="simetrija_tacke">
-            <p>Q-7: Ако је прозор висине 600 пиксела, које су координате тачке која је симетрична тачки (100, 100) у односу на хоризонталну средину прозора?</p>
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="cifra_osam">
+            <p>Q-125: Какав је међусобни положај кругова нацртаних овим наредбама?</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">pygame</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">circle</span><span class="p">(</span><span class="n">prozor</span><span class="p">,</span> <span class="n">pygame</span><span class="o">.</span><span class="n">Color</span><span class="p">(</span><span class="s2">&quot;black&quot;</span><span class="p">),</span> <span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="o">-</span><span class="n">r</span><span class="p">),</span> <span class="n">r</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="n">pygame</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">circle</span><span class="p">(</span><span class="n">prozor</span><span class="p">,</span> <span class="n">pygame</span><span class="o">.</span><span class="n">Color</span><span class="p">(</span><span class="s2">&quot;black&quot;</span><span class="p">),</span> <span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="o">+</span><span class="n">r</span><span class="p">),</span> <span class="n">r</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+</pre></div>
+</div>
 <p>Изабери тачан одговор:</p>
 
-            <li data-component="answer" data-correct id="simetrija_tacke_opt_a">(100, 500)</li><li data-component="feedback" id="simetrija_tacke_opt_a">Тачно</li>
+            <li data-component="answer"  id="cifra_osam_opt_a">Секу се</li><li data-component="feedback" id="cifra_osam_opt_a">Нетачно</li>
             
-            <li data-component="answer"  id="simetrija_tacke_opt_b">(500, 100)</li><li data-component="feedback" id="simetrija_tacke_opt_b">Нетачно</li>
+            <li data-component="answer" data-correct id="cifra_osam_opt_b">Додирују се</li><li data-component="feedback" id="cifra_osam_opt_b">Тачно</li>
             
-            <li data-component="answer"  id="simetrija_tacke_opt_c">(500, 500)</li><li data-component="feedback" id="simetrija_tacke_opt_c">Нетачно</li>
+            <li data-component="answer"  id="cifra_osam_opt_c">Немају заједничких тачака</li><li data-component="feedback" id="cifra_osam_opt_c">Нетачно</li>
             
-            <li data-component="answer"  id="simetrija_tacke_opt_d">(100, 400)</li><li data-component="feedback" id="simetrija_tacke_opt_d">Нетачно</li>
+            <li data-component="answer"  id="cifra_osam_opt_d">Први се налази унутар другог</li><li data-component="feedback" id="cifra_osam_opt_d">Нетачно</li>
             
 
             </ul>
@@ -260,21 +266,25 @@
 <h2>Питање 3.<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
 
             <div class="course-box course-box-question course-content">
-            <ul data-component="multiplechoice" data-multipleanswers="false"  id="trouglovi">
-            <p>Q-8: Шта ће исцртати следеће две функције у прозору ширине 300 пиксела и висине 300 пиксела?</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">pg</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">polygon</span><span class="p">(</span><span class="n">prozor</span><span class="p">,</span> <span class="n">pg</span><span class="o">.</span><span class="n">Color</span><span class="p">(</span><span class="s2">&quot;gray&quot;</span><span class="p">),</span> <span class="p">[(</span><span class="mi">50</span><span class="p">,</span> <span class="mi">100</span><span class="p">),</span> <span class="p">(</span><span class="mi">150</span><span class="p">,</span> <span class="mi">100</span><span class="p">),</span> <span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="mi">50</span><span class="p">)])</span>
-<span class="n">pg</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">polygon</span><span class="p">(</span><span class="n">prozor</span><span class="p">,</span> <span class="n">pg</span><span class="o">.</span><span class="n">Color</span><span class="p">(</span><span class="s2">&quot;gray&quot;</span><span class="p">),</span> <span class="p">[(</span><span class="mi">50</span><span class="p">,</span> <span class="mi">200</span><span class="p">),</span> <span class="p">(</span><span class="mi">150</span><span class="p">,</span> <span class="mi">200</span><span class="p">),</span> <span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="mi">250</span><span class="p">)])</span>
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="cifra_jedan">
+            <p>Q-126: Извршавањем следеће две наредбе исцртава се облик цифре 1.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">pygame</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">line</span><span class="p">(</span><span class="n">prozor</span><span class="p">,</span> <span class="n">pygame</span><span class="o">.</span><span class="n">Color</span><span class="p">(</span><span class="s2">&quot;black&quot;</span><span class="p">),</span> <span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="o">+</span><span class="mi">2</span><span class="o">*</span><span class="n">a</span><span class="p">),</span> <span class="p">(</span><span class="n">x</span><span class="o">+</span><span class="n">a</span><span class="p">,</span> <span class="n">y</span><span class="p">),</span> <span class="mi">3</span><span class="p">)</span>
+<span class="n">pygame</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">line</span><span class="p">(</span><span class="n">prozor</span><span class="p">,</span> <span class="n">pygame</span><span class="o">.</span><span class="n">Color</span><span class="p">(</span><span class="s2">&quot;black&quot;</span><span class="p">),</span> <span class="p">(</span><span class="n">x</span><span class="o">+</span><span class="n">a</span><span class="p">,</span> <span class="n">y</span><span class="p">),</span> <span class="p">(</span><span class="n">x</span><span class="o">+</span><span class="n">a</span><span class="p">,</span> <span class="n">y</span><span class="o">+</span><span class="mi">4</span><span class="o">*</span><span class="n">a</span><span class="p">),</span> <span class="mi">3</span><span class="p">)</span>
 </pre></div>
 </div>
+<p>Где je при томе тачка (x, y)?</p>
+<blockquote>
+<div><img alt="_images/pg_rel_koord_cifra1.png" src="_images/pg_rel_koord_cifra1.png" />
+</div></blockquote>
 <p>Изабери тачан одговор:</p>
 
-            <li data-component="answer" data-correct id="trouglovi_opt_a">Два троугла симетрично пресликана по вертикалној средини прозора</li><li data-component="feedback" id="trouglovi_opt_a">Нетачно</li>
+            <li data-component="answer"  id="cifra_jedan_opt_a">У тачки "A"</li><li data-component="feedback" id="cifra_jedan_opt_a">Нетачно</li>
             
-            <li data-component="answer"  id="trouglovi_opt_b">Два троугла симетрично пресликана по хоризонталној средини прозора</li><li data-component="feedback" id="trouglovi_opt_b">Тачно</li>
+            <li data-component="answer" data-correct id="cifra_jedan_opt_b">У тачки "B"</li><li data-component="feedback" id="cifra_jedan_opt_b">Тачно</li>
             
-            <li data-component="answer"  id="trouglovi_opt_c">Два несимтрична троулга</li><li data-component="feedback" id="trouglovi_opt_c">Нетачно</li>
+            <li data-component="answer"  id="cifra_jedan_opt_c">У тачки "C"</li><li data-component="feedback" id="cifra_jedan_opt_c">Нетачно</li>
             
-            <li data-component="answer"  id="trouglovi_opt_d">Два симетрично пресликана троугла који се додирују</li><li data-component="feedback" id="trouglovi_opt_d">Нетачно</li>
+            <li data-component="answer"  id="cifra_jedan_opt_d">У тачки "D"</li><li data-component="feedback" id="cifra_jedan_opt_d">Нетачно</li>
             
 
             </ul>
@@ -284,20 +294,21 @@
 <h2>Питање 4.<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
 
             <div class="course-box course-box-question course-content">
-            <ul data-component="multiplechoice" data-multipleanswers="false"  id="elipse_simetrija">
-            <p>Q-9: Ако је прозор ширине 300 пиксела и висине 300 пиксела, која од понуђених функција ће исцртати елипсу симетрично пресликану по вертикалној средини прозора у односу на елипсу коју исцртава следећа функција</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">pg</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">ellipse</span><span class="p">(</span><span class="n">prozor</span><span class="p">,</span> <span class="n">pg</span><span class="o">.</span><span class="n">Color</span><span class="p">(</span><span class="s2">&quot;gray&quot;</span><span class="p">),</span> <span class="p">(</span><span class="mi">50</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">80</span><span class="p">)</span> <span class="p">)</span>
-</pre></div>
-</div>
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="iks_oks_zuta">
+            <p>Q-127: Нека је на следећој слици горње лево теме решетке у тачки (x, y), а страница малих квадрата нека је дужине <em>d</em>.</p>
+<blockquote>
+<div><img alt="_images/pg_rel_koord_iksoks_zuta.png" src="_images/pg_rel_koord_iksoks_zuta.png" />
+</div></blockquote>
+<p>Које су координате крајева жуте дужи?</p>
 <p>Изабери тачан одговор:</p>
 
-            <li data-component="answer" data-correct id="elipse_simetrija_opt_a">pg.draw.ellipse(prozor, pg.Color("gray"), (200, 100, 50, 80) )</li><li data-component="feedback" id="elipse_simetrija_opt_a">Тачно</li>
+            <li data-component="answer" data-correct id="iks_oks_zuta_opt_a">(x, y+2*d), (x+3*d, y+2*d)</li><li data-component="feedback" id="iks_oks_zuta_opt_a">Тачно</li>
             
-            <li data-component="answer"  id="elipse_simetrija_opt_b">pg.draw.ellipse(prozor, pg.Color("gray"), (250, 100, 50, 80) )</li><li data-component="feedback" id="elipse_simetrija_opt_b">Нетачно</li>
+            <li data-component="answer"  id="iks_oks_zuta_opt_b">(x, y+d), (x+3*d, y+d)</li><li data-component="feedback" id="iks_oks_zuta_opt_b">Нетачно</li>
             
-            <li data-component="answer"  id="elipse_simetrija_opt_c">pg.draw.ellipse(prozor, pg.Color("gray"), (50, 200, 50, 80) )</li><li data-component="feedback" id="elipse_simetrija_opt_c">Нетачно</li>
+            <li data-component="answer"  id="iks_oks_zuta_opt_c">(x+2*d, y), (x+2*d, y+3*d)</li><li data-component="feedback" id="iks_oks_zuta_opt_c">Нетачно</li>
             
-            <li data-component="answer"  id="elipse_simetrija_opt_d">pg.draw.ellipse(prozor, pg.Color("gray"), (100, 180, 50, 80) )</li><li data-component="feedback" id="elipse_simetrija_opt_d">Нетачно</li>
+            <li data-component="answer"  id="iks_oks_zuta_opt_d">(x, y+2*d), (x+2*d, y+2*d)</li><li data-component="feedback" id="iks_oks_zuta_opt_d">Нетачно</li>
             
 
             </ul>
@@ -307,17 +318,27 @@
 <h2>Питање 5.<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
 
             <div class="course-box course-box-question course-content">
-            <ul data-component="multiplechoice" data-multipleanswers="true"  id="pravougaonik_centrirano">
-            <p>Q-10: Коју наредбу можеш употребити како би нацртао правоугаоник ширине 100 и висине 50 коме је центар у тачки (120, 120)?</p>
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="cifra_cetiri">
+            <p>Q-128: Извршавањем следећих наредби треба да се исцрта облик цифре 4.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">T1</span> <span class="o">=</span> <span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="o">+</span><span class="mi">3</span><span class="o">*</span><span class="n">a</span><span class="p">)</span>
+<span class="n">T2</span> <span class="o">=</span> <span class="p">(</span><span class="n">x</span><span class="o">+</span><span class="mi">3</span><span class="o">*</span><span class="n">a</span><span class="p">,</span> <span class="n">y</span><span class="o">+</span><span class="mi">3</span><span class="o">*</span><span class="n">a</span><span class="p">)</span>
+<span class="n">T3</span> <span class="o">=</span> <span class="p">(</span><span class="n">x</span><span class="o">+</span><span class="mi">2</span><span class="o">*</span><span class="n">a</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+<span class="n">T4</span> <span class="o">=</span> <span class="p">(</span><span class="n">x</span><span class="o">+</span><span class="mi">2</span><span class="o">*</span><span class="n">a</span><span class="p">,</span> <span class="n">y</span><span class="o">+</span><span class="mi">4</span><span class="o">*</span><span class="n">a</span><span class="p">)</span>
+<span class="n">pygame</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">line</span><span class="p">(</span><span class="n">prozor</span><span class="p">,</span> <span class="n">pygame</span><span class="o">.</span><span class="n">Color</span><span class="p">(</span><span class="s2">&quot;black&quot;</span><span class="p">),</span>  <span class="n">T1</span><span class="p">,</span>  <span class="n">T2</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span> <span class="c1"># vodoravna</span>
+<span class="n">pygame</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">line</span><span class="p">(</span><span class="n">prozor</span><span class="p">,</span> <span class="n">pygame</span><span class="o">.</span><span class="n">Color</span><span class="p">(</span><span class="s2">&quot;black&quot;</span><span class="p">),</span>  <span class="n">T3</span><span class="p">,</span>  <span class="n">T4</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span> <span class="c1"># uspravna</span>
+<span class="n">pygame</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">line</span><span class="p">(</span><span class="n">prozor</span><span class="p">,</span> <span class="n">pygame</span><span class="o">.</span><span class="n">Color</span><span class="p">(</span><span class="s2">&quot;black&quot;</span><span class="p">),</span> <span class="n">___</span><span class="p">,</span> <span class="n">___</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span> <span class="c1"># kosa</span>
+</pre></div>
+</div>
+<p>Шта треба да стоји уместо линија у последњој наредби да би била исцртана четворка?</p>
 <p>Изабери тачан одговор:</p>
 
-            <li data-component="answer"  id="pravougaonik_centrirano_opt_a">pg.draw.rect(prozor, boja, (100, 100, 100, 50))</li><li data-component="feedback" id="pravougaonik_centrirano_opt_a">Нетачно</li>
+            <li data-component="answer" data-correct id="cifra_cetiri_opt_a">T1, T3</li><li data-component="feedback" id="cifra_cetiri_opt_a">Тачно</li>
             
-            <li data-component="answer" data-correct id="pravougaonik_centrirano_opt_b">pg.draw.rect(prozor, boja, (70, 95, 100, 50))</li><li data-component="feedback" id="pravougaonik_centrirano_opt_b">Тачно</li>
+            <li data-component="answer"  id="cifra_cetiri_opt_b">T2, T3</li><li data-component="feedback" id="cifra_cetiri_opt_b">Нетачно</li>
             
-            <li data-component="answer"  id="pravougaonik_centrirano_opt_c">pg.draw.rect(prozor, boja, (120, 120, 100, 50))</li><li data-component="feedback" id="pravougaonik_centrirano_opt_c">Нетачно</li>
+            <li data-component="answer"  id="cifra_cetiri_opt_c">T1, T4</li><li data-component="feedback" id="cifra_cetiri_opt_c">Нетачно</li>
             
-            <li data-component="answer"  id="pravougaonik_centrirano_opt_d">pg.draw.rect(prozor, boja, (280, 280, 100, 50))</li><li data-component="feedback" id="pravougaonik_centrirano_opt_d">Нетачно</li>
+            <li data-component="answer"  id="cifra_cetiri_opt_d">T2, T4</li><li data-component="feedback" id="cifra_cetiri_opt_d">Нетачно</li>
             
 
             </ul>
@@ -327,23 +348,34 @@
 <h2>Питање 6.<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h2>
 
             <div class="course-box course-box-question course-content">
-            <ul data-component="multiplechoice" data-multipleanswers="false"  id="blit">
-            <p>Q-11: Који од следећих правоугаоника је центриран у правоугаоник који исцртава следећа функција?</p>
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="cifra_sest">
+            <p>Q-129: Допуњавањем датог кода може се нацртати цифра 6 као на слици (без црвених тачака).</p>
 <blockquote>
-<div><div class="highlight-python notranslate"><div class="highlight"><pre><span></span>
+<div><img alt="_images/pg_rel_koord_cifra6.png" src="_images/pg_rel_koord_cifra6.png" />
+</div></blockquote>
+<p>Шта треба да стоји уместо линија?</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">T11</span> <span class="o">=</span> <span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+<span class="n">T21</span> <span class="o">=</span> <span class="p">(</span><span class="n">x</span><span class="o">+</span><span class="n">a</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+<span class="n">T12</span> <span class="o">=</span> <span class="n">__________</span>
+<span class="n">T22</span> <span class="o">=</span> <span class="p">(</span><span class="n">x</span><span class="o">+</span><span class="n">a</span><span class="p">,</span> <span class="n">y</span><span class="o">+</span><span class="n">a</span><span class="p">)</span>
+<span class="n">T13</span> <span class="o">=</span> <span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="o">+</span><span class="mi">2</span><span class="o">*</span><span class="n">a</span><span class="p">)</span>
+<span class="n">T23</span> <span class="o">=</span> <span class="n">__________</span>
+<span class="n">pygame</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">line</span><span class="p">(</span><span class="n">prozor</span><span class="p">,</span> <span class="n">pygame</span><span class="o">.</span><span class="n">Color</span><span class="p">(</span><span class="s2">&quot;black&quot;</span><span class="p">),</span> <span class="n">T11</span><span class="p">,</span> <span class="n">T21</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span> <span class="c1"># gornja</span>
+<span class="n">pygame</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">line</span><span class="p">(</span><span class="n">prozor</span><span class="p">,</span> <span class="n">pygame</span><span class="o">.</span><span class="n">Color</span><span class="p">(</span><span class="s2">&quot;black&quot;</span><span class="p">),</span> <span class="n">T12</span><span class="p">,</span> <span class="n">T22</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span> <span class="c1"># srednja</span>
+<span class="n">pygame</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">line</span><span class="p">(</span><span class="n">prozor</span><span class="p">,</span> <span class="n">pygame</span><span class="o">.</span><span class="n">Color</span><span class="p">(</span><span class="s2">&quot;black&quot;</span><span class="p">),</span> <span class="n">T13</span><span class="p">,</span> <span class="n">T23</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span> <span class="c1"># donja</span>
+<span class="n">pygame</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">line</span><span class="p">(</span><span class="n">prozor</span><span class="p">,</span> <span class="n">pygame</span><span class="o">.</span><span class="n">Color</span><span class="p">(</span><span class="s2">&quot;black&quot;</span><span class="p">),</span> <span class="n">T11</span><span class="p">,</span> <span class="n">T13</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span> <span class="c1"># leva</span>
+<span class="n">pygame</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">line</span><span class="p">(</span><span class="n">prozor</span><span class="p">,</span> <span class="n">pygame</span><span class="o">.</span><span class="n">Color</span><span class="p">(</span><span class="s2">&quot;black&quot;</span><span class="p">),</span> <span class="n">T22</span><span class="p">,</span> <span class="n">T23</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span> <span class="c1"># desna</span>
 </pre></div>
 </div>
-<p>pg.draw.rect(prozor, pg.Color(„gray”), (150, 100, 100, 40))</p>
-</div></blockquote>
 <p>Изабери тачан одговор:</p>
 
-            <li data-component="answer"  id="blit_opt_a">pg.draw.rect(prozor, pg.Color("blue"), (100, 50, 100, 40))</li><li data-component="feedback" id="blit_opt_a">Нетачно</li>
+            <li data-component="answer"  id="cifra_sest_opt_a">T12 = (x+2*a, y); T23 = (x, y+4*a)</li><li data-component="feedback" id="cifra_sest_opt_a">Нетачно</li>
             
-            <li data-component="answer"  id="blit_opt_b">pg.draw.rect(prozor, pg.Color("blue"), (150, 100 , 80, 20))</li><li data-component="feedback" id="blit_opt_b">Нетачно</li>
+            <li data-component="answer"  id="cifra_sest_opt_b">T12 = (x+2*a, y+a); T23 = (x+a, y+2*a)</li><li data-component="feedback" id="cifra_sest_opt_b">Нетачно</li>
             
-            <li data-component="answer"  id="blit_opt_c">pg.draw.rect(prozor, pg.Color("blue"), (50, 60 , 80, 20))</li><li data-component="feedback" id="blit_opt_c">Нетачно</li>
+            <li data-component="answer" data-correct id="cifra_sest_opt_c">T12 = (x, y+a); T23 = (x+a, y+2*a)</li><li data-component="feedback" id="cifra_sest_opt_c">Тачно</li>
             
-            <li data-component="answer" data-correct id="blit_opt_d">pg.draw.rect(prozor, pg.Color("blue"), (160, 110 , 80, 20))</li><li data-component="feedback" id="blit_opt_d">Тачно</li>
+            <li data-component="answer"  id="cifra_sest_opt_d">T12 = (x, y+a); T23 = (x+2*a, y+2*a)</li><li data-component="feedback" id="cifra_sest_opt_d">Нетачно</li>
             
 
             </ul>
