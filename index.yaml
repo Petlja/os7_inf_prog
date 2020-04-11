@@ -183,7 +183,54 @@ lekcije:
     content: peti_cas_kviz.html
     opis: 3, 1, 1, 0, 0, 2 #koristimo ovo polje da se izlistaju svi odgovori 
     alias: test7
-
+  - tip: section
+    ime: Час 6
+    order: 7 #kod sekcije postoji u suprotnom prazan
+    content: #kod sekcije prazan, kod html-a, quiz-a i pdf-a putanja do file-a, kod yt link
+    opis:  #opcioni - samo kod sekcije kako bi se u sadrzaju videlo objasnjenje (ako vec nije naveden sadrzaj gore)
+    alias: cas6
+  - tip: html
+    ime: Шести час
+    order: 
+    content: sesti_cas.html  #kod sekcije prazan, kod html-a, quiz-a i pdf-a putanja do file-a, kod yt link
+    opis: #prazan
+    alias: lekcija_6.1 #edinstven-alias-u-okviru-kursa1
+  - tip: html
+    ime: Видео - Релативне координате - утврђивање
+    order: 
+    content: sesti_cas_video.html  #kod sekcije prazan, kod html-a, quiz-a i pdf-a putanja do file-a, kod yt link
+    opis: #prazan
+    alias: lekcija_6.2 #edinstven-alias-u-okviru-kursa1
+  - tip: quiz
+    ime: Шести час - квиз
+    order: 
+    content: sesti_cas_kviz.html
+    opis: 2, 1, 3, XVLT, 0 #koristimo ovo polje da se izlistaju svi odgovori 
+    alias: test8
+  - tip: section
+    ime: Час 7
+    order: 8 #kod sekcije postoji u suprotnom prazan
+    content: #kod sekcije prazan, kod html-a, quiz-a i pdf-a putanja do file-a, kod yt link
+    opis:  #opcioni - samo kod sekcije kako bi se u sadrzaju videlo objasnjenje (ako vec nije naveden sadrzaj gore)
+    alias: cas6
+  - tip: html
+    ime: Седми час
+    order: 
+    content: sedmi_cas.html  #kod sekcije prazan, kod html-a, quiz-a i pdf-a putanja do file-a, kod yt link
+    opis: #prazan
+    alias: lekcija_7.1 #edinstven-alias-u-okviru-kursa1
+  - tip: html
+    ime: Видео - Петље
+    order: 
+    content: sedmi_cas_video.html  #kod sekcije prazan, kod html-a, quiz-a i pdf-a putanja do file-a, kod yt link
+    opis: #prazan
+    alias: lekcija_7.2 #edinstven-alias-u-okviru-kursa1
+  - tip: quiz
+    ime: Седми час - квиз
+    order: 
+    content: sedmi_cas_kviz.html
+    opis: 2, 2, 2, 0123, 0 #koristimo ovo polje da se izlistaju svi odgovori 
+    alias: test9
 
 
 

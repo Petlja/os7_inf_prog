@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="sr-Cyrl">
   <head>
     <meta charset="utf-8" />
-    <title>Видео - релативно задавање координата и димензија &#8212; Седми разред</title>
+    <title>Шести час &#8212; Седми разред</title>
     <link rel="stylesheet" href="_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/activecode.css" />
@@ -210,42 +210,44 @@
 <div class="container col-md-8 col-md-offset-2" id="main-content">
   
   <div class="section" id="id1">
-<h1>Видео - релативно задавање координата и димензија<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
-<p>Погледај сада ова два видеа како би утврдио/утврдила оно што си управо научио/научила у нашем приручнику. Када то завршиш, настаави са курсом и уради кратак тест који ће ти показати како си савладао/савладала лекцију.</p>
+<h1>Шести час<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<p>Здраво,</p>
+<p>До сада смо научили како да цртамо линије и облике, како да их симетрично распоређујемо, како да их центрирамо и како да их скалирамо, како да користимо релативне координате уместо апсолутних. Знамо да је ово доста нових ствари и зато je дошло време за лекцију у којој ћеш провежбати све ствари које си до сада научио/научила.</p>
 <div class="section" id="id2">
-<h2>Померање објеката по екрану<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
-
-    <div  id="X7QOVdYfen8" class="ytvideo"  style="text-align: center; margin: 15px; cursor:pointer;">
-        <div style="background-image: url('https://img.youtube.com/vi/X7QOVdYfen8/mqdefault.jpg'); background-repeat: no-repeat;background-position: center; height: 210px; width: 310px; margin: 0 auto; border: 1px solid #20c997">
-            <img src="/_static/images/play_button.svg" style="margin-top: 78px;" /> 
-        </div>
-      
-
-        </div>
-    <div id="modal-X7QOVdYfen8" class="ytvideoclose" style="display: none; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background-color: rgba(128, 182, 128, 0.3); z-index: 10000;">
-        <div style="background-color: white; position: fixed; top: 4vh; left: 5vw; width:  90vw; height:  90vh; z-index: 100;" id="YTmodal-X7QOVdYfen8">
-        </div>
-    </div>
-    
-    
-    </div>
+<h2>Пре него што почнеш<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<p>У овој лекцији ће најважније бити да си савладао/савладала градиво прошлих часова и да умеш да се без потешкоћа сналазиш у координатном систему. Поново ћемо ти дати подсетник на који можеш да употребиш кад год заборавиш неки детаљ везан за цртање облика.</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 13%" />
+<col style="width: 87%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>дуж</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">pg.draw.line(prozor,</span> <span class="pre">boja,</span> <span class="pre">(x1,</span> <span class="pre">y1),</span> <span class="pre">(x2,</span> <span class="pre">y2),</span> <span class="pre">debljina)</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>правоугаоник</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">pg.draw.rect(prozor,</span> <span class="pre">boja,</span> <span class="pre">(x,</span> <span class="pre">y,</span> <span class="pre">sirina,</span> <span class="pre">visina),</span> <span class="pre">debljina)</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>круг</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">pg.draw.circle(prozor,</span> <span class="pre">boja,</span> <span class="pre">(x,</span> <span class="pre">y),</span> <span class="pre">r,</span> <span class="pre">debljina)</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>елипса</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">pg.draw.ellipse(prozor,</span> <span class="pre">boja,</span> <span class="pre">(x,</span> <span class="pre">y,</span> <span class="pre">sirina,</span> <span class="pre">visina),</span> <span class="pre">debljina)</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>многоугао</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">pg.draw.polygon(prozor,</span> <span class="pre">boja,</span> <span class="pre">[(x,</span> <span class="pre">y),</span> <span class="pre">(x,</span> <span class="pre">y),</span> <span class="pre">(x,</span> <span class="pre">y)])</span></code></p></td>
+</tr>
+</tbody>
+</table>
+</div>
 <div class="section" id="id3">
-<h2>Релативне координате и сидра<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
-
-    <div  id="eVuKjw6krMY" class="ytvideo"  style="text-align: center; margin: 15px; cursor:pointer;">
-        <div style="background-image: url('https://img.youtube.com/vi/eVuKjw6krMY/mqdefault.jpg'); background-repeat: no-repeat;background-position: center; height: 210px; width: 310px; margin: 0 auto; border: 1px solid #20c997">
-            <img src="/_static/images/play_button.svg" style="margin-top: 78px;" /> 
-        </div>
-      
-
-        </div>
-    <div id="modal-eVuKjw6krMY" class="ytvideoclose" style="display: none; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background-color: rgba(128, 182, 128, 0.3); z-index: 10000;">
-        <div style="background-color: white; position: fixed; top: 4vh; left: 5vw; width:  90vw; height:  90vh; z-index: 100;" id="YTmodal-eVuKjw6krMY">
-        </div>
-    </div>
-    
-    
-    </div>
+<h2>Релативне координате - утврђивање<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<p>Потребно је да одеш на <a class="reference external" href="https://petlja.org/biblioteka/r/lekcije/pygame-prirucnik/crtanje-cas6">Час 6 Прирурчника за седми разред</a> и ту решиш задатке које смо за тебе спремили.</p>
+<p>Покушај да и даље имаш у виду због чега на овај начин пишемо код - варијабле и функције користимо како бисмо уопштили оно што радимо и лакше померали, допуњавали, повећавали и смањивали цртеже. На ово ће те подсетити први задатак, <a class="reference external" href="https://petlja.org/biblioteka/r/lekcije/pygame-prirucnik/crtanje-cas6#id2">Кућа - положај</a>.</p>
+<p>Такође, немој да те уплаши дужина задатака и кода програма које треба да допуниш. Видећеш, већина кода који се појављује у овим задацима је већ написан и твој задатак ће бити да углавном допуниш код појединим вредностима и функцијама. Такође, не дозовли да те уплаши математика која ће се појавити у лекцији. Видећеш, све ствари које се налазе у лекцији већ знаш са часова математике.</p>
+<p>На пример, у задацима <a class="reference external" href="https://petlja.org/biblioteka/r/lekcije/pygame-prirucnik/crtanje-cas6#id3">Саобраћајни знак од једнакостраничних троуглова</a> и <a class="reference external" href="https://petlja.org/biblioteka/r/lekcije/pygame-prirucnik/crtanje-cas6#id5">Цвет</a> користићеш неке ствари које сигурно знаш из математике, рецимо, Питагорину теорему. Видећеш, чак и ако се неких ствари не сећаш из математике оне су објашњене у задацима, тако да ти препоручујемо да полако и пажљиво читаш задатке и покушаш да вредности из текстова задатака пронађеш прво на слици која се налази у задатку, а затим да у коду пронађеш исте те вредности и укључиш их тамо где је потребно. Задаци овде нису само ту да би проверио/проверила шта знаш, него да би, уз помоћ текста и објашњења у њима, увежбао/увежбала и утврдио/утврдила оно што смо до сада радили.</p>
+<p>Када завршиш све задатке у овој лекцији, можеш прећи на видее.</p>
+</div>
 </div>
 
 
