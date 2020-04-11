@@ -11,7 +11,7 @@
       :height: 415
       :align: center
 
-Relativne koordinate i sidra
+Релативне координате и сидра
 ----------------------------
 
 .. ytpopup:: eVuKjw6krMY
