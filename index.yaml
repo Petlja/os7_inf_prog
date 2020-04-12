@@ -212,7 +212,7 @@ lekcije:
     order: 8 #kod sekcije postoji u suprotnom prazan
     content: #kod sekcije prazan, kod html-a, quiz-a i pdf-a putanja do file-a, kod yt link
     opis:  #opcioni - samo kod sekcije kako bi se u sadrzaju videlo objasnjenje (ako vec nije naveden sadrzaj gore)
-    alias: cas6
+    alias: cas7
   - tip: html
     ime: Седми час
     order: 
