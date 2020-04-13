@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="sr-Cyrl">
   <head>
     <meta charset="utf-8" />
-    <title>Седми час &#8212; Седми разред</title>
+    <title>Видео - цртање облика помоћу петљи &#8212; Седми разред</title>
     <link rel="stylesheet" href="_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/activecode.css" />
@@ -210,92 +210,42 @@
 <div class="container col-md-8 col-md-offset-2" id="main-content">
   
   <div class="section" id="id1">
-<h1>Седми час<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
-<p>Здраво,</p>
-<p>У претходним часовима фокусирали смо се на цртање линија и облика. Сада прелазимо на нову целину у којој ће главни фокус бити како да употребљавамо петље како бисмо цртали и распоређивали елементе на екрану. Сети се корњача графике и цртања правилних облика помоћу петљи и имаћеш идеју о томе шта ћемо овде научити.</p>
+<h1>Видео - цртање облика помоћу петљи<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<p>Погледај сада ова два видеа како би утврдио/утврдила оно што си управо научио/научила у нашем приручнику. Када то завршиш, настаави са курсом и уради кратак тест који ће ти показати како си савладао/савладала лекцију.</p>
 <div class="section" id="id2">
-<h2>Пре него што почнеш<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
-<p>Пре него што почнеш са овом лекцијом, важно је да се подсетиш како се користе петље у програмском језику Пајтон. У лекцији <a class="reference external" href="https://petlja.org/biblioteka/r/lekcije/prirucnik-python/kontrolatoka-cas11#id1">Понављање</a> из Приручника за шести разред налази се неколико области које ће ти помоћи да се подсетиш овога. Прво погледај област <a class="reference external" href="https://petlja.org/biblioteka/r/lekcije/prirucnik-python/kontrolatoka-cas11#id2">Понављање наредби дати број пута</a> и реши два лака задатка који су у тој области. Онда прочитај део који се зове <a class="reference external" href="https://petlja.org/biblioteka/r/lekcije/prirucnik-python/kontrolatoka-cas11#range">Опсег бројева</a> и који се тиче тога како се употребљава функција <code class="docutils literal notranslate"><span class="pre">range</span></code>. Када то завршиш погледај и део који говори о томе како се употребљава <a class="reference external" href="https://petlja.org/biblioteka/r/lekcije/prirucnik-python/kontrolatoka-cas19#">Условна петља</a></p>
-<p>Ако желиш још да провежбаш коришћење петљи, то можеш урадити у <a class="reference external" href="https://petlja.org/biblioteka/r/lekcije/python-zbirka-malih-zadataka/funkcije#id3">Збирци малих задатака</a> тако што ћеш урадити задатке 4.1.1, 4.1.2, 4.1.5, 4.1.6. Наравно, можеш и више да урадиш, али ово ће бити довољно да се подсетиш основних ствари.</p>
-<p>Такође, као и до сада, препоручујемо ти да током рада користиш и наш <a class="reference external" href="https://petljamediastorage.blob.core.windows.net/root/Media/Default/Help/cheatsheet.pdf">Синтаксни подсетника за Пајтон</a> ако ти икад затреба да се подсетиш ових ствари. Одељак <em>Функције - дефинисање и позив</em> ће ти бити сасвим довољан.</p>
-<p>Оставићемо ти овде и подсетник како се цртају облици, ако и даље буде било потребе да се подсетиш како се то ради.</p>
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 13%" />
-<col style="width: 87%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p>дуж</p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">pg.draw.line(prozor,</span> <span class="pre">boja,</span> <span class="pre">(x1,</span> <span class="pre">y1),</span> <span class="pre">(x2,</span> <span class="pre">y2),</span> <span class="pre">debljina)</span></code></p></td>
-</tr>
-<tr class="row-even"><td><p>правоугаоник</p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">pg.draw.rect(prozor,</span> <span class="pre">boja,</span> <span class="pre">(x,</span> <span class="pre">y,</span> <span class="pre">sirina,</span> <span class="pre">visina),</span> <span class="pre">debljina)</span></code></p></td>
-</tr>
-<tr class="row-odd"><td><p>круг</p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">pg.draw.circle(prozor,</span> <span class="pre">boja,</span> <span class="pre">(x,</span> <span class="pre">y),</span> <span class="pre">r,</span> <span class="pre">debljina)</span></code></p></td>
-</tr>
-<tr class="row-even"><td><p>елипса</p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">pg.draw.ellipse(prozor,</span> <span class="pre">boja,</span> <span class="pre">(x,</span> <span class="pre">y,</span> <span class="pre">sirina,</span> <span class="pre">visina),</span> <span class="pre">debljina)</span></code></p></td>
-</tr>
-<tr class="row-odd"><td><p>многоугао</p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">pg.draw.polygon(prozor,</span> <span class="pre">boja,</span> <span class="pre">[(x,</span> <span class="pre">y),</span> <span class="pre">(x,</span> <span class="pre">y),</span> <span class="pre">(x,</span> <span class="pre">y)])</span></code></p></td>
-</tr>
-</tbody>
-</table>
-</div>
+<h2>Петље 1<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+
+    <div  id="eGBaEUh9j-M" class="ytvideo"  style="text-align: center; margin: 15px; cursor:pointer;">
+        <div style="background-image: url('https://img.youtube.com/vi/eGBaEUh9j-M/mqdefault.jpg'); background-repeat: no-repeat;background-position: center; height: 210px; width: 310px; margin: 0 auto; border: 1px solid #20c997">
+            <img src="/_static/images/play_button.svg" style="margin-top: 78px;" /> 
+        </div>
+      
+
+        </div>
+    <div id="modal-eGBaEUh9j-M" class="ytvideoclose" style="display: none; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background-color: rgba(128, 182, 128, 0.3); z-index: 10000;">
+        <div style="background-color: white; position: fixed; top: 4vh; left: 5vw; width:  90vw; height:  90vh; z-index: 100;" id="YTmodal-eGBaEUh9j-M">
+        </div>
+    </div>
+    
+    
+    </div>
 <div class="section" id="id3">
-<h2>Цртање правилних облика уз помоћ петљи<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
-<p>На почетку овог часа потребно је да одеш на <a class="reference external" href="https://petlja.org/biblioteka/r/lekcije/pygame-prirucnik/crtanje-cas7">Час 7 Прирурчника за седми разред</a> и ту прочиташ текст приручника и урадиш задатке.</p>
+<h2>Петље 2<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
 
-    <div data-component="reveal" id="podsetnik_petlje"   data-showtitle="Петље" data-hidetitle="Сакриј">
-    
-    <div class="course-box course-box-info">
-        <div class="course-content">
-            <p>
-<p>Прво што ћеш видети је један једноставан задатак који служи томе да те подсети како се користе петље и због чега је често потребно да се оне користе. Видећеш, у овом задатку, а и касније у лекцији добро ће ти доћи ако си се подестио/подсетила како да користиш петље у програмском језику Пајтон. Ако будеш имао/имала проблема, слободно се користи овим што смо написали у делу <em>Пре него што почнемо</em>.</p>
+    <div  id="vWRDQoO0W2U" class="ytvideo"  style="text-align: center; margin: 15px; cursor:pointer;">
+        <div style="background-image: url('https://img.youtube.com/vi/vWRDQoO0W2U/mqdefault.jpg'); background-repeat: no-repeat;background-position: center; height: 210px; width: 310px; margin: 0 auto; border: 1px solid #20c997">
+            <img src="/_static/images/play_button.svg" style="margin-top: 78px;" /> 
+        </div>
+      
 
-    </p></div></div>
-
+        </div>
+    <div id="modal-vWRDQoO0W2U" class="ytvideoclose" style="display: none; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background-color: rgba(128, 182, 128, 0.3); z-index: 10000;">
+        <div style="background-color: white; position: fixed; top: 4vh; left: 5vw; width:  90vw; height:  90vh; z-index: 100;" id="YTmodal-vWRDQoO0W2U">
+        </div>
     </div>
-    <p>Након тога уради задатак <a class="reference external" href="https://petlja.org/biblioteka/r/lekcije/pygame-prirucnik/petlje-cas7#id4">Мердевине</a>.</p>
-
-    <div data-component="reveal" id="podsetnik_merdevine"   data-showtitle="Мердевине" data-hidetitle="Сакриј">
     
-    <div class="course-box course-box-info">
-        <div class="course-content">
-            <p>
-<p>Видећеш, он се не разликује претерано од претходног задатка са круговима. Када радиш задатке са петљама, покушај да размишљаш о томе шта се дешава у сваком проласку кроз петљу. Све време имај у виду да је то нека радња која се понавља и сваки пут се мало промени. Покушај да размислиш о томе шта је то што се промени и како. Слободно се неколико пута врати на текст задатка ако у неком тренутку застанеш. Поред текста задатка, обрати пажњу и на коментаре који се налазе у коду и који ће ти доста олакшати рад.</p>
-
-    </p></div></div>
-
-    </div>
-    <p>Након тога следи део <a class="reference external" href="https://petlja.org/biblioteka/r/lekcije/pygame-prirucnik/petlje-cas7#id">Правилно распоређени бројеви</a> који ће ти показати неколико начина да у сваком проласку кроз петљу промениш одређене вредости.</p>
-
-    <div data-component="reveal" id="podsetnik_range"   data-showtitle="Range" data-hidetitle="Сакриј">
     
-    <div class="course-box course-box-info">
-        <div class="course-content">
-            <p>
-<p>Овај део ће ти бити лакши за разумевање ако  лепо схваташ шта се дешава када користимо петље и ако добро разумеш функцију <code class="docutils literal notranslate"><span class="pre">range</span></code>. Због тога је важно да се, ако до сада већ ниси, добро подсетиш градива о петљама.</p>
-
-    </p></div></div>
-
     </div>
-    <p>Неколико наредних задатака даће ти прилику да ово провежбаш као и да се подсетиш употребе <code class="docutils literal notranslate"><span class="pre">while</span></code> петље.</p>
-
-    <div data-component="reveal" id="podsetnik_while"   data-showtitle="While" data-hidetitle="Сакриј">
-    
-    <div class="course-box course-box-info">
-        <div class="course-content">
-            <p>
-<p>Док будеш решавао/решавала ове задатке, пажљиво читај текст задатка и све време размишљај шта се дешава у сваком проласку кроз петљу (које вредности добијају променљиве, који је опсег који користиш, колики је скок и сл.). Као што смо већ написали, доста ће ти помоћи и коментари који се налазе у самом коду задатака.</p>
-
-    </p></div></div>
-
-    </div>
-    <p>Када завршиш са свим тим, видећеш да и слике можеш да исцртаваш помоћу петљи на исти начин као и остале облике.</p>
-<p>Када то завршиш можеш прећи на видеo материјал који је дат у наставку часа.</p>
-</div>
 </div>
 
 

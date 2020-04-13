@@ -122,9 +122,9 @@
 
 .. mchoice:: slovo_k
     :answer_a: "F"
-    :feedback_a: Нетачно    
+    :feedback_a: Тачно    
     :answer_b: "E"
-    :feedback_b: Тачно
+    :feedback_b: Нетачно    
     :answer_c: "W"
     :feedback_c: Нетачно    
     :answer_d: "Ш"
