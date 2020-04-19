@@ -231,6 +231,127 @@ lekcije:
     content: sedmi_cas_kviz.html
     opis: 2, 2, 2, 0123, 0 #koristimo ovo polje da se izlistaju svi odgovori 
     alias: test9
+  - tip: section
+    ime: Час 8
+    order: 9 #kod sekcije postoji u suprotnom prazan
+    content: #kod sekcije prazan, kod html-a, quiz-a i pdf-a putanja do file-a, kod yt link
+    opis:  #opcioni - samo kod sekcije kako bi se u sadrzaju videlo objasnjenje (ako vec nije naveden sadrzaj gore)
+    alias: cas8
+  - tip: html
+    ime: Осми час
+    order: 
+    content: osmi_cas.html  #kod sekcije prazan, kod html-a, quiz-a i pdf-a putanja do file-a, kod yt link
+    opis: #prazan
+    alias: lekcija_8.1 #edinstven-alias-u-okviru-kursa1
+  - tip: html
+    ime: Видео Генератор насумичних бројева, дијагонално распоређивање облика
+    order: 
+    content: osmi_cas_video.html  #kod sekcije prazan, kod html-a, quiz-a i pdf-a putanja do file-a, kod yt link
+    opis: #prazan
+    alias: lekcija_8.2 #edinstven-alias-u-okviru-kursa1
+  - tip: quiz
+    ime: Осми час - квиз
+    order: 
+    content: osmi_cas_kviz.html
+    opis: 2, 01, 0, 0, 13, 0 #koristimo ovo polje da se izlistaju svi odgovori 
+    alias: test10
+  - tip: section
+    ime: Час 9
+    order: 10 #kod sekcije postoji u suprotnom prazan
+    content: #kod sekcije prazan, kod html-a, quiz-a i pdf-a putanja do file-a, kod yt link
+    opis:  #opcioni - samo kod sekcije kako bi se u sadrzaju videlo objasnjenje (ako vec nije naveden sadrzaj gore)
+    alias: cas9
+  - tip: html
+    ime: Девети час
+    order: 
+    content: deveti_cas.html  #kod sekcije prazan, kod html-a, quiz-a i pdf-a putanja do file-a, kod yt link
+    opis: #prazan
+    alias: lekcija_9.1 #edinstven-alias-u-okviru-kursa1
+  - tip: html
+    ime: Видео - Гранање и петље у петљама
+    order: 
+    content: deveti_cas_video.html  #kod sekcije prazan, kod html-a, quiz-a i pdf-a putanja do file-a, kod yt link
+    opis: #prazan
+    alias: lekcija_9.2 #edinstven-alias-u-okviru-kursa1
+  - tip: quiz
+    ime: Девети час - квиз
+    order: 
+    content: deveti_cas_kviz.html
+    opis: 3, 2, 2413, 0, 2 #koristimo ovo polje da se izlistaju svi odgovori 
+    alias: test11
+  - tip: section
+    ime: Час 10
+    order: 11 #kod sekcije postoji u suprotnom prazan
+    content: #kod sekcije prazan, kod html-a, quiz-a i pdf-a putanja do file-a, kod yt link
+    opis:  #opcioni - samo kod sekcije kako bi se u sadrzaju videlo objasnjenje (ako vec nije naveden sadrzaj gore)
+    alias: cas10
+  - tip: html
+    ime: Десети час
+    order: 
+    content: deseti_cas.html  #kod sekcije prazan, kod html-a, quiz-a i pdf-a putanja do file-a, kod yt link
+    opis: #prazan
+    alias: lekcija_10.1 #edinstven-alias-u-okviru-kursa1
+  - tip: html
+    ime: Видео - Понављање облика коришћењем петљи
+    order: 
+    content: deseti_cas_video.html  #kod sekcije prazan, kod html-a, quiz-a i pdf-a putanja do file-a, kod yt link
+    opis: #prazan
+    alias: lekcija_10.2 #edinstven-alias-u-okviru-kursa1
+  - tip: quiz
+    ime: Десети час - квиз
+    order: 
+    content: deseti_cas_kviz.html
+    opis: 0, 3, 2, 3, 0 #koristimo ovo polje da se izlistaju svi odgovori 
+    alias: test12
+  - tip: section
+    ime: Час 11
+    order: 12 #kod sekcije postoji u suprotnom prazan
+    content: #kod sekcije prazan, kod html-a, quiz-a i pdf-a putanja do file-a, kod yt link
+    opis:  #opcioni - samo kod sekcije kako bi se u sadrzaju videlo objasnjenje (ako vec nije naveden sadrzaj gore)
+    alias: cas11
+  - tip: html
+    ime: Једанаести час
+    order: 
+    content: jedanaesti_cas.html  #kod sekcije prazan, kod html-a, quiz-a i pdf-a putanja do file-a, kod yt link
+    opis: #prazan
+    alias: lekcija_11.1 #edinstven-alias-u-okviru-kursa1
+  - tip: html
+    ime: Видео - Анимације
+    order: 
+    content: jedanaesti_cas_video.html  #kod sekcije prazan, kod html-a, quiz-a i pdf-a putanja do file-a, kod yt link
+    opis: #prazan
+    alias: lekcija_11.2 #edinstven-alias-u-okviru-kursa1
+  - tip: quiz
+    ime: Једанаести час - квиз
+    order: 
+    content: jedanaesti_cas_kviz.html
+    opis: 0, 3, 3, 2, 2 #koristimo ovo polje da se izlistaju svi odgovori 
+    alias: test13
+  - tip: section
+    ime: Час 12
+    order: 13 #kod sekcije postoji u suprotnom prazan
+    content: #kod sekcije prazan, kod html-a, quiz-a i pdf-a putanja do file-a, kod yt link
+    opis:  #opcioni - samo kod sekcije kako bi se u sadrzaju videlo objasnjenje (ako vec nije naveden sadrzaj gore)
+    alias: cas11
+  - tip: html
+    ime: Дванаести час
+    order: 
+    content: dvanaesti_cas.html  #kod sekcije prazan, kod html-a, quiz-a i pdf-a putanja do file-a, kod yt link
+    opis: #prazan
+    alias: lekcija_12.1 #edinstven-alias-u-okviru-kursa1
+  - tip: html
+    ime: Видео - Анимације кретања
+    order: 
+    content: dvanaesti_cas_video.html  #kod sekcije prazan, kod html-a, quiz-a i pdf-a putanja do file-a, kod yt link
+    opis: #prazan
+    alias: lekcija_12.2 #edinstven-alias-u-okviru-kursa1
+  - tip: quiz
+    ime: Дванаести час - квиз
+    order: 
+    content: dvanaesti_cas_kviz.html
+    opis: 1, 2, 2, 0, 1 #koristimo ovo polje da se izlistaju svi odgovori 
+    alias: test14
+  
 
 
 

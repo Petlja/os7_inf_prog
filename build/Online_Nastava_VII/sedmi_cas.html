@@ -217,34 +217,43 @@
 <h2>Пре него што почнеш<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
 <p>Пре него што почнеш са овом лекцијом, важно је да се подсетиш како се користе петље у програмском језику Пајтон. У лекцији <a class="reference external" href="https://petlja.org/biblioteka/r/lekcije/prirucnik-python/kontrolatoka-cas11#id1">Понављање</a> из Приручника за шести разред налази се неколико области које ће ти помоћи да се подсетиш овога. Прво погледај област <a class="reference external" href="https://petlja.org/biblioteka/r/lekcije/prirucnik-python/kontrolatoka-cas11#id2">Понављање наредби дати број пута</a> и реши два лака задатка који су у тој области. Онда прочитај део који се зове <a class="reference external" href="https://petlja.org/biblioteka/r/lekcije/prirucnik-python/kontrolatoka-cas11#range">Опсег бројева</a> и који се тиче тога како се употребљава функција <code class="docutils literal notranslate"><span class="pre">range</span></code>. Када то завршиш погледај и део који говори о томе како се употребљава <a class="reference external" href="https://petlja.org/biblioteka/r/lekcije/prirucnik-python/kontrolatoka-cas19#">Условна петља</a></p>
 <p>Ако желиш још да провежбаш коришћење петљи, то можеш урадити у <a class="reference external" href="https://petlja.org/biblioteka/r/lekcije/python-zbirka-malih-zadataka/funkcije#id3">Збирци малих задатака</a> тако што ћеш урадити задатке 4.1.1, 4.1.2, 4.1.5, 4.1.6. Наравно, можеш и више да урадиш, али ово ће бити довољно да се подсетиш основних ствари.</p>
-<p>Такође, као и до сада, препоручујемо ти да током рада користиш и наш <a class="reference external" href="https://petljamediastorage.blob.core.windows.net/root/Media/Default/Help/cheatsheet.pdf">Синтаксни подсетника за Пајтон</a> ако ти икад затреба да се подсетиш ових ствари. Одељак <em>Функције - дефинисање и позив</em> ће ти бити сасвим довољан.</p>
+<p>Такође, као и до сада, препоручујемо ти да током рада користиш и наш <a class="reference external" href="https://petljamediastorage.blob.core.windows.net/root/Media/Default/Help/cheatsheet.pdf">Синтаксни подсетника за Пајтон</a> ако ти икад затреба да се подсетиш ових ствари. Одељак <em>Контрола тока</em> ће ти бити сасвим довољан.</p>
 <p>Оставићемо ти овде и подсетник како се цртају облици, ако и даље буде било потребе да се подсетиш како се то ради.</p>
 <table class="docutils align-default">
 <colgroup>
-<col style="width: 13%" />
-<col style="width: 87%" />
+<col style="width: 28%" />
+<col style="width: 72%" />
 </colgroup>
 <tbody>
-<tr class="row-odd"><td><p>дуж</p></td>
+<tr class="row-odd"><td><p>боја</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">pg.Color(&quot;ime_boje&quot;)</span></code> или торка <code class="docutils literal notranslate"><span class="pre">(r,</span> <span class="pre">g,</span> <span class="pre">b)</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>дуж</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">pg.draw.line(prozor,</span> <span class="pre">boja,</span> <span class="pre">(x1,</span> <span class="pre">y1),</span> <span class="pre">(x2,</span> <span class="pre">y2),</span> <span class="pre">debljina)</span></code></p></td>
 </tr>
-<tr class="row-even"><td><p>правоугаоник</p></td>
+<tr class="row-odd"><td><p>правоугаоник</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">pg.draw.rect(prozor,</span> <span class="pre">boja,</span> <span class="pre">(x,</span> <span class="pre">y,</span> <span class="pre">sirina,</span> <span class="pre">visina),</span> <span class="pre">debljina)</span></code></p></td>
 </tr>
-<tr class="row-odd"><td><p>круг</p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">pg.draw.circle(prozor,</span> <span class="pre">boja,</span> <span class="pre">(x,</span> <span class="pre">y),</span> <span class="pre">r,</span> <span class="pre">debljina)</span></code></p></td>
+<tr class="row-even"><td><p>круг</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">pg.draw.circle(prozor,</span> <span class="pre">boja,</span> <span class="pre">(x,</span> <span class="pre">y),</span> <span class="pre">poluprecnik,</span> <span class="pre">debljina)</span></code></p></td>
 </tr>
-<tr class="row-even"><td><p>елипса</p></td>
+<tr class="row-odd"><td><p>елипса</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">pg.draw.ellipse(prozor,</span> <span class="pre">boja,</span> <span class="pre">(x,</span> <span class="pre">y,</span> <span class="pre">sirina,</span> <span class="pre">visina),</span> <span class="pre">debljina)</span></code></p></td>
 </tr>
-<tr class="row-odd"><td><p>многоугао</p></td>
+<tr class="row-even"><td><p>многоугао</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">pg.draw.polygon(prozor,</span> <span class="pre">boja,</span> <span class="pre">[(x,</span> <span class="pre">y),</span> <span class="pre">(x,</span> <span class="pre">y),</span> <span class="pre">(x,</span> <span class="pre">y)])</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>укључивање слике</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">pg.image.load(&quot;putanja_do_slike&quot;)</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>цртање слике</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">prozor.blit(slika,</span> <span class="pre">(x,</span> <span class="pre">y))</span></code></p></td>
 </tr>
 </tbody>
 </table>
 </div>
 <div class="section" id="id3">
-<h2>Релативно задавање координата и димензија<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<h2>Понављање облика коришћењем петљи<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
 <p>Потребно је да одеш на <a class="reference external" href="https://petlja.org/biblioteka/r/lekcije/pygame-prirucnik/crtanje-cas7">Час 7 Прирурчника за седми разред</a> и ту прочиташ текст приручника и урадиш задатке.</p>
 <p>Прво што ћеш видети је један једноставан задатак који служи томе да те подсети како се користе петље и због чега је често потребно да се оне користе. Видећеш, у овом задатку, а и касније у лекцији добро ће ти доћи ако си се подестио/подсетила како да користиш петље у програмском језику Пајтон. Ако будеш имао/имала проблема, слободно се користи овим што смо написали у делу <em>Пре него што почнемо</em>.</p>
 <p>Након тога уради задатак <a class="reference external" href="https://petlja.org/biblioteka/r/lekcije/pygame-prirucnik/petlje-cas7#id4">Мердевине</a>. Видећеш, он се не разликује претерано од претходног задатка са круговима. Када радиш задатке са петљама, покушај да размишљаш о томе шта се дешава у сваком проласку кроз петљу. Све време имај у виду да је то нека радња која се понавља и сваки пут се мало промени. Покушај да размислиш о томе шта је то што се промени и како. Слободно се неколико пута врати на текст задатка ако у неком тренутку застанеш. Поред текста задатка, обрати пажњу и на коментаре који се налазе у коду и који ће ти доста олакшати рад.</p>
