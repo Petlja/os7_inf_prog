@@ -332,7 +332,7 @@ lekcije:
     order: 13 #kod sekcije postoji u suprotnom prazan
     content: #kod sekcije prazan, kod html-a, quiz-a i pdf-a putanja do file-a, kod yt link
     opis:  #opcioni - samo kod sekcije kako bi se u sadrzaju videlo objasnjenje (ako vec nije naveden sadrzaj gore)
-    alias: cas11
+    alias: cas12
   - tip: html
     ime: Дванаести час
     order: 
