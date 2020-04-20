@@ -283,49 +283,7 @@ pygamebg.wait_loop()
 плаве једнака (на основу тога можемо сматрати да су црна и бела
 екстремно тамна и екстремно светла нијанса сиве).</p>
 <a class="reference internal image-reference" href="_images/RGB.png"><img alt="_images/RGB.png" class="align-center" src="_images/RGB.png" style="width: 200px;" /></a>
-
-    <div data-component="reveal" id="zanimljivost_bojе1"   data-showtitle="Занимљивост - мешање боја" data-hidetitle="Сакриј прозор">
-    
-    <div class="course-box course-box-info">
-        <div class="course-content">
-            <p>
-<p>Мешање боја
-Ако нам не верујеш зато што си до сада научио/научила да су основне боје плава жута и црвена и да се њиховом комбинацијом добијају све друге боје погледај следећи видео и видећеш да не лажемо.</p>
-
-    <div  id="ELJ18NS_B6E" class="ytvideo"  style="text-align: center; margin: 15px; cursor:pointer;">
-        <div style="background-image: url('https://img.youtube.com/vi/ELJ18NS_B6E/mqdefault.jpg'); background-repeat: no-repeat;background-position: center; height: 210px; width: 310px; margin: 0 auto; border: 1px solid #20c997">
-            <img src="/_static/images/play_button.svg" style="margin-top: 78px;" /> 
-        </div>
-      
-
-        </div>
-    <div id="modal-ELJ18NS_B6E" class="ytvideoclose" style="display: none; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background-color: rgba(128, 182, 128, 0.3); z-index: 10000;">
-        <div style="background-color: white; position: fixed; top: 4vh; left: 5vw; width:  90vw; height:  90vh; z-index: 100;" id="YTmodal-ELJ18NS_B6E">
-        </div>
-    </div>
-    
-    
-    <p>Ствар је у томе што комбиновање светлости одређене боје и комбиновање различитих пигмената, темпера, или штампарске боје на пример, нису иста ствар. При комбиновању светла, основне боје (оне помоћу којих се добијају све остале боје) јесу црвена, зелена и плава, као што си могао/могла да се увериш у претходном видеу, а при комбиновању различитих пигмената начин мешања боја је потпуно другачији процес.</p>
-<p>Да je RGB модел користан и да је мешање боја уистину такво како смо овде написали, може те уверити и то што сви екрани које данас користимо користе управо овај модел боје. Најмањи елемент сваког екрана је пиксел и сви екрани се заправо састоје из великог броја малих светала која могу да буду црвена, зелена или плава. Распоређујући ове боје на одговарајући начин, на екранима се добијају и све остале боје. Погледај следећи видео како би ти ово било јасније. Обрати пажњу на то које су једине три боје тачкица које видиш (пиксела).</p>
-
-    <div  id="NyUMeSBw3X8" class="ytvideo"  style="text-align: center; margin: 15px; cursor:pointer;">
-        <div style="background-image: url('https://img.youtube.com/vi/NyUMeSBw3X8/mqdefault.jpg'); background-repeat: no-repeat;background-position: center; height: 210px; width: 310px; margin: 0 auto; border: 1px solid #20c997">
-            <img src="/_static/images/play_button.svg" style="margin-top: 78px;" /> 
-        </div>
-      
-
-        </div>
-    <div id="modal-NyUMeSBw3X8" class="ytvideoclose" style="display: none; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background-color: rgba(128, 182, 128, 0.3); z-index: 10000;">
-        <div style="background-color: white; position: fixed; top: 4vh; left: 5vw; width:  90vw; height:  90vh; z-index: 100;" id="YTmodal-NyUMeSBw3X8">
-        </div>
-    </div>
-    
-    
-    
-    </p></div></div>
-
-    </div>
-    <p>У програмском језику Python, као и у Паинту (као и у рачунарству уопште), боју можеш представити и тројком бројева и то у облику трочлане уређене торке (нпр. <code class="docutils literal notranslate"><span class="pre">(123,</span> <span class="pre">80,</span> <span class="pre">56)</span></code>) или трочлане листе (нпр. <code class="docutils literal notranslate"><span class="pre">[123,</span> <span class="pre">80,</span> <span class="pre">56]</span></code>). Сети се, када кажемо да је нешто уређено, то значи да је битан редослед елемената - и овде ћемо увек прво наводити компоненту црвене, затим компоненту зелене и на крају компоненту плаве, увек истим редоследом. Торку или листу можеш навести директно као аргумент функције који одговара боји, а можеш је упамтити у променљивој и касније користити више пута.  На пример, доделом <code class="docutils literal notranslate"><span class="pre">REZEDO</span> <span class="pre">=</span> <span class="pre">(0,</span> <span class="pre">255,</span> <span class="pre">255)</span></code> дефинишемо резедo боју (каже се и тиркизна или цијан, а то је у ствари боја светлосне сабље Лука Скајвокера из филма <cite>A New Hope: Star Wars: Episode IV</cite>) наводећи одговарајуће количине црвене, зелене и плаве светлости коју ова боја садржи - пошто је то мешавина плаве и зелене боје у њој нема нимало црвене, а плава и зелена компонента су на максимуму. Након тога, ту боју можемо употребити и у позиву функције (нпр. <code class="docutils literal notranslate"><span class="pre">prozor.fill(REZEDO)</span></code>). Имена тих променљивих не морају бити написана великим словима, али то је добар обичај.</p>
+<p>У програмском језику Python, као и у Паинту (као и у рачунарству уопште), боју можеш представити и тројком бројева и то у облику трочлане уређене торке (нпр. <code class="docutils literal notranslate"><span class="pre">(123,</span> <span class="pre">80,</span> <span class="pre">56)</span></code>) или трочлане листе (нпр. <code class="docutils literal notranslate"><span class="pre">[123,</span> <span class="pre">80,</span> <span class="pre">56]</span></code>). Сети се, када кажемо да је нешто уређено, то значи да је битан редослед елемената - и овде ћемо увек прво наводити компоненту црвене, затим компоненту зелене и на крају компоненту плаве, увек истим редоследом. Торку или листу можеш навести директно као аргумент функције који одговара боји, а можеш је упамтити у променљивој и касније користити више пута.  На пример, доделом <code class="docutils literal notranslate"><span class="pre">REZEDO</span> <span class="pre">=</span> <span class="pre">(0,</span> <span class="pre">255,</span> <span class="pre">255)</span></code> дефинишемо резедo боју (каже се и тиркизна или цијан, а то је у ствари боја светлосне сабље Лука Скајвокера из филма <cite>A New Hope: Star Wars: Episode IV</cite>) наводећи одговарајуће количине црвене, зелене и плаве светлости коју ова боја садржи - пошто је то мешавина плаве и зелене боје у њој нема нимало црвене, а плава и зелена компонента су на максимуму. Након тога, ту боју можемо употребити и у позиву функције (нпр. <code class="docutils literal notranslate"><span class="pre">prozor.fill(REZEDO)</span></code>). Имена тих променљивих не морају бити написана великим словима, али то је добар обичај.</p>
 <p>Све ово ће ти бити јасније када у следећем програму замениш знакове питања бројевима које желиш и кликнеш на <cite>Покрени програм</cite>. Покушај да пронађеш боје о којима смо говорили, а покушај и да унесеш и боје које се налазе у листи на крају лекције. Наравно, обрати пажњу и на то како смо овог пута употребили функцију <code class="docutils literal notranslate"><span class="pre">prozor.fill</span></code>. Довољно је било јој као аргумент дамо листу три броја и она је знала како да прозор обоји у одговарајућу боју.</p>
 
 <div data-childcomponent="colors_rgb" class="course-box course-box-problem course-content">

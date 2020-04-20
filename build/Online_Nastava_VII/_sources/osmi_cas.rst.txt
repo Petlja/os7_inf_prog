@@ -20,17 +20,17 @@
 
         Оставићемо ти овде и подсетник за неке најважније функције које смо до сада користили.
 
-        ================================   =================================================================================
-        боја                               ``pg.Color("ime_boje")`` или торка ``(r, g, b)`` 
-        дуж                                ``pg.draw.line(prozor, boja, (x1, y1), (x2, y2), debljina)``
-        правоугаоник                       ``pg.draw.rect(prozor, boja, (x, y, sirina, visina), debljina)``
-        круг                               ``pg.draw.circle(prozor, boja, (x, y), poluprecnik, debljina)``
-        елипса                             ``pg.draw.ellipse(prozor, boja, (x, y, sirina, visina), debljina)``
-        многоугао                          ``pg.draw.polygon(prozor, boja, [(x, y), (x, y), (x, y)])``
-        насумични број од ``x`` до ``y``   ``random.randint(x, y)`` 
-        укључивање слике                   ``pg.image.load("putanja_do_slike")``
-        цртање слике                       ``prozor.blit(slika, (x, y))``
-        ================================   =================================================================================
+        ====================================   =================================================================================
+        боја                                   ``pg.Color("ime_boje")`` или торка ``(r, g, b)`` 
+        дуж                                    ``pg.draw.line(prozor, boja, (x1, y1), (x2, y2), debljina)``
+        правоугаоник                           ``pg.draw.rect(prozor, boja, (x, y, sirina, visina), debljina)``
+        круг                                   ``pg.draw.circle(prozor, boja, (x, y), poluprecnik, debljina)``
+        елипса                                 ``pg.draw.ellipse(prozor, boja, (x, y, sirina, visina), debljina)``
+        многоугао                              ``pg.draw.polygon(prozor, boja, [(x, y), (x, y), (x, y)])``
+        насумичан цео број од ``x`` до ``y``   ``random.randint(x, y)`` 
+        укључивање слике                       ``pg.image.load("putanja_do_slike")``
+        цртање слике                           ``prozor.blit(slika, (x, y))``
+        ====================================   =================================================================================
 
 Релативно задавање координата и димензија
 -----------------------------------------

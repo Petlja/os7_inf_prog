@@ -24,7 +24,7 @@
 елипса                             ``pg.draw.ellipse(prozor, boja, (x, y, sirina, visina), debljina)``
 многоугао                          ``pg.draw.polygon(prozor, boja, [(x, y), (x, y), (x, y)])``
 укључивање слике                   ``pg.image.load("putanja_do_slike")``
-цртање слике                       ``prozor.blit(slika, (x, y))``
+приказивање слике                  ``prozor.blit(slika, (x, y))``
 ================================   =================================================================================
 
 Понављање облика коришћењем петљи

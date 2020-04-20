@@ -11,29 +11,27 @@
 
 
 
-.. reveal:: pre_nego_sto_pocnes11
+.. reveal:: pre_nego_sto_pocnes12
    :showtitle: Пре него што почнеш
    :hidetitle: Сакриј прозор
    
    .. infonote:: Пре него што почнеш
     
-        Овог пута би било добро да се подсетиш како се укључују слике у цртеже, што можеш урадити тако што ћеш погледати поднаслов `Приказ слика <https://petlja.org/biblioteka/r/lekcije/pygame-prirucnik/crtanje-cas3#id9>`__.
-
-        Такође, као и до сада, препоручујемо ти да током рада користиш и наш `Синтаксни подсетника за Пајтон <https://petljamediastorage.blob.core.windows.net/root/Media/Default/Help/cheatsheet.pdf>`__.
+        За овај час ти неће требати никакво посебно подсећање, али, као и до сада, препоручујемо ти да током рада користиш и наш `Синтаксни подсетника за Пајтон <https://petljamediastorage.blob.core.windows.net/root/Media/Default/Help/cheatsheet.pdf>`__.
 
         Као и увек, оставићемо ти овде и подсетник за неке најважније функције које смо до сада користили.
 
-        ================================   =================================================================================
-        боја                               ``pg.Color("ime_boje")`` или торка ``(r, g, b)`` 
-        дуж                                ``pg.draw.line(prozor, boja, (x1, y1), (x2, y2), debljina)``
-        правоугаоник                       ``pg.draw.rect(prozor, boja, (x, y, sirina, visina), debljina)``
-        круг                               ``pg.draw.circle(prozor, boja, (x, y), poluprecnik, debljina)``
-        елипса                             ``pg.draw.ellipse(prozor, boja, (x, y, sirina, visina), debljina)``
-        многоугао                          ``pg.draw.polygon(prozor, boja, [(x, y), (x, y), (x, y)])``
-        насумични број од ``x`` до ``y``   ``random.randint(x, y)`` 
-        укључивање слике                   ``pg.image.load("putanja_do_slike")``
-        цртање слике                       ``prozor.blit(slika, (x, y))``
-        ================================   =================================================================================
+        ====================================   =================================================================================
+        боја                                   ``pg.Color("ime_boje")`` или торка ``(r, g, b)`` 
+        дуж                                    ``pg.draw.line(prozor, boja, (x1, y1), (x2, y2), debljina)``
+        правоугаоник                           ``pg.draw.rect(prozor, boja, (x, y, sirina, visina), debljina)``
+        круг                                   ``pg.draw.circle(prozor, boja, (x, y), poluprecnik, debljina)``
+        елипса                                 ``pg.draw.ellipse(prozor, boja, (x, y, sirina, visina), debljina)``
+        многоугао                              ``pg.draw.polygon(prozor, boja, [(x, y), (x, y), (x, y)])``
+        насумичан цео број од ``x`` до ``y``   ``random.randint(x, y)`` 
+        укључивање слике                       ``pg.image.load("putanja_do_slike")``
+        приказивање слике                      ``prozor.blit(slika, (x, y))``
+        ====================================   =================================================================================
 
 Анимације кретања
 -----------------
@@ -47,13 +45,13 @@
 На крају, уради задатке **Стражар који патролира** и **Авион**, у којима ћеш научити како да направиш анимацију одбијања објеката од ивице екрана. 
 
 
-.. reveal:: ako_zelis_vise11
+.. reveal:: ako_zelis_vise12
    :showtitle: Ако желиш да научиш више
    :hidetitle: Сакриј прозор
    
-   .. infonote:: *Одбијање лоптице*
+   .. infonote:: **Одбијање лоптице**
 
-        Провежбај мало ово што си научио/научила на часу тако што ћеш урадити задатак `Одбијање лоптице <https://petlja.org/biblioteka/r/lekcije/pygame-prirucnik/animacije-cas12#id9>`. 
+        Провежбај мало ово што си научио/научила на часу тако што ћеш урадити задатак `Одбијање лоптице <https://petlja.org/biblioteka/r/lekcije/pygame-prirucnik/animacije-cas12#id9>`__. 
 
 
 Када завршиш са задацима пређи на видее. 

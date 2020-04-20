@@ -116,7 +116,7 @@
 Питање 6.
 ~~~~~~~~~
 
-.. mchoice:: blit
+.. mchoice:: centriran_pravougaonik
    :answer_a: pg.draw.rect(prozor, pg.Color("blue"), (100, 50, 100, 40))
    :feedback_a: Нетачно
    :answer_b: pg.draw.rect(prozor, pg.Color("blue"), (150, 100 , 80, 20))

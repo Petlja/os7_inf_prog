@@ -76,7 +76,7 @@
    :width: 200px
 
 
-.. reveal:: zanimljivost_bojе1
+.. zanimljivost_bojе1
    :showtitle: Занимљивост - мешање боја
    :hidetitle: Сакриј прозор
    
