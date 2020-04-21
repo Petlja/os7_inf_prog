@@ -124,7 +124,7 @@
    :feedback_c: Нетачно
    :answer_d: prozor.image
    :feedback_d: Нетачно    
-   :correct: а
+   :correct: a
     
    Коју функцију користимо да бисмо приказали слику на Пајгејм прозору?
 

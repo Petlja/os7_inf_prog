@@ -99,7 +99,6 @@
 
 
 .. mchoice:: duz_duzina_pravac
-    :multiple_answers:
     :answer_a: Усправну дуж дужине 500
     :feedback_a: Нетачно    
     :answer_b: Усправну дуж дужине 50
@@ -108,7 +107,7 @@
     :feedback_c: Нетачно    
     :answer_d: Водоравну дуж дужине 50
     :feedback_d: Тачно
-    :correct: ['d']
+    :correct: d
     
 
     Какву дуж исцртава следећа наредба?
