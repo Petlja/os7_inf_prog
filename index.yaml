@@ -351,6 +351,60 @@ lekcije:
     content: dvanaesti_cas_kviz.html
     opis: 1, 2, 2, 0, 1 #koristimo ovo polje da se izlistaju svi odgovori 
     alias: test14
+  - tip: section
+    ime: Час 13
+    order: 14 #kod sekcije postoji u suprotnom prazan
+    content: #kod sekcije prazan, kod html-a, quiz-a i pdf-a putanja do file-a, kod yt link
+    opis:  #opcioni - samo kod sekcije kako bi se u sadrzaju videlo objasnjenje (ako vec nije naveden sadrzaj gore)
+    alias: cas13
+  - tip: html
+    ime: Тринаести час
+    order: 
+    content: trinaesti_cas.html  #kod sekcije prazan, kod html-a, quiz-a i pdf-a putanja do file-a, kod yt link
+    opis: #prazan
+    alias: lekcija_13.1 #edinstven-alias-u-okviru-kursa1
+  - tip: quiz
+    ime: Тринаести час - квиз
+    order: 
+    content: trinaesti_cas_kviz.html
+    opis: 2, 3, 0, 1, 4 #koristimo ovo polje da se izlistaju svi odgovori 
+    alias: test15
+  - tip: section
+    ime: Час 14
+    order: 15 #kod sekcije postoji u suprotnom prazan
+    content: #kod sekcije prazan, kod html-a, quiz-a i pdf-a putanja do file-a, kod yt link
+    opis:  #opcioni - samo kod sekcije kako bi se u sadrzaju videlo objasnjenje (ako vec nije naveden sadrzaj gore)
+    alias: cas14
+  - tip: html
+    ime: Четрнаести час
+    order: 
+    content: cetrnaesti_cas.html  #kod sekcije prazan, kod html-a, quiz-a i pdf-a putanja do file-a, kod yt link
+    opis: #prazan
+    alias: lekcija_14.1 #edinstven-alias-u-okviru-kursa1
+  - tip: quiz
+    ime: Четрнаести час - квиз
+    order: 
+    content: cetrnaesti_cas_kviz.html
+    opis: 0, 13, 1, 2, 0 #koristimo ovo polje da se izlistaju svi odgovori 
+    alias: test16
+  - tip: section
+    ime: Час 15
+    order: 15 #kod sekcije postoji u suprotnom prazan
+    content: #kod sekcije prazan, kod html-a, quiz-a i pdf-a putanja do file-a, kod yt link
+    opis:  #opcioni - samo kod sekcije kako bi se u sadrzaju videlo objasnjenje (ako vec nije naveden sadrzaj gore)
+    alias: cas15
+  - tip: html
+    ime: Петнаести час
+    order: 
+    content: petnaesti_cas.html  #kod sekcije prazan, kod html-a, quiz-a i pdf-a putanja do file-a, kod yt link
+    opis: #prazan
+    alias: lekcija_15.1 #edinstven-alias-u-okviru-kursa1
+  - tip: quiz
+    ime: Петнаести час - квиз
+    order: 
+    content: petnaesti_cas_kviz.html
+    opis: 3142, 2, 0, 0, 1 #koristimo ovo polje da se izlistaju svi odgovori 
+    alias: test17
   
 
 
