@@ -405,7 +405,23 @@ lekcije:
     content: petnaesti_cas_kviz.html
     opis: 3142, 2, 0, 0, 1 #koristimo ovo polje da se izlistaju svi odgovori 
     alias: test17
-  
-
+  - tip: section
+    ime: Час 16
+    order: 17 #kod sekcije postoji u suprotnom prazan
+    content: #kod sekcije prazan, kod html-a, quiz-a i pdf-a putanja do file-a, kod yt link
+    opis:  #opcioni - samo kod sekcije kako bi se u sadrzaju videlo objasnjenje (ako vec nije naveden sadrzaj gore)
+    alias: cas16
+  - tip: html
+    ime: Шеснаести час
+    order: 
+    content: sesnaesti_cas.html  #kod sekcije prazan, kod html-a, quiz-a i pdf-a putanja do file-a, kod yt link
+    opis: #prazan
+    alias: lekcija_16.1 #edinstven-alias-u-okviru-kursa1
+  - tip: quiz
+    ime: Завршни квиз
+    order: 
+    content: sesnaesti_cas_kviz.html
+    opis: 2, 1, 3, 1, 3, 1, 3, 3, 0, 0 #koristimo ovo polje da se izlistaju svi odgovori 
+    alias: kviz_final
 
 

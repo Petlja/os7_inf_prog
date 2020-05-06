@@ -38,12 +38,12 @@
     :answer_a: Круг попуњен бојом
     :feedback_a: Нетачно    
     :answer_b: Кружница - линија
-    :feedback_b: Тачно
+    :feedback_b:  Нетачно  
     :answer_c: Елипса (општи случај) попуњена бојом
     :feedback_c: Нетачно    
     :answer_d: Елипса (општи случај) - линија
-    :feedback_d: Нетачно    
-    :correct: b
+    :feedback_d: Тачно    
+    :correct: d
     
     Шта се исцртава следећом наредбом?
 
