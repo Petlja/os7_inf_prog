@@ -17,7 +17,7 @@
    
    .. infonote:: Пре него што почнеш
     
-        За овај час ти неће требати никакво посебно подсећање, али, као и до сада, препоручујемо ти да током рада користиш и наш `Синтаксни подсетника за Пајтон <https://petljamediastorage.blob.core.windows.net/root/Media/Default/Help/cheatsheet.pdf>`__.
+        За овај час ти неће требати никакво посебно подсећање, али, као и до сада, препоручујемо ти да током рада користиш и наш `Синтаксни подсетник за Пајтон <https://petljamediastorage.blob.core.windows.net/root/Media/Default/Help/cheatsheet.pdf>`__.
 
         Као и увек, оставићемо ти овде и подсетник за неке најважније функције које смо до сада користили.
 
@@ -29,7 +29,7 @@
         елипса                                 ``pg.draw.ellipse(prozor, boja, (x, y, sirina, visina), debljina)``
         многоугао                              ``pg.draw.polygon(prozor, boja, [(x, y), (x, y), (x, y)])``
         насумичан цео број од ``x`` до ``y``   ``random.randint(x, y)`` 
-        укључивање слике                       ``pg.image.load("putanja_do_slike")``
+        учитивање слике                        ``pg.image.load("putanja_do_slike")``
         приказивање слике                      ``prozor.blit(slika, (x, y))``
         ====================================   =================================================================================
 

@@ -30,9 +30,9 @@
     :feedback_a: Нетачно    
     :answer_b: Кружница - линија
     :feedback_b:  Тачно  
-    :answer_c: Елипса (општи случај) попуњена бојом
+    :answer_c: Елипса (која није круг) попуњена бојом
     :feedback_c: Нетачно    
-    :answer_d: Елипса (општи случај) - линија
+    :answer_d: Елипса - линија (која није кружница)
     :feedback_d: Нетачно 
     :correct: b
     
@@ -132,10 +132,7 @@
         x, y = 100, 100
         for i in range(10):
             pygame.draw.line(prozor, pygame.Color("black"), (x, y), (x+10, y), 1)
-            pygame.draw.line(prozor, pygame.Color("black"), (x+10, y), (x+10, y+10), 1)
             x = x+20
-
-
 
     Изабери тачан одговор:
 
@@ -233,11 +230,11 @@
     2)
         .. code-block:: python
 
-            if (dogadjaj.type == pygame.KEYDOWN) or (dogadjaj.key == pygame.K_a):
+            if (dogadjaj.type == pygame.KEYDOWN) or (dogadjaj.key == pygame.K_l):
 
     3)
         .. code-block:: python
 
-            if (dogadjaj.type == pygame.K_a):
+            if (dogadjaj.type == pygame.K_l):
 
     Изабери тачан одговор:

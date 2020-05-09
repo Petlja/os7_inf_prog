@@ -74,9 +74,9 @@
     :feedback_a: Нетачно  
     :answer_b: исцртаваju се четири плаве линије које се смањују и између којих је размак све мањи
     :feedback_b: Нетачно  
-    :answer_c: исцртаваju се четири плаве линије које се повећавају и између којих је размак све већи
+    :answer_c: исцртаваju се четири једнаке плаве линије које се подижу и између којих је размак све већи
     :feedback_c: Тачно
-    :answer_d: исцртаваju се четири плаве линије које се повећавају и између којих је размак све мањи
+    :answer_d: исцртаваju се четири једнаке плаве линије које се подижу и између којих је размак све мањи
     :feedback_d: Нетачно   
     :correct: c
     
@@ -93,13 +93,13 @@
         y0 = 50
         y1 = visina - 30
         x = 30
-        z = 50
-        for i in range(10):
+        dx = 50
+        for i in range(4):
             pg.draw.line(prozor, pg.Color("blue"), (x, y1), (x, y0));
             y1 -= 10
             y0 -= 10
-            x += z
-            z += z*0.5
+            x += dx
+            dx += dx*0.5
         pygamebg.wait_loop()
 
     Изабери тачан одговор:
@@ -108,17 +108,17 @@
 ~~~~~~~~~       
 
 .. mchoice:: linije_dijagonala
-    :answer_a: цео прозор је ишпартан дијагонално насумичним бројем линија између 1 и 20 
+    :answer_a: цео прозор
     :feedback_a: Нетачно  
-    :answer_b: горња Половина прозора је ишпартана дијагонално насумичним бројем линија
+    :answer_b: половина прозора троугаоног облика у горњем десном делу
     :feedback_b: Нетачно  
-    :answer_c: доња половина прозора је ишпартана дијагонално са 20 линија 
+    :answer_c: половина прозора троугаоног облика у доњем левом делу
     :feedback_c: Нетачно
-    :answer_d: доња половина прозора је ишпартана дијагонално насумичним бројем линија између 1 и 20 
-    :feedback_d: Tačno    
+    :answer_d: половина прозора троугаоног облика у доњем десном делу
+    :feedback_d: Тачно
     :correct: d
     
-    Шта је резултат извршавања следећег програма?
+    Који део прозора се шпарта косим линијама извршавањем следећег програма?
 
     .. code-block:: python
 
@@ -129,10 +129,10 @@
         (sirina, visina) = (400, 300) # otvaramo prozor
         prozor = pygamebg.open_window(sirina, visina, "")
         prozor.fill(pg.Color("white"))
-        n = random.randint(1,20)
+        n = random.randint(10,20)
         x = int(sirina / n)
-        y = int(visina / n()
-        for i in range(n + 1):
+        y = int(visina / n)
+        for i in range(n):
             pg.draw.line(prozor, pg.Color("black"), (i*x, visina),  (sirina, i*y), 1)
         pygamebg.wait_loop()
 

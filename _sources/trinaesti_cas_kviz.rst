@@ -25,11 +25,11 @@
 ~~~~~~~~~
 
 .. mchoice:: pg_ciklicno1
-    :answer_a: if x + 10 > sirina
+    :answer_a: if x - 10 > sirina
     :feedback_a: Нетачно    
-    :answer_b: if x + 100 > sirina 
+    :answer_b: if x - 100 > sirina 
     :feedback_b: Нетачно    
-    :answer_c: if x + 110 > sirina
+    :answer_c: if x - 110 > sirina
     :feedback_c: Нетачно    
     :answer_d: Ниједан од понуђених одговора није тачан.  
     :feedback_d: Тачно
