@@ -29,7 +29,7 @@
         елипса                                 ``pg.draw.ellipse(prozor, boja, (x, y, sirina, visina), debljina)``
         многоугао                              ``pg.draw.polygon(prozor, boja, [(x, y), (x, y), (x, y)])``
         насумичан цео број од ``x`` до ``y``   ``random.randint(x, y)`` 
-        учитавање слике                       ``pg.image.load("putanja_do_slike")``
+        учитавање слике                        ``pg.image.load("putanja_do_slike")``
         приказивање слике                      ``prozor.blit(slika, (x, y))``
         ====================================   =================================================================================
 
