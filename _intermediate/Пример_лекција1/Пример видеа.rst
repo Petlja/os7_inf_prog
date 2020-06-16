@@ -1,0 +1,7 @@
+Пример видеа
+============
+
+.. ytpopup:: flu3-ntQIlE
+      :width: 735
+      :height: 415
+      :align: center

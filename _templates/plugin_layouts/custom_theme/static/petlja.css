@@ -144,7 +144,15 @@ div.modal-header {
 }
 
 
-
+div.sphinxsidebar {
+  float: left;
+  width: 25% !important;
+  margin-left: -100%;
+  font-size: 90%;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  margin-top: 15px !important;
+}
 
 @media only screen and (max-width: 900px) {
     .course-content {

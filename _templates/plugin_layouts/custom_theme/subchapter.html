@@ -1,10 +1,10 @@
 <div class="col-md-12">
 <ul class="pager">
     {%- if prev %}
-        <li id="relations-prev" title='Previous chapter - {{ prev.title }}' data-toggle="tooltip"><a href="{{ prev.link|e }}">Previous chapter</a></li>
+    <li id="relations-prev" title='Previous chapter - {{ prev.title }}' data-toggle="tooltip"><a href="{{ prev.link|e }}"><i class="fas fa-arrow-left"></i></a></li>
     {% endif %}
     {%- if next %}
-        <li id="relations-next" title='Next chapter - {{ next.title }}' data-toggle="tooltip"><a href="{{ next.link|e }}">Next chapter</a></li>
+        <li id="relations-next" title='Next chapter - {{ next.title }}' data-toggle="tooltip"><a href="{{ next.link|e }}"><i class="fas fa-arrow-right"></i></a></li>
     {%- endif %}
 </ul>
 

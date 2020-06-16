@@ -1,52 +1,34 @@
+import os
+import sys
 import paver
-from paver.easy import *
+from paver.easy import options, Bunch
 import paver.setuputils
-paver.setuputils.install_distutils_tasks()
-import os, sys
-from runestone.server import get_dburl
-from sphinxcontrib import paverutils
 import pkg_resources
+#pylint: disable=unused-import
+from runestone import build  # build is called implicitly by the paver driver.
+
+paver.setuputils.install_distutils_tasks()
 
 sys.path.append(os.getcwd())
 
 home_dir = os.getcwd()
 master_url = 'http://127.0.0.1:8000'
 master_app = 'runestone'
-serving_dir = "./build/Online_Nastava_VII"
+serving_dir = "./_build"
 dest = "../../static"
+version = pkg_resources.require("runestone")[0].version
 
 options(
     sphinx = Bunch(docroot=".",),
 
     build = Bunch(
-        builddir="./build/Online_Nastava_VII",
-        sourcedir="_sources",
-        outdir="./build/Online_Nastava_VII",
+        builddir="./_build",
+        sourcedir="_intermediate",
+        outdir="./_build",
         confdir=".",
-        project_name = "Online_Nastava_VII",
-        template_args={'course_id': 'Online_Nastava_VII',
-                       'login_required':'false',
-                       'appname':master_app,
-                       'loglevel': 0,
-                       'course_url':master_url,
-                       'use_services': 'false',
-                       'python3': 'false',
-                       'dburl': '',
-                       'default_ac_lang': 'python',
-                       'basecourse': 'Online_Nastava_VII',
-                       'jobe_server': 'http://jobe2.cosc.canterbury.ac.nz',
-                       'proxy_uri_runs': '/jobe/index.php/restapi/runs/',
-                       'proxy_uri_files': '/jobe/index.php/restapi/files/',
-                       'downloads_enabled': 'false',
-                       'enable_chatcodes': 'false'
-                        }
+        project_name = "Информатика и рачунарство за седми разред",
+
+        # leave template_args empty, use html_context from conf.py
+        template_args= {}
     )
 )
-
-version = pkg_resources.require("runestone")[0].version
-options.build.template_args['runestone_version'] = version
-
-# If DBURL is in the environment override dburl
-options.build.template_args['dburl'] = get_dburl(outer=locals())
-
-from runestone import build  # build is called implicitly by the paver driver.

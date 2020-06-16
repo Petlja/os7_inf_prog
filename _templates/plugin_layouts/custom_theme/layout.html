@@ -57,7 +57,6 @@
     </div>
   </div>
 </nav>
-<br/>
 {% endmacro %}
 
 {%- block extrahead %}
@@ -101,10 +100,12 @@
 
 {%- block content %}
 {{ navBar() }}
-
+<div style="margin-left: 50%;margin-top: 5%;font-size: 20px;">
+  {{ sidebar()}}
+  </div>
 <div class="container col-md-12" id="continue-reading"></div>
 
-<div class="container col-md-8 col-md-offset-2" id="main-content">
+<div class="container col-md-10 col-md-offset-2" id="main-content" style="margin-top: 70px;">
   {% block body %}{% endblock %}
   {% block nextprevious %}
       {% include "subchapter.html" %}
@@ -114,13 +115,11 @@
 
 {%- block footer %}
 <footer class="footer col-md-12">
-    <div class="container text-center">
+    <div class="container">
         <div class="text-center">
             <hr>
             <p class="text-muted">
-                <span class="text-center">&copy; 2020 <a href="https://petlja.org">Petlja.org</a> 
-                  <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0; vertical-align: text-bottom" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /></a>
-                  (Created using  <a href="https://pypi.org/project/Sphinx/">Sphinx</a>, <a href="http://runestoneinteractive.org/">RunestoneComponents</a> and <a href="https://github.com/Petlja/PetljaDoc">PetljaDoc</a>)</span>
+                <span class="pull-left">&copy; 2019 Petlja (Created using  <a href="https://pypi.org/project/Sphinx/">Swinx</a>, <a href="http://runestoneinteractive.org/">RunestoneComponents</a> and <a href="https://github.com/Petlja/PetljaDoc">PetljaDoc</a>)</span>
             </p>
         </div>
     </div>
