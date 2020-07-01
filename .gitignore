@@ -3,3 +3,4 @@ __pycache__
 build_info
 pavement.pyc
 _build
+_intermediate
