@@ -1,6 +1,6 @@
-courseId: kurs-sedmi
+courseId: kurs-primer
 lang: sr-Cyrl
-title: Информатика и рачунарство за седми разред
+title: Пример курса
 description:
   willLearn: # list
     - Научићете 1
@@ -18,7 +18,8 @@ description:
       href: https://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html
 
 lessons:
-  - title: Пример_лекција1
+  - title: Наслов_1
+    folder: Пример_лекција1
     guid: c2c651cd-53d9-4a3d-ba4f-650b8422f0bc
     description: Прва лекција
     activities:
@@ -45,7 +46,8 @@ lessons:
     archived-activities: # ne smeta ni ako se ostave drugi atribudi iz aktivnosti, ali se gleda samo guid
       - guid: de4d8ced-7457-4257-a156-250bdb711d65
       - guid: 22752682-f23f-4df7-b590-e22780fda0a3
-  - title: Пример_лекција2
+  - title: Naslov_2
+    folder: Пример_лекција2
     guid: c79a8591-ad06-4e46-9d4d-8ecb5361cf8c
     description:  Друга лекција
     activities:

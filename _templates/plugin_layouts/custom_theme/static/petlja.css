@@ -148,18 +148,32 @@ div.sphinxsidebar {
   float: left;
   width: 25% !important;
   margin-left: -100%;
-  font-size: 90%;
+  font-size: 17px;
   word-wrap: break-word;
   overflow-wrap: break-word;
-  margin-top: 15px !important;
+  margin-top: 20px !important;
 }
 
+div.sphinxsidebarwrapper {
+    padding: 10px 5px 0 0;
+}
+
+ul:first-child{
+   padding: 0px !important;
+}
+
+.toctree-l1 ul{
+    padding-left:15px;
+}
 @media only screen and (max-width: 900px) {
     .course-content {
         padding: 5px;
         text-align: left;
     }
-
+     
+    div.sphinxsidebar {
+  	margin-top: 20px !important;
+    }
     .section{
         padding: 0 4px 0 3px;
     }
