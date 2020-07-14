@@ -3,59 +3,142 @@ lang: sr-Cyrl
 title: Информатика и рачунарство за седми разред
 description:
   willLearn: # list
-    - Научићете 1
-    - Научићете 2
+    - Упознаћете се са програмирањем 2Д графике у програмском језику Python уз помоћ библиотеке PyGame.
+    - Научићете како да користите програмирање да бисте нацртали неке основне облике
+    - Научићете како да нацртате неке занимљивије елементе коришћењем петљи
+    - Научићете како да укључите слике у своје цртеже
   requirements:
-    - Имаш инсталиран Пајтон
-    - Имаш инсталиран Петљадок
+    - Имаш инсталиран Python 3.6 или новији
+    - Познавање основа Python-а (на нивоу шестог разреда)
   toc:
-    - Пример_лекције
-    - Пример_лекције2
+    - Пре него што почнемо
+    - Час 1 - Координатни систем и боје
   externalLinks: # opciono 
-    - text: Синтакса restructuredText
-      href: https://docutils.sourceforge.io/docs/user/rst/quickref.html
-    - text: Синтакса restructuredText 2
-      href: https://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html
-
+    - text: Упутство за инсталацију Пајтона и библиотеке Пајгејм
+      href: https://petljamediastorage.blob.core.windows.net/root/Media/Default/Help/Uputstvo%20Python%20pygame.pdf
+    - text: Синтаксни подсетник за Пајтон
+      href: https://petljamediastorage.blob.core.windows.net/root/Media/Default/Help/cheatsheet.pdf
+    - text: Наш форум - Алгора
+      href: https://algora.petlja.org/
 lessons:
-  - title: Наслов_1
-    folder: Пример_лекција1
+  - title: Пре него што почнемо
+    folder: предговор
     guid: c2c651cd-53d9-4a3d-ba4f-650b8422f0bc
-    description: Прва лекција
+    description: Прва лекција testiram šta još ovde može da piše
     activities:
       - type: reading
         title: Пример фајла
-        file: primer_1.rst
+        file: предговор.rst
         description: #opciono
         guid: 71c00155-f7f3-410d-8019-e88d22cb7f01
       - type: reading
-        title: Пример pdf фајла
-        file: primer_dokument.pdf
-        description: ...
-        guid: d90350ae-84e4-4e49-bac8-2d4849e3c409
-      - type: video
-        title: Пример видеа
-        url: https://www.youtube.com/watch?v=flu3-ntQIlE # može da se navede i ceo YT url, a može i samo ID (id u bilo kom yt linku predstavlja 11 karatkera nakon v=)
-        description: ...
-        guid: 61657689-aa6b-46c9-87da-51869d6477ee
-      - type: quiz 
-        title: Пример теста
-        file: primer_test_1.rst
-        description: ...
-        guid: a725f29a-b323-4a1a-b52d-6eae141bc243
+        title: Основна структура Пајгејм програма
+        file: основна_структура_програма.rst
+        description: #opciono
+        guid: 7427b636-12ff-49bd-8374-8ba101f6f8c8
     archived-activities: # ne smeta ni ako se ostave drugi atribudi iz aktivnosti, ali se gleda samo guid
       - guid: de4d8ced-7457-4257-a156-250bdb711d65
       - guid: 22752682-f23f-4df7-b590-e22780fda0a3
-  - title: Naslov_2
-    folder: Пример_лекција2
+  - title: Час 1 
+    folder: час_1
     guid: c79a8591-ad06-4e46-9d4d-8ecb5361cf8c
-    description:  Друга лекција
+    description:  Прва лекција
     activities:
       - type: reading
-        title: Primer rst fajla
-        file: primer_2.rst
+        title: Подсетник на Пајтон - Торке и листе
+        file: torke_liste_podsetnik.rst
         description: #opciono
-        guid: 4576c9a4-2071-4a21-b221-a646477e05be   
+        guid: e81b17d4-cea6-428a-b32a-f961216a42d8
+      - type: reading
+        title: Координатни систем
+        file: koordinatni_sistem.rst
+        description: #opciono
+        guid: 4576c9a4-2071-4a21-b221-a646477e05be
+      - type: quiz
+        title: Тест координате
+        file: тест_координатни_систем.rst
+        description: #opciono
+        guid: c165c91ed37f45e6a7059f7ab0e8054e
+  - title: Час 2
+    folder: час_2
+    guid: 6591217f-820a-424c-88d9-69062928b6c8
+    description:  Друга лекција - Боје
+    activities:
+      - type: reading
+        title: Подсетник на Пајтон - функције и варијабле
+        file: funkcije_varijable_podsetnik.rst
+        description: #opciono
+        guid: cc76a4f7-ddfe-4749-8d58-46ae1a89d853
+      - type: reading
+        title: Boje
+        file: Boje.rst
+        description: #opciono
+        guid: fcea681e-4791-4d4d-aff4-488fd923e9dq
+      - type: quiz
+        title: Тест боје
+        file: boje_kviz.rst
+        description: #opciono
+        guid: 971e3377-252b-4640-aeb0-faff1ac25494
+  - title: Час 3
+    folder: час_3
+    guid: c4537713-64d9-4e85-b94b-2474b1d2525f
+    description:  Трећа лекција - Дужи
+    activities:
+      - type: reading
+        title: Дужи
+        file: duzi.rst
+        description: #opciono
+        guid: 91f5c315-8997-4a43-a7a3-7a35e48334c5
+      - type: reading
+        title: Дужи - задатак
+        file: duzi_zadatak.rst
+        description: #opciono
+        guid: 49d29442-bae6-459e-b36d-5334f61395e4
+      - type: quiz
+        title: Тест - дужи
+        file: duzi_kviz.rst
+        description: #opciono
+        guid: 92306241-4bbb-44e6-82fa-f6b883b80032
+  - title: Час 4
+    folder: час_4
+    guid: 93c99d9f-3421-426c-abb9-3e50cf271b73
+    description:  Četvrta lekcija - pravougaonici i elipse 
+    activities:
+      - type: reading
+        title: Цртање облика
+        file: pravougaonici_elipse.rst
+        description: #opciono
+        guid: dc49e87f-93b3-4c6b-8717-bcc0a8dab9c0
+      - type: reading
+        title: Облици - задатак
+        file: pravougaonici_elipse_zadatak.rst
+        description: #opciono
+        guid: a62d1383-c81a-4f33-961d-ff45c60e42f5
+      - type: quiz
+        title: Облици - задатак
+        file: pravougaonici_elipse_test.rst
+        description: #opciono
+        guid: 5c853e2f-4563-4db0-a19e-461f9b85d203
+  - title: Час 5
+    folder: час_5
+    guid: 41ea581a-367f-4b24-98b8-de3c4b430429
+    description:  Krugovi i mnogouglovi
+    activities:
+      - type: reading
+        title: Цртање облика
+        file: Krugovi_mnogoulgovi.rst
+        description: #opciono
+        guid: 9ae897b8-5715-4dd6-802e-1652e5496688
+      - type: reading
+        title: Кругови и многоуглови - задатак
+        file: Krugovi_mnogouglovi_zadatak.rst
+        description: #opciono
+        guid: 4e282f13-59fc-4106-b190-baf9fc45a54d
+      - type: quiz
+        title: Кругови и многоуглови - задатак
+        file: Krugovi_mnogouglovi_test.rst
+        description: #opciono
+        guid: 54bb214b-46c2-4318-9623-411210b9dc2c
 archived-lessons: # ne smeta ni ako se ostave drugi atribudi iz aktivnosti, ali se gleda samo guid
   - guid: 3ced8ac6-8be7-4921-bea7-dccf89a7cc79
   - guid: 29a3a23a-0cdb-4a2b-ad6b-611d36c39db5
