@@ -139,6 +139,51 @@ lessons:
         file: Krugovi_mnogouglovi_test.rst
         description: #opciono
         guid: 54bb214b-46c2-4318-9623-411210b9dc2c
+  - title: Час 6
+    folder: час_6
+    guid: 9e85fbe3-7866-42db-9b69-62a68c4341e4
+    description: Симетрија
+    activities:
+      - type: reading
+        title: Симетрија
+        file: simetrija.rst
+        description: #opciono
+        guid: 72c0b759-f0d4-4e02-a2d0-66899b33665b
+      - type: reading
+        title: Симетрија - задатак
+        file: simetrija_zadatak.rst
+        description: #opciono
+        guid: 6f4d899d-00d1-4877-8a4c-27f3c6daec40
+      - type: quiz
+        title: Симетрија - задатак
+        file: simetrija_test.rst
+        description: #opciono
+        guid: ca890608-6d67-40e1-8e96-1ef385076915
+  - title: Час 7
+    folder: час_7
+    guid: 1484255d-c3c8-4a62-ab94-362bf5806b35
+    description: Симетрија
+    activities:
+      - type: reading
+        title: Пајтон подсетник - дефинисање функција
+        file: Pajton_podsetnik_definisanje_funkcija.rst
+        description: #opciono
+        guid: 9da95bb0-42ce-4eb7-abb9-15ebfd8c20a5
+      - type: reading
+        title: Релативне координате и димензије
+        file: skaliranje.rst
+        description: #opciono
+        guid: 3772cb99-eec9-4e90-8c42-8d22e4c90fc9
+      - type: reading
+        title: Задатак - релативне координате и димензије
+        file: zadatak_relativne_koordinate.rst
+        description: #opciono
+        guid: 914f5cf5-98d0-4014-bdbe-7ee5f9ae6dc4
+      - type: quiz
+        title: Тест - релативне координате и димензије
+        file: relativne_koordinate_test.rst
+        description: #opciono
+        guid: 05d3035a-0971-4e4d-a874-e8ccd7d4df7e
 archived-lessons: # ne smeta ni ako se ostave drugi atribudi iz aktivnosti, ali se gleda samo guid
   - guid: 3ced8ac6-8be7-4921-bea7-dccf89a7cc79
   - guid: 29a3a23a-0cdb-4a2b-ad6b-611d36c39db5
