@@ -15,7 +15,7 @@
     прозора који је широк 400 пиксела.
 
 
-Питање 2. 
+dПитање 2. 
 ~~~~~~~~~
 
 .. fillintheblank:: pygame_quiz_simetricno_oko_vertikale

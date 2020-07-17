@@ -162,7 +162,7 @@ lessons:
   - title: Час 7
     folder: час_7
     guid: 1484255d-c3c8-4a62-ab94-362bf5806b35
-    description: Симетрија
+    description: Релативне координате
     activities:
       - type: reading
         title: Пајтон подсетник - дефинисање функција
@@ -184,6 +184,66 @@ lessons:
         file: relativne_koordinate_test.rst
         description: #opciono
         guid: 05d3035a-0971-4e4d-a874-e8ccd7d4df7e
+  - title: Час 8
+    folder: час_8
+    guid: d8c185e1-cde0-4355-9e4b-84c1784e25d8
+    description: Релативне координате утврђивање
+    activities:
+      - type: reading
+        title: Релативне координате утврђивање
+        file: relativne_koordinate_utvrdjivanje.rst
+        description: #opciono
+        guid: c4a4e338-75c8-459a-9e45-3144d00bfffe
+      - type: reading
+        title: Задатак релативне координате
+        file: zadatak_relativne_koordinate_utvrdjivanje.rst
+        description: #opciono
+        guid: a1437b8d-62d5-4cdc-9829-c1c73584f778
+      - type: quiz
+        title: Тест - релативне координате и димензије
+        file: relativne_koordinate_test2.rst
+        description: #opciono
+        guid: 32b66c63-ab3d-40a9-856e-b46545b7507a
+  - title: Час 9
+    folder: час_9
+    guid: 1ec14c22-df03-41f9-b8d5-5f002427cacf
+    description: Слике и текст
+    activities:
+      - type: reading
+        title: Релативне координате утврђивање
+        file: slike.rst
+        description: #opciono
+        guid: e2a30a14-4137-4924-b860-101e3e7d4420
+      - type: quiz
+        title: Слике и текст - тест
+        file: slike_test.rst
+        description: #opciono
+        guid: 48403868-9bb7-4257-bece-f3ef99f02b3d
+  - title: Час 10
+    folder: час_10
+    guid: 34886612-7520-429e-a8ed-ac2fa04d6b60
+    description: Crtanje u petljama
+    activities:
+      - type: reading
+        title: Pajton podsetnik - petlje
+        file: pajton_podsetnik_petlje.rst
+        description: #opciono
+        guid: 10ee6d4b-60f5-472f-bd0e-3a8ca5ec3b78
+      - type: reading
+        title: Pajton podsetnik - petlje
+        file: petlje.rst
+        description: #opciono
+        guid: 07bb678b-6b48-4a74-8adc-98de2fffd7be  
+      - type: reading
+        title: Pajton podsetnik - petlje
+        file: petlje_zadatak.rst
+        description: #opciono
+        guid: e50427b4-89f3-41ee-959b-4b24152636a8 
+      - type: quiz
+        title: Петље тест
+        file: petlje_test.rst
+        description: #opciono
+        guid: 0023f725-e5e6-4b25-b930-31f958c626ac
 archived-lessons: # ne smeta ni ako se ostave drugi atribudi iz aktivnosti, ali se gleda samo guid
   - guid: 3ced8ac6-8be7-4921-bea7-dccf89a7cc79
   - guid: 29a3a23a-0cdb-4a2b-ad6b-611d36c39db5
