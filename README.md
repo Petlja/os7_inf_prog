@@ -1,3 +1,7 @@
 # Информатика и рачунарство за седми разред
 
-Ovaj repozitorijum služi kao primer kursa napravljenog pomoću alata Petljadoc
+ToDo:
+1. Dopuniti primere za elipse
+2. Napisati test za slike i tekst
+3. Napraviti zadatak za slike i tekst 
+4. Smisliti još malih zadataka
