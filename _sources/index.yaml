@@ -244,6 +244,96 @@ lessons:
         file: petlje_test.rst
         description: #opciono
         guid: 0023f725-e5e6-4b25-b930-31f958c626ac
+  - title: Час 11
+    folder: час_11
+    guid: 96db797c-6f57-43ae-8388-ad3e7e51abdd
+    description: Crtanje u petljama 2
+    activities:
+      - type: reading
+        title: Crtanje pomoću petlji 2 
+        file: petlje2.rst
+        description: #opciono
+        guid: a848cd14-cb6f-4b16-8b03-a1841841312c  
+      - type: reading
+        title: Petlje 2 zadatak
+        file: petlje2_zadatak.rst
+        description: #opciono
+        guid: 1bfd9aa9-2dc3-4908-97ec-04647820d1ff 
+      - type: quiz
+        title: Петље 2 тест
+        file: petlje2_test.rst
+        description: #opciono
+        guid: 18d068a9-2f51-4cb0-92e4-5104f10bbaa8
+  - title: Час 12
+    folder: час_12
+    guid: 05d7e765-f279-4bde-b843-0080d4fd6bed
+    description: Grananje
+    activities:
+      - type: reading
+        title: Pajton podsetnik - grananje 
+        file: pajton_podsetnik_grananje.rst
+        description: #opciono
+        guid: 23026df6-431e-453b-8c42-ad5961b907ee  
+      - type: reading
+        title: grananje
+        file: grananje.rst
+        description: #opciono
+        guid: d1f32840-b2d1-482d-8fa3-6613906aa286
+      - type: reading
+        title: grananje zadatak
+        file: grananje_zadatak.rst
+        description: #opciono
+        guid: 1eb13a70-5e0a-4e8e-9e50-b17c1613fe22 
+      - type: quiz
+        title: grananje test
+        file: grananje_test.rst
+        description: #opciono
+        guid: 2a273c3d-65e8-41f1-b86c-b2fcba57f138
+  - title: Час 13
+    folder: час_13
+    guid: d4ae5091-1f95-4a94-8cb3-75e46f32db46
+    description: Ugnježđene
+    activities:
+      - type: reading
+        title: Pajton podsetnik - ugnježđene 
+        file: pajton_podsetnik_ugnjezdene.rst
+        description: #opciono
+        guid: 0d1ed898-c9a7-419c-a2d5-22d3f3ff2c2c  
+      - type: reading
+        title: petlje_ugnjezdene
+        file: petlje_ugnjezdene.rst
+        description: #opciono
+        guid: 847d4f5b-88be-418a-b855-1f44f1fef8cb
+      - type: reading
+        title: ugnježdene petlje zadatak
+        file: petlje_ugnjezdene_zadatak.rst
+        description: #opciono
+        guid: 55d215ca-3ee9-4a5f-ab25-ea8dfa8804f4 
+      - type: quiz
+        title: Ugnjezdene test
+        file: petlje_ugnjezdene_test.rst
+        description: #opciono
+        guid: 53daaba2-6557-4104-a637-6bc924eb3a65
+  - title: Час 14
+    folder: час_14
+    guid: 364f0295-7af4-4b82-9efe-47fd008e1828
+    description: Petlje - obnavljanje
+    activities:
+      - type: reading
+        title: Petlje obnavljanje
+        file: ugnjezdene_petlje_obnavljanje.rst
+        description: #opciono
+        guid: 43bf9a35-1526-49ac-884f-13b0ccbf59bd
+  - title: završni test
+    folder: завршни_тест
+    guid: 04051dfb-7a2c-45a0-9be0-50b53ce873fc
+    description: завршни тест
+    activities:
+      - type: quiz
+        title: Завршни тест
+        file: zavrsni_test.rst
+        description: #opciono
+        guid: 6c2a4646-4568-41bb-9354-dea265874cc7     
 archived-lessons: # ne smeta ni ako se ostave drugi atribudi iz aktivnosti, ali se gleda samo guid
   - guid: 3ced8ac6-8be7-4921-bea7-dccf89a7cc79
   - guid: 29a3a23a-0cdb-4a2b-ad6b-611d36c39db5

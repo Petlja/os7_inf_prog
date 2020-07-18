@@ -1,0 +1,213 @@
+Наизменично смењивање облика или боја
+=====================================   
+
+У многим ситуацијама су цртежи такви да се наизменично смењују два
+правила на основу којих се црта. На пример, ако желимо да нацртамо
+"црта-тачка" линију, тада у непарним корацима цртамо црте, а у парним
+тачке. Размотримо неколико примера цртежа у којима се јавља овај облик
+правилности и прикажимо неке могућности да се такви цртежи нацртају.
+
+Жуто-зелени квадрати
+''''''''''''''''''''
+
+.. questionnote::
+
+   Напиши програм који ширину екрану попуњава помоћу 10 квадратића, пет
+   жутих и пет зелених, који се наизменично ређају почевши од жутог.
+
+.. activecode:: kvadratici_naizmenicno
+   :nocodelens:
+   :modaloutput: 
+   :enablecopy:
+   :playtask:
+   :includexsrc: _includes/kvadrati_naizmenicno.py
+
+   # broj kvadrata koje treba iscrtati
+   broj_kvadrata = 10
+   # širina i visina jednog kvadrata
+   dimenzija_kvadrata = sirina / broj_kvadrata
+   # vertikalna sredina ekrana
+   sredina = visina / 2
+
+   for i in range(0, broj_kvadrata):
+       # boja zavisi od toga da li je redni broj kvadrata paran ili neparan
+       if ???:
+           boja = pg.Color("yellow")
+       else:
+           boja = pg.Color("green")
+       # koordinate gornjeg levog temena
+       (levo, gore) = (???, ???)
+       # crtamo kvadrat
+       pg.draw.rect(prozor, boja, (levo, gore, dimenzija_kvadrata, dimenzija_kvadrata))
+   
+Пошто знамо укупан број квадрата и ширину целог екрана дуж око којег су
+они распоређени, ширину једног квадрата можемо једноставно израчунати
+дељењем укупне ширине бројем квадрата. Квадрате цртамо у петљи. Ако
+вредност бројачке променљиве почиње од 0, тада се координата :math:`x` левог
+горњег темена i-тог квадрата може добити множењем ширине квадрата
+бројем i (заиста, ако је ширина квадрата :math:`a`, тада квадрати
+редом почињу на координатама :math:`0, a, 2 a, \ldots, (n-1)\cdot
+a`. Координата :math:`y` горњег левог темена сваког квадрата се добија
+одузимањем половине висине квадрата од средине екрана (коју
+израчунавамо дељењем висине екрана са два). На тај начин се вертикално
+средиште квадрата налази на средини екрана. На крају, боју квадрата
+можемо одредити у зависности од парности редног броја квадрата који се
+црта. Када је бројач у петљи ``i`` паран (када му је вредност 0, 2, 4,
+6 или 8, што можемо израчунати поређењем остатка при дељењу ``i % 2``
+са нулом) тада квадрат бојимо у жуто, а када је непаран (када му је
+вредност 1, 3, 5, 7 или 9), тада квадрат бојимо у зелено.
+
+.. reveal:: naizmenicno_resenje1
+   :showtitle: Прикажи решење
+   :hidetitle: Сакриј решење
+
+   .. activecode:: naizmenicno_kod1
+      :passivecode: true
+         
+      # broj kvadrata koje treba iscrtati
+      broj_kvadrata = 10
+      # širina i visina jednog kvadrata
+      dimenzija_kvadrata = sirina / broj_kvadrata
+      # vertikalna sredina ekrana
+      sredina = visina / 2
+        
+      for i in range(0, broj_kvadrata):
+          # boja zavisi od toga da li je redni broj kvadrata paran ili neparan
+          if i % 2 == 0:
+              boja = pg.Color("yellow")
+          else:
+              boja = pg.Color("green")
+          # koordinate gornjeg levog temena
+          (levo, gore) = (i * dimenzija_kvadrata, sredina - dimenzija_kvadrata / 2)
+          # crtamo kvadrat
+          pg.draw.rect(prozor, boja, (levo, gore, dimenzija_kvadrata, dimenzija_kvadrata))
+
+Још један начин да се наизменично мењају боје је да се уведе логичка
+променљива којом се означава да ли цртамо жути квадрат. У почетку је
+постављамо на вредност тачно, у сваком кораку петље јој мењамо
+истинитосну вредност (тако што је негирамо оператором ``not``), а у
+телу петље боју одређујемо на основу те вредности, гранањем.
+
+.. reveal:: naizmenicno_resenje2
+   :showtitle: Прикажи решење
+   :hidetitle: Сакриј решење
+
+   .. activecode:: naizmenicno_kod2
+      :passivecode: true
+    
+      # prvi kvadrat je zute boje
+      zuto = true
+      for i in range(0, broj_kvadrata):
+          # boju odredjujemo na osnovu istinitosne vrednosti promenljive zuto
+          if zuto:
+              boja = pg.Color("yellow")
+          else:
+              boja = pg.Color("green")
+          # menjamo boju za sledeci korak
+          zuto = not zuto
+          # koordinate gornjeg levog temena
+          (levo, gore) = (i*sirina_kvadrata, sredina - dimenzija_kvadrata / 2)
+          # crtamo kvadrat
+          pg.draw.rect(prozor, boja, (levo, gore, dimenzija_kvadrata, dimenzija_kvadrata))
+
+Приметимо да смо наредбом гранања (наредби `if-else`) само поставили
+боју, а да смо сам квадрат цртали независно, након гранања. Наиме, да
+смо у наредби гранања цртали квадрат, непотребно бисмо понављали кôд и
+тиме начинили програм тежим за одржавање.
+
+Могуће је још једно, суштински другачије решење овог задатка, које се
+не заснива на гранању, већ на листи у којој се памте боје које се
+циклично смењују. Редни број квадрата је одређен бројачком променљивом
+``i``, која редом узима вредности 0, 1, 2, 3, 4, ... Са друге стране
+позиција боје у листи редом треба да узима вредности 0, 1, 0, 1, 0,
+...  Можемо приметити да се та позиција може добити од вредности ``i``
+тако што се израчуна остатак при дељењу са 2. Ово се лако може
+уопштити и на више од две боје. Када би се наизменично смењивале 3
+боје, тада би позиције требало да узимају вредности 0, 1, 2, 0, 1, 2,
+... и добијале би се израчунавањем остатка при дељењу са 3. У општем
+случају, потребно је израчунати остатак при дељењу дужином листе. На
+основу ове дискусије покушај да допуниш наредни код.
+
+.. activecode:: kvadratici_naizmenicno_lista
+   :nocodelens:
+   :modaloutput: 
+   :enablecopy:
+   :playtask:
+   :includexsrc: _includes/kvadrati_naizmenicno.py
+
+   # broj kvadrata koje treba iscrtati
+   broj_kvadrata = 10
+   # širina i visina jednog kvadrata
+   dimenzija_kvadrata = ???
+   # vertikalna sredina ekrana
+   sredina = ???
+
+   # lista koja sadrži boje  koje se smenjuju
+   boje = [pg.Color("yellow"), pg.Color("green")]
+   for i in range(0, broj_kvadrata):
+       # boju odredjujemo na osnovu vrednosti brojača i
+       boja = ???
+       # koordinate gornjeg levog temena
+       (levo, gore) = (???, ???)
+       # crtamo kvadrat
+       pg.draw.rect(prozor, boja, (levo, gore, dimenzija_kvadrata, dimenzija_kvadrata))
+
+.. reveal:: naizmenicno_resenje3
+   :showtitle: Прикажи решење
+   :hidetitle: Сакриј решење
+
+   .. activecode:: naizmenicno_kod3
+      :passivecode: true
+    
+      # lista koja sadrži boje  koje se smenjuju
+      boje = [pg.Color("yellow"), pg.Color("green")]
+      for i in range(0, broj_kvadrata):
+          # boju odredjujemo na osnovu vrednosti brojača i
+          boja = boje[i % len(boje)]
+          # koordinate gornjeg levog temena
+          (levo, gore) = (i*sirina_kvadrata, sredina - dimenzija_kvadrata / 2)
+          # crtamo kvadrat
+          pg.draw.rect(prozor, boja, (levo, gore, dimenzija_kvadrata, dimenzija_kvadrata))
+
+
+Патент затварач
+'''''''''''''''
+
+.. questionnote::
+
+   Напиши програм који исцртава шару која подсећа на патент-затварач
+   (рајсфершлус, цибзар).
+
+.. activecode:: rajsferslus
+   :nocodelens:
+   :modaloutput: 
+   :enablecopy:
+   :playtask:
+   :includexsrc: _includes/rajsferslus.py
+
+   sirina_linije = 50         # širina linije rajsferšlusa
+   margina_levo_desno = 15    # margina do leve i desne ivice prozora
+   margina_gore_dole  = 20    # margina do gornje i donje ivice prozora
+   razmak = 15                # razmak između linija rasjferšlusa
+    
+   # x koordinate početaka linija
+   x_levo = margina_levo_desno
+   x_desno = (sirina - margina_levo_desno) - sirina_linije
+    
+   # koordinate početka tekuće linije
+   x_poc = x_levo
+   y = margina_gore_dole
+    
+   while y < visina - margina_gore_dole:
+       x_kraj = ???
+       pg.draw.line(prozor, pg.Color("yellow"), ???, ???, 6);
+       
+       # pripremamo crtanje sledece linije
+       y += razmak            # y je zadati broj piksela niže
+       if x_poc == x_levo:    # x_poc je suprotno od prethodnog
+           x_poc = ???
+       else:
+           x_poc = ???
+
+Покушај и овај задатак да решиш коришћењем листе, без гранања (овај
+пут ћеш у листу сместити две позиције почетка линије).
