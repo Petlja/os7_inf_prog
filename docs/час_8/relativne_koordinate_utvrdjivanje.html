@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="sr-Cyrl">
+  <head>
+    <meta charset="utf-8" />
+    <title>Час 6 - релативне координате - утврђивање &#8212; Petlja - Информатика и рачунарство за седми разред</title>
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/matrixeq.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/activecode.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/codemirror.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/tabbedstuff.css" />
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/video.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/poll.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/showEval.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pytutor.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/modal-basic.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/clickable.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/dragndrop.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/fitb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/webgldemo.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/webglinteractive.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/datafile.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/parsons.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/lib/prettify.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/karel.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/notes.css" />
+    <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-4.0.0-dist/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/flatly.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/petlja.css" type="text/css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/runestonebase.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/language_data.js"></script>
+    <script src="../_static/matrixeq.js"></script>
+    <script src="../_static/mchoice.js"></script>
+    <script src="../_static/timedmc.js"></script>
+    <script src="../_static/timed.js"></script>
+    <script src="../_static/jquery_i18n/CLDRPluralRuleParser.js"></script>
+    <script src="../_static/jquery_i18n/jquery.i18n.js"></script>
+    <script src="../_static/jquery_i18n/jquery.i18n.messagestore.js"></script>
+    <script src="../_static/jquery_i18n/jquery.i18n.fallbacks.js"></script>
+    <script src="../_static/jquery_i18n/jquery.i18n.language.js"></script>
+    <script src="../_static/jquery_i18n/jquery.i18n.parser.js"></script>
+    <script src="../_static/jquery_i18n/jquery.i18n.emitter.js"></script>
+    <script src="../_static/jquery_i18n/jquery.i18n.emitter.bidi.js"></script>
+    <script src="../_static/mchoice-i18n.en.js"></script>
+    <script src="../_static/mchoice-i18n.sr-Cyrl.js"></script>
+    <script src="../_static/jquery.highlight.js"></script>
+    <script src="../_static/bookfuncs.js"></script>
+    <script src="../_static/codemirror.js"></script>
+    <script src="../_static/xml.js"></script>
+    <script src="../_static/css.js"></script>
+    <script src="../_static/python.js"></script>
+    <script src="../_static/htmlmixed.js"></script>
+    <script src="../_static/javascript.js"></script>
+    <script src="../_static/activecode-i18n.en.js"></script>
+    <script src="../_static/activecode-i18n.sr-Cyrl.js"></script>
+    <script src="../_static/skulpt.min.js"></script>
+    <script src="../_static/skulpt-stdlib.js"></script>
+    <script src="../_static/activecode.js"></script>
+    <script src="../_static/clike.js"></script>
+    <script src="../_static/timed_activecode.js"></script>
+    <script src="../_static/tabbedstuff.js"></script>
+    <script src="../_static/runestonevideo.js"></script>
+    <script src="../_static/shortanswer.js"></script>
+    <script src="../_static/timed_shortanswer.js"></script>
+    <script src="../_static/poll.js"></script>
+    <script src="../_static/showEval.js"></script>
+    <script src="../_static/d3.v2.min.js"></script>
+    <script src="../_static/jquery.ba-bbq.min.js"></script>
+    <script src="../_static/jquery.jsPlumb-1.3.10-all-min.js"></script>
+    <script src="../_static/pytutor.js"></script>
+    <script src="../_static/codelens.js"></script>
+    <script src="../_static/clickable.js"></script>
+    <script src="../_static/timedclickable.js"></script>
+    <script src="../_static/dragndrop.js"></script>
+    <script src="../_static/timeddnd.js"></script>
+    <script src="../_static/dragndrop-i18n.en.js"></script>
+    <script src="../_static/dragndrop-i18n.sr-Cyrl.js"></script>
+    <script src="../_static/fitb.js"></script>
+    <script src="../_static/timedfitb.js"></script>
+    <script src="../_static/fitb-i18n.en.js"></script>
+    <script src="../_static/fitb-i18n.sr-Cyrl.js"></script>
+    <script src="../_static/webglinteractive.js"></script>
+    <script src="../_static/FileSaver.min.js"></script>
+    <script src="../_static/Blob.js"></script>
+    <script src="../_static/reveal.js"></script>
+    <script src="../_static/animationbase.js"></script>
+    <script src="../_static/datafile.js"></script>
+    <script src="../_static/lib/prettify.js"></script>
+    <script src="../_static/lib/hammer.min.js"></script>
+    <script src="../_static/parsons.js"></script>
+    <script src="../_static/parsons-i18n.en.js"></script>
+    <script src="../_static/parsons-i18n.sr-Cyrl.js"></script>
+    <script src="../_static/timedparsons.js"></script>
+    <script src="../_static/karelCorner.js"></script>
+    <script src="../_static/karelRobot.js"></script>
+    <script src="../_static/karelWorld.js"></script>
+    <script src="../_static/karelRobotDrawer.js"></script>
+    <script src="../_static/karelUI.js"></script>
+    <script src="../_static/karel.js"></script>
+    <script src="../_static/karel-i18n.en.js"></script>
+    <script src="../_static/karel-i18n.sr-Cyrl.js"></script>
+    <script src="../_static/notes.js"></script>
+    <script src="../_static/pygamelib-init.js"></script>
+    <script src="../_static/blockly/blockly_compressed.js"></script>
+    <script src="../_static/blockly/blocks_compressed.js"></script>
+    <script src="../_static/blockly/python_compressed.js"></script>
+    <script src="../_static/blockly/msg-sr.js"></script>
+    <script src="../_static/blockpy/utilities.js"></script>
+    <script src="../_static/blockpy/python_errors.js"></script>
+    <script src="../_static/blockpy/ast_node_visitor.js"></script>
+    <script src="../_static/blockpy/abstract_interpreter.js"></script>
+    <script src="../_static/blockpy/pytifa.js"></script>
+    <script src="../_static/blockpy/abstract_interpreter_definitions.js"></script>
+    <script src="../_static/blockpy/python_to_blockly.js"></script>
+    <script src="../_static/blockpy/imported.js"></script>
+    <script src="../_static/blockpy/blocks/class.js"></script>
+    <script src="../_static/blockpy/blocks/comment.js"></script>
+    <script src="../_static/blockpy/blocks/comprehensions.js"></script>
+    <script src="../_static/blockpy/blocks/dict.js"></script>
+    <script src="../_static/blockpy/blocks/if.js"></script>
+    <script src="../_static/blockpy/blocks/io.js"></script>
+    <script src="../_static/blockpy/blocks/lists.js"></script>
+    <script src="../_static/blockpy/blocks/sets.js"></script>
+    <script src="../_static/blockpy/blocks/loops.js"></script>
+    <script src="../_static/blockpy/blocks/parking.js"></script>
+    <script src="../_static/blockpy/blocks/tuple.js"></script>
+    <script src="../_static/blockpy/blocks/turtles.js"></script>
+    <script src="../_static/blockpy/blocks/text.js"></script>
+    <script src="../_static/blockpy-modal.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script src="../_static/jquery-ui-1.10.3.custom.min.js"></script>
+    <script src="../_static/jquery-fix.js"></script>
+    <script src="../_static/bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
+    <script src="../_static/bootstrap-4.0.0-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../_static/bootstrap-sphinx.js"></script>
+    <script src="../_static/waypoints.min.js"></script>
+    <script src="../_static/rangy-core.js"></script>
+    <script src="../_static/rangy-textrange.js"></script>
+    <script src="../_static/rangy-cssclassapplier.js"></script>
+    <script src="../_static/user-highlights.js"></script>
+    <script src="../_static/jquery.idle-timer.js"></script>
+    <script src="../_static/processing-1.4.1.min.js"></script>
+    <script src="../_static/jquery.hotkey.js"></script>
+    <script src="../_static/jquery-migrate-1.2.1.min.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Прелазак са апсолутних на релативне координате" href="zadatak_relativne_koordinate_utvrdjivanje.html" />
+    <link rel="prev" title="Час 8" href="index.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+<link rel="shortcut icon" href="../_static/favicon.ico" type="image/ico" />
+
+<script type="text/javascript">
+  eBookConfig = {};
+  eBookConfig.host = 'http://127.0.0.1:8000' ? 'http://127.0.0.1:8000' : 'http://127.0.0.1:8000';
+  eBookConfig.app = eBookConfig.host+'/runestone';
+  eBookConfig.ajaxURL = eBookConfig.app+'/ajax/';
+  eBookConfig.course = 'Информатика и рачунарство за седми разред';
+  eBookConfig.logLevel = 0;
+  eBookConfig.loginRequired = false;
+  eBookConfig.build_info = "";
+  eBookConfig.isLoggedIn = false;
+  eBookConfig.useRunestoneServices = false;
+  eBookConfig.python3 = true;
+  eBookConfig.basecourse = 'Информатика и рачунарство за седми разред';
+  eBookConfig.runestone_version = '3.1.1';
+  eBookConfig.imagesDir = '../_images/';
+  eBookConfig.staticDir = '../_static/';
+  if(typeof(Sk) != "undefined")
+      Sk.imgPath = eBookConfig.imagesDir;
+</script>
+
+<div id="fb-root"></div>
+
+
+
+  </head><body>
+
+
+<!-- Begin navbar -->
+
+<nav id="navbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+
+  <div class="container">
+
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+     <img src="../_static/img/logo.png" style="width:80px; height: 80px;"> 
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="margin-top: 10px; margin-left: 25px;">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="../">Petlja - Информатика и рачунарство за седми разред</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div style="margin-left: 50%;margin-top: 5%;font-size: 20px;">
+  
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+    <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../предговор/index.html">Пре него што почнемо</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../предговор/предговор.html">Пре првог часа</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../предговор/основна_структура_програма.html">Основна структура програма</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../час_1/index.html">Час 1</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../час_1/torke_liste_podsetnik.html">Пајтон подсетник - типови података</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../час_1/koordinatni_sistem.html">Координатни систем</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../час_1/тест_координатни_систем.html">Тест - координатни систем</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../час_2/index.html">Час 2</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../час_2/funkcije_varijable_podsetnik.html">Пајтон подсетник варијабле и функције</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../час_2/Boje.html">Задавање боја</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../час_2/boje_kviz.html">Боје - квиз</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../час_3/index.html">Час 3</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../час_3/duzi.html">Цртање дужи</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../час_3/duzi_zadatak.html">Задатак - антена</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../час_3/duzi_kviz.html">Тест - дужи</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../час_4/index.html">Час 4</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../час_4/pravougaonici_elipse.html">Цртање облика помоћу функције <code class="docutils literal notranslate"><span class="pre">pg.draw</span></code> - правоугаоници и елипсе</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../час_4/pravougaonici_elipse_zadatak.html">Задатак - паткица</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../час_4/pravougaonici_elipse_test.html">Oblici test</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../час_5/index.html">Час 5</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../час_5/Krugovi_mnogoulgovi.html">Цртање облика помоћу функције <code class="docutils literal notranslate"><span class="pre">pg.draw</span></code> - кругови, многоуглови</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../час_5/Krugovi_mnogouglovi_zadatak.html">Цртеж по упутству</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../час_5/Krugovi_mnogouglovi_test.html">Многоуглови, комбиновање облика, слике - квиз</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../час_6/index.html">Час 6</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../час_6/simetrija.html">Израчунавање координата</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../час_6/simetrija_zadatak.html">Пројекат - Кућица</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../час_6/simetrija_test.html">Израчунавање координата - тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../час_7/index.html">Час 7</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../час_7/Pajton_podsetnik_definisanje_funkcija.html">Пајтон подсетник - дефинисање функција</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../час_7/skaliranje.html">Релативно задавање координата и димензија</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../час_7/zadatak_relativne_koordinate.html">Релативно задавање координата и димензија - задатак</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../час_7/relativne_koordinate_test.html">Тест - Релативно задавање координата и димензија</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Час 8</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Час 6 - релативне координате - утврђивање</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id4">Проблеми приликом израчунавања параметара кругова</a></li>
+<li class="toctree-l2"><a class="reference internal" href="zadatak_relativne_koordinate_utvrdjivanje.html">Прелазак са апсолутних на релативне координате</a></li>
+<li class="toctree-l2"><a class="reference internal" href="relativne_koordinate_test2.html">Релативне координате - квиз</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../час_9/index.html">Час 9</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../час_9/slike.html">Слике и текст</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../час_9/slike_test.html">Слике и текст - тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../час_10/index.html">Час 10</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../час_10/pajton_podsetnik_petlje.html">Пајтон подсетник - петље</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../час_10/petlje.html">Цртање облика помоћу петљи</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../час_10/petlje.html#id4">Хоризонтално и вертикално распоређивање облика</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../час_10/petlje_zadatak.html">Петље задатак</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../час_10/petlje_test.html">Цртање облика помоћу петљи - тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../час_11/index.html">Час 11</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../час_11/petlje2.html">Употреба генератора случајних бројева</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../час_11/petlje2.html#id6">Правилно распоређивање боја</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../час_11/petlje2_zadatak.html">Петље 2 задатак</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../час_11/petlje2_test.html">Понављање облика коришћењем петљи - тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../час_12/index.html">Час 12</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../час_12/pajton_podsetnik_grananje.html">Пајтон подсетник - гранање</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../час_12/grananje.html">Наизменично смењивање облика или боја</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../час_12/grananje_test.html">Понављање облика коришћењем петљи - тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../час_13/index.html">Час 13</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../час_13/pajton_podsetnik_ugnjezdene.html">Пајтон подсетник - Угнежђене петље</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../час_13/petlje_ugnjezdene.html">Цртање помоћу петљи - угњежђене петље</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../час_13/petlje_ugnjezdene_zadatak.html">Шаховска табла</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../час_13/petlje_ugnjezdene_test.html">Понављање облика коришћењем петљи - квиз</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../час_14/index.html">Час 14</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../час_14/ugnjezdene_petlje_obnavljanje.html">Час 10 - цртање у петљама - утврђивање</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../завршни_тест/index.html">završni test</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../завршни_тест/zavrsni_test.html">Завршни тест</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+
+        </div>
+      </div>
+  </div>
+<div class="container col-md-12" id="continue-reading"></div>
+
+<div class="container col-md-10 col-md-offset-2" id="main-content" style="margin-top: 70px;">
+  
+  <div class="section" id="id1">
+<h1>Час 6 - релативне координате - утврђивање<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<p>На прошлом часу смо се упознали са релативно задатим координатама и
+предностима тог механизма цртања. Утврдимо ово кроз још неколико
+примера.</p>
+<div class="section" id="id2">
+<h2>Кућа - положај<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<p>Рецимо да сте написали овај програм, а циљ вам је да преправите
+програм тако да кућица може једноставно да се премешта:</p>
+
+<div data-childcomponent="PyGame_house_detailed_fixed" class="course-box course-box-problem course-content">
+
+<textarea data-component="activecode" id=PyGame_house_detailed_fixed data-lang="python" 
+      data-timelimit=25000    
+    data-audio=''   
+              data-modaloutput="true" data-hidehistory=true
+    data-includesrc="# -*- acsection: general-init -*-
+import pygame as pg
+
+pg.init()                          # uključivanje rada biblioteke PyGame
+pg.display.set_caption(&quot;Кућа&quot;)     # podešavamo naslov prozora
+(sirina, visina) = (300, 300)      # otvaramo prozor dimenzije 300x300
+prozor = pg.display.set_mode((sirina, visina))
+
+# -*- acsection: main -*-
+prozor.fill(pg.Color(&quot;darkgreen&quot;)) # bojimo pozadinu ekrana u svetlo plavo
+
+pg.draw.polygon(prozor, pg.Color(&quot;red&quot;), [(50, 150), (120, 100), (190, 150)]) # krov
+pg.draw.rect(prozor, pg.Color(&quot;khaki&quot;), ( 50, 150, 140, 100))  # kuca
+pg.draw.rect(prozor, pg.Color(&quot;brown&quot;), ( 60, 170,  30,  30))  # levi prozor
+pg.draw.rect(prozor, pg.Color(&quot;brown&quot;), (150, 170,  30,  30))  # desni prozor
+pg.draw.rect(prozor, pg.Color(&quot;brown&quot;), (100, 180,  40,  70))  # vrata
+
+# -*- acsection: after-main -*-
+pg.display.update()   # prikazujemo nacrtano na ekranu
+
+# petlja obrade događaja - čekamo dok korisnik ne isključi prozor
+while pg.event.wait().type != pg.QUIT:
+    pass
+
+# isključivanje rada biblioteke PyGame
+pg.quit()
+"   data-enablecopy="true">
+
+
+</textarea>
+</div>
+<p>Нека је главна тачка (сидро) <code class="code docutils literal notranslate"><span class="pre">(x,</span> <span class="pre">y)</span> <span class="pre">=</span> <span class="pre">(50,</span> <span class="pre">150)</span></code>. Довршите
+започето преправљање програма у пољу испод, у коме се цртање обавља у
+функцији <code class="code docutils literal notranslate"><span class="pre">kuca(x,</span> <span class="pre">y,</span> <span class="pre">boja_zidova)</span></code>. Када се уверите да цртежи у
+два програма изгледају исто (осим што су прозори различите величине),
+замените позив <code class="code docutils literal notranslate"><span class="pre">kuca(50,</span> <span class="pre">150,</span> <span class="pre">pg.Color(&quot;khaki&quot;))</span></code> са следећа 4,
+да бисте добили слику као кад се кликне на дугме „Прикажи пример”:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">kuca</span><span class="p">(</span><span class="mi">150</span><span class="p">,</span>  <span class="mi">90</span><span class="p">,</span> <span class="n">pg</span><span class="o">.</span><span class="n">Color</span><span class="p">(</span><span class="mi">220</span><span class="p">,</span> <span class="mi">220</span><span class="p">,</span> <span class="mi">220</span><span class="p">))</span>
+<span class="n">kuca</span><span class="p">(</span><span class="mi">220</span><span class="p">,</span> <span class="mi">130</span><span class="p">,</span> <span class="n">pg</span><span class="o">.</span><span class="n">Color</span><span class="p">(</span><span class="s2">&quot;white&quot;</span><span class="p">))</span>
+<span class="n">kuca</span><span class="p">(</span><span class="mi">350</span><span class="p">,</span> <span class="mi">160</span><span class="p">,</span> <span class="p">(</span><span class="mi">255</span><span class="p">,</span><span class="mi">255</span><span class="p">,</span><span class="mi">150</span><span class="p">))</span>
+<span class="n">kuca</span><span class="p">(</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">150</span><span class="p">,</span> <span class="n">pg</span><span class="o">.</span><span class="n">Color</span><span class="p">(</span><span class="s2">&quot;khaki&quot;</span><span class="p">))</span>
+</pre></div>
+</div>
+
+<div data-childcomponent="PyGame_house_detailed_movable" class="course-box course-box-problem course-content">
+
+<textarea data-component="activecode" id=PyGame_house_detailed_movable data-lang="python" 
+      data-timelimit=25000    
+    data-audio=''   
+           data-playtask="true"   data-modaloutput="true" data-hidehistory=true
+      data-includexsrc="# -*- acsection: general-init -*-
+import pygame as pg
+
+pg.init()                          # uključivanje rada biblioteke PyGame
+pg.display.set_caption(&quot;Кућа&quot;)     # podešavamo naslov prozora
+(sirina, visina) = (500, 300)      # otvaramo prozor dimenzije 500x300
+prozor = pg.display.set_mode((sirina, visina))
+
+# -*- acsection: main -*-
+prozor.fill(pg.Color(&quot;darkgreen&quot;)) # bojimo pozadinu ekrana u tamno zeleno
+
+def kuca(x, y, boja_zidova):
+    pg.draw.polygon(prozor, pg.Color(&quot;red&quot;), [(x, y), (x+70, y-50), (x+140, y)]) # krov
+    pg.draw.rect(prozor, boja_zidova,       (x,       y,     140, 100)) # kuca
+    pg.draw.rect(prozor, pg.Color(&quot;brown&quot;), (x +  10, y + 20, 30,  30)) # levi prozor
+    pg.draw.rect(prozor, pg.Color(&quot;brown&quot;), (x + 100, y + 20, 30,  30)) # desni prozor
+    pg.draw.rect(prozor, pg.Color(&quot;brown&quot;), (x +  50, y + 30, 40,  70)) # vrata
+    
+kuca(150,  90, (220, 220, 220))
+kuca(220, 130, pg.Color(&quot;white&quot;))
+kuca(350, 160, (255, 255, 150))
+kuca( 50, 150, pg.Color(&quot;khaki&quot;))
+
+# -*- acsection: after-main -*-
+pg.display.update()   # prikazujemo nacrtano na ekranu
+
+# petlja obrade događaja - čekamo dok korisnik ne isključi prozor
+while pg.event.wait().type != pg.QUIT:
+    pass
+
+# isključivanje rada biblioteke PyGame
+pg.quit()
+" data-enablecopy="true">
+prozor.fill(pg.Color("darkgreen")) # bojimo pozadinu ekrana u tamno zeleno
+
+def kuca(x, y, boja_zidova):
+    pg.draw.polygon(prozor, pg.Color("red"), [(x, y), (x+???, y-???), (x+140, y)]) # krov
+    pg.draw.rect(prozor, boja_zidova,       (x,       y,     140, 100))   # kuca
+    pg.draw.rect(prozor, pg.Color("brown"), (x + ???, y + ???,  30,  30)) # levi prozor
+    pg.draw.rect(prozor, pg.Color("brown"), (x + ???, y + ???, ???, ???)) # desni prozor
+    pg.draw.rect(prozor, pg.Color("brown"), (x + ???, y + ???, ???, ???)) # vrata
+
+kuca( 50, 150, pg.Color("khaki"))
+</textarea>
+</div>
+</div>
+<div class="section" id="id3">
+<h2>Саобраћајни знак од једнакостраничних троуглова<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+
+    <div class="course-box course-box-special">
+        <div class="course-content">
+            <h4 class="carbox-title">
+                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
+            </h4>
+            <p>
+<p>Напиши програм који исцртава саобраћајни знак укрштања са путем са
+првенством пролаза који је у облику жутог једнакостраничног троугла
+са црвеном ивицом, окренутог тако да му је хоризонтална основица
+горе.</p>
+
+    </p></div></div>
+<p>Ефекат троугла који је жуте боје и има дебелу црвену ивицу постићи
+ћемо тако што ћемо нацртати прво већи црвени троугао, а затим мањи
+жути троугао. Та два троугла ћемо поставити тако да им се тежишта
+(уједно и све значајне тачке) поклапају и да су идентично
+оријентисани.</p>
+<p>Приликом цртања саобраћајног знака потребно је да одредимо поступак
+којим се црта једнакостранични троугао ако му је познато сидро
+постављено у тежиште <span class="math notranslate nohighlight">\(T\)</span> за које ћемо претпоставити да има
+координате <span class="math notranslate nohighlight">\((t_x, t_y)\)</span> и ако му је позната димензија (то може
+бити било дужина странице <span class="math notranslate nohighlight">\(a\)</span>, било висина <span class="math notranslate nohighlight">\(h\)</span>, јер се из
+једне од ових димензија друга једноставно израчунава на основу чувене
+везе <span class="math notranslate nohighlight">\(h = \frac{a\sqrt{3}}{2}\)</span>, која се лако изводи применом
+Питагорине теореме на правоугли троугао чија је једна катета висина
+једнакостраничног троугла, друга половина странице, а хипотенуза је
+страница једнакостраничног троугла).</p>
+<a class="reference internal image-reference" href="../_images/jednakostranicanTrougaoZnak.png"><img alt="../_images/jednakostranicanTrougaoZnak.png" class="align-center" src="../_images/jednakostranicanTrougaoZnak.png" style="width: 400px;" /></a>
+<p>Пошто, како из математике знамо, тежиште троугла дели тежишну дуж (у
+овом случају то је уједно и висина) у односу <span class="math notranslate nohighlight">\(2:1\)</span>, координате
+темена <span class="math notranslate nohighlight">\(A\)</span> и <span class="math notranslate nohighlight">\(B\)</span> су у односу на ову тачку померене
+(транслиране) на горе за <span class="math notranslate nohighlight">\(\frac{1}{3}h\)</span>, док је тачка <span class="math notranslate nohighlight">\(C\)</span>
+померена на доле за <span class="math notranslate nohighlight">\(\frac{2}{3}h\)</span>.</p>
+<p>Координате x ових тачака одређујемо у односу на тачку <span class="math notranslate nohighlight">\(T\)</span>,
+односно дужину странице <span class="math notranslate nohighlight">\(a\)</span>. Тачка <span class="math notranslate nohighlight">\(А\)</span> је померена од
+тежишта за <span class="math notranslate nohighlight">\(\frac{а}{2}\)</span> ка левој ивици прозора. Тачка <span class="math notranslate nohighlight">\(В\)</span>
+је померена од тежишта за <span class="math notranslate nohighlight">\(\frac{а}{2}\)</span> средину ка десној
+ивици. Тачка <span class="math notranslate nohighlight">\(C\)</span> се хоризонално налази на линији тежишта.</p>
+<p>Дакле, тачка <span class="math notranslate nohighlight">\(A\)</span> има координате <span class="math notranslate nohighlight">\((t_x-\frac{a}{2},
+t_y-\frac{h}{3})\)</span>, тачка <span class="math notranslate nohighlight">\(B\)</span> има координате
+<span class="math notranslate nohighlight">\((t_x+\frac{a}{2}, t_y-\frac{h}{3})\)</span>, док тачка <span class="math notranslate nohighlight">\(C\)</span> има
+координате <span class="math notranslate nohighlight">\((t_x, t_y+\frac{2h}{3})\)</span>.</p>
+<p>Пошто је потребно да нацртамо два троугла, можемо дефинисати функцију
+за цртање троугла и позвати је два пута (за исто тежиште, али
+различите боје и димензије). Тежиште ћемо поставити хоризонтално на
+средину прозора, док ћемо га вертикално поставити тако да троугао
+делује центриран по средини екрана. Оставићемо простор (маргину) од по
+30 пиксела изнад и испод троугла, а тежиште троугла ћемо поставити
+тако да преосталу висину дели у односу 1:2.</p>
+<p>На основу претходне дискусије допуни наредни програм.</p>
+
+<div data-childcomponent="obojeni_trougao" class="course-box course-box-problem course-content">
+
+<textarea data-component="activecode" id=obojeni_trougao data-lang="python" 
+      data-timelimit=25000    
+    data-audio=''   
+           data-playtask="true"   data-modaloutput="true" data-hidehistory=true
+      data-includexsrc="# -*- acsection: general-init -*-
+import math
+import pygame as pg
+import pygamebg
+
+(sirina, visina) = (300, 300) # otvaramo prozor
+prozor = pygamebg.open_window(sirina, visina, &quot;Саобраћајни знак&quot;)
+
+# -*- acsection: main -*-
+
+def jedakostranicni_trougao(tx, ty, h, boja):
+    a = h * 2 / math.sqrt(3)  # dužina stranice
+    # koordinate temena - težiste deli visinu u odnosu 1 : 2
+    A = (tx - a/2, ty - h/3)
+    B = (tx + a/2, ty - h/3)
+    C = (tx, ty + 2*h/3)
+    pg.draw.polygon(prozor, boja, [A, B, C])
+   
+# bojimo pozadinu prozora u belo
+prozor.fill(pg.Color(&quot;white&quot;))
+margina = 30
+h = visina - 2*margina
+(tx, ty) = (sirina / 2, margina + h / 3)
+jedakostranicni_trougao(tx, ty, h, pg.Color(&quot;red&quot;))
+jedakostranicni_trougao(tx, ty, 0.65*h, pg.Color(&quot;yellow&quot;))
+
+
+# -*- acsection: after-main -*-
+
+# prikazujemo prozor i čekamo da ga korisnik isključi
+pygamebg.wait_loop()
+" data-enablecopy="true">
+def jedakostranicni_trougao(tx, ty, h, boja):
+    a = h * 2 / math.sqrt(3)       # dužina stranice
+    # koordinate temena - težiste deli visinu u odnosu 1 : 2
+    A = (tx - a/2, ty - h/3)
+    B = (???, ???)
+    C = (???, ???)
+    pg.draw.polygon(prozor, ???, ???)
+
+# bojimo pozadinu prozora u belo
+prozor.fill(pg.Color("white"))
+margina = 30
+h = visina - 2*margina
+(tx, ty) = (sirina / 2, margina + h / 3)
+jedakostranicni_trougao(tx, ty, h, pg.Color("red"))
+jedakostranicni_trougao(tx, ty, 0.65*h, pg.Color("yellow"))
+</textarea>
+</div>
+</div>
+</div>
+<div class="section" id="id4">
+<h1>Проблеми приликом израчунавања параметара кругова<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h1>
+<p>Подсетимо се да за разлику од функција за цртање линија и
+правоугаоника које примају и реалне аргументе, функција за цртање
+кругова захтева да су координате центра круга и дужина полупречника
+искључиво цели бројеви. Ово може довести до одређених проблема у
+програмима у којима се ти аргументи израчунавају у програму. Када
+видиш поруку <code class="docutils literal notranslate"><span class="pre">TypeError:</span> <span class="pre">integer</span> <span class="pre">argument</span> <span class="pre">expected,</span> <span class="pre">got</span> <span class="pre">float</span></code>, тада
+знај да је проблем у томе што је функцији за цртање круга уместо целог
+прослеђен неки реалан број и тај проблем можеш лако решити коришћењем
+неког облика заокруживања бројева.</p>
+<p>Зато ћемо често у задацима у којима цртамо кругове, за израчунавање
+координата центара и полупречника кругова уместо реалног дељења
+(оператора <code class="docutils literal notranslate"><span class="pre">/</span></code>) користити целобројно дељење (оператор <code class="docutils literal notranslate"><span class="pre">//</span></code>) или
+ћемо користити заокруживање реалних бројева (функцијом <code class="docutils literal notranslate"><span class="pre">round</span></code> или
+функцијом <code class="docutils literal notranslate"><span class="pre">int</span></code>).</p>
+<p>Провери да ли ово разумеш тако што ћеш одговорити на наредно питање.</p>
+
+            <div class="course-box course-box-question course-content">
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="pygame_quiz_greska_float">
+            <p>Q-83: Након позива <cite>pg.draw.circle(prozor, boja, (x, y), r)</cite> пријављена
+је грешка <cite>TypeError: integer argument expected, got float</cite>. Шта
+може бити узрок те грешке?</p>
+
+            <li data-component="answer"  id="pygame_quiz_greska_float_opt_a">Није наведен добар број параметара у позиву функције `pg.draw.circle`</li><li data-component="feedback" id="pygame_quiz_greska_float_opt_a">Покушај поново</li>
+            
+            <li data-component="answer" data-correct id="pygame_quiz_greska_float_opt_b">Координате центра не могу бити реални бројеви</li><li data-component="feedback" id="pygame_quiz_greska_float_opt_b">Тачно</li>
+            
+            <li data-component="answer"  id="pygame_quiz_greska_float_opt_c">Редослед параметара у позиву није исправан</li><li data-component="feedback" id="pygame_quiz_greska_float_opt_c">Покушај поново</li>
+            
+            <li data-component="answer"  id="pygame_quiz_greska_float_opt_d">Полупречник круга не сме да буде негативан број</li><li data-component="feedback" id="pygame_quiz_greska_float_opt_d">Покушај поново</li>
+            
+            <li data-component="answer"  id="pygame_quiz_greska_float_opt_e">Потребно је навести још дебљину кружнице</li><li data-component="feedback" id="pygame_quiz_greska_float_opt_e">Покушај поново</li>
+            
+
+            </ul>
+            </div>
+            <p>Наредни програм црта цвет састављен од кругова, али не ради исправно и
+твој задатак је да га поправиш.</p>
+<div class="section" id="id5">
+<h2>Цвет<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+
+    <div class="course-box course-box-special">
+        <div class="course-content">
+            <h4 class="carbox-title">
+                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
+            </h4>
+            <p>
+<p>Напиши програм који исцртава цвет који се састоји од централног
+жутог круга пречника 100 пиксела, око којег се налази 6 правилно
+распоређених латица розе боје, свака у облику круга, такође
+пречника 100 пиксела (центри латица се налазе у теменима правилног
+шестоугла, чији је центар у центру цвета, а дужина странице је 100
+пиксела).</p>
+
+    </p></div></div>
+<a class="reference internal image-reference" href="../_images/roze_cvet.png"><img alt="../_images/roze_cvet.png" class="align-center" src="../_images/roze_cvet.png" style="width: 500px;" /></a>
+<p>За цртање круга потребно је знати координате центра и дужину
+полупречника круга. Пречник свих кругова је једнак, самим тим и
+полупречник <span class="math notranslate nohighlight">\(r = \frac{a}{2}\)</span>.  Нека је тачка О центар жутог,
+централног круга. Координате ове тачке означимо са <span class="math notranslate nohighlight">\((c_x,
+c_y)\)</span>. Ова тачка се налази у центру прозора и њене координате једнаке
+су половини висине, односно ширине прозора. Координате осталих
+центара кругова изразићемо такође преко координата <span class="math notranslate nohighlight">\((c_x, c_y)\)</span>
+.  Координате тачке <span class="math notranslate nohighlight">\(А_1\)</span> означимо са <span class="math notranslate nohighlight">\((x_1, y_1)\)</span>. Тачка
+<span class="math notranslate nohighlight">\(А_1\)</span> је за <span class="math notranslate nohighlight">\(a\)</span> померена (транслирана) од тачке О по оси
+<span class="math notranslate nohighlight">\(x\)</span>, тако да је <span class="math notranslate nohighlight">\(x_1\)</span>, прва координата ове тачке једнака
+<span class="math notranslate nohighlight">\(x_1 = c_x + a\)</span>, а друга координата ове тачке <span class="math notranslate nohighlight">\(y_1\)</span>
+једнака је <span class="math notranslate nohighlight">\(y\)</span> координати тачке О, тј. <span class="math notranslate nohighlight">\(y_1 = c_y\)</span>.
+Координате тачке <span class="math notranslate nohighlight">\(А_2\)</span> означимо са <span class="math notranslate nohighlight">\((x_2, y_2)\)</span>. Ова тачка
+је у односу на тачку О померена (транслирана) за <span class="math notranslate nohighlight">\(\frac{a}{2}\)</span>
+по оси <span class="math notranslate nohighlight">\(x\)</span>, односно за висину <span class="math notranslate nohighlight">\(h = \frac{a \sqrt{3}}{2}\)</span>
+једнакостраничног троугла <span class="math notranslate nohighlight">\(\triangle OA_1A_2\)</span> по оси <cite>y</cite>. На
+основу овога закључујемо да су координате тачке <span class="math notranslate nohighlight">\(А_2\)</span>,
+<span class="math notranslate nohighlight">\((x_2, y_2) = (c_x+\frac{a}{2}, c_y + h)\)</span>.  Координате центра
+осталих кругова одређујемо на сличан начин.</p>
+<p>На основу претходне дискусије, допуни наредни програм и поправи
+грешке везане за тип података бројева.</p>
+
+<div data-childcomponent="cvet" class="course-box course-box-problem course-content">
+
+<textarea data-component="activecode" id=cvet data-lang="python" 
+      data-timelimit=25000    
+    data-audio=''   
+           data-playtask="true"   data-modaloutput="true" data-hidehistory=true
+      data-includexsrc="# -*- acsection: general-init -*-
+import math
+import pygame as pg, pygamebg
+
+(sirina, visina) = (400, 400)  # uključujemo prozor dimenzije 400x400 piksela
+prozor = pygamebg.open_window(400, 400, &quot;Blue circle&quot;)
+
+# boje koje ćemo koristiti
+BELA = (255, 255, 255)
+ZUTA = (255, 255, 0)
+ROZE = (255, 200, 200)
+
+# -*- acsection: main -*-
+prozor.fill(BELA)   # bojimo pozadinu u belo
+
+(cx, cy) = (sirina // 2, visina // 2) # koordinate centra prozora
+
+# prečnici krugova - dužina stranice pravilnog šestougla u čijim se
+# temenima nalaze centri krugova
+a = 100
+# visina karakterističnog trougla šestougla
+h = round(a * math.sqrt(3) / 2)
+
+# sva temena šestougla dele ove koordinate
+x1 = cx + a
+x2 = cx - a//2
+x3 = cx + a//2
+x4 = cx - a
+y1 = cy - h
+y2 = cy
+y3 = cy + h
+
+# koordinate temena šestougla
+O = (cx, cy)
+A1 = (x1, y2)
+A2 = (x2, y1)
+A3 = (x3, y1)
+A4 = (x4, y2)
+A5 = (x3, y3)
+A6 = (x2, y3)
+
+# poluprečnik krugova
+r = a // 2
+
+# iscrtavamo krugove
+pg.draw.circle(prozor, ZUTA, O, r)
+pg.draw.circle(prozor, ROZE, A1, r)
+pg.draw.circle(prozor, ROZE, A2, r)
+pg.draw.circle(prozor, ROZE, A3, r)
+pg.draw.circle(prozor, ROZE, A4, r)
+pg.draw.circle(prozor, ROZE, A5, r)
+pg.draw.circle(prozor, ROZE, A6, r)
+
+# -*- acsection: after-main -*-
+
+# prikazujemo prozor i čekamo da ga korisnik isključi
+pygamebg.wait_loop()
+" data-enablecopy="true">
+# bojimo pozadinu u belo
+prozor.fill(BELA)
+
+# koordinate centra prozora
+(cx, cy) = (sirina / 2, visina / 2)
+
+# precnici krugova - duzina stranice pravilnog sestougla u cijim se
+# temenima nalaze centri krugova
+a = 100
+# visina karakteristicnog trougla sestougla
+h = a * math.sqrt(3) / 2
+
+# sva temena šestougla dele ove koordinate
+x1 = cx - a
+x2 = cx - a/2
+x3 = cx + a/2
+x4 = cx + a
+y1 = ???
+y2 = cy
+y3 = ???
+
+# koordinate temena šestougla
+O = (cx, cy)
+A1 = (x1, y2)
+A2 = (???, ???)
+A3 = (???, ???)
+A4 = (???, ???)
+A5 = (???, ???)
+A6 = (???, ???)
+
+# poluprecnik krugova
+r = a / 2
+
+# iscrtavamo krugove
+pg.draw.circle(prozor, ZUTA, O, r)
+pg.draw.circle(prozor, ROZE, A1, r)
+pg.draw.circle(prozor, ROZE, A2, ???)
+pg.draw.circle(prozor, ROZE, ???, ???)
+pg.draw.circle(prozor, ROZE, ???, ???)
+pg.draw.circle(prozor, ROZE, ???, ???)
+pg.draw.circle(prozor, ROZE, ???, ???)
+</textarea>
+</div>
+</div>
+</div>
+
+
+  
+      <div class="col-md-12">
+<ul class="pager">
+    <li id="relations-prev" title='Previous chapter - Час 8' data-toggle="tooltip"><a href="index.html"><i class="fas fa-arrow-left"></i></a></li>
+    
+        <li id="relations-next" title='Next chapter - Прелазак са апсолутних на релативне координате' data-toggle="tooltip"><a href="zadatak_relativne_koordinate_utvrdjivanje.html"><i class="fas fa-arrow-right"></i></a></li>
+</ul>
+
+<!-- <ul class="pager"> -->
+    <!-- -->
+        <!-- <li id="relations-prev" title='Претходно поглавље - Час 8' data-toggle="tooltip"><a href="index.html">Претходно поглавље</a></li> -->
+    <!--  -->
+    <!-- -->
+        <!-- <li id="relations-next" title='Следеће поглавље - Прелазак са апсолутних на релативне координате' data-toggle="tooltip"><a href="zadatak_relativne_koordinate_utvrdjivanje.html">Следеће поглавље</a></li> -->
+    <!-- -->
+<!-- </ul> -->
+
+<script type="text/javascript">
+
+  $('#relations-prev').tooltip({'placement':'right', 'selector': '', 'delay': { show: 100, hide: 50}});
+  $('#relations-next').tooltip({'placement':'left', 'selector': '', 'delay': { show: 100, hide: 50}});
+
+</script>
+</div>
+  
+</div>
+<footer class="footer col-md-12">
+    <div class="container">
+        <div class="text-center">
+            <hr>
+            <p class="text-muted">
+                <span class="pull-left">&copy; 2019 Petlja (Created using  <a href="https://pypi.org/project/Sphinx/">Swinx</a>, <a href="http://runestoneinteractive.org/">RunestoneComponents</a> and <a href="https://github.com/Petlja/PetljaDoc">PetljaDoc</a>)</span>
+            </p>
+        </div>
+    </div>
+</footer>
+
+
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-32029811-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+
+  </body>
+</html>

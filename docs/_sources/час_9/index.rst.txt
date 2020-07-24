@@ -1,0 +1,9 @@
+=====
+Час 9
+=====
+
+.. toctree:: 
+    :maxdepth: 1
+
+    slike.rst
+    slike_test.rst

@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="sr-Cyrl">
+  <head>
+    <meta charset="utf-8" />
+    <title>Слике и текст &#8212; Petlja - Информатика и рачунарство за седми разред</title>
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/matrixeq.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/activecode.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/codemirror.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/tabbedstuff.css" />
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/video.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/poll.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/showEval.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pytutor.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/modal-basic.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/clickable.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/dragndrop.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/fitb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/webgldemo.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/webglinteractive.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/datafile.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/parsons.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/lib/prettify.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/karel.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/notes.css" />
+    <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-4.0.0-dist/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/flatly.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/petlja.css" type="text/css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/runestonebase.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/language_data.js"></script>
+    <script src="../_static/matrixeq.js"></script>
+    <script src="../_static/mchoice.js"></script>
+    <script src="../_static/timedmc.js"></script>
+    <script src="../_static/timed.js"></script>
+    <script src="../_static/jquery_i18n/CLDRPluralRuleParser.js"></script>
+    <script src="../_static/jquery_i18n/jquery.i18n.js"></script>
+    <script src="../_static/jquery_i18n/jquery.i18n.messagestore.js"></script>
+    <script src="../_static/jquery_i18n/jquery.i18n.fallbacks.js"></script>
+    <script src="../_static/jquery_i18n/jquery.i18n.language.js"></script>
+    <script src="../_static/jquery_i18n/jquery.i18n.parser.js"></script>
+    <script src="../_static/jquery_i18n/jquery.i18n.emitter.js"></script>
+    <script src="../_static/jquery_i18n/jquery.i18n.emitter.bidi.js"></script>
+    <script src="../_static/mchoice-i18n.en.js"></script>
+    <script src="../_static/mchoice-i18n.sr-Cyrl.js"></script>
+    <script src="../_static/jquery.highlight.js"></script>
+    <script src="../_static/bookfuncs.js"></script>
+    <script src="../_static/codemirror.js"></script>
+    <script src="../_static/xml.js"></script>
+    <script src="../_static/css.js"></script>
+    <script src="../_static/python.js"></script>
+    <script src="../_static/htmlmixed.js"></script>
+    <script src="../_static/javascript.js"></script>
+    <script src="../_static/activecode-i18n.en.js"></script>
+    <script src="../_static/activecode-i18n.sr-Cyrl.js"></script>
+    <script src="../_static/skulpt.min.js"></script>
+    <script src="../_static/skulpt-stdlib.js"></script>
+    <script src="../_static/activecode.js"></script>
+    <script src="../_static/clike.js"></script>
+    <script src="../_static/timed_activecode.js"></script>
+    <script src="../_static/tabbedstuff.js"></script>
+    <script src="../_static/runestonevideo.js"></script>
+    <script src="../_static/shortanswer.js"></script>
+    <script src="../_static/timed_shortanswer.js"></script>
+    <script src="../_static/poll.js"></script>
+    <script src="../_static/showEval.js"></script>
+    <script src="../_static/d3.v2.min.js"></script>
+    <script src="../_static/jquery.ba-bbq.min.js"></script>
+    <script src="../_static/jquery.jsPlumb-1.3.10-all-min.js"></script>
+    <script src="../_static/pytutor.js"></script>
+    <script src="../_static/codelens.js"></script>
+    <script src="../_static/clickable.js"></script>
+    <script src="../_static/timedclickable.js"></script>
+    <script src="../_static/dragndrop.js"></script>
+    <script src="../_static/timeddnd.js"></script>
+    <script src="../_static/dragndrop-i18n.en.js"></script>
+    <script src="../_static/dragndrop-i18n.sr-Cyrl.js"></script>
+    <script src="../_static/fitb.js"></script>
+    <script src="../_static/timedfitb.js"></script>
+    <script src="../_static/fitb-i18n.en.js"></script>
+    <script src="../_static/fitb-i18n.sr-Cyrl.js"></script>
+    <script src="../_static/webglinteractive.js"></script>
+    <script src="../_static/FileSaver.min.js"></script>
+    <script src="../_static/Blob.js"></script>
+    <script src="../_static/reveal.js"></script>
+    <script src="../_static/animationbase.js"></script>
+    <script src="../_static/datafile.js"></script>
+    <script src="../_static/lib/prettify.js"></script>
+    <script src="../_static/lib/hammer.min.js"></script>
+    <script src="../_static/parsons.js"></script>
+    <script src="../_static/parsons-i18n.en.js"></script>
+    <script src="../_static/parsons-i18n.sr-Cyrl.js"></script>
+    <script src="../_static/timedparsons.js"></script>
+    <script src="../_static/karelCorner.js"></script>
+    <script src="../_static/karelRobot.js"></script>
+    <script src="../_static/karelWorld.js"></script>
+    <script src="../_static/karelRobotDrawer.js"></script>
+    <script src="../_static/karelUI.js"></script>
+    <script src="../_static/karel.js"></script>
+    <script src="../_static/karel-i18n.en.js"></script>
+    <script src="../_static/karel-i18n.sr-Cyrl.js"></script>
+    <script src="../_static/notes.js"></script>
+    <script src="../_static/pygamelib-init.js"></script>
+    <script src="../_static/blockly/blockly_compressed.js"></script>
+    <script src="../_static/blockly/blocks_compressed.js"></script>
+    <script src="../_static/blockly/python_compressed.js"></script>
+    <script src="../_static/blockly/msg-sr.js"></script>
+    <script src="../_static/blockpy/utilities.js"></script>
+    <script src="../_static/blockpy/python_errors.js"></script>
+    <script src="../_static/blockpy/ast_node_visitor.js"></script>
+    <script src="../_static/blockpy/abstract_interpreter.js"></script>
+    <script src="../_static/blockpy/pytifa.js"></script>
+    <script src="../_static/blockpy/abstract_interpreter_definitions.js"></script>
+    <script src="../_static/blockpy/python_to_blockly.js"></script>
+    <script src="../_static/blockpy/imported.js"></script>
+    <script src="../_static/blockpy/blocks/class.js"></script>
+    <script src="../_static/blockpy/blocks/comment.js"></script>
+    <script src="../_static/blockpy/blocks/comprehensions.js"></script>
+    <script src="../_static/blockpy/blocks/dict.js"></script>
+    <script src="../_static/blockpy/blocks/if.js"></script>
+    <script src="../_static/blockpy/blocks/io.js"></script>
+    <script src="../_static/blockpy/blocks/lists.js"></script>
+    <script src="../_static/blockpy/blocks/sets.js"></script>
+    <script src="../_static/blockpy/blocks/loops.js"></script>
+    <script src="../_static/blockpy/blocks/parking.js"></script>
+    <script src="../_static/blockpy/blocks/tuple.js"></script>
+    <script src="../_static/blockpy/blocks/turtles.js"></script>
+    <script src="../_static/blockpy/blocks/text.js"></script>
+    <script src="../_static/blockpy-modal.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script src="../_static/jquery-ui-1.10.3.custom.min.js"></script>
+    <script src="../_static/jquery-fix.js"></script>
+    <script src="../_static/bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
+    <script src="../_static/bootstrap-4.0.0-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../_static/bootstrap-sphinx.js"></script>
+    <script src="../_static/waypoints.min.js"></script>
+    <script src="../_static/rangy-core.js"></script>
+    <script src="../_static/rangy-textrange.js"></script>
+    <script src="../_static/rangy-cssclassapplier.js"></script>
+    <script src="../_static/user-highlights.js"></script>
+    <script src="../_static/jquery.idle-timer.js"></script>
+    <script src="../_static/processing-1.4.1.min.js"></script>
+    <script src="../_static/jquery.hotkey.js"></script>
+    <script src="../_static/jquery-migrate-1.2.1.min.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Слике и текст - тест" href="slike_test.html" />
+    <link rel="prev" title="Час 9" href="index.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+<link rel="shortcut icon" href="../_static/favicon.ico" type="image/ico" />
+
+<script type="text/javascript">
+  eBookConfig = {};
+  eBookConfig.host = 'http://127.0.0.1:8000' ? 'http://127.0.0.1:8000' : 'http://127.0.0.1:8000';
+  eBookConfig.app = eBookConfig.host+'/runestone';
+  eBookConfig.ajaxURL = eBookConfig.app+'/ajax/';
+  eBookConfig.course = 'Информатика и рачунарство за седми разред';
+  eBookConfig.logLevel = 0;
+  eBookConfig.loginRequired = false;
+  eBookConfig.build_info = "";
+  eBookConfig.isLoggedIn = false;
+  eBookConfig.useRunestoneServices = false;
+  eBookConfig.python3 = true;
+  eBookConfig.basecourse = 'Информатика и рачунарство за седми разред';
+  eBookConfig.runestone_version = '3.1.1';
+  eBookConfig.imagesDir = '../_images/';
+  eBookConfig.staticDir = '../_static/';
+  if(typeof(Sk) != "undefined")
+      Sk.imgPath = eBookConfig.imagesDir;
+</script>
+
+<div id="fb-root"></div>
+
+
+
+  </head><body>
+
+
+<!-- Begin navbar -->
+
+<nav id="navbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+
+  <div class="container">
+
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+     <img src="../_static/img/logo.png" style="width:80px; height: 80px;"> 
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="margin-top: 10px; margin-left: 25px;">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="../">Petlja - Информатика и рачунарство за седми разред</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div style="margin-left: 50%;margin-top: 5%;font-size: 20px;">
+  
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+    <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../предговор/index.html">Пре него што почнемо</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../предговор/предговор.html">Пре првог часа</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../предговор/основна_структура_програма.html">Основна структура програма</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../час_1/index.html">Час 1</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../час_1/torke_liste_podsetnik.html">Пајтон подсетник - типови података</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../час_1/koordinatni_sistem.html">Координатни систем</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../час_1/тест_координатни_систем.html">Тест - координатни систем</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../час_2/index.html">Час 2</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../час_2/funkcije_varijable_podsetnik.html">Пајтон подсетник варијабле и функције</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../час_2/Boje.html">Задавање боја</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../час_2/boje_kviz.html">Боје - квиз</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../час_3/index.html">Час 3</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../час_3/duzi.html">Цртање дужи</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../час_3/duzi_zadatak.html">Задатак - антена</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../час_3/duzi_kviz.html">Тест - дужи</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../час_4/index.html">Час 4</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../час_4/pravougaonici_elipse.html">Цртање облика помоћу функције <code class="docutils literal notranslate"><span class="pre">pg.draw</span></code> - правоугаоници и елипсе</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../час_4/pravougaonici_elipse_zadatak.html">Задатак - паткица</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../час_4/pravougaonici_elipse_test.html">Oblici test</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../час_5/index.html">Час 5</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../час_5/Krugovi_mnogoulgovi.html">Цртање облика помоћу функције <code class="docutils literal notranslate"><span class="pre">pg.draw</span></code> - кругови, многоуглови</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../час_5/Krugovi_mnogouglovi_zadatak.html">Цртеж по упутству</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../час_5/Krugovi_mnogouglovi_test.html">Многоуглови, комбиновање облика, слике - квиз</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../час_6/index.html">Час 6</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../час_6/simetrija.html">Израчунавање координата</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../час_6/simetrija_zadatak.html">Пројекат - Кућица</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../час_6/simetrija_test.html">Израчунавање координата - тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../час_7/index.html">Час 7</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../час_7/Pajton_podsetnik_definisanje_funkcija.html">Пајтон подсетник - дефинисање функција</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../час_7/skaliranje.html">Релативно задавање координата и димензија</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../час_7/zadatak_relativne_koordinate.html">Релативно задавање координата и димензија - задатак</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../час_7/relativne_koordinate_test.html">Тест - Релативно задавање координата и димензија</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../час_8/index.html">Час 8</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../час_8/relativne_koordinate_utvrdjivanje.html">Час 6 - релативне координате - утврђивање</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../час_8/relativne_koordinate_utvrdjivanje.html#id4">Проблеми приликом израчунавања параметара кругова</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../час_8/zadatak_relativne_koordinate_utvrdjivanje.html">Прелазак са апсолутних на релативне координате</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../час_8/relativne_koordinate_test2.html">Релативне координате - квиз</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Час 9</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Слике и текст</a></li>
+<li class="toctree-l2"><a class="reference internal" href="slike_test.html">Слике и текст - тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../час_10/index.html">Час 10</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../час_10/pajton_podsetnik_petlje.html">Пајтон подсетник - петље</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../час_10/petlje.html">Цртање облика помоћу петљи</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../час_10/petlje.html#id4">Хоризонтално и вертикално распоређивање облика</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../час_10/petlje_zadatak.html">Петље задатак</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../час_10/petlje_test.html">Цртање облика помоћу петљи - тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../час_11/index.html">Час 11</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../час_11/petlje2.html">Употреба генератора случајних бројева</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../час_11/petlje2.html#id6">Правилно распоређивање боја</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../час_11/petlje2_zadatak.html">Петље 2 задатак</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../час_11/petlje2_test.html">Понављање облика коришћењем петљи - тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../час_12/index.html">Час 12</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../час_12/pajton_podsetnik_grananje.html">Пајтон подсетник - гранање</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../час_12/grananje.html">Наизменично смењивање облика или боја</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../час_12/grananje_test.html">Понављање облика коришћењем петљи - тест</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../час_13/index.html">Час 13</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../час_13/pajton_podsetnik_ugnjezdene.html">Пајтон подсетник - Угнежђене петље</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../час_13/petlje_ugnjezdene.html">Цртање помоћу петљи - угњежђене петље</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../час_13/petlje_ugnjezdene_zadatak.html">Шаховска табла</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../час_13/petlje_ugnjezdene_test.html">Понављање облика коришћењем петљи - квиз</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../час_14/index.html">Час 14</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../час_14/ugnjezdene_petlje_obnavljanje.html">Час 10 - цртање у петљама - утврђивање</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../завршни_тест/index.html">završni test</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../завршни_тест/zavrsni_test.html">Завршни тест</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+
+        </div>
+      </div>
+  </div>
+<div class="container col-md-12" id="continue-reading"></div>
+
+<div class="container col-md-10 col-md-offset-2" id="main-content" style="margin-top: 70px;">
+  
+  <div class="section" id="id1">
+<h1>Слике и текст<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<p>Поред цртања облика Пајгејм омогућује да се у програме укључе и слике као и да се исписује текст. У овој лекцији научићемо да у наше програме укључимо слике и прикажемо текст на екрану.</p>
+<div class="section" id="id2">
+<h2>Приказ слика<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<p>Сада сте научили да цртате помоћу геометријских облика, па можемо да
+вам откријемо једну тајну. Ако сте раније користити Scratch, знате
+колико је интересантно било када сте ликове на екрану могли да
+представљате сличицама (било унапред понуђеним, било преузетим са
+интернета). И PyGame нуди ту функционалност и то често бива
+једноставније него цртање помоћу геометријских облика.</p>
+<p>Претпоставићемо да на располагању имамо слику мачке у датотеци
+<code class="docutils literal notranslate"><span class="pre">macka.png</span></code>. Ако овај програм покрећеш на свом рачунару (на пример,
+из окружења IDLE) потребно је да слику преузмеш и снимиш на исто место
+на коме је снимљена и изворна датотека Python програма (датотека са
+екстензијом <code class="docutils literal notranslate"><span class="pre">py</span></code>).</p>
+<img alt="../_images/macka.png" class="align-center" src="../_images/macka.png" />
+<p>Први корак је да се слика учита. То се ради помоћу функције
+<code class="docutils literal notranslate"><span class="pre">pg.image.load</span></code> којој се као параметар наводи назив датотеке са
+сликом (то су обично датотеке са екстензијама <code class="docutils literal notranslate"><span class="pre">png</span></code> или <code class="docutils literal notranslate"><span class="pre">jpg</span></code>).
+После учитавања слике могуће је позвати <code class="docutils literal notranslate"><span class="pre">convert()</span></code> да би се слика
+превела из формата у којем је записана у датотеци у формат који је
+погодан за приказивање на екрану.</p>
+<p>Други корак је приказ учитане сличице на екрану (једном учитана слика
+се може приказивати и на више места). То радимо помоћу функције
+<code class="docutils literal notranslate"><span class="pre">prozor.blit</span></code> којој се као параметри наводе учитана слика и позиција
+на коју ће се поставити њено горње лево теме (ако наведемо координате
+<span class="math notranslate nohighlight">\((0, 0)\)</span>, слика ће бити приказана у горњем левом углу екрана).</p>
+
+<div data-childcomponent="ucitavanje_i_prikaz_slike" class="course-box course-box-problem course-content">
+
+<textarea data-component="activecode" id=ucitavanje_i_prikaz_slike data-lang="python" data-autorun="true"
+      data-timelimit=25000  data-codelens="true"  
+    data-audio=''   
+             data-passivecode="onlymain"  data-hidehistory=true
+    data-includesrc="# -*- acsection: general-init -*-
+import pygame as pg, math
+import pygamebg
+
+(sirina, visina) = (300, 300) # otvaramo prozor
+prozor = pygamebg.open_window(sirina, visina, &quot;Мачкица&quot;)
+
+# -*- acsection: main -*-
+
+# učitavamo slicicu iz datoteke macka.png
+slika = pg.image.load(&quot;macka.png&quot;)
+# prikazujemo sličicu u gornjem levom uglu prozora
+prozor.blit(slika, (0, 0))
+
+# -*- acsection: after-main -*-
+
+pg.display.update()
+
+# petlja obrade događaja - čekamo dok korisnik ne isključi prozor
+#while pg.event.wait().type != pg.QUIT:
+#    pass
+
+# isključivanje rada biblioteke PyGame
+pg.quit()
+"   >
+
+
+</textarea>
+</div>
+</div>
+<div class="section" id="id3">
+<h2>Приказ текста<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<p>PyGame омогућава и да се на екрану пише текст. Тексту је могуће
+задавати боју, фонт, величину и положај. Размотримо наредни пример
+који у горњем левом углу прозора исписује поруку <code class="docutils literal notranslate"><span class="pre">Zdravo</span> <span class="pre">svete!</span></code>.</p>
+<p>Приказ текста захтева неколико корака.</p>
+<p>Прво, потребно је одабрати фонт којим ће се текст исписивати. Најлакше
+је да употребимо функцију <code class="docutils literal notranslate"><span class="pre">pg.font.SysFont</span></code> која прима два
+параметра: назив системског фонта (инсталираног на нивоу оперативног
+система) и његову величину. Уместо системског фонта могуће је навести
+и неку датотеку са фонтом (то су обично <code class="docutils literal notranslate"><span class="pre">.ttf</span></code> или <code class="docutils literal notranslate"><span class="pre">.otf</span></code>
+датотеке) и тада се користи функција <code class="docutils literal notranslate"><span class="pre">pg.font.Font</span></code>, али то нећемо у
+наставку користити.</p>
+<p>Други корак је да се креира сличица (прецизније објекат типа
+<code class="docutils literal notranslate"><span class="pre">Surface</span></code>) која представља нацртани текст. То можемо једноставно
+урадити функцијом <code class="docutils literal notranslate"><span class="pre">font.render</span></code> где је <code class="docutils literal notranslate"><span class="pre">font</span></code> објекат фонта
+креиран у претходном кораку, а параметри функције су редом ниска
+(стринг) која представља текст који се исписује, логичка вредност која
+одређује да ли ће се цртати лепшим линијама (тј. користити такозвана
+техника антиалијасинга) и на крају боја којом ће се текст исписивати.</p>
+<p>Процедура је надаље потпуно идентична као и у случају слике. У трећем
+кораку добијену сличицу можемо поставити на било коју позицију на
+екрану (па и на више њих). То радимо као и са свим другим сличицама,
+помоћу функције <code class="docutils literal notranslate"><span class="pre">prozor.blit</span></code> чији је први параметар сличица, а
+други координате на које ће бити постављен горњи леви угао слике
+тј. текста.</p>
+
+<div data-childcomponent="pisanje_teksta" class="course-box course-box-problem course-content">
+
+<textarea data-component="activecode" id=pisanje_teksta data-lang="python" data-autorun="true"
+      data-timelimit=25000  data-codelens="true"  
+    data-audio=''   
+             data-passivecode="onlymain"  data-hidehistory=true
+    data-includesrc="# -*- acsection: general-init -*-
+import pygame as pg
+
+# uključivanje rada biblioteke PyGame
+pg.init()
+
+# podešavamo naslov prozora
+pg.display.set_caption(&quot;Zdravo svete!&quot;)
+# otvaramo prozor dimenzije 200x200
+(sirina, visina) = (200, 200)
+prozor = pg.display.set_mode((sirina, visina))
+
+# bojimo pozadinu prozora u belo
+prozor.fill(pg.Color(&quot;white&quot;))
+# -*- acsection: main -*-
+# font kojim će biti prikazan tekst
+font = pg.font.SysFont(&quot;Arial&quot;, 20)
+
+# gradimo sličicu koja predstavlja tu poruku ispisanu crnom bojom
+tekst = font.render(&quot;Zdravo svete!&quot;, True, pg.Color(&quot;black&quot;))
+# prikazujemo sličicu u gornjem levom uglu ekrana
+prozor.blit(tekst, (0, 0))
+
+# -*- acsection: after-main -*-
+pg.time.delay(300)
+# ažuriramo prikaz sadržaja ekrana
+pg.display.update()
+
+# čekamo da korisnik isključi prozor
+#while pg.event.wait().type != pg.QUIT:
+#    pass
+
+# isključivanje rada biblioteke PyGame
+pg.quit()
+
+"   >
+
+
+</textarea>
+</div>
+</div>
+<div class="section" id="id4">
+<h2>Центрирана слика<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<p>Пошто су слике правоугаоног облика, оне се такође могу центрирати на
+унутар прозора на исти начин као и било који други правоугаоник.</p>
+
+    <div class="course-box course-box-special">
+        <div class="course-content">
+            <h4 class="carbox-title">
+                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
+            </h4>
+            <p>
+<p>Прилагоди програм који на екрану приказује слику мачке учитану из
+датотеке <code class="docutils literal notranslate"><span class="pre">macka.png</span></code> тако да та слика буде центрирана у средини
+екрана.</p>
+
+    </p></div></div>
+<img alt="../_images/macka.png" class="align-center" src="../_images/macka.png" />
+<p>Да би се слика приказала на средини екрана, очитавамо прво њене
+димензије. То можемо урадити помоћу функција <code class="docutils literal notranslate"><span class="pre">get_width()</span></code> и
+<code class="docutils literal notranslate"><span class="pre">get_height()</span></code>, које враћају ширину и висину слике. Координате се
+онда добијају као половина разлике између димензија екрана и димензија
+слике која се приказује (сличица је центрирана јер се празан простор
+равномерно распоређује са његове обе стране).</p>
+
+<div data-childcomponent="ucitavanje_i_prikaz_slike_sredina" class="course-box course-box-problem course-content">
+
+<textarea data-component="activecode" id=ucitavanje_i_prikaz_slike_sredina data-lang="python" data-autorun="true"
+      data-timelimit=25000  data-codelens="true"  
+    data-audio=''   
+             data-passivecode="onlymain"  data-hidehistory=true
+    data-includesrc="# -*- acsection: general-init -*-
+import pygame as pg
+import pygamebg
+
+(sirina, visina) = (300, 300) # otvaramo prozor
+prozor = pygamebg.open_window(sirina, visina, &quot;Мачкица&quot;)
+
+# -*- acsection: main -*-
+
+# bojimo pozadinu u belo
+prozor.fill(pg.Color(&quot;white&quot;))
+
+# učitavamo slicicu iz datoteke macka.png
+slika = pg.image.load(&quot;macka.png&quot;)
+# prikazujemo sličicu na sredini ekrana
+(x, y) = ((sirina - slika.get_width()) / 2, (visina - slika.get_height()) / 2)
+prozor.blit(slika, (x, y))
+
+# -*- acsection: after-main -*-
+
+# ažuriramo prikaz sadržaja ekrana
+pg.display.update()
+
+# čekamo da korisnik isključi prozor
+#while pg.event.wait().type != pg.QUIT:
+#    pass
+
+# isključivanje rada biblioteke PyGame
+pg.quit()
+"   >
+
+
+</textarea>
+</div>
+</div>
+<div class="section" id="id5">
+<h2>Центрирани текст<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+
+    <div class="course-box course-box-special">
+        <div class="course-content">
+            <h4 class="carbox-title">
+                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
+            </h4>
+            <p>
+<p>Прилагоди програм који на екран исписује поруку „Здраво свете” тако
+да тај текст буде центриран у средини екрана.</p>
+
+    </p></div></div>
+<p>Пошто желимо да текст буде центриран, ту позицију можемо израчунати
+тако што одредимо прво ширину и висину текста. За то можемо поново
+употребити функције <code class="docutils literal notranslate"><span class="pre">get_width()</span></code> и <code class="docutils literal notranslate"><span class="pre">get_height()</span></code> као и у случају
+слике, а можемо употребити и функцију <code class="docutils literal notranslate"><span class="pre">font.size()</span></code> чији је
+параметар ниска чија се величина одређује. Координате левог угла се
+онда одређује на исти начин као и у случају слике.</p>
+
+<div data-childcomponent="font_sredina" class="course-box course-box-problem course-content">
+
+<textarea data-component="activecode" id=font_sredina data-lang="python" 
+      data-timelimit=25000    
+    data-audio=''   
+           data-playtask="true"   data-modaloutput="true" data-hidehistory=true
+      data-includexsrc="# -*- acsection: general-init -*-
+import pygame as pg
+import pygamebg
+
+(sirina, visina) = (300, 300) # otvaramo prozor
+prozor = pygamebg.open_window(sirina, visina, &quot;Zdravo svete!&quot;)
+
+# bojimo pozadinu prozora u belo
+prozor.fill(pg.Color(&quot;white&quot;))
+
+# -*- acsection: main -*-
+
+# font kojim će biti prikazan tekst
+font = pg.font.SysFont(&quot;Arial&quot;, 40)
+# poruka koja će se ispisivati
+poruka = &quot;Zdravo svete!&quot;
+# gradimo sličicu koja predstavlja tu poruku ispisanu crnom bojom
+tekst = font.render(poruka, True, pg.Color(&quot;black&quot;))
+# određujemo veličinu tog teksta (da bismo mogli da ga centriramo)
+(sirina_teksta, visina_teksta) = (tekst.get_width(), tekst.get_height())
+# položaj određujemo tako da tekst bude centriran
+(x, y) = ((sirina - sirina_teksta) / 2, (visina - visina_teksta) / 2)
+# prikazujemo sličicu na odgovarajućem mestu na ekranu
+prozor.blit(tekst, (x, y))
+
+# -*- acsection: after-main -*-
+
+# prikazujemo prozor i čekamo da ga korisnik isključi
+pygamebg.wait_loop()
+" data-enablecopy="true">
+# font kojim će biti prikazan tekst
+font = pg.font.SysFont("Arial", 40)
+# poruka koja će se ispisivati
+poruka = "Zdravo svete!"
+# gradimo sličicu koja predstavlja tu poruku ispisanu crnom bojom
+tekst = font.render(poruka, True, pg.Color("black"))
+# određujemo veličinu tog teksta (da bismo mogli da ga centriramo)
+(sirina_teksta, visina_teksta) = (tekst.get_width(), tekst.get_height())
+# položaj određujemo tako da tekst bude centriran
+(x, y) = (???, ???)
+# prikazujemo sličicu na odgovarajućem mestu na ekranu
+prozor.blit(tekst, (x, y))
+</textarea>
+</div>
+</div>
+<div class="section" id="id6">
+<h2>Најважније из ове лекције<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Слике се у Пајгејм програме учитавају помоћу функције <code class="docutils literal notranslate"><span class="pre">pg.image.load</span></code> којој се као аргумент прослеђује назив фајла у коме је слика сачувана</p></li>
+<li><p>Слике се у Пајгејм програмима на екрану приказују помоћу функције <code class="docutils literal notranslate"><span class="pre">prozor.blit()</span></code>, чији су аргументи учитана слика и координате горњег левог темена учитане слике.</p></li>
+<li><p>Када приказујемо текст на екрану, потребно је да прво одаберемо фонт који ћемо користити и то се ради помоћу функције <code class="docutils literal notranslate"><span class="pre">pg.font.SysFont</span></code> којој се као аргументи прослеђују назив фонта и величина слова.</p></li>
+<li><p>Да бисмо направили сличицу која садржи жељени текст, потребно је да употребимо функцију <code class="docutils literal notranslate"><span class="pre">font.render</span></code> која као аргументе узима текст (ниску) који желимо да прикажемо, логичку варијаблу која одређује изглед текста и боју текста.</p></li>
+<li><p>Да бисмо приказали текст, користимо функцију <code class="docutils literal notranslate"><span class="pre">prozor.blit()</span></code> који као аргумент узима сличицу у којој је текст и координате горњег левог темена те сличице</p></li>
+<li><p>Да бисмо добили димензије слика и текста користимо функције <code class="docutils literal notranslate"><span class="pre">get_width()</span></code> i <code class="docutils literal notranslate"><span class="pre">get_height()</span></code>. Те димензије можемо користити како бисмо позиционирали слике и текст.</p></li>
+</ul>
+</div>
+</div>
+
+
+  
+      <div class="col-md-12">
+<ul class="pager">
+    <li id="relations-prev" title='Previous chapter - Час 9' data-toggle="tooltip"><a href="index.html"><i class="fas fa-arrow-left"></i></a></li>
+    
+        <li id="relations-next" title='Next chapter - Слике и текст - тест' data-toggle="tooltip"><a href="slike_test.html"><i class="fas fa-arrow-right"></i></a></li>
+</ul>
+
+<!-- <ul class="pager"> -->
+    <!-- -->
+        <!-- <li id="relations-prev" title='Претходно поглавље - Час 9' data-toggle="tooltip"><a href="index.html">Претходно поглавље</a></li> -->
+    <!--  -->
+    <!-- -->
+        <!-- <li id="relations-next" title='Следеће поглавље - Слике и текст - тест' data-toggle="tooltip"><a href="slike_test.html">Следеће поглавље</a></li> -->
+    <!-- -->
+<!-- </ul> -->
+
+<script type="text/javascript">
+
+  $('#relations-prev').tooltip({'placement':'right', 'selector': '', 'delay': { show: 100, hide: 50}});
+  $('#relations-next').tooltip({'placement':'left', 'selector': '', 'delay': { show: 100, hide: 50}});
+
+</script>
+</div>
+  
+</div>
+<footer class="footer col-md-12">
+    <div class="container">
+        <div class="text-center">
+            <hr>
+            <p class="text-muted">
+                <span class="pull-left">&copy; 2019 Petlja (Created using  <a href="https://pypi.org/project/Sphinx/">Swinx</a>, <a href="http://runestoneinteractive.org/">RunestoneComponents</a> and <a href="https://github.com/Petlja/PetljaDoc">PetljaDoc</a>)</span>
+            </p>
+        </div>
+    </div>
+</footer>
+
+
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-32029811-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+
+  </body>
+</html>

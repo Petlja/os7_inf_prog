@@ -1,0 +1,11 @@
+======
+Час 12
+======
+
+.. toctree:: 
+    :maxdepth: 1
+
+    pajton_podsetnik_grananje.rst
+    grananje.rst
+    grananje_zadatak.rst
+    grananje_test.rst

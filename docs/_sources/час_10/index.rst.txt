@@ -1,0 +1,11 @@
+======
+Час 10
+======
+
+.. toctree:: 
+    :maxdepth: 1
+
+    pajton_podsetnik_petlje.rst
+    petlje.rst
+    petlje_zadatak.rst
+    petlje_test.rst

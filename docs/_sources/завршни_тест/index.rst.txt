@@ -1,0 +1,8 @@
+============
+završni test
+============
+
+.. toctree:: 
+    :maxdepth: 1
+
+    zavrsni_test.rst

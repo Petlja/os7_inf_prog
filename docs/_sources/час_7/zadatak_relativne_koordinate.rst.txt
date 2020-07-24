@@ -1,0 +1,131 @@
+Релативно задавање координата и димензија - задатак
+===================================================
+
+.. questionnote::
+
+   Нацртај наранџасту главу робота квадратног облика, која има црне
+   очи и уста правоугаоног облика.
+
+.. activecode:: glava_robota
+   :passivecode: onlymain
+   :autorun:
+   :includesrc: _includes/glava_robota.py
+
+   Глава робота
+   ~~~~
+		
+Претходни програм приказује тражену главу робота. Желимо да глава буде
+центрирана унутар прозора. Такође, желимо да уста центрирамо
+хоризонтално унутар главе. Подсетимо се зато, за почетак, како то
+можемо нацртати правоугаоник ако су му познате координате центра (овај
+пут помоћу релативних координата).
+   
+.. mchoice:: pygame_quiz_centriranje_pravougaonika_relativno
+   :answer_a: pg.draw.rect(prozor, boja, (cx, cy, a, b))
+   :answer_b: pg.draw.rect(prozor, boja, (cx, cy, 2*a, 2*b))
+   :answer_c: pg.draw.rect(prozor, boja, (cx - a/2, cy - b/2, a, b))
+   :answer_d: pg.draw.rect(prozor, boja, (cx - a, cy - b, 2*a, 2*b))
+   :correct: c
+   :feedback_a: Покушај поново
+   :feedback_b: Покушај поново
+   :feedback_c: Тачно
+   :feedback_d: Покушај поново
+   
+   Знаш да желиш да нацрташ правоугаоник ширине `a` и висине `b` тако
+   да му је центар у тачки `cx` и `cy`. Коју наредбу можеш да
+   употребиш за то?
+
+Прикажимо математичке операције којима смо израчунали све потребне
+координате када смо цртеж задавали у апсолутним координатама. Прозор
+је димензија 300 пута 300 пиксела, а глава робота 200 пута 200
+пиксела.  То значи да на маргине одлази по 50 пиксела и стога се горње
+лево теме главе робота налази у тачки са координатама :math:`(50,
+50)`. Можемо приметити да су ширина два ока и ширина размака око очију
+(размаци од ивице главе до очију и размак између очију)
+једнаки. Дакле, укупно 5 ширина ока тј. размака испуњава ширину главе
+робота, одакле следи да су и ширина ока и ширина размака око очију
+једнаке петини ширине главе, тј. 40 пиксела. Претпоставићемо да је то
+уједно и висина ока (јер су очи квадратног облика), као и димензија
+размака од горње ивице главе робота до горње ивице очију, тако да ће
+се горње лево теме левог ока налазити у тачки са координатама
+:math:`(90, 90)` (величина размака је додата на обе координате горњег
+левог темена главе), а горње лево теме десног ока налазити у тачки са
+координатама :math:`(170, 90)` (на координату :math:`x` горњег левог темена
+левог ока која је једнака 90 додата је ширина ока од 40 пиксела и
+ширина размака између очију која је такође 40
+пиксела). Претпоставићемо да су уста исте висине као и око, али
+двоструко шира од њега, да је размак од дна уста до дна главе исти као
+размак између врха главе и врха очију и да су уста хоризонтално
+центрирана. Пошто је вертикална средина екрана на линији са
+координатом :math:`x` која је једнака 150, координате горњег левог темена уста
+су :math:`(110, 170)` (прва је добијена тако што је од координате :math:`x`
+средине прозора одузета половина ширине уста, а друга је добијена тако
+што је од координате :math:`y` дна уста одузета величина размака и висина
+уста).
+
+Програм можемо прилагодити тако да се све координате аутоматски
+рачунају на основу правила које смо применили у претходној рачуници,
+на основу сидра ``(cx, cy)`` постављеног у средиште прозора и на
+основу димензије екрана.  Тиме ћемо постићи да цео цртеж робота може
+лако да мења величину и свој положај на екрану (величина ће зависити
+само од димензије главе, а положај само од координата центра главе тј.
+сидра које је за почетак постављено у центар прозора).
+
+.. image:: ../../_images/glava_robota.png
+   :width: 400px   
+   :align: center 
+
+Допуни наредни програм, а затим мењај димензију главе и њен центар и
+посматрај како се мења слика на екрану.
+
+.. activecode:: glava_robota_promenljive
+   :nocodelens:		
+   :modaloutput:
+   :enablecopy:
+   :playtask:
+   :includexsrc: _includes/glava_robota2.py
+
+   prozor.fill(pg.Color("white"))
+    
+   # sidro je u centru ekrana
+   (cx, cy) = (sirina / 2, visina / 2)
+   # dimenzija glave robota je 200x200 piksela
+   glava_dim = 200
+    
+   # gornje levo teme glave određujemo tako da je centar glave u tački (cx, cy)
+   glava_x = cx - glava_dim / 2
+   glava_y = ???
+   pg.draw.rect(prozor, pg.Color("orange"), (???, ???, glava_dim, glava_dim))
+    
+   # relativna dimenzija oka u odnosu na dimenziju glave
+   oko_dim = glava_dim / 5
+   # dimenzija razmaka oko očiju i oko usta
+   razmak = glava_dim / 5
+    
+   # gornje levo teme levog oka u odnosu na gornje levo teme glave
+   levo_oko_x = ???
+   levo_oko_y = ???
+   pg.draw.rect(prozor, pg.Color("black"), (levo_oko_x, levo_oko_y, ???, ???))
+    
+   # gornje levo teme desnog oka u odnosu na gornje levo teme levog oka
+   desno_oko_x = ???
+   desno_oko_y = ???
+   pg.draw.rect(prozor, pg.Color("black"), (???, ???, oko_dim, oko_dim))
+    
+   # dimenzije usta u odnosu na dimenziju oka
+   usta_visina = oko_dim
+   usta_sirina = 2 * oko_dim
+   # gornje levo teme usta u odnosu gornje levo teme glave
+   usta_x = ???
+   usta_y = glava_y + glava_dim - ???
+   pg.draw.rect(prozor, pg.Color("black"), (???, ???, ???, ???))
+		
+.. reveal:: PyGame_glava_robota_relativno_reveal
+   :showtitle: Прикажи решење
+   :hidetitle: Сакриј решење
+
+   .. activecode:: PyGame_glava_robota_relativno_kod
+      :includesrc: _includes/glava_robota2.py
+      :modaloutput:
+      :nocodelens:
+      :enablecopy:
