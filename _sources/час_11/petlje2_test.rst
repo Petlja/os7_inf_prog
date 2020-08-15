@@ -26,7 +26,7 @@
             pygame.draw.rect(prozor, boje[i], (x + i*30, y + i*40, 60, 40))
 
 
-    .. image:: /../_images/pg_petlje_rect01.png
+    .. image:: /../../_images/pg_petlje_rect01.png
 
     Изабери тачан одговор:
  
@@ -52,7 +52,7 @@
         for i in range(3):
             pygame.draw.circle(prozor, boje[i], (x - i*20, y), 20)
 
-    .. image:: ../_images/pg_petlje_krugovi1.png
+    .. image:: ../../_images/pg_petlje_krugovi1.png
 
     Изабери тачан одговор:
 
@@ -74,14 +74,14 @@
     :feedback_e: Нетачно    
     :correct: c,d
     
-    Следећим кодом треба да се исцрта пет кругова. Ти кругови ће се додиривати ако уместо (P, Q) стоји
+    Следећим кодом треба да се исцрта пет кругова:
 
     .. code-block:: python
 
         for a in range(20, 120, 20):
             pygame.draw.circle(prozor, pygame.Color("black"), (P, Q), 20, 1)
 
-    Изабери тачан одговор:
+    Ти кругови ће се додиривати ако уместо (P, Q) стоји ... (изабери тачан одговор)
  
 
 Питање 4.
@@ -129,7 +129,7 @@
        for r in range(a, n*a+1, a):
             pygame.draw.circle(prozor, pygame.Color("black"), (x+r, y), r, 1)
 
-    .. image:: ../_images/pg_petlje_krugovi2.png
+    .. image:: ../../_images/pg_petlje_krugovi2.png
 
 
 

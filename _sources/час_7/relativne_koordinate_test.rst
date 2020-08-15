@@ -76,7 +76,7 @@
       
     Где je при томе тачка (x, y)?
 
-        .. image:: ../_images/pg_rel_koord_cifra1.png
+    .. image:: ../../_images/pg_rel_koord_cifra1.png
 
 
     Изабери тачан одговор:
@@ -97,7 +97,7 @@
     
     Нека је на следећој слици горње лево теме решетке у тачки (x, y), а страница малих квадрата нека је дужине *d*.
 
-        .. image:: ../_images/pg_rel_koord_iksoks_zuta.png
+        .. image:: ../../_images/pg_rel_koord_iksoks_zuta.png
 
     Које су координате крајева жуте дужи?
 
@@ -151,7 +151,7 @@
     
     Допуњавањем датог кода може се нацртати цифра 6 као на слици (без црвених тачака).
 
-        .. image:: ../_images/pg_rel_koord_cifra6.png
+        .. image:: ../../_images/pg_rel_koord_cifra6.png
 
     Шта треба да стоји уместо линија?
 

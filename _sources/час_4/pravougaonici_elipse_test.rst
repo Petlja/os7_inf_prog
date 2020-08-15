@@ -1,5 +1,5 @@
-Oblici test
-===========
+Облици - тест
+=============
 
 .. fillintheblank:: pygame_quiz_crtanje_elipsi_1
 

@@ -6,7 +6,7 @@
 Питање 1.
 ~~~~~~~~~
 
-.. mchoice:: for_rect_1
+.. mchoice:: for_rect_111111
     :answer_a: слика 1
     :feedback_a: Нетачно    
     :answer_b: слика 2
@@ -26,14 +26,14 @@
             pygame.draw.rect(prozor, boje[i], (x + i*30, y + i*40, 60, 40))
 
 
-    .. image:: /../_images/pg_petlje_rect01.png
+    .. image:: ../../_images/pg_petlje_rect01.png
 
     Изабери тачан одговор:
  
 Питање 2.
 ~~~~~~~~~
 
-.. mchoice:: for_krugovi01
+.. mchoice:: for_krugovi01111111
     :answer_a: слика 1
     :feedback_a: Нетачно    
     :answer_b: слика 2
@@ -52,7 +52,7 @@
         for i in range(3):
             pygame.draw.circle(prozor, boje[i], (x - i*20, y), 20)
 
-    .. image:: ../_images/pg_petlje_krugovi1.png
+    .. image:: ../../_images/pg_petlje_krugovi1.png
 
     Изабери тачан одговор:
 
@@ -60,7 +60,7 @@
 Питање 3.
 ~~~~~~~~~       
 
-.. mchoice:: for_krugovi03
+.. mchoice:: for_krugovi0311111
     :multiple_answers:
     :answer_a: (x+a, y)
     :feedback_a: Нетачно    
@@ -88,7 +88,7 @@
 ~~~~~~~~~
 
 
-.. mchoice:: for_krugovi02
+.. mchoice:: for_krugovi0211111
     :multiple_answers:
     :answer_a: pygame.draw.circle(prozor, pygame.Color("black"), (x, y-r), r, 1)
     :feedback_a: Тачно
@@ -111,7 +111,7 @@
 Питање 5.
 ~~~~~~~~~
 
-.. mchoice:: for_krugovi04
+.. mchoice:: for_krugovi04111111
     :answer_a: слика 1
     :feedback_a: Нетачно    
     :answer_b: слика 2
@@ -129,7 +129,7 @@
        for r in range(a, n*a+1, a):
             pygame.draw.circle(prozor, pygame.Color("black"), (x+r, y), r, 1)
 
-    .. image:: ../_images/pg_petlje_krugovi2.png
+    .. image:: ../../_images/pg_petlje_krugovi2.png
 
 
 

@@ -1,7 +1,7 @@
 Тест - дужи
 ===========
 
-Провери своје цртања дужи
+Провери своје знање о цртању дужи
 
 Питање 1.
 ~~~~~~~~~
@@ -67,30 +67,14 @@
     
     Нека је прозор димензија 300 x 300. Којом командом ће се исцртати вертикална линија (дебљине 2 пиксела) која дели површину прозора на два потпуно једнака дела?
 
-    1) 
+    
 
-    .. code-block:: python
+    .. code::
   
-       pygame.draw.line(prozor, pygame.Color("black"), (0, 150), (0, 150), 2)
-
-    2) 
-
-    .. code-block:: python
-
-       pygame.draw.line(prozor, pygame.Color("black"), (0, 149), (0, 149), 2)
-
-    3) 
-
-    .. code-block:: python
-
-       pygame.draw.line(prozor, pygame.Color("black"), (150, 0), (150, 300), 2)
-
-    4) 
-
-    .. code-block:: python
-
-       pygame.draw.line(prozor, pygame.Color("black"), (149, 0), (149, 300), 2)
-
+       1) pygame.draw.line(prozor, pygame.Color("black"), (0, 150), (0, 150), 2)
+       2) pygame.draw.line(prozor, pygame.Color("black"), (0, 149), (0, 149), 2)
+       3) pygame.draw.line(prozor, pygame.Color("black"), (150, 0), (150, 300), 2)
+       4) pygame.draw.line(prozor, pygame.Color("black"), (149, 0), (149, 300), 2)
 
     Изабери тачан одговор:
 
@@ -185,23 +169,10 @@
     
     Која од наредних наредби исцртава дијагоналу прозора димензије 150 x 150?
 
-    1) 
+    .. code::
 
-    .. code-block:: python
-
-       pygame.draw.line(prozor, pygame.Color("black"), (0, 0), (0, 150), 1)
-
-    2)
-
-    .. code-block:: python
-
-       pygame.draw.line(prozor, pygame.Color("black"), (150, 0), (150, 150), 1)
-
-    3) 
-
-    .. code-block:: python
-  
-       pygame.draw.line(prozor, pygame.Color("black"), (0, 150), (150, 0), 1)
-
+       1) pygame.draw.line(prozor, pygame.Color("black"), (0, 0), (0, 150), 1)
+       2) pygame.draw.line(prozor, pygame.Color("black"), (150, 0), (150, 150), 1)
+       3) pygame.draw.line(prozor, pygame.Color("black"), (0, 150), (150, 0), 1)
 
     Изабери тачан одговор:

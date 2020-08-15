@@ -20,8 +20,8 @@ font = pg.font.SysFont("Arial", 9)
 # gradimo sličicu koja predstavlja tu poruku ispisanu crnom bojom
 tekst1 = font.render("150", True, pg.Color("black"))
 tekst2 = font.render("300", True, pg.Color("black"))
-tekst3 = font.render("X1(150, 100)", True, pg.Color("black"))
-tekst4 = font.render("X2(450, 100)", True, pg.Color("black"))
+tekst3 = font.render("M1(150, 100)", True, pg.Color("black"))
+tekst4 = font.render("M2(450, 100)", True, pg.Color("black"))
 
 prozor.blit(tekst1, (0, 150))
 prozor.blit(tekst2, (300, 0))

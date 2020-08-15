@@ -7,27 +7,30 @@
 ~~~~~~~~~
 
 .. mchoice:: cokolada
-    :answer_a: temena = [(x, y+2*h), (x+3*w, y+2*h), (x+3*w, , y+5*h), (x+4*w, y+5*h)]
+    :answer_a: temena = [(x, y+2*h), (x+3*w, y+2*h), (x+3*w, y+5*h), (x+4*w, y+5*h)]
     :feedback_a: Нетачно    
-    :answer_b: temena = [(x+2*w, y), (x+2*w, y+2*h), (x+4*w, , y+2*h), (x+4*w, y+4*h)]
+    :answer_b: temena = [(x+2*w, y), (x+2*w, y+2*h), (x+4*w, y+2*h), (x+4*w, y+4*h)]
     :feedback_b: Нетачно    
-    :answer_c: temena = [(x+2*w, y), (x+2*w, y+3*h), (x+5*w, , y+3*h), (x+5*w, y+4*h)]
+    :answer_c: temena = [(x+2*w, y), (x+2*w, y+3*h), (x+5*w, y+3*h), (x+5*w, y+4*h)]
     :feedback_c: Тачно
-    :answer_d: temena = [(x+3*w, y+h), (x+3*w, y+4*h), (x+6*w, , y+4*h), (x+6*w, y+5*h)]
+    :answer_d: temena = [(x+3*w, y+h), (x+3*w, y+4*h), (x+6*w, y+4*h), (x+6*w, y+5*h)]
     :feedback_d: Нетачно    
     :correct: c
     
     
     Нека је на следећој слици горње лево теме чоколаде у тачки (x, y) и нека су коцкице чоколаде ширине *w* и висине *h*.
 
-      .. image:: ../_images/pg_rel_koord_cokolada.png
+    .. image:: ../../_images/pg_rel_koord_cokolada.png
 
     Допунити прву наредбу следећег кода, тако да се тим кодом црта жута линија по којој је чоколада сломљена.
 
       .. code-block:: python
 
         temena = __________
-        pygame.draw.polygon(prozor, pygame.Color("yellow"), temena)
+        pg.draw.line(prozor, pg.Color("yellow"), temena[0], temena[1])
+        pg.draw.line(prozor, pg.Color("yellow"), temena[1], temena[2])
+        pg.draw.line(prozor, pg.Color("yellow"), temena[2], temena[3])
+
 
     Изабери тачан одговор:
  
@@ -75,7 +78,7 @@
     
     Нека је на следећој слици горње лево теме решетке у тачки (x, y), а страница малих квадрата нека је дужине *d*.
 
-    .. image:: ../_images/pg_rel_koord_iksoks_crvena.png
+    .. image:: ../../_images/pg_rel_koord_iksoks_crvena.png
 
     Које су координате крајева црвене дужи?
 
@@ -122,13 +125,13 @@
 
 .. mchoice:: slovo_k
     :answer_a: "F"
-    :feedback_a: Нетачно    
+    :feedback_a: Тачно
     :answer_b: "E"
-    :feedback_b: Тачно
+    :feedback_b: Нетачно
     :answer_c: "W"
-    :feedback_c: Нетачно    
+    :feedback_c: Нетачно
     :answer_d: "Ш"
-    :feedback_d: Нетачно    
+    :feedback_d: Нетачно
     :correct: a
     
     Извршавањем следећег кода црта се облик једног слова. Којег?

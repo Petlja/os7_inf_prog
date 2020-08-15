@@ -22,9 +22,9 @@
 Питање 2.
 ~~~~~~~~~
 
-.. fillintheblank:: nijanse_plave
+.. fillintheblank:: ispisivanje_teksta
    
-   Поређај наредбе тако да добијеш програм који на екрану исписује текст.
+   Поређај наредбе тако да добијеш програм који у прозору исписује текст.
 
    (1)
       prozor.blit(tekst, (0, 0))
@@ -37,7 +37,7 @@
 
    Одговор: |blank|
 
-   - :^\s*213\s*$: Тачно
+   - :^\s*231\s*$: Тачно
      :x: Одговор није тачан.
 
 
@@ -69,10 +69,11 @@
     :feedback_b: Нетачно    
     :answer_c: (x, y) = ((sirina - slika.get_width()) / 2, (visina - slika.get_height()) / 2)
     :feedback_c: Тачно
-    :answer_d: (x, y) = (slika.get_width(), slika.get_height())    :feedback_d: Нетачно    
+    :answer_d: (x, y) = (slika.get_width(), slika.get_height())    
+    :feedback_d: Нетачно
     :correct: c
     
-    Којим од понуђених одговора је потребно допунити следећи код како би се слика на екрану приказала центрирано.
+    Којим од понуђених одговора је потребно допунити следећи код како би се слика у прозору приказала центрирано.
 
     .. code-block:: python
         

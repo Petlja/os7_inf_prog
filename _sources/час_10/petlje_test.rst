@@ -44,7 +44,7 @@
       for a in range(10, 60, 10):
           pygame.draw.line(prozor, pygame.Color("black"), (x+a, y), (x+a-d, y+d))
 
-    .. image:: ../_images/pg_petlje_kose.png
+    .. image:: ../../_images/pg_petlje_kose.png
 
     Изабери тачан одговор:
 
@@ -149,7 +149,7 @@
             y += dy
             dy = -dy
 
-    .. image:: ../_images/pg_petlje_cikcak.png
+    .. image:: ../../_images/pg_petlje_cikcak.png
 
     Изабери тачан одговор:
 
