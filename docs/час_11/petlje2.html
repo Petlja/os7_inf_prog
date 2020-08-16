@@ -361,10 +361,6 @@ prozor = pygamebg.open_window(sirina, visina, &quot;Ноћно небо&quot;)
 # bojimo pozadinu prozora u crno
 prozor.fill(pg.Color(&quot;black&quot;))
 
-# crtamo mlad mesec pomoću jednog crnog i jednog belog kruga
-pg.draw.circle(prozor, pg.Color(&quot;white&quot;), (100, 100),  30)
-pg.draw.circle(prozor, pg.Color(&quot;black&quot;), (120, 100),  30)
-
 # crtamo 100 nasumično raspoređenih zvezdica
 for i in range(100):
     # nasumično određujemo koordinate
@@ -373,6 +369,9 @@ for i in range(100):
     # crtamo zvezdicu kao mali kružić
     pg.draw.circle(prozor, pg.Color(&quot;white&quot;), (x, y), 2)
 
+# crtamo mlad mesec pomoću jednog crnog i jednog belog kruga
+pg.draw.circle(prozor, pg.Color(&quot;white&quot;), (100, 100),  30)
+pg.draw.circle(prozor, pg.Color(&quot;black&quot;), (120, 100),  30)
 
 # -*- acsection: after-main -*-
 
