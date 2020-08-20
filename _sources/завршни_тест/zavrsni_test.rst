@@ -1,4 +1,4 @@
-Завршни тест
+Завршни квиз
 ============
 
 Питање 1.
@@ -160,3 +160,65 @@
             x, y = x+20, y+20 
 
     Изабери тачан одговор:
+
+Питање 8.
+~~~~~~~~~
+
+.. mchoice:: kvadrat_poligon_zk
+   :answer_a: Ако је c-a = d-b
+   :feedback_a: Тачно
+   :answer_b: Дата наредба увек исцртава квадрат
+   :feedback_b: Нетачно    
+   :answer_c: Ако је a=b и c=d
+   :feedback_c: Нетачно    
+   :answer_d: Дата наредба ни под којим условима не исцртава квадрат
+   :feedback_d: Нетачно    
+   :correct: a
+    
+   Под којим условима би следећа наредба исцртала квадрат?
+
+   .. code-block:: python
+  
+      pygame.draw.polygon(prozor, pygame.Color("gray"), [(a, b), (a, d), (c, d), (c, b)])
+
+   Изабери тачан одговор:
+
+Питање 9.
+~~~~~~~~~
+
+.. mchoice:: elipse_simetrija_zk 
+   :answer_a: pg.draw.ellipse(prozor, pg.Color("gray"), (200, 100, 50, 80) )
+   :feedback_a: Тачно
+   :answer_b:  pg.draw.ellipse(prozor, pg.Color("gray"), (250, 100, 50, 80) )
+   :feedback_b: Нетачно    
+   :answer_c: pg.draw.ellipse(prozor, pg.Color("gray"), (50, 200, 50, 80) )
+   :feedback_c: Нетачно  
+   :answer_d: pg.draw.ellipse(prozor, pg.Color("gray"), (100, 180, 50, 80) )
+   :feedback_d: Нетачно    
+   :correct: a
+    
+   Дата линија програма исцртава једну елипсу. Ако је прозор је ширине 300 пиксела и висине 300 пиксела, која од понуђених функција ће исцртати елипсу симетричну већ нацртаној у односу на вертикалну осу симетрије прозора?
+
+   .. code-block:: python
+  
+      pg.draw.ellipse(prozor, pg.Color("gray"), (50, 100, 50, 80) )
+
+   Изабери тачан одговор:
+
+Питање 10.
+~~~~~~~~~~
+
+.. mchoice:: blit_zk
+   :answer_a: prozor.blit
+   :feedback_a: Тачно
+   :answer_b: pg.draw.image
+   :feedback_b: Нетачно    
+   :answer_c: pg.image
+   :feedback_c: Нетачно
+   :answer_d: prozor.image
+   :feedback_d: Нетачно    
+   :correct: a
+    
+   Коју функцију користимо да бисмо приказали слику на Пајгејм прозору?
+
+   Изабери тачан одговор:

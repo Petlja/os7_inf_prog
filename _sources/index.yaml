@@ -7,6 +7,7 @@ description:
     - Научићете како да користите програмирање да бисте нацртали неке основне облике
     - Научићете како да нацртате неке занимљивије елементе коришћењем петљи
     - Научићете како да укључите слике у своје цртеже
+    - Кроз цртње и рад са 2Д графиком, продубићете своје знање о основним концептима програмирања у Пајтону и добићете прилику да на занимљив начин вежбате програмирање
   requirements:
     - Имаш инсталиран Python 3.6 или новији
     - Познавање основа Python-а (на нивоу шестог разреда)
@@ -39,8 +40,8 @@ lessons:
     archived-activities: # ne smeta ni ako se ostave drugi atribudi iz aktivnosti, ali se gleda samo guid
       - guid: de4d8ced-7457-4257-a156-250bdb711d65
       - guid: 22752682-f23f-4df7-b590-e22780fda0a3
-  - title: Час 1 
-    folder: час_1
+  - title: Координатни систем
+    folder: Координатни систем
     guid: c79a8591-ad06-4e46-9d4d-8ecb5361cf8c
     description:  Прва лекција
     activities:
@@ -59,8 +60,8 @@ lessons:
         file: тест_координатни_систем.rst
         description: #opciono
         guid: c165c91ed37f45e6a7059f7ab0e8054e
-  - title: Час 2
-    folder: час_2
+  - title: Боје
+    folder: Боје
     guid: 6591217f-820a-424c-88d9-69062928b6c8
     description:  Друга лекција - Боје
     activities:
@@ -79,8 +80,8 @@ lessons:
         file: boje_kviz.rst
         description: #opciono
         guid: 971e3377-252b-4640-aeb0-faff1ac25494
-  - title: Час 3
-    folder: час_3
+  - title: Дужи
+    folder: Дужи
     guid: c4537713-64d9-4e85-b94b-2474b1d2525f
     description:  Трећа лекција - Дужи
     activities:
@@ -99,8 +100,8 @@ lessons:
         file: duzi_kviz.rst
         description: #opciono
         guid: 92306241-4bbb-44e6-82fa-f6b883b80032
-  - title: Час 4
-    folder: час_4
+  - title: Правоугаоници и елипсе
+    folder: Правоугаоници и елипсе
     guid: 93c99d9f-3421-426c-abb9-3e50cf271b73
     description:  Četvrta lekcija - pravougaonici i elipse 
     activities:
@@ -119,8 +120,8 @@ lessons:
         file: pravougaonici_elipse_test.rst
         description: #opciono
         guid: 5c853e2f-4563-4db0-a19e-461f9b85d203
-  - title: Час 5
-    folder: час_5
+  - title: Кругови и многоуглови
+    folder: Кругови и многоуглови
     guid: 41ea581a-367f-4b24-98b8-de3c4b430429
     description:  Krugovi i mnogouglovi
     activities:
@@ -139,8 +140,8 @@ lessons:
         file: Krugovi_mnogouglovi_test.rst
         description: #opciono
         guid: 54bb214b-46c2-4318-9623-411210b9dc2c
-  - title: Час 6
-    folder: час_6
+  - title: Симетрично пресликане координате
+    folder: Симетрично пресликане координате
     guid: 9e85fbe3-7866-42db-9b69-62a68c4341e4
     description: Симетрија
     activities:
@@ -159,8 +160,8 @@ lessons:
         file: simetrija_test.rst
         description: #opciono
         guid: ca890608-6d67-40e1-8e96-1ef385076915
-  - title: Час 7
-    folder: час_7
+  - title: Релативно задавање координата и димензија
+    folder: Релативно задавање координата и димензија
     guid: 1484255d-c3c8-4a62-ab94-362bf5806b35
     description: Релативне координате
     activities:
@@ -184,8 +185,8 @@ lessons:
         file: relativne_koordinate_test.rst
         description: #opciono
         guid: 05d3035a-0971-4e4d-a874-e8ccd7d4df7e
-  - title: Час 8
-    folder: час_8
+  - title: Релативно задавање координата - утврђивање
+    folder: Релативно задавање координата - утврђивање
     guid: d8c185e1-cde0-4355-9e4b-84c1784e25d8
     description: Релативне координате утврђивање
     activities:
@@ -204,8 +205,8 @@ lessons:
         file: relativne_koordinate_test2.rst
         description: #opciono
         guid: 32b66c63-ab3d-40a9-856e-b46545b7507a
-  - title: Час 9
-    folder: час_9
+  - title: Слике и текст
+    folder: Слике и текст
     guid: 1ec14c22-df03-41f9-b8d5-5f002427cacf
     description: Слике и текст
     activities:
@@ -219,8 +220,8 @@ lessons:
         file: slike_test.rst
         description: #opciono
         guid: 48403868-9bb7-4257-bece-f3ef99f02b3d
-  - title: Час 10
-    folder: час_10
+  - title: Цртање уз помоћ петљи
+    folder: Цртање уз помоћ петљи
     guid: 34886612-7520-429e-a8ed-ac2fa04d6b60
     description: Crtanje u petljama
     activities:
@@ -244,8 +245,8 @@ lessons:
         file: petlje_test.rst
         description: #opciono
         guid: 0023f725-e5e6-4b25-b930-31f958c626ac
-  - title: Час 11
-    folder: час_11
+  - title: Цртање уз помоћ петљи 2
+    folder: Цртање уз помоћ петљи 2
     guid: 96db797c-6f57-43ae-8388-ad3e7e51abdd
     description: Crtanje u petljama 2
     activities:
@@ -264,8 +265,8 @@ lessons:
         file: petlje2_test.rst
         description: #opciono
         guid: 18d068a9-2f51-4cb0-92e4-5104f10bbaa8
-  - title: Час 12
-    folder: час_12
+  - title: Гранање
+    folder: Гранање
     guid: 05d7e765-f279-4bde-b843-0080d4fd6bed
     description: Grananje
     activities:
@@ -289,8 +290,8 @@ lessons:
         file: grananje_test.rst
         description: #opciono
         guid: 2a273c3d-65e8-41f1-b86c-b2fcba57f138
-  - title: Час 13
-    folder: час_13
+  - title: Угнежђене петље
+    folder: Угнежђене петље
     guid: d4ae5091-1f95-4a94-8cb3-75e46f32db46
     description: Ugnježđene
     activities:
@@ -314,8 +315,8 @@ lessons:
         file: petlje_ugnjezdene_test.rst
         description: #opciono
         guid: 53daaba2-6557-4104-a637-6bc924eb3a65
-  - title: Час 14
-    folder: час_14
+  - title: Цртање уз помоћ петљи - обнављање
+    folder: Цртање уз помоћ петљи - обнављање
     guid: 364f0295-7af4-4b82-9efe-47fd008e1828
     description: Petlje - obnavljanje
     activities:

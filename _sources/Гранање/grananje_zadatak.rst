@@ -1,0 +1,94 @@
+Задатак - гранање 
+=================
+
+Цик-цак линија
+''''''''''''''
+
+.. questionnote::
+
+   Искорости гранање како би написао/написала програм који исцртава цик-цак линију. Дужина дијагоналне линије је 150 пиксела, :math:`x` координата почетне тачке је 30, а тачке су од горње и доње ивице екрана удаљене 30 пиксела. 
+
+.. activecode:: cik-cak
+   :nocodelens:
+   :modaloutput: 
+   :enablecopy:
+   :playtask:
+   :help:
+   :includexsrc: _includes/zigzag.py
+
+   # bojimo pozadinu prozora u belo
+   prozor.fill(pg.Color("white"))
+
+   duzina_linije = 150    # dužina dijagonalne linije
+   razmak_od_ivice = 30   # razmak od ivice ekrana
+
+   # y koordinate donjih tačaka linija
+   y_dole = ???
+   # y koordinate gornjih tačaka linija
+   y_gore = ???
+
+   # koordinate početka tekuće linije
+   x_poc = 30
+   y1 = y_dole
+   y2 = y_gore
+   #koristimo pitagorinu teoremu kako bismo sračunali x koordinate sledeće tačke
+   x_pomeraj = math.sqrt(???)
+   x_kraj = x_poc+x_pomeraj
+
+   while x_kraj<sirina:
+        
+       pg.draw.line(prozor, pg.Color("yellow"), (???, ???), (???, ???), 6);
+        
+       # pripremamo crtanje sledece linije
+       
+       #početna x koordinata postaje krajnja koordinata prošle linije, a krajnja koordinata se pomera 
+       x_poc = ???
+       x_kraj += ???
+
+       #koristimo grananje kako bismo pripremili sledeću liniju
+
+       if y1 == y_dole: # x_poc je suprotno od prethodnog
+           y1 = y_gore
+           ???
+       else:
+           ???
+           ???
+
+
+.. reveal:: zigzag_resenje
+   :showtitle: Прикажи решење
+   :hidetitle: Сакриј решење
+   
+   Oвај задатак је јако сличан задатку са рајсфершлусом, али је мало компликованији зато што се у сваком проласку кроз петљу мењају све четири координате тачака. Коришћење гранања је у том смислу готово исто као у претходном задатку, али потребно је да се уведе још једна променљива која би помогла смењивање вредности :math:`y` координата тачака.  Као и у претходном задатку, потребно је одредити које вредности координате крајњих тачака линија треба да имају у следећем проласку кроз петљу. За разлику од претходног задатка где су вредности размака биле дате, у овом задтку је потребно да се, помоћу Питагорине теореме срачуна колико ће се вредност :math:`x` координате повећати у сваком проласку кроз петљу. 
+
+   .. activecode:: zigzag_resenje1
+      :passivecode: true
+    
+      prozor.fill(pg.Color("white"))
+
+      duzina_linije = 150    # dužina linije rajsferšlusa
+      razmak_od_ivice = 30
+
+      # x koordinate početaka linija sa leve i desne strane
+      y_dole = visina-razmak_od_ivice
+      y_gore = razmak_od_ivice
+
+      # koordinate početka tekuće linije
+      x_poc = 30
+      y1 = y_dole
+      y2 = y_gore
+      x_pomeraj = math.sqrt((duzina_linije**2)-((y_dole-y_gore)**2))
+      x_kraj = x_poc+x_pomeraj
+      while x_kraj<sirina:
+        
+          pg.draw.line(prozor, pg.Color("yellow"), (x_poc, y1), (x_kraj, y2), 6);
+        
+          # pripremamo crtanje sledece linije
+          x_poc=x_kraj
+          x_kraj+=x_pomeraj
+          if y1 == y_dole: # x_poc je suprotno od prethodnog
+              y1 = y_gore
+              y2 = y_dole
+          else:
+              y1 = y_dole
+              y2 = y_gore
