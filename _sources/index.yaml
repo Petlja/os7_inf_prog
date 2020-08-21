@@ -28,7 +28,7 @@ lessons:
     description: Прва лекција
     activities:
       - type: reading
-        title: Пример фајла
+        title: Предговор
         file: предговор.rst
         description: #opciono
         guid: fc0b0a40-55d5-483b-bf50-81460076ec0e
