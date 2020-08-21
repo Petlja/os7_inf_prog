@@ -25,7 +25,7 @@ lessons:
   - title: Пре него што почнемо
     folder: предговор
     guid: b7caaf4c-34dd-493a-8d04-0bfab446d50c
-    description: Прва лекција testiram šta još ovde može da piše
+    description: Прва лекција
     activities:
       - type: reading
         title: Пример фајла
