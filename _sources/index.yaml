@@ -1,6 +1,6 @@
-courseId: kurs-sedmi
+courseId: kurs-sedmi-pygame
 lang: sr-Cyrl
-title: Информатика и рачунарство за седми разред
+title: Информатика и рачунарство за седми разред - Програмирање графике помоћу Pygame 
 description:
   willLearn: # list
     - Упознаћете се са програмирањем 2Д графике у програмском језику Python уз помоћ библиотеке PyGame.
@@ -24,14 +24,14 @@ description:
 lessons:
   - title: Пре него што почнемо
     folder: предговор
-    guid: c2c651cd-53d9-4a3d-ba4f-650b8422f0bc
+    guid: b7caaf4c-34dd-493a-8d04-0bfab446d50c
     description: Прва лекција testiram šta još ovde može da piše
     activities:
       - type: reading
         title: Пример фајла
         file: предговор.rst
         description: #opciono
-        guid: 71c00155-f7f3-410d-8019-e88d22cb7f01
+        guid: fc0b0a40-55d5-483b-bf50-81460076ec0e
       - type: reading
         title: Основна структура Пајгејм програма
         file: основна_структура_програма.rst
@@ -49,17 +49,17 @@ lessons:
         title: Подсетник на Пајтон - Торке и листе
         file: torke_liste_podsetnik.rst
         description: #opciono
-        guid: e81b17d4-cea6-428a-b32a-f961216a42d8
+        guid: 8c8d5fe8-dcb5-44df-967c-c02c71c68917
       - type: reading
         title: Координатни систем
         file: koordinatni_sistem.rst
         description: #opciono
-        guid: 4576c9a4-2071-4a21-b221-a646477e05be
+        guid: 9de0fb11-1373-4850-9921-cbd6d73dbc6b
       - type: quiz
         title: Тест координате
         file: тест_координатни_систем.rst
         description: #opciono
-        guid: c165c91ed37f45e6a7059f7ab0e8054e
+        guid: 5f65cfba-e785-4d08-b317-d0703b6b129a
   - title: Боје
     folder: Боје
     guid: 6591217f-820a-424c-88d9-69062928b6c8
