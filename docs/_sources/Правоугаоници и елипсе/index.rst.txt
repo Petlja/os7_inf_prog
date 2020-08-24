@@ -1,0 +1,10 @@
+=========================================
+5.0. Рачунарство - Правоугаоници и елипсе
+=========================================
+
+.. toctree:: 
+    :maxdepth: 1
+
+    pravougaonici_elipse.rst
+    pravougaonici_elipse_zadatak.rst
+    pravougaonici_elipse_test.rst

@@ -1,0 +1,11 @@
+=========================================
+11.0. Рачунарство - Цртање уз помоћ петљи
+=========================================
+
+.. toctree:: 
+    :maxdepth: 1
+
+    pajton_podsetnik_petlje.rst
+    petlje.rst
+    petlje_zadatak.rst
+    petlje_test.rst

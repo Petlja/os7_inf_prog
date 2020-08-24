@@ -1,0 +1,10 @@
+=============================================================
+9.0. Рачунарство - Релативно задавање координата - утврђивање
+=============================================================
+
+.. toctree:: 
+    :maxdepth: 1
+
+    relativne_koordinate_utvrdjivanje.rst
+    zadatak_relativne_koordinate_utvrdjivanje.rst
+    relativne_koordinate_test2.rst

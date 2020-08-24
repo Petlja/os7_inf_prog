@@ -1,0 +1,10 @@
+========================================
+6.0. Рачунарство - Кругови и многоуглови
+========================================
+
+.. toctree:: 
+    :maxdepth: 1
+
+    Krugovi_mnogoulgovi.rst
+    Krugovi_mnogouglovi_zadatak.rst
+    Krugovi_mnogouglovi_test.rst

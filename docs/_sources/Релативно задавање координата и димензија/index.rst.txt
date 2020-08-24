@@ -1,0 +1,11 @@
+============================================================
+8.0. Рачунарство - Релативно задавање координата и димензија
+============================================================
+
+.. toctree:: 
+    :maxdepth: 1
+
+    Pajton_podsetnik_definisanje_funkcija.rst
+    skaliranje.rst
+    zadatak_relativne_koordinate.rst
+    relativne_koordinate_test.rst

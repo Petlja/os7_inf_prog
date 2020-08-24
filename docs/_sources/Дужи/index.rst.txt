@@ -1,0 +1,10 @@
+=======================
+4.0. Рачунарство - Дужи
+=======================
+
+.. toctree:: 
+    :maxdepth: 1
+
+    duzi.rst
+    duzi_zadatak.rst
+    duzi_kviz.rst

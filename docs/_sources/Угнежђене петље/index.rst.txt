@@ -1,0 +1,11 @@
+===================================
+14.0. Рачунарство - Угнежђене петље
+===================================
+
+.. toctree:: 
+    :maxdepth: 1
+
+    pajton_podsetnik_ugnjezdene.rst
+    petlje_ugnjezdene.rst
+    petlje_ugnjezdene_zadatak.rst
+    petlje_ugnjezdene_test.rst

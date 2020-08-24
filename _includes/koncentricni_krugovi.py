@@ -1,24 +1,47 @@
 # -*- acsection: general-init -*-
 import pygame as pg
-import pygamebg
 
-(sirina, visina) = (300, 300) # otvaramo prozor
-prozor = pygamebg.open_window(sirina, visina, "Концентрични кругови")
+pg.init()  # inicijalizujemo rad biblioteke PyGame
+pg.display.set_caption("Koncentrični krugovi")  # otvaramo prozor
+(sirina, visina) = (225, 225)
+prozor = pg.display.set_mode((sirina, visina))
 
 # -*- acsection: main -*-
 
-# bojimo pozadinu prozora u belu
-prozor.fill(pg.Color("white"))
+broj_krugova = 1   # broj krugova koji se trenutno craju
+r = 10             # razlika poluprečnika susednih krugova
+dk = 1             # promena broja krugova
 
-# centar kruga je u centru prozora
-centar = (sirina // 2, visina // 2)
+def crtaj():
+    prozor.fill(pg.Color("white"))            # bojimo pozadinu u belo
+    (cx, cy) = (sirina // 2, visina // 2)     # centar krugova
+    for i in range(1, broj_krugova + 1):      # crtamo krugove
+        pg.draw.circle(prozor, pg.Color("red"), (cx, cy), i*r, 2)
 
-# poluprecnik se menja od 10 do 100, sa korakom 10
-for r in range(10, 101, 10):
-    # crtamo krug
-    pg.draw.circle(prozor, pg.Color("red"), centar, r, 5)
+def novi_frejm():
+    global broj_krugova, dk
+    # ako se promenom u tekućem smeru broj krugova povećava ili
+    # smanjuje previše, menjamo smer promene
+    if broj_krugova + dk > 10 or broj_krugova + dk < 1: 
+        dk = -dk
+    broj_krugova += dk  # menjamo broj krugova za 1, u odgovarajućem smeru
 
 # -*- acsection: after-main -*-
 
-# prikazujemo prozor i čekamo da ga korisnik isključi
-pygamebg.wait_loop()
+kraj = False
+sat = pg.time.Clock()  # sat koji određuje broj frejmova u sekundi
+while not kraj:
+    # crtamo i ažuriramo sadržaj prozora
+    crtaj()
+    pg.display.update()
+
+    # proveravamo da li je korisnik isključio prozor
+    for dogadjaj in pg.event.get():
+        if dogadjaj.type == pg.QUIT:
+            kraj = True
+
+    # pauziramo do sledeceg frejma
+    sat.tick(10)
+    novi_frejm()
+
+pg.quit() # isključujemo rad biblioteke PyGame

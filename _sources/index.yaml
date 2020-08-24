@@ -22,136 +22,136 @@ description:
     - text: Наш форум - Алгора
       href: https://algora.petlja.org/
 lessons:
-  - title: Пре него што почнемо
+  - title: 1.0 Рачунарство - Увод у Pygame
     folder: предговор
     guid: b7caaf4c-34dd-493a-8d04-0bfab446d50c
     description: Прва лекција
     activities:
       - type: reading
-        title: Предговор
+        title: 1.1 Увод у Pygame
         file: предговор.rst
         description: #opciono
         guid: fc0b0a40-55d5-483b-bf50-81460076ec0e
       - type: reading
-        title: Основна структура Пајгејм програма
+        title: 1.2. Основна структура Пајгејм програма
         file: основна_структура_програма.rst
         description: #opciono
         guid: 7427b636-12ff-49bd-8374-8ba101f6f8c8
     archived-activities: # ne smeta ni ako se ostave drugi atribudi iz aktivnosti, ali se gleda samo guid
       - guid: de4d8ced-7457-4257-a156-250bdb711d65
       - guid: 22752682-f23f-4df7-b590-e22780fda0a3
-  - title: Координатни систем
+  - title: 2.0. Рачунарство - Координатни систем
     folder: Координатни систем
     guid: c79a8591-ad06-4e46-9d4d-8ecb5361cf8c
     description:  Прва лекција
     activities:
       - type: reading
-        title: Подсетник на Пајтон - Торке и листе
+        title: 2.1. Подсетник на Пајтон - Торке и листе
         file: torke_liste_podsetnik.rst
         description: #opciono
         guid: 8c8d5fe8-dcb5-44df-967c-c02c71c68917
       - type: reading
-        title: Координатни систем
+        title: 2.2. Координатни систем
         file: koordinatni_sistem.rst
         description: #opciono
         guid: 9de0fb11-1373-4850-9921-cbd6d73dbc6b
       - type: quiz
-        title: Тест координате
+        title: 2.3. Квиз - координатни систем
         file: тест_координатни_систем.rst
         description: #opciono
         guid: 5f65cfba-e785-4d08-b317-d0703b6b129a
-  - title: Боје
+  - title: 3.0. Рачунарство - Боје
     folder: Боје
     guid: 6591217f-820a-424c-88d9-69062928b6c8
     description:  Друга лекција - Боје
     activities:
       - type: reading
-        title: Подсетник на Пајтон - функције и варијабле
+        title: 3.1. Подсетник на Пајтон - функције и варијабле
         file: funkcije_varijable_podsetnik.rst
         description: #opciono
         guid: cc76a4f7-ddfe-4749-8d58-46ae1a89d853
       - type: reading
-        title: Boje
+        title: 3.2. Боје
         file: Boje.rst
         description: #opciono
         guid: fcea681e-4791-4d4d-aff4-488fd923e9dq
       - type: quiz
-        title: Тест боје
+        title: 3.3. Квиз боје
         file: boje_kviz.rst
         description: #opciono
         guid: 971e3377-252b-4640-aeb0-faff1ac25494
-  - title: Дужи
+  - title: 4.0. Рачунарство - Дужи
     folder: Дужи
     guid: c4537713-64d9-4e85-b94b-2474b1d2525f
     description:  Трећа лекција - Дужи
     activities:
       - type: reading
-        title: Дужи
+        title: 4.1. Дужи
         file: duzi.rst
         description: #opciono
         guid: 91f5c315-8997-4a43-a7a3-7a35e48334c5
       - type: reading
-        title: Дужи - задатак
+        title: 4.2. Домаћи задатак
         file: duzi_zadatak.rst
         description: #opciono
         guid: 49d29442-bae6-459e-b36d-5334f61395e4
       - type: quiz
-        title: Тест - дужи
+        title: 4.3. Квиз - дужи
         file: duzi_kviz.rst
         description: #opciono
         guid: 92306241-4bbb-44e6-82fa-f6b883b80032
-  - title: Правоугаоници и елипсе
+  - title: 5.0. Рачунарство - Правоугаоници и елипсе
     folder: Правоугаоници и елипсе
     guid: 93c99d9f-3421-426c-abb9-3e50cf271b73
     description:  Četvrta lekcija - pravougaonici i elipse 
     activities:
       - type: reading
-        title: Цртање облика
+        title: 5.1. Цртање облика - правоугаоници и елипсе
         file: pravougaonici_elipse.rst
         description: #opciono
         guid: dc49e87f-93b3-4c6b-8717-bcc0a8dab9c0
       - type: reading
-        title: Облици - задатак
+        title: 5.2. Домаћи задатак
         file: pravougaonici_elipse_zadatak.rst
         description: #opciono
         guid: a62d1383-c81a-4f33-961d-ff45c60e42f5
       - type: quiz
-        title: Облици - задатак
+        title: 5.3. Квиз - правоугаоници и елипсе
         file: pravougaonici_elipse_test.rst
         description: #opciono
         guid: 5c853e2f-4563-4db0-a19e-461f9b85d203
-  - title: Кругови и многоуглови
+  - title: 6.0. Рачунарство - Кругови и многоуглови
     folder: Кругови и многоуглови
     guid: 41ea581a-367f-4b24-98b8-de3c4b430429
     description:  Krugovi i mnogouglovi
     activities:
       - type: reading
-        title: Цртање облика
+        title: 6.1. Цртање облика - кругови и многоуглови
         file: Krugovi_mnogoulgovi.rst
         description: #opciono
         guid: 9ae897b8-5715-4dd6-802e-1652e5496688
       - type: reading
-        title: Кругови и многоуглови - задатак
+        title: 6.2. Домаћи задатак
         file: Krugovi_mnogouglovi_zadatak.rst
         description: #opciono
         guid: 4e282f13-59fc-4106-b190-baf9fc45a54d
       - type: quiz
-        title: Кругови и многоуглови - задатак
+        title: 6.3. Квиз - кругови и многоуглови
         file: Krugovi_mnogouglovi_test.rst
         description: #opciono
         guid: 54bb214b-46c2-4318-9623-411210b9dc2c
-  - title: Симетрично пресликане координате
+  - title: 7.0. Рачунарство - Симетрично пресликане координате
     folder: Симетрично пресликане координате
     guid: 9e85fbe3-7866-42db-9b69-62a68c4341e4
     description: Симетрија
     activities:
       - type: reading
-        title: Симетрија
+        title: 7.1. Симетрично пресликане координате
         file: simetrija.rst
         description: #opciono
         guid: 72c0b759-f0d4-4e02-a2d0-66899b33665b
       - type: reading
-        title: Симетрија - задатак
+        title: 7.2. Домаћи задатак
         file: simetrija_zadatak.rst
         description: #opciono
         guid: 6f4d899d-00d1-4877-8a4c-27f3c6daec40
@@ -160,178 +160,178 @@ lessons:
         file: simetrija_test.rst
         description: #opciono
         guid: ca890608-6d67-40e1-8e96-1ef385076915
-  - title: Релативно задавање координата и димензија
+  - title: 8.0. Рачунарство - Релативно задавање координата и димензија
     folder: Релативно задавање координата и димензија
     guid: 1484255d-c3c8-4a62-ab94-362bf5806b35
     description: Релативне координате
     activities:
       - type: reading
-        title: Пајтон подсетник - дефинисање функција
+        title: 8.1. Пајтон подсетник - дефинисање функција
         file: Pajton_podsetnik_definisanje_funkcija.rst
         description: #opciono
         guid: 9da95bb0-42ce-4eb7-abb9-15ebfd8c20a5
       - type: reading
-        title: Релативне координате и димензије
+        title: 8.2. Релативне координате и димензије
         file: skaliranje.rst
         description: #opciono
         guid: 3772cb99-eec9-4e90-8c42-8d22e4c90fc9
       - type: reading
-        title: Задатак - релативне координате и димензије
+        title: 8.3. Домаћи задатак
         file: zadatak_relativne_koordinate.rst
         description: #opciono
         guid: 914f5cf5-98d0-4014-bdbe-7ee5f9ae6dc4
       - type: quiz
-        title: Тест - релативне координате и димензије
+        title: 8.4. Квиз - релативне координате и димензије
         file: relativne_koordinate_test.rst
         description: #opciono
         guid: 05d3035a-0971-4e4d-a874-e8ccd7d4df7e
-  - title: Релативно задавање координата - утврђивање
+  - title: 9.0. Рачунарство - Релативно задавање координата - утврђивање
     folder: Релативно задавање координата - утврђивање
     guid: d8c185e1-cde0-4355-9e4b-84c1784e25d8
     description: Релативне координате утврђивање
     activities:
       - type: reading
-        title: Релативне координате утврђивање
+        title: 9.1. Релативне координате утврђивање
         file: relativne_koordinate_utvrdjivanje.rst
         description: #opciono
         guid: c4a4e338-75c8-459a-9e45-3144d00bfffe
       - type: reading
-        title: Задатак релативне координате
+        title: 9.2. Домаћи задатак
         file: zadatak_relativne_koordinate_utvrdjivanje.rst
         description: #opciono
         guid: a1437b8d-62d5-4cdc-9829-c1c73584f778
       - type: quiz
-        title: Тест - релативне координате и димензије
+        title: 9.3. Квиз - релативне координате и димензије
         file: relativne_koordinate_test2.rst
         description: #opciono
         guid: 32b66c63-ab3d-40a9-856e-b46545b7507a
-  - title: Слике и текст
+  - title: 10.0. Рачунарство - Слике и текст 
     folder: Слике и текст
     guid: 1ec14c22-df03-41f9-b8d5-5f002427cacf
     description: Слике и текст
     activities:
       - type: reading
-        title: Релативне координате утврђивање
+        title: 10.1. Слике и текст
         file: slike.rst
         description: #opciono
         guid: e2a30a14-4137-4924-b860-101e3e7d4420
       - type: quiz
-        title: Слике и текст - тест
+        title: 10.2. Квиз - слике и текст
         file: slike_test.rst
         description: #opciono
         guid: 48403868-9bb7-4257-bece-f3ef99f02b3d
-  - title: Цртање уз помоћ петљи
+  - title: 11.0. Рачунарство - Цртање уз помоћ петљи
     folder: Цртање уз помоћ петљи
     guid: 34886612-7520-429e-a8ed-ac2fa04d6b60
     description: Crtanje u petljama
     activities:
       - type: reading
-        title: Pajton podsetnik - petlje
+        title: 11.1. Пајтон подсетник - петље
         file: pajton_podsetnik_petlje.rst
         description: #opciono
         guid: 10ee6d4b-60f5-472f-bd0e-3a8ca5ec3b78
       - type: reading
-        title: Pajton podsetnik - petlje
+        title: 11.2. Цртање облика помоћу петљи
         file: petlje.rst
         description: #opciono
         guid: 07bb678b-6b48-4a74-8adc-98de2fffd7be  
       - type: reading
-        title: Pajton podsetnik - petlje
+        title: 11.3. Домаћи задатак - петље
         file: petlje_zadatak.rst
         description: #opciono
         guid: e50427b4-89f3-41ee-959b-4b24152636a8 
       - type: quiz
-        title: Петље тест
+        title: 11.4. Квиз - цртање облика помоћу петљи
         file: petlje_test.rst
         description: #opciono
         guid: 0023f725-e5e6-4b25-b930-31f958c626ac
-  - title: Цртање уз помоћ петљи 2
+  - title: 12.0. Рачунарство - Цртање уз помоћ петљи 2
     folder: Цртање уз помоћ петљи 2
     guid: 96db797c-6f57-43ae-8388-ad3e7e51abdd
     description: Crtanje u petljama 2
     activities:
       - type: reading
-        title: Crtanje pomoću petlji 2 
+        title: 12.1. Цртање облика помоћу петљи
         file: petlje2.rst
         description: #opciono
         guid: a848cd14-cb6f-4b16-8b03-a1841841312c  
       - type: reading
-        title: Petlje 2 zadatak
+        title: 12.2. Домаћи задатак
         file: petlje2_zadatak.rst
         description: #opciono
         guid: 1bfd9aa9-2dc3-4908-97ec-04647820d1ff 
       - type: quiz
-        title: Петље 2 тест
+        title: 12.3. Квиз - петље 2
         file: petlje2_test.rst
         description: #opciono
         guid: 18d068a9-2f51-4cb0-92e4-5104f10bbaa8
-  - title: Гранање
+  - title: 13.0. Рачунарство - Гранање
     folder: Гранање
     guid: 05d7e765-f279-4bde-b843-0080d4fd6bed
     description: Grananje
     activities:
       - type: reading
-        title: Pajton podsetnik - grananje 
+        title: 13.1. Пајон подсетник гранање
         file: pajton_podsetnik_grananje.rst
         description: #opciono
         guid: 23026df6-431e-453b-8c42-ad5961b907ee  
       - type: reading
-        title: grananje
+        title: 13.2. Гранање
         file: grananje.rst
         description: #opciono
         guid: d1f32840-b2d1-482d-8fa3-6613906aa286
       - type: reading
-        title: grananje zadatak
+        title: 13.3. Домаћи задатак
         file: grananje_zadatak.rst
         description: #opciono
         guid: 1eb13a70-5e0a-4e8e-9e50-b17c1613fe22 
       - type: quiz
-        title: grananje test
+        title: 13.4. Квиз - гранање
         file: grananje_test.rst
         description: #opciono
         guid: 2a273c3d-65e8-41f1-b86c-b2fcba57f138
-  - title: Угнежђене петље
+  - title: 14.0. Рачунарство - Угнежђене петље
     folder: Угнежђене петље
     guid: d4ae5091-1f95-4a94-8cb3-75e46f32db46
     description: Ugnježđene
     activities:
       - type: reading
-        title: Pajton podsetnik - ugnježđene 
+        title: 14.1. Пајтон подсетник - угнежђене петље
         file: pajton_podsetnik_ugnjezdene.rst
         description: #opciono
         guid: 0d1ed898-c9a7-419c-a2d5-22d3f3ff2c2c  
       - type: reading
-        title: petlje_ugnjezdene
+        title: 14.2. Угњежђене петље
         file: petlje_ugnjezdene.rst
         description: #opciono
         guid: 847d4f5b-88be-418a-b855-1f44f1fef8cb
       - type: reading
-        title: ugnježdene petlje zadatak
+        title: 14.3. Домаћи задатак
         file: petlje_ugnjezdene_zadatak.rst
         description: #opciono
         guid: 55d215ca-3ee9-4a5f-ab25-ea8dfa8804f4 
       - type: quiz
-        title: Ugnjezdene test
+        title: 14.4. Квиз - угнежђене петље
         file: petlje_ugnjezdene_test.rst
         description: #opciono
         guid: 53daaba2-6557-4104-a637-6bc924eb3a65
-  - title: Цртање уз помоћ петљи - обнављање
+  - title: 15.0. Рачунарство - Цртање уз помоћ петљи - обнављање
     folder: Цртање уз помоћ петљи - обнављање
     guid: 364f0295-7af4-4b82-9efe-47fd008e1828
     description: Petlje - obnavljanje
     activities:
       - type: reading
-        title: Petlje obnavljanje
+        title: 15.1. Цртање уз помоћ петљи - обнављање
         file: ugnjezdene_petlje_obnavljanje.rst
         description: #opciono
         guid: 43bf9a35-1526-49ac-884f-13b0ccbf59bd
-  - title: završni test
+  - title: 16.0 Завршни квиз
     folder: завршни_тест
     guid: 04051dfb-7a2c-45a0-9be0-50b53ce873fc
     description: завршни тест
     activities:
       - type: quiz
-        title: Завршни тест
+        title: 16.1 Завршни квиз
         file: zavrsni_test.rst
         description: #opciono
         guid: 6c2a4646-4568-41bb-9354-dea265874cc7     
