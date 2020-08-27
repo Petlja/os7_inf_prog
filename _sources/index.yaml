@@ -14,11 +14,11 @@ description:
 
   shortDescription: Програмирање графике помоћу Пајгејм
   willLearn: # list
-    - Упознаћете се са програмирањем 2Д графике у програмском језику Python уз помоћ библиотеке PyGame.
-    - Научићете како да користите програмирање да бисте нацртали неке основне облике
-    - Научићете како да нацртате неке занимљивије елементе коришћењем петљи
-    - Научићете како да укључите слике у своје цртеже
-    - Кроз цртње и рад са 2Д графиком, продубићете своје знање о основним концептима програмирања у Пајтону и добићете прилику да на занимљив начин вежбате програмирање
+    - Упознаћеш се са програмирањем 2Д графике у програмском језику Python уз помоћ библиотеке PyGame.
+    - Научићеш како да користите програмирање да бисте нацртали неке основне облике
+    - Научићеш како да нацртате неке занимљивије елементе коришћењем петљи
+    - Научићеш како да укључите слике у своје цртеже
+    - Кроз цртње и рад са 2Д графиком, продубићеш своје знање о основним концептима програмирања у Пајтону и добићете прилику да на занимљив начин вежбате програмирање
   requirements:
     - Имаш инсталиран Python 3.6 или новији
     - Познавање основа Python-а (на нивоу шестог разреда)
@@ -51,7 +51,7 @@ lessons:
     archived-activities: # ne smeta ni ako se ostave drugi atribudi iz aktivnosti, ali se gleda samo guid
       - guid: de4d8ced-7457-4257-a156-250bdb711d65
       - guid: 22752682-f23f-4df7-b590-e22780fda0a3
-  - title: 2. Рачунарство - Координатни систем
+  - title: 2. Координатни систем
     folder: Координатни систем
     guid: c79a8591-ad06-4e46-9d4d-8ecb5361cf8c
     description:  Прва лекција
@@ -71,7 +71,7 @@ lessons:
         file: тест_координатни_систем.rst
         description: #opciono
         guid: 5f65cfba-e785-4d08-b317-d0703b6b129a
-  - title: 3. Рачунарство - Боје
+  - title: 3. Боје
     folder: Боје
     guid: 6591217f-820a-424c-88d9-69062928b6c8
     description:  Друга лекција - Боје
@@ -91,7 +91,7 @@ lessons:
         file: boje_kviz.rst
         description: #opciono
         guid: 971e3377-252b-4640-aeb0-faff1ac25494
-  - title: 4. Рачунарство - Дужи
+  - title: 4. Дужи
     folder: Дужи
     guid: c4537713-64d9-4e85-b94b-2474b1d2525f
     description:  Трећа лекција - Дужи
@@ -111,7 +111,7 @@ lessons:
         file: duzi_kviz.rst
         description: #opciono
         guid: 92306241-4bbb-44e6-82fa-f6b883b80032
-  - title: 5. Рачунарство - Правоугаоници и елипсе
+  - title: 5. Правоугаоници и елипсе
     folder: Правоугаоници и елипсе
     guid: 93c99d9f-3421-426c-abb9-3e50cf271b73
     description:  Četvrta lekcija - pravougaonici i elipse 
@@ -131,7 +131,7 @@ lessons:
         file: pravougaonici_elipse_test.rst
         description: #opciono
         guid: 5c853e2f-4563-4db0-a19e-461f9b85d203
-  - title: 6. Рачунарство - Кругови и многоуглови
+  - title: 6. Кругови и многоуглови
     folder: Кругови и многоуглови
     guid: 41ea581a-367f-4b24-98b8-de3c4b430429
     description:  Krugovi i mnogouglovi
@@ -151,7 +151,7 @@ lessons:
         file: Krugovi_mnogouglovi_test.rst
         description: #opciono
         guid: 54bb214b-46c2-4318-9623-411210b9dc2c
-  - title: 7. Рачунарство - Симетрично пресликане координате
+  - title: 7. Симетрично пресликане координате
     folder: Симетрично пресликане координате
     guid: 9e85fbe3-7866-42db-9b69-62a68c4341e4
     description: Симетрија
@@ -171,7 +171,7 @@ lessons:
         file: simetrija_test.rst
         description: #opciono
         guid: ca890608-6d67-40e1-8e96-1ef385076915
-  - title: 8. Рачунарство - Релативно задавање координата и димензија
+  - title: 8. Релативно задавање координата и димензија
     folder: Релативно задавање координата и димензија
     guid: 1484255d-c3c8-4a62-ab94-362bf5806b35
     description: Релативне координате
@@ -196,7 +196,7 @@ lessons:
         file: relativne_koordinate_test.rst
         description: #opciono
         guid: 05d3035a-0971-4e4d-a874-e8ccd7d4df7e
-  - title: 9. Рачунарство - Релативно задавање координата - утврђивање
+  - title: 9. Релативно задавање координата - утврђивање
     folder: Релативно задавање координата - утврђивање
     guid: d8c185e1-cde0-4355-9e4b-84c1784e25d8
     description: Релативне координате утврђивање
@@ -216,7 +216,7 @@ lessons:
         file: relativne_koordinate_test2.rst
         description: #opciono
         guid: 32b66c63-ab3d-40a9-856e-b46545b7507a
-  - title: 10. Рачунарство - Слике и текст 
+  - title: 10. Слике и текст 
     folder: Слике и текст
     guid: 1ec14c22-df03-41f9-b8d5-5f002427cacf
     description: Слике и текст
@@ -231,7 +231,7 @@ lessons:
         file: slike_test.rst
         description: #opciono
         guid: 48403868-9bb7-4257-bece-f3ef99f02b3d
-  - title: 11. Рачунарство - Цртање уз помоћ петљи
+  - title: 11. Цртање уз помоћ петљи
     folder: Цртање уз помоћ петљи
     guid: 34886612-7520-429e-a8ed-ac2fa04d6b60
     description: Crtanje u petljama
@@ -256,7 +256,7 @@ lessons:
         file: petlje_test.rst
         description: #opciono
         guid: 0023f725-e5e6-4b25-b930-31f958c626ac
-  - title: 12. Рачунарство - Цртање уз помоћ петљи 2
+  - title: 12. Цртање уз помоћ петљи 2
     folder: Цртање уз помоћ петљи 2
     guid: 96db797c-6f57-43ae-8388-ad3e7e51abdd
     description: Crtanje u petljama 2
@@ -276,7 +276,7 @@ lessons:
         file: petlje2_test.rst
         description: #opciono
         guid: 18d068a9-2f51-4cb0-92e4-5104f10bbaa8
-  - title: 13. Рачунарство - Гранање
+  - title: 13. Гранање
     folder: Гранање
     guid: 05d7e765-f279-4bde-b843-0080d4fd6bed
     description: Grananje
@@ -301,7 +301,7 @@ lessons:
         file: grananje_test.rst
         description: #opciono
         guid: 2a273c3d-65e8-41f1-b86c-b2fcba57f138
-  - title: 14. Рачунарство - Угнежђене петље
+  - title: 14. Угнежђене петље
     folder: Угнежђене петље
     guid: d4ae5091-1f95-4a94-8cb3-75e46f32db46
     description: Ugnježđene
@@ -326,7 +326,7 @@ lessons:
         file: petlje_ugnjezdene_test.rst
         description: #opciono
         guid: 53daaba2-6557-4104-a637-6bc924eb3a65
-  - title: 15. Рачунарство - Цртање уз помоћ петљи - обнављање
+  - title: 15. Цртање уз помоћ петљи - обнављање
     folder: Цртање уз помоћ петљи - обнављање
     guid: 364f0295-7af4-4b82-9efe-47fd008e1828
     description: Petlje - obnavljanje
