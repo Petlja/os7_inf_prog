@@ -196,8 +196,8 @@
    :includexsrc: _includes/centrirani_pravougaonik_u_pravougaoniku.py
 
    prozor.fill(pg.Color("white"))
-   pg.draw.rect(prozor, pg.Color("yellow"), (230, 270, 120, 100))
-   pg.draw.ellipse(prozor, pg.Color("blue"), (???, ???, ???, ???))
+   pg.draw.rect(prozor, pg.Color("yellow"), (130, 170, 120, 100))
+   pg.draw.rect(prozor, pg.Color("blue"), (???, ???, ???, ???))
 
 У специјалном случају када је спољни правоугаоник цео прозор,
 правоугаоник можемо центрирати тако што му :math:`x` координату горњег левог
