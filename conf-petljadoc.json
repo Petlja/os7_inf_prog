@@ -1,3 +1,4 @@
 {
-  "project_type": "course"
+  "project_type": "course",
+  "petljadoc_version": "0.2.8"
 }

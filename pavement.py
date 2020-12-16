@@ -16,7 +16,7 @@ master_url = 'http://127.0.0.1:8000'
 master_app = 'runestone'
 serving_dir = "./_build"
 dest = "../../static"
-version = pkg_resources.require("runestone")[0].version
+
 
 options(
     sphinx = Bunch(docroot=".",),
