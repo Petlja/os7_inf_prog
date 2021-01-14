@@ -206,6 +206,15 @@ A има координате :math:`(50, 100)`). Пошто квадрат ни
    # bojimo pozadinu prozora u tamno zeleno
    # crtamo mnogougao na osnovu datih taчака
 
+.. topic:: Погледај видео:
+
+   Погледај овај видео како научи провежбај да кругове и многоуглове црташ и на свом рачунару.
+
+    .. ytpopup:: 8xs-4k3avOI
+        :width: 735
+        :height: 415
+        :align: center 
+
 Најважније из ове лекције
 -------------------------
 
