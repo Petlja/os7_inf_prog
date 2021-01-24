@@ -182,7 +182,7 @@ lessons:
         description: #opciono
         guid: 6f4d899d-00d1-4877-8a4c-27f3c6daec40
       - type: quiz
-        title: Симетрија - задатак
+        title: Квиз - симетрија
         file: simetrija_test.rst
         description: #opciono
         guid: ca890608-6d67-40e1-8e96-1ef385076915
