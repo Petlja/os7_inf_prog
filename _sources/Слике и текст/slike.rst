@@ -42,6 +42,16 @@
    :includesrc: _includes/slika.py
 
 
+.. topic:: Погледај видео:
+
+   Погледај овај видео испробај да на свом рачунару напишеш програм који укључује слику. Слику коју смо користили у овом видеу можеш преузети са `овог линка <https://petljamediastorage.blob.core.windows.net/root/Media/Default/Kursevi/informatika_VII/raketa.png>`__ 
+
+    .. ytpopup:: EMVPL3zczeg
+        :width: 735
+        :height: 415
+        :align: center 
+
+
 Приказ текста
 -------------
 
@@ -78,6 +88,15 @@ PyGame омогућава и да се у прозору пише текст. Т
    :passivecode: onlymain
    :autorun: 
    :includesrc: _includes/font.py
+
+.. topic:: Погледај видео:
+
+   У овом видеу можеш видети како да укључиш текст у своје програме. 
+
+    .. ytpopup:: OyAm4ftHZg4
+        :width: 735
+        :height: 415
+        :align: center 
 
 Центрирана слика
 ----------------

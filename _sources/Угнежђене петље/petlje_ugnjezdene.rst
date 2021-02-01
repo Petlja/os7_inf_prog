@@ -48,7 +48,16 @@
        for j in range(broj_kvadrata):
            pg.draw.rect(prozor, nasumicna_boja(), ???)
 
-       
+
+.. topic:: Погледај видео:
+
+   У овом погедај како да упторебиш угнежђене петље у својим програмима
+
+    .. ytpopup:: a4eMSPKiTUU
+        :width: 735
+        :height: 415
+        :align: center 
+
 Сивкасти насумични кружићи
 ''''''''''''''''''''''''''
    
