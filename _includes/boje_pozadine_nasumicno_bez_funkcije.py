@@ -3,7 +3,7 @@ import random
 import pygame as pg
 
 pg.init()                                # pokrećemo biblioteku PyGame
-pg.display.set_caption("Боја позадине")  # postavljamo naslov prozora
+pg.display.set_caption("Boja pozadine")  # postavljamo naslov prozora
 (sirina, visina) = (200, 200)            # otvaramo prozor dimenzije 200x200 piksela
 prozor = pg.display.set_mode((sirina, visina))
 

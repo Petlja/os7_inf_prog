@@ -3,7 +3,7 @@ import pygame as pg
 import pygamebg
 
 (sirina, visina) = (400, 300) # otvaramo prozor
-prozor = pygamebg.open_window(sirina, visina, "Дијагонално шпартање")
+prozor = pygamebg.open_window(sirina, visina, "Dijagonalno spartanje")
 
 # -*- acsection: main -*-
 

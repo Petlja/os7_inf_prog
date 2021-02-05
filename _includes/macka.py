@@ -2,7 +2,7 @@
 import pygame as pg
 
 pg.init()  # inicijalizujemo biblioteku PyGame
-pg.display.set_caption('Мачка')  # otvaramo prozor
+pg.display.set_caption('Macka')  # otvaramo prozor
 (sirina, visina) = (400, 300)
 prozor = pg.display.set_mode((sirina, visina))
 

@@ -3,7 +3,7 @@ import random, math
 import pygame as pg
 
 pg.init() # inicijalizujemo biblioteku PyGame
-pg.display.set_caption("Лоптица прати миша")  # otvaramo prozor
+pg.display.set_caption("Loptica prati misa")  # otvaramo prozor
 (sirina, visina) = (250, 250)
 prozor = pg.display.set_mode((sirina, visina))
 

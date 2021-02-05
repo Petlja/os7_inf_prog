@@ -3,7 +3,7 @@ import pygame as pg, random
 import pygamebg
 
 (sirina, visina) = (300, 300) # otvaramo prozor
-prozor = pygamebg.open_window(sirina, visina, "Кућица")
+prozor = pygamebg.open_window(sirina, visina, "Kucica")
 
 # -*- acsection: main -*-
 

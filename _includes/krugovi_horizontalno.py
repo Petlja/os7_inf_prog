@@ -3,7 +3,7 @@ import pygame as pg
 import pygamebg
 
 (sirina, visina) = (600, 100) # otvaramo prozor
-prozor = pygamebg.open_window(sirina, visina, "Хоризонтално распоређени кругови")
+prozor = pygamebg.open_window(sirina, visina, "Horizontalno rasporedjeni krugovi")
 
 # -*- acsection: main -*-
 

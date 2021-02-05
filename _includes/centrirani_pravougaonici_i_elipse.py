@@ -2,7 +2,7 @@
 import pygame as pg, pygamebg
 
 (sirina, visina) = (300, 300)    # otvaramo prozor
-prozor = pygamebg.open_window(sirina, visina, "Центрирани правоугаоник и елипса")
+prozor = pygamebg.open_window(sirina, visina, "Centrirani pravougaonik i elipsa")
 
 # -*- acsection: main -*-
 

@@ -4,7 +4,7 @@ import pygame as pg
 import pygamebg
 
 (sirina, visina) = (600, 300) # otvaramo prozor
-prozor = pygamebg.open_window(sirina, visina, "Село")
+prozor = pygamebg.open_window(sirina, visina, "Selo")
 
 # -*- acsection: main -*-
 

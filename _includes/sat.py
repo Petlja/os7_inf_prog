@@ -5,7 +5,7 @@ import pygame as pg
 import pygamebg
 
 (sirina, visina) = (300, 300) # otvaramo prozor
-prozor = pygamebg.open_window(sirina, visina, "Аналогни сат")
+prozor = pygamebg.open_window(sirina, visina, "Analogni sat")
 
 # -*- acsection: main -*-
 

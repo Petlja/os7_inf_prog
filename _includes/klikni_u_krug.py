@@ -2,7 +2,7 @@
 import pygame as pg, random
 
 pg.init()  # uključivanje rada biblioteke PyGame
-pg.display.set_caption("Кликни у круг")   # otvaramo prozor
+pg.display.set_caption("Klikni u krug")   # otvaramo prozor
 (sirina, visina) = (200, 300)
 prozor = pg.display.set_mode((sirina, visina))
 

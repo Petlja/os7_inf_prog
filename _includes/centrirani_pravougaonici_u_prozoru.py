@@ -3,7 +3,7 @@ import pygame as pg
 import pygamebg
 
 (sirina, visina) = (300, 300)   # otvaramo prozor
-prozor = pygamebg.open_window(sirina, visina, "Центрирани квадрати")
+prozor = pygamebg.open_window(sirina, visina, "Centrirani kvadrati")
 
 # -*- acsection: main -*-
 

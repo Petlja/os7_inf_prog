@@ -3,7 +3,7 @@ import pygame as pg
 import pygamebg
 
 (sirina, visina) = (300, 300) # otvaramo prozor
-prozor = pygamebg.open_window(sirina, visina, "Помери објекте")
+prozor = pygamebg.open_window(sirina, visina, "Pomeri objekte")
 
 # -*- acsection: main -*-
 

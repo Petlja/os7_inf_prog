@@ -6,7 +6,7 @@ import pygame as pg
 pg.init()
 
 # postavljamo naslov prozora
-pg.display.set_caption("Кругови на дијагонали")
+pg.display.set_caption("Krugovi na dijagonali")
 # otvaramo prozor dimenzije 300x300 piksela
 (sirina, visina) = (400, 500)
 prozor = pg.display.set_mode((sirina, visina))

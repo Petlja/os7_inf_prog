@@ -4,7 +4,7 @@ import pygame as pg
 import pygamebg
 
 (sirina, visina) = (200, 200)   # otvaramo prozor
-prozor = pygamebg.open_window(sirina, visina, "Боја позадине")
+prozor = pygamebg.open_window(sirina, visina, "Boja pozadine")
 
 # -*- acsection: main -*-
 

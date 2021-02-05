@@ -4,7 +4,7 @@ import pygame as pg
 
 pg.init()  # inicijalizujemo biblioteku pygame
 
-pg.display.set_caption("Новчић")  # otvaramo prozor
+pg.display.set_caption("Novcic")  # otvaramo prozor
 (sirina, visina) = (222, 227)
 prozor = pg.display.set_mode((sirina, visina))
 

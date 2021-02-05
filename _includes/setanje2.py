@@ -3,7 +3,7 @@ import pygame as pg
 
 pg.init()  # inicijalizujemo biblioteku pygame
 
-pg.display.set_caption("Шетање")  # otvaramo prozor
+pg.display.set_caption("Setanje")  # otvaramo prozor
 (sirina, visina) = (400, 400)
 prozor = pg.display.set_mode((sirina, visina))
 sredina_y = visina / 2

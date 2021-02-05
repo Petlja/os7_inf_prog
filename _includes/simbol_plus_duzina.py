@@ -3,7 +3,7 @@ import pygame as pg
 import pygamebg
 
 (sirina, visina) = (200, 200) # otvaramo prozor
-prozor = pygamebg.open_window(sirina, visina, "Симбол плус променљиве величине")
+prozor = pygamebg.open_window(sirina, visina, "Simbol plus promenljive velicine")
 
 # -*- acsection: main -*-
 

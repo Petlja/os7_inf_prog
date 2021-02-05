@@ -4,7 +4,7 @@ import pygame as pg
 import pygamebg
 
 (sirina, visina) = (250, 250)   # otvaramo prozor
-prozor = pygamebg.open_window(sirina, visina, "Насумични кругови")
+prozor = pygamebg.open_window(sirina, visina, "Nasumicni krugovi")
 
 # -*- acsection: main -*-
 

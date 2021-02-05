@@ -4,7 +4,7 @@ import pygame as pg
 
 pg.init()  # inicijalizujemo biblioteku pygame
 
-pg.display.set_caption("Кртица")  # otvaramo prozor
+pg.display.set_caption("krtica")  # otvaramo prozor
 (sirina, visina) = (150, 150)
 prozor = pg.display.set_mode((sirina, visina))
 

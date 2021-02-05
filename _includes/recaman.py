@@ -3,7 +3,7 @@ import pygame as pg, math
 
 
 pg.init()  # ukljucivanje rada biblioteke PyGame
-pg.display.set_caption("Рецаманова секвенца")  # otvaranje prozora
+pg.display.set_caption("Recamanova sekvenca")  # otvaranje prozora
 (sirina, visina) = (500, 500)
 prozor = pg.display.set_mode((sirina, visina))
 

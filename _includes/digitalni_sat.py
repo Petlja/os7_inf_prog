@@ -2,7 +2,7 @@
 import pygame as pg, datetime
 
 pg.init() # inicijalizujemo biblioteku PyGame
-pg.display.set_caption("Дигитални сат") # otvaramo prozor
+pg.display.set_caption("Digitalni sat") # otvaramo prozor
 (sirina, visina) = (200, 200)
 prozor = pg.display.set_mode((sirina, visina))
 

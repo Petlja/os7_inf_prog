@@ -2,7 +2,7 @@
 import pygame as pg
 
 pg.init()   # uključujemo rad biblioteke PyGame
-pg.display.set_caption("Трећина прозора")  # otvaramo prozor
+pg.display.set_caption("Trecina prozora")  # otvaramo prozor
 (sirina, visina) = (250, 100)
 prozor = pg.display.set_mode((sirina, visina))
 

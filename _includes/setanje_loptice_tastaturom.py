@@ -3,7 +3,7 @@ import pygame as pg
 import pygamebg
 
 (sirina, visina) = (400, 400)    # otvaramo prozor
-prozor = pygamebg.open_window(sirina, visina, "Шетање лоптице тастатуром")
+prozor = pygamebg.open_window(sirina, visina, "Setanje loptice tastaturom")
 
 # podešavamo događaje tastaturom - prvi događaj se generise nakon
 # 50ms, a svaki naredni nakon 25ms

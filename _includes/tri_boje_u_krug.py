@@ -2,7 +2,7 @@
 import pygame as pg
 
 pg.init()  # uključivanje rada biblioteke PyGame
-pg.display.set_caption("Три боје у круг")   # otvaramo prozor
+pg.display.set_caption("Tri boje u krug")   # otvaramo prozor
 (sirina, visina) = (300, 300)
 prozor = pg.display.set_mode((sirina, visina))
 

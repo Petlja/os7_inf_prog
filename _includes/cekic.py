@@ -2,7 +2,7 @@
 import pygame as pg
 import pygamebg
 (sirina, visina) = (400, 400)
-prozor = pygamebg.open_window(sirina, visina, "Слика као курсор миша")
+prozor = pygamebg.open_window(sirina, visina, "Slika kao kursor miša")
 
 # -*- acsection: main -*-
 

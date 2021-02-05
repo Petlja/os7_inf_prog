@@ -4,7 +4,7 @@ import pygame as pg
 
 
 pg.init()  # inicijalizujemo rad biblioteke PyGame
-pg.display.set_caption("Бацање коцкице")  # otvaramo prozor
+pg.display.set_caption("Bacanje kockice")  # otvaramo prozor
 (sirina, visina) = (300, 300)
 prozor = pg.display.set_mode((sirina, visina))
 

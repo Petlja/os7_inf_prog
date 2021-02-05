@@ -4,7 +4,7 @@ import pygamebg
 
 # otvaramo prozor
 (sirina, visina) = (300, 300)
-prozor = pygamebg.open_window(sirina, visina, "Антена")
+prozor = pygamebg.open_window(sirina, visina, "Antena")
 
 # -*- acsection: main -*-
 prozor.fill(pg.Color("skyblue")) # bojimo pozadinu ekrana u nebo-plavo

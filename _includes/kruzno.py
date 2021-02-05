@@ -3,7 +3,7 @@ import pygame as pg, math
 
 pg.init() # uključivanje rada biblioteke PyGame
 
-pg.display.set_caption("Кружно кретање")  # otvaramo prozor
+pg.display.set_caption("Kruzno kretanje")  # otvaramo prozor
 (sirina, visina) = (400, 400)
 prozor = pg.display.set_mode((sirina, visina))
 (cx, cy) = (sirina / 2, visina / 2)    # centar prozora

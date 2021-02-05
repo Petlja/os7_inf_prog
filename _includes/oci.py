@@ -3,7 +3,7 @@ import math
 import pygame as pg
 
 pg.init()  # započinje rad biblioteke PyGame
-pg.display.set_caption("Очи")  # otvaramo prozor
+pg.display.set_caption("Oci")  # otvaramo prozor
 (sirina, visina) = (400, 400)
 prozor = pg.display.set_mode((sirina, visina))
 

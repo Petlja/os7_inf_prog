@@ -3,7 +3,7 @@ import pygame as pg
 import pygamebg
 
 (sirina, visina) = (400, 400) # otvaramo prozor
-prozor = pygamebg.open_window(sirina, visina, "Згуснуте линије")
+prozor = pygamebg.open_window(sirina, visina, "Zgusnute linije")
 
 # -*- acsection: main -*-
 

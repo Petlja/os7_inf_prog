@@ -4,7 +4,7 @@ import pygame as pg
 # incicijalizujemo biblioteku PyGame
 pg.init()
 # postavljamo naslov prozora
-pg.display.set_caption("Пулсирајућа лоптица која се може померати")
+pg.display.set_caption("Pulsirajuca loptica koja se moze pomerati")
 # otvaramo prozor dimenzije 400x400 piksela
 (sirina, visina) = (400, 400)
 prozor = pg.display.set_mode((sirina, visina))

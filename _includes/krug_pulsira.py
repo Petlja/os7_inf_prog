@@ -2,7 +2,7 @@
 import pygame as pg
 
 pg.init()  # inicijalizujemo rad biblioteke PyGame
-pg.display.set_caption("Круг који пулсира") # otvaramo prozor
+pg.display.set_caption("Krug koji pulsira") # otvaramo prozor
 (sirina, visina) = (400, 400)
 prozor = pg.display.set_mode((sirina, visina))
 

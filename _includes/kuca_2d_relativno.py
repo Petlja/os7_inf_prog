@@ -2,7 +2,7 @@
 import pygame as pg
 
 pg.init()                          # uključivanje rada biblioteke PyGame
-pg.display.set_caption("Кућа")     # podešavamo naslov prozora
+pg.display.set_caption("Kuca")     # podešavamo naslov prozora
 (sirina, visina) = (500, 300)      # otvaramo prozor dimenzije 500x300
 prozor = pg.display.set_mode((sirina, visina))
 

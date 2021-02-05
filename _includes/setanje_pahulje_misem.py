@@ -3,7 +3,7 @@ import pygame as pg, random
 
 pg.init()   # uključujemo rad biblioteke PyGame
 
-pg.display.set_caption("Шетање пахуље мишем") # otvaramo prozor
+pg.display.set_caption("Setanje pahulje misem") # otvaramo prozor
 (sirina, visina) = (400, 400)
 prozor = pg.display.set_mode((sirina, visina))
 

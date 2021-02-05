@@ -2,7 +2,7 @@
 import pygame as pg
 
 pg.init()  # uključivanje rada biblioteke PyGame
-pg.display.set_caption("Три боје напред-назад")   # otvaramo prozor
+pg.display.set_caption("Tri boje napred-nazad")   # otvaramo prozor
 (sirina, visina) = (300, 300)
 prozor = pg.display.set_mode((sirina, visina))
 

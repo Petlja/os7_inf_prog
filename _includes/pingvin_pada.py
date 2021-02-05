@@ -2,7 +2,7 @@
 import pygame as pg
 
 pg.init()  # inicijalizujemo biblioteku PyGame
-pg.display.set_caption('Пингвин пада')  # otvaramo prozor
+pg.display.set_caption('Pingvin pada')  # otvaramo prozor
 (sirina, visina) = (400, 300)
 prozor = pg.display.set_mode((sirina, visina))
 

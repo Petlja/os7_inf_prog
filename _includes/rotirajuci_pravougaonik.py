@@ -3,7 +3,7 @@ import math
 import pygame as pg
 
 pg.init()                           # ukljucivanje rada biblioteke PyGame
-pg.display.set_caption("Ротирајући правоугаоник")  # otvaramo prozor
+pg.display.set_caption("Rotirajuci pravougaonik")  # otvaramo prozor
 (sirina, visina) = (300, 300)
 prozor = pg.display.set_mode((sirina, visina))
 

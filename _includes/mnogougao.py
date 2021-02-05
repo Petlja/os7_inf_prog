@@ -5,7 +5,7 @@ import pygame as pg, math
 pg.init()  
   
 # podešavamo naslov prozora
-pg.display.set_caption("Многоугао")
+pg.display.set_caption("Mnogougao")
 
 # otvaramo prozor dimenzije 300x350
 (sirina, visina) = (300, 350)

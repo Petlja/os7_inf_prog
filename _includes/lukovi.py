@@ -5,7 +5,7 @@ import pygame as pg, math
 pg.init()
 
 # podešavamo naslov prozora
-pg.display.set_caption("Кружни лукови")
+pg.display.set_caption("Kruzni lukovi")
 # uključujemo prozor dimenzije 200x200 piksela
 (sirina, visina) = (200, 200)
 prozor = pg.display.set_mode((sirina, visina))

@@ -3,7 +3,7 @@ import pygame as pg
 import pygamebg
 
 (sirina, visina) = (300, 50) # otvaramo prozor
-prozor = pygamebg.open_window(sirina, visina, "Квадрати у нијансама црвене боје")
+prozor = pygamebg.open_window(sirina, visina, "Kvadrati u nijansama crvene boje")
 
 # -*- acsection: main -*-
 

@@ -3,7 +3,7 @@ import random
 import pygame as pg
 
 pg.init()  # uključivanje rada biblioteke PyGame
-pg.display.set_caption("Резултат")   # otvaramo prozor
+pg.display.set_caption("Rezultat")   # otvaramo prozor
 (sirina, visina) = (200, 200)
 prozor = pg.display.set_mode((sirina, visina))
 

@@ -3,7 +3,7 @@ import pygame as pg
 import pygamebg
 
 (sirina, visina) = (400, 400) # otvaramo prozor
-prozor = pygamebg.open_window(sirina, visina, "Шетање")
+prozor = pygamebg.open_window(sirina, visina, "Setanje")
 
 pg.key.set_repeat(10, 10)  # podešavamo dogadjaje tastature
 

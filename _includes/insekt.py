@@ -4,7 +4,7 @@ import pygame as pg
 import pygamebg
 
 (sirina, visina) = (300, 300) # otvaramo prozor
-prozor = pygamebg.open_window(sirina, visina, "Мрав")
+prozor = pygamebg.open_window(sirina, visina, "Mrav")
 
 # -*- acsection: main -*-
 prozor.fill(pg.Color("white")) # bojimo pozadinu ekrana u belo

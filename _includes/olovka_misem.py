@@ -2,7 +2,7 @@
 import pygame as pg
 
 pg.init()  # uključujemo rad biblioteke PyGame
-pg.display.set_caption("Цртање мишем")  # otvaramo prozor
+pg.display.set_caption("Crtanje misem")  # otvaramo prozor
 (sirina, visina) = (400, 500)
 prozor = pg.display.set_mode((sirina, visina))
 

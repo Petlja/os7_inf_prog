@@ -3,7 +3,7 @@ import math, random
 import pygame as pg
 
 pg.init()   # uključujemo rad biblioteke PyGame
-pg.display.set_caption("Пронађи сакривену тачку")  # otvaramo prozor
+pg.display.set_caption("Pronadji tacku")  # otvaramo prozor
 (visina, sirina) = (400, 400)
 prozor = pg.display.set_mode((visina, sirina))
 

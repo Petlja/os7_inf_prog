@@ -5,7 +5,7 @@ import pygame as pg, math
 pg.init()
 
 # podešavamo naslov prozora
-pg.display.set_caption("Кругови симетрични")
+pg.display.set_caption("Krugovi simetricni")
 # uključujemo prozor dimenzije 200x200 piksela
 (sirina, visina) = (600, 300)
 prozor = pg.display.set_mode((sirina, visina))

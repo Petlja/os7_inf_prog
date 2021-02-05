@@ -5,7 +5,7 @@ import pygame as pg, datetime
 pg.init()
 
 # postavljamo naslov prozora
-pg.display.set_caption("Дигитални сат")
+pg.display.set_caption("Digitalni sat")
 # otvaramo prozor dimenzije 200x200 piksela
 (sirina, visina) = (200, 200)
 prozor = pg.display.set_mode((sirina, visina))

@@ -3,7 +3,7 @@ import pygame as pg
 import pygamebg
 
 (sirina, visina) = (300, 300) # otvaramo prozor
-prozor = pygamebg.open_window(sirina, visina, "Релативно цртање")
+prozor = pygamebg.open_window(sirina, visina, "Relativno crtanje")
 
 x = sirina // 2
 y = visina // 2

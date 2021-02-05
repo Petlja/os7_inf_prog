@@ -5,7 +5,7 @@ pg.init()  # uključivanje rada biblioteke PyGame
 import pygamebg
 
 (sirina, visina) = (300, 300) # otvaramo prozor
-prozor = pygamebg.open_window(sirina, visina, "Глава робота")
+prozor = pygamebg.open_window(sirina, visina, "Glava robota")
 
 # -*- acsection: main -*-
 prozor.fill(pg.Color("white"))

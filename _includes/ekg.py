@@ -2,7 +2,7 @@
 import pygame as pg
 
 pg.init()                           # ukljucivanje rada biblioteke PyGame
-pg.display.set_caption("ЕКГ срца")  # otvaramo prozor
+pg.display.set_caption("EKG srca")  # otvaramo prozor
 (sirina, visina) = (400, 150)
 prozor = pg.display.set_mode((sirina, visina))
 

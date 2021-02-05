@@ -3,7 +3,7 @@ import pygame as pg
 import pygamebg
 
 (sirina, visina) = (200, 450) # otvaramo prozor
-prozor = pygamebg.open_window(sirina, visina,  "Семафор")
+prozor = pygamebg.open_window(sirina, visina,  "Semafor")
 
 
 # -*- acsection: main -*-

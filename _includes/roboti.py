@@ -3,7 +3,7 @@ import pygame as pg
 import pygamebg
 
 (sirina, visina) = (800, 400) # otvaramo prozor
-prozor = pygamebg.open_window(sirina, visina, "Роботица Мица")
+prozor = pygamebg.open_window(sirina, visina, "Robotica Mica")
 
 
 # definišemo boje koje cemo koristiti

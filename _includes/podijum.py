@@ -4,7 +4,7 @@ import pygame as pg
 import pygamebg
 
 (sirina, visina) = (400, 400) # otvaramo prozor
-prozor = pygamebg.open_window(sirina, visina, "Подијум за игру")
+prozor = pygamebg.open_window(sirina, visina, "Podijum za igru")
 
 # -*- acsection: main -*-
 

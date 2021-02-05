@@ -2,7 +2,7 @@
 import pygame as pg
 
 pg.init()  # inicijalizujemo rad biblioteke PyGame
-pg.display.set_caption("Koncentrični krugovi")  # otvaramo prozor
+pg.display.set_caption("Koncentricni krugovi")  # otvaramo prozor
 (sirina, visina) = (225, 225)
 prozor = pg.display.set_mode((sirina, visina))
 

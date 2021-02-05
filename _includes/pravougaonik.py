@@ -3,7 +3,7 @@ import pygame as pg
 import pygamebg
 
 (sirina, visina) = (300, 200) # otvaramo prozor
-prozor = pygamebg.open_window(sirina, visina, "Правоугаоници")
+prozor = pygamebg.open_window(sirina, visina, "Pravougaonici")
 
 # -*- acsection: main -*-
 
