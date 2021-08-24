@@ -63,9 +63,6 @@ lessons:
         file: основна_структура_програма.rst
         description: #opciono
         guid: 7427b636-12ff-49bd-8374-8ba101f6f8c8
-    archived-activities: # ne smeta ni ako se ostave drugi atribudi iz aktivnosti, ali se gleda samo guid
-      - guid: de4d8ced-7457-4257-a156-250bdb711d65
-      - guid: 22752682-f23f-4df7-b590-e22780fda0a3
   - title: 2. Координатни систем
     folder: Координатни систем
     guid: c79a8591-ad06-4e46-9d4d-8ecb5361cf8c
@@ -361,10 +358,6 @@ lessons:
         file: zavrsni_test.rst
         description: #opciono
         guid: 6c2a4646-4568-41bb-9354-dea265874cc7     
-archived-lessons: # ne smeta ni ako se ostave drugi atribudi iz aktivnosti, ali se gleda samo guid
-  - guid: 3ced8ac6-8be7-4921-bea7-dccf89a7cc79
-  - guid: 29a3a23a-0cdb-4a2b-ad6b-611d36c39db5
-
 
 
 
