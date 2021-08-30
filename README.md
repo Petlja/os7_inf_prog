@@ -1,9 +1,5 @@
 # Информатика и рачунарство за седми разред
 
-ToDo:
+Ovaj repozitorijum posvećen je kursu za sedmi razred za nastavnu temu Programiranje. Kurs se na Petlji nalazi ovde https://petlja.org/kurs/395/
 
-
-6. Napraviti zadatak za slike i tekst 
-8. General celanup  - ujednačiti naslove, komentare, popraviti sve errore u build-u...
-9. Dopuniti završni test
 
