@@ -10,7 +10,7 @@ Kurs možete itegrisati u svoj LMS koristeći SCORM pakete koji se mogu preuzeti
 
 U ovom repozitorijumu se nalazi izvorna forma sadržaja koju pomoću alata [PetljaDoc](https://github.com/Petlja/PetljaDoc) možete konvertovati u skup *HTML* strana.
 
-Na https://petlja.github.io/gim1_rac_prog možete pregledati na taj način dobijene *HTML* strane.
+Na https://petlja.github.io/os7_inf_prog možete pregledati na taj način dobijene *HTML* strane.
 
 ## License
 
