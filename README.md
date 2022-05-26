@@ -1,10 +1,10 @@
-# Programiranje za prvi razred specijalizovanih IT odeljenja 
+# Programiranje u Pajtonu za sedmi razred
 
-Ovaj repozitorijum posvećen je kursu za Programiranje za prvi razred specijalizovanih IT odeljenja. 
+Ovaj repozitorijum posvećen je kursu za Programiranje u Pajtonu za sedmi razred. 
 
-Kurs je na Petljom portalu dotupan ovde: [https://petlja.org/kurs/369/0](https://petlja.org/kurs/369/)
+Kurs je na Petljom portalu dotupan ovde: [https://petlja.org/kurs/395/0](https://petlja.org/kurs/395/)
 
-Kurs možete itegrisati u svoj LMS koristeći SCORM pakete koji se mogu preuzeti sa: https://github.com/Petlja/specit1_prog/releases
+Kurs možete itegrisati u svoj LMS koristeći SCORM pakete koji se mogu preuzeti sa: https://github.com/Petlja/os7_inf_prog/releases
 
 ## Konverzija u *HTML*
 
