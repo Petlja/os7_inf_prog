@@ -1050,7 +1050,7 @@ ActiveCode.prototype.buildProg = function (buildType = ActiveCode.prototype.BUIL
             returnString += parameters[i] + "=" + parameters[i] + (i < parameters.length - 1 ? ',' : '');
         }
 
-        let regex = /print\((.+?)\)/g;
+        let regex = /print\s*\((.+?)\)/g;
         let mainCopy ="def acStdout(" + parametersString + "):\n\tstdout=[]\n" + main; 
         mainCopy = mainCopy.replace(regex,"stdout.append(str($1))");
         mainCopy += "\treturn stdout\n";
@@ -1349,6 +1349,17 @@ def _call_event_handler(handle_event, event):
     }).bind(this),
         (function (err) {  // fail
             $(self.runButton).removeAttr('disabled');
+            switch (params[0]) {
+                case 0:
+                    $(this.runButton).removeAttr('disabled');
+                    break;
+                case 1:
+                    $(this.testButton).removeAttr('disabled');
+                    break;
+                case 2:
+                    $(this.playTaskButton).removeAttr('disabled');
+                    break;
+            }
             if (this.modaloutput) {
                 if (typeof PygameLib !== 'undefined')
                     PygameLib.running = false;
@@ -2799,7 +2810,7 @@ function createArrows(div) {
     $(arrows[3]).on('mouseup', function () {
         returnIcon(3);
     });
-    $(document).keydown(function (e) {
+    $(document).unbind('keydown').bind('keydown', function (e) {
         switch (e.which) {
             case 37:
                 swapIcon(0);
@@ -2815,7 +2826,7 @@ function createArrows(div) {
                 break;
         }
     });
-    $(document).keyup(function (e) {
+    $(document).unbind('keyup').bind('keyup', function (e) {
         switch (e.which) {
             case 37:
                 returnIcon(0);

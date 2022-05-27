@@ -1,0 +1,124 @@
+.simanim{
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.control-button-div {
+    max-width: 50%;
+    float: left;
+    border: 1px solid lightgray;
+    padding: 6px 10px;
+    height: 50px;
+}
+
+.control-btn {
+    border: none;
+    margin: 4px;
+    background-color: rgb(189, 189, 189);
+    border-radius: 2px;
+    width: 100px;
+}
+
+.control-btn:disabled{
+    opacity: 0.7;
+}
+
+.sim-controls{
+    height: 50px;
+}
+
+.sim-modal-canvas{
+    width: min-content;
+    margin: auto;
+}
+
+.control-btn:hover:enabled {
+    background-color: rgb(140, 140, 140);
+}
+.modal-sim{
+    margin: auto;
+    width: min-content;
+}
+
+.modal-content-sim{
+    padding: 10px;
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: .3rem;
+    outline: 0;
+    width: max-content !important;;
+    min-width: 560px;
+}
+
+.sim-modal-variables {
+    float: right;
+    height: 50px;
+    border: 1px solid lightgray;
+    padding: 8px 10px;
+    margin-left: 20px;
+}
+
+.variable-label {
+    margin-left: 10px;
+}
+
+.variable-input {
+    width: 70px;
+    margin-left: 5px;
+}
+
+.variable-input::-webkit-inner-spin-button, 
+.variable-input::-webkit-outer-spin-button {  
+
+   opacity: 1;
+
+}
+
+.sim-canvas {
+    border: 1px solid lightgray;
+    margin-top: 10px;
+}
+
+
+@media only screen and (max-width: 795px) {
+    .sim-modal-variables {
+        float: none;
+        height: 50px;
+        border: 1px solid lightgray;
+        padding: 8px 10px;
+        margin-left: 0px; 
+        width: 100%;
+    }
+    .control-button-div {
+        width: 100%;
+        float: none;
+        border: 1px solid lightgray;
+        padding: 6px 10px;
+        height: 50px;
+        margin-bottom: 5px;
+        max-width: none;
+    }
+    .sim-controls {
+        height: max-content;
+        width: 100%;
+    }
+    .modal-content-sim{
+        min-width: 0;
+    }
+    .modal-content-sim {
+        min-width: 370px !important;
+        max-width: none !important;
+        width: 0 !important;
+    }
+}
+  

@@ -1,0 +1,140 @@
+.query{
+    width: 80%;
+    margin-left: 10%; 
+    margin-bottom: 10px;
+}
+
+.result{
+    margin-top: 10px;
+    width: 500px;
+    margin-left: 4%;
+    overflow-x:  auto;
+    
+}
+
+.db{
+    margin-top: 50px;
+    border: 1px solid black;
+    padding: 15px;
+}
+.stats{
+    width: 25%;
+    overflow: auto;
+    max-height: 400px;
+}
+.db-input{
+    width: 70%;
+}
+.runQuery{
+    margin-left:4%;
+}
+
+.rollback{
+    border: 1px solid red;
+    color: red;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+.db-tables{
+    border: 1px solid black;
+    width: 100%;
+    text-align: center;
+
+}
+.db-tables tr, .db-tables th, .db-tables td{
+    border: 1px solid black; 
+    padding-left: 2.5px;
+    padding-right: 2.5px;
+    text-align: center !important;
+}
+
+.db-table{
+    cursor: pointer; 
+}
+
+.res-tables{
+    border: 1px solid black;
+    width: 100%;
+    text-align: center;
+}
+
+.res-tables  th{
+    border: 1px solid black;
+    min-width: 45px;
+    text-align: center;
+    padding-left: 2.5px;
+    padding-right: 2.5px;
+}
+.res-tables  td{
+    border-left: 1px solid black;
+    min-width: 45px;
+    padding-left: 2.5px;
+    padding-right: 2.5px;
+}
+
+.res-tables  td{
+    border-left: 1px solid black;
+    min-width: 45px;
+    padding-left: 2.5px;
+    padding-right: 2.5px;
+}
+
+.res-tables tr td:first-child{
+    color: black;
+    width: 10px;
+    background: lightblue;
+}
+.res-tables tr:nth-child(even){
+    background-color:#18bc9c ;
+}
+
+.errP{
+    border: 1px solid;
+    background-color: #fda2a8;
+    width: 500px;
+}
+.msgP{
+    color: #6bda8c;
+    width: 500px;
+}
+
+.res-tables th{
+    color: #18bc9c;
+}
+
+.db-table{
+    color: #18bc9c;;
+}
+.editor-div-db{
+    width: 500px;
+    margin-left:20px
+}
+
+.btn-db {
+    display:inline-block;
+    margin-bottom:0;
+    margin-right: 5px;
+    padding: 5px 10px;
+    font-weight:normal;
+    text-align:center;
+    vertical-align:middle;
+    -ms-touch-action:manipulation;
+    touch-action:manipulation;
+    cursor:pointer;
+    background-image:none;
+    border:1px solid transparent;
+    white-space:nowrap;
+    font-size:15px;
+    line-height:1.42857143;
+    border-radius:4px;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+    margin-bottom: 10px;
+   }
+
+.db-input .row :nth-child(4){
+    margin-left: 20px
+}

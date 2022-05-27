@@ -1,11 +1,9 @@
 <!DOCTYPE html>
-
 <html xmlns="http://www.w3.org/1999/xhtml" lang="sr-Cyrl">
   <head>
     <meta charset="utf-8" />
-    <title>Информатика и рачунарство за седми разред - Програмирање графике помоћу Pygame &#8212; Petlja - Информатика и рачунарство за седми разред</title>
-    <link rel="stylesheet" href="_static/basic.css" type="text/css" />
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Програмирање графике помоћу Пајгејм за седми разред</title>
     <link rel="stylesheet" type="text/css" href="_static/activecode.css" />
     <link rel="stylesheet" type="text/css" href="_static/codemirror.css" />
     <link rel="stylesheet" type="text/css" href="_static/clickable.css" />
@@ -26,13 +24,25 @@
     <link rel="stylesheet" type="text/css" href="_static/webglinteractive.css" />
     <link rel="stylesheet" type="text/css" href="_static/karel.css" />
     <link rel="stylesheet" type="text/css" href="_static/notes.css" />
+    <link rel="stylesheet" type="text/css" href="_static/simanim.css" />
+    <link rel="stylesheet" type="text/css" href="_static/pycode.css" />
+    <link rel="stylesheet" type="text/css" href="_static/p5js.css" />
+    <link rel="stylesheet" type="text/css" href="_static/gallery.css" />
+    <link rel="stylesheet" type="text/css" href="_static/dbDirective.css" />
+    <link rel="stylesheet" type="text/css" href="_static/associations.css" />
+    <link rel="stylesheet" type="text/css" href="_static/regex-check.css" />
+    <link rel="stylesheet" href="_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="_static/user-highlights.css" type="text/css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" type="text/css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" type="text/css" />
     <link rel="stylesheet" href="_static/bootstrap-4.0.0-dist/css/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="_static/flatly.min.css" type="text/css" />
-    <link rel="stylesheet" href="_static/petlja.css" type="text/css" />
-    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <link rel="stylesheet" href="_static/petlja-course.css" type="text/css" />
+    <link rel="stylesheet" href="_static/nbstyle.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
     <script type="text/javascript" src="_static/runestonebase.js"></script>
+    <script type="text/javascript" src="_static/skulpt.min.js"></script>
+    <script type="text/javascript" src="_static/skulpt-stdlib.js"></script>
     <script type="text/javascript" src="_static/jquery.js"></script>
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
@@ -55,8 +65,6 @@
     <script type="text/javascript" src="_static/jquery_i18n/jquery.i18n.emitter.bidi.js"></script>
     <script type="text/javascript" src="_static/activecode-i18n.en.js"></script>
     <script type="text/javascript" src="_static/activecode-i18n.sr-Cyrl.js"></script>
-    <script type="text/javascript" src="_static/skulpt.min.js"></script>
-    <script type="text/javascript" src="_static/skulpt-stdlib.js"></script>
     <script type="text/javascript" src="_static/activecode.js"></script>
     <script type="text/javascript" src="_static/clike.js"></script>
     <script type="text/javascript" src="_static/timed_activecode.js"></script>
@@ -73,6 +81,8 @@
     <script type="text/javascript" src="_static/jquery.jsPlumb-1.3.10-all-min.js"></script>
     <script type="text/javascript" src="_static/pytutor.js"></script>
     <script type="text/javascript" src="_static/codelens.js"></script>
+    <script type="text/javascript" src="_static/skulpt.min.js"></script>
+    <script type="text/javascript" src="_static/skulpt-stdlib.js"></script>
     <script type="text/javascript" src="_static/datafile.js"></script>
     <script type="text/javascript" src="_static/dragndrop.js"></script>
     <script type="text/javascript" src="_static/timeddnd.js"></script>
@@ -135,6 +145,21 @@
     <script type="text/javascript" src="_static/blockpy/blocks/turtles.js"></script>
     <script type="text/javascript" src="_static/blockpy/blocks/text.js"></script>
     <script type="text/javascript" src="_static/blockpy-modal.js"></script>
+    <script type="text/javascript" src="_static/simanim.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/pyodide/v0.16.1/full/pyodide.js"></script>
+    <script type="text/javascript" src="_static/pycode.js"></script>
+    <script type="text/javascript" src="//toolness.github.io/p5.js-widget/p5-widget.js"></script>
+    <script type="text/javascript" src="_static/p5js.js"></script>
+    <script type="text/javascript" src="_static/gallery.js"></script>
+    <script type="text/javascript" src="_static/dbDirective.js"></script>
+    <script type="text/javascript" src="_static/sql.js"></script>
+    <script type="text/javascript" src="_static/associations.js"></script>
+    <script type="text/javascript" src="_static/associations-i18n.en.js"></script>
+    <script type="text/javascript" src="_static/associations-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="_static/regex-check.js"></script>
+    <script type="text/javascript" src="_static/regex-check-i18n.en.js"></script>
+    <script type="text/javascript" src="_static/regex-check-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="_static/translations.js"></script>
     <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/javascript" src="_static/jquery-ui-1.10.3.custom.min.js"></script>
     <script type="text/javascript" src="_static/jquery-fix.js"></script>
@@ -150,255 +175,248 @@
     <script type="text/javascript" src="_static/processing-1.4.1.min.js"></script>
     <script type="text/javascript" src="_static/jquery.hotkey.js"></script>
     <script type="text/javascript" src="_static/jquery-migrate-1.2.1.min.js"></script>
-    <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="1.0 Рачунарство - Увод у Pygame" href="предговор/index.html" />
-<meta charset='utf-8'>
-<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
-<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
-<link rel="shortcut icon" href="_static/favicon.ico" type="image/ico" />
+    <script type="text/javascript" src="_static/course-errors.js"></script>
+    <script type="text/javascript" src="_static/petlja.js"></script>
+    <script type="text/javascript" src="_static/require.js"></script>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <link rel="shortcut icon" href="_static/favicon.ico" type="image/ico" />
+    <script type="text/javascript">
+      eBookConfig = {};
+      eBookConfig.host = 'http://127.0.0.1:8000' ? 'http://127.0.0.1:8000' : 'http://127.0.0.1:8000';
+      eBookConfig.app = eBookConfig.host + '/runestone';
+      eBookConfig.ajaxURL = eBookConfig.app + '/ajax/';
+      eBookConfig.course = 'Информатика и рачунарство за седми разред';
+      eBookConfig.logLevel = '0';
+      eBookConfig.loginRequired = 'false';
+      eBookConfig.build_info = "";
+      eBookConfig.isLoggedIn = false;
+      eBookConfig.useRunestoneServices = false;
+      eBookConfig.python3 = true;
+      eBookConfig.basecourse = 'Информатика и рачунарство за седми разред';
+      eBookConfig.runestone_version = '';
+      eBookConfig.imagesDir = '_images/';
+      eBookConfig.staticDir = '_static/';
+      if (typeof (Sk) != "undefined")
+        Sk.imgPath = eBookConfig.imagesDir;
+    </script>
 
-<script type="text/javascript">
-  eBookConfig = {};
-  eBookConfig.host = 'http://127.0.0.1:8000' ? 'http://127.0.0.1:8000' : 'http://127.0.0.1:8000';
-  eBookConfig.app = eBookConfig.host+'/runestone';
-  eBookConfig.ajaxURL = eBookConfig.app+'/ajax/';
-  eBookConfig.course = 'Информатика и рачунарство за седми разред';
-  eBookConfig.logLevel = 0;
-  eBookConfig.loginRequired = false;
-  eBookConfig.build_info = "";
-  eBookConfig.isLoggedIn = false;
-  eBookConfig.useRunestoneServices = false;
-  eBookConfig.python3 = true;
-  eBookConfig.basecourse = 'Информатика и рачунарство за седми разред';
-  eBookConfig.runestone_version = '3.1.1';
-  eBookConfig.imagesDir = '_images/';
-  eBookConfig.staticDir = '_static/';
-  if(typeof(Sk) != "undefined")
-      Sk.imgPath = eBookConfig.imagesDir;
-</script>
+  </head>
 
-<div id="fb-root"></div>
-
-
-
-  </head><body>
+  <body>
 
 
-<!-- Begin navbar -->
 
-<nav id="navbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
-
-  <div class="container">
-
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-     <img src="_static/img/logo.png" style="width:80px; height: 80px;"> 
-    </div>
-
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="margin-top: 10px; margin-left: 25px;">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="./">Petlja - Информатика и рачунарство за седми разред</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
-<div style="margin-left: 50%;margin-top: 5%;font-size: 20px;">
-  
-      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
-        <div class="sphinxsidebarwrapper">
-    <ul>
-<li class="toctree-l1"><a class="reference internal" href="предговор/index.html">1.0 Рачунарство - Увод у Pygame</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="предговор/предговор.html">1.1 Увод у Pygame</a></li>
-<li class="toctree-l2"><a class="reference internal" href="предговор/предговор.html#id1">Шта ћеш учити и шта са тим?</a></li>
-<li class="toctree-l2"><a class="reference internal" href="предговор/основна_структура_програма.html">1.2 Основна структура Pygame програма</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="Координатни систем/index.html">2.0. Рачунарство - Координатни систем</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Координатни систем/torke_liste_podsetnik.html">2.1. Подсетник на Пајтон - Торке и листе</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Координатни систем/koordinatni_sistem.html">2.2. Координатни систем</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Координатни систем/тест_координатни_систем.html">2.3. Квиз - координатни систем</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="Боје/index.html">3.0. Рачунарство - Боје</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Боје/funkcije_varijable_podsetnik.html">3.1. Подсетник на Пајтон - функције и варијабле</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Боје/Boje.html">3.2. Боје</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Боје/boje_kviz.html">3.3. Квиз боје</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="Дужи/index.html">4.0. Рачунарство - Дужи</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Дужи/duzi.html">4.1. Дужи</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Дужи/duzi_zadatak.html">4.2. Домаћи задатак</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Дужи/duzi_kviz.html">4.3. Квиз - дужи</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="Правоугаоници и елипсе/index.html">5.0. Рачунарство - Правоугаоници и елипсе</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Правоугаоници и елипсе/pravougaonici_elipse.html">5.1. Цртање облика - правоугаоници и елипсе</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Правоугаоници и елипсе/pravougaonici_elipse_zadatak.html">5.2. Домаћи задатак</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Правоугаоници и елипсе/pravougaonici_elipse_test.html">5.3. Квиз - правоугаоници и елипсе</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="Кругови и многоуглови/index.html">6.0. Рачунарство - Кругови и многоуглови</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Кругови и многоуглови/Krugovi_mnogoulgovi.html">6.1. Цртање облика - кругови и многоуглови</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Кругови и многоуглови/Krugovi_mnogouglovi_zadatak.html">6.2. Домаћи задатак</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Кругови и многоуглови/Krugovi_mnogouglovi_test.html">6.3. Квиз - кругови и многоуглови</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="Симетрично пресликане координате/index.html">7.0. Рачунарство - Симетрично пресликане координате</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Симетрично пресликане координате/simetrija.html">7.1. Симетрично пресликане координате</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Симетрично пресликане координате/simetrija_zadatak.html">7.2. Домаћи задатак</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Симетрично пресликане координате/simetrija_test.html">7. 3. Квиз - симетрија</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="Релативно задавање координата и димензија/index.html">8.0. Рачунарство - Релативно задавање координата и димензија</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Релативно задавање координата и димензија/Pajton_podsetnik_definisanje_funkcija.html">8.1. Пајтон подсетник - дефинисање функција</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Релативно задавање координата и димензија/skaliranje.html">8.2. Релативне координате и димензије</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Релативно задавање координата и димензија/zadatak_relativne_koordinate.html">8.3. Домаћи задатак</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Релативно задавање координата и димензија/relativne_koordinate_test.html">8.4. Квиз - релативне координате и димензије</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="Релативно задавање координата - утврђивање/index.html">9.0. Рачунарство - Релативно задавање координата - утврђивање</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Релативно задавање координата - утврђивање/relativne_koordinate_utvrdjivanje.html">9.1. Релативне координате утврђивање</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Релативно задавање координата - утврђивање/zadatak_relativne_koordinate_utvrdjivanje.html">9.2. Домаћи задатак</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Релативно задавање координата - утврђивање/relativne_koordinate_test2.html">9.3. Квиз - релативне координате и димензије</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="Слике и текст/index.html">10.0. Рачунарство - Слике и текст</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Слике и текст/slike.html">10.1. Слике и текст</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Слике и текст/slike_test.html">10.2. Квиз - слике и текст</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="Цртање уз помоћ петљи/index.html">11.0. Рачунарство - Цртање уз помоћ петљи</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Цртање уз помоћ петљи/pajton_podsetnik_petlje.html">11.1. Пајтон подсетник - петље</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Цртање уз помоћ петљи/petlje.html">11.2. Цртање облика помоћу петљи</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Цртање уз помоћ петљи/petlje_zadatak.html">11.3. Домаћи задатак - петље</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Цртање уз помоћ петљи/petlje_test.html">11.4. Квиз - цртање облика помоћу петљи</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="Цртање уз помоћ петљи 2/index.html">12.0. Рачунарство - Цртање уз помоћ петљи 2</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Цртање уз помоћ петљи 2/petlje2.html">12.1. Цртање облика помоћу петљи</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Цртање уз помоћ петљи 2/petlje2_zadatak.html">12.2. Домаћи задатак</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Цртање уз помоћ петљи 2/petlje2_test.html">12.3. Квиз - Понављање облика коришћењем петљи</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="Гранање/index.html">13.0. Рачунарство - Гранање</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Гранање/pajton_podsetnik_grananje.html">13.1. Пајон подсетник гранање</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Гранање/grananje.html">13.2. Гранање</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Гранање/grananje_zadatak.html">Цик-цак линија</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Гранање/grananje_test.html">13.4. Квиз - гранање</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="Угнежђене петље/index.html">14.0. Рачунарство - Угнежђене петље</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Угнежђене петље/pajton_podsetnik_ugnjezdene.html">14.1. Пајтон подсетник - угнежђене петље</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Угнежђене петље/petlje_ugnjezdene.html">14.2 Угњежђене петље</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Угнежђене петље/petlje_ugnjezdene_zadatak.html">14.3. Домаћи задатак</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Угнежђене петље/petlje_ugnjezdene_test.html">14.4. Квиз - угнежђене петље</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="Цртање уз помоћ петљи - обнављање/index.html">15.0. Рачунарство - Цртање уз помоћ петљи - обнављање</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Цртање уз помоћ петљи - обнављање/ugnjezdene_petlje_obnavljanje.html">15.1. Цртање уз помоћ петљи - обнављање</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="завршни_тест/index.html">16.0 Завршни квиз</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="завршни_тест/zavrsni_test.html">16.0. Завршни квиз</a></li>
-</ul>
-</li>
-</ul>
-</ul>
-
-        </div>
-      </div>
-  </div>
-<div class="container col-md-12" id="continue-reading"></div>
-
-<div class="container col-md-10 col-md-offset-2" id="main-content" style="margin-top: 70px;">
-  
-  <div class="section" id="pygame">
-<h1>Информатика и рачунарство за седми разред - Програмирање графике помоћу Pygame<a class="headerlink" href="#pygame" title="Permalink to this headline">¶</a></h1>
-<dl class="simple">
-<dt>Шта ће те научити:</dt><dd><ul class="simple">
-<li><p>Упознаћете се са програмирањем 2Д графике у програмском језику Python уз помоћ библиотеке PyGame.</p></li>
-<li><p>Научићете како да користите програмирање да бисте нацртали неке основне облике</p></li>
-<li><p>Научићете како да нацртате неке занимљивије елементе коришћењем петљи</p></li>
-<li><p>Научићете како да укључите слике у своје цртеже</p></li>
-<li><p>Кроз цртње и рад са 2Д графиком, продубићете своје знање о основним концептима програмирања у Пајтону и добићете прилику да на занимљив начин вежбате програмирање</p></li>
-</ul>
-</dd>
-<dt>Потребно:</dt><dd><ul class="simple">
-<li><p>Имаш инсталиран Python 3.6 или новији</p></li>
-<li><p>Познавање основа Python-а (на нивоу шестог разреда)</p></li>
-</ul>
-</dd>
-<dt>Садржај:</dt><dd><ul class="simple">
-<li><p>Пре него што почнемо</p></li>
-<li><p>Час 1 - Координатни систем и боје</p></li>
-</ul>
-</dd>
-<dt>Додатни линкови:</dt><dd><ul class="simple">
-<li><p><a class="reference external" href="https://petljamediastorage.blob.core.windows.net/root/Media/Default/Help/Uputstvo%20Python%20pygame.pdf">Упутство за инсталацију Пајтона и библиотеке Пајгејм</a></p></li>
-<li><p><a class="reference external" href="https://petljamediastorage.blob.core.windows.net/root/Media/Default/Help/cheatsheet.pdf">Синтаксни подсетник за Пајтон</a></p></li>
-<li><p><a class="reference external" href="https://algora.petlja.org/">Наш форум - Алгора</a></p></li>
-</ul>
-</dd>
-</dl>
-<div class="toctree-wrapper compound">
-</div>
-</div>
-
-
-  
-      <div class="col-md-12">
-<ul class="pager">
-        <li id="relations-next" title='Next chapter - 1.0 Рачунарство - Увод у Pygame' data-toggle="tooltip"><a href="предговор/index.html"><i class="fas fa-arrow-right"></i></a></li>
-</ul>
-
-<!-- <ul class="pager"> -->
-    <!-- -->
-    <!-- -->
-        <!-- <li id="relations-next" title='Следеће поглавље - 1.0 Рачунарство - Увод у Pygame' data-toggle="tooltip"><a href="предговор/index.html">Следеће поглавље</a></li> -->
-    <!-- -->
-<!-- </ul> -->
-
-<script type="text/javascript">
-
-  $('#relations-prev').tooltip({'placement':'right', 'selector': '', 'delay': { show: 100, hide: 50}});
-  $('#relations-next').tooltip({'placement':'left', 'selector': '', 'delay': { show: 100, hide: 50}});
-
-</script>
-</div>
-  
-</div>
-<footer class="footer col-md-12">
-    <div class="container">
-        <div class="text-center">
-            <hr>
-            <p class="text-muted">
-                <span class="pull-left">&copy; 2019 Petlja (Created using  <a href="https://pypi.org/project/Sphinx/">Swinx</a>, <a href="http://runestoneinteractive.org/">RunestoneComponents</a> and <a href="https://github.com/Petlja/PetljaDoc">PetljaDoc</a>)</span>
-            </p>
+<div id="navbar" class="content-header">
+  <div class="right-side-nav">
+    
+    <div id="usefulLinksToggle" class="useful-links-toggle">
+        <a class="dropdown-toggle dropdown-toggle-burger" role="button" href="#" id="usefulLinksDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-bars fa-2x"></i>
+        </a>
+        <div class="dropdown-menu dropdown-nav-links shadow-lg" aria-labelledby="usefulLinksDropdown" x-placement="bottom-start" style="position: absolute; transform: translate3d(-55px, 32px, 0px); top: 0px; left: 0px; will-change: transform;">
+          <div class="links-title"> Корисни линкови</div>
+          <div class="useful-link">
+            <a href="https://petljamediastorage.blob.core.windows.net/root/Media/Default/Help/Uputstvo%20Python%20pygame.pdf" target="_blank">Упутство за инсталацију Пајтона и библиотеке Пајгејм</a></div>
+          <div class="useful-link">
+            <a href="https://petljamediastorage.blob.core.windows.net/root/Media/Default/Help/cheatsheet.pdf" target="_blank">Синтаксни подсетник за Пајтон</a></div>
+          <div class="useful-link">
+            <a href="https://algora.petlja.org/" target="_blank">Наш форум - Алгора</a></div>
+          
         </div>
     </div>
-</footer>
+
+    
+</div>
+
+<div class="left-side-nav">
+  <div class="course-logo-nav">
+      <a target="_blank" href="https://petlja.org">
+          <img src="_static/img/petlja-logo-wt.svg" alt="petlja.org" id="lightPetljaLogo">
+      </a>
+  </div>
+  <div class="course-logo-nav-kabinet">
+      <a target="_blank" href="https://petlja.org/net.kabinet">
+          <img src="_static/img/netkabinet-logo-strelica-wt.svg" alt="petlja.org" id="lightNetKabinetLogo">
+      </a>
+  </div>
+</div>
+
+
+</div>
 
 
 
-<script type="text/javascript">
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-32029811-1']);
-  _gaq.push(['_trackPageview']);
 
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-</script>
+<div class="course-description">
+    <div class="course-info">
+        <div class="course-logo">
+            <img class="course-logo-img" src="_static/images/logo.svg">
+        </div>
+                    <a class="course-start " id="startCourseAnonymously" href="./предговор/предговор.html">
+                        Погледај курс одмах
+                    </a>
+    </div>
+    <div class="course-shortdescription">
+        <h2> Програмирање графике помоћу Пајгејм </h2>
+        <div class="course-description-additionalinfo">
+           Овај курс је намењен ученицима 7. разреда основне школе за предмет Информатика и рачунарство у току другог полугодишта. 
+У оквиру овог курса детаљно je обрађенa наставнa темa Рачунарство кроз демонстрацију текстуалног програмирања применом 
+програмског језика Пајтон и његове библиотеке Пајгејм. Курс у потпуности прати програм наставе и учења за овај предмет. 
+Курс је подељен по часовима. Материјал намењен за један школски час се састоји од лекције, дела са питалицама, 
+којима се ученицима скреће пажња на најбитније делове из садржаја лекције и кратких квизова, 
+који имају за циљ проверу усвојеног градива.
 
+Поред рада у школи, курс се може пролазити и самостално.
+ 
+<p>
+<a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.sr_LATN">
+<img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a>
+<br />Овај курс Фондација Петља објавила je под лиценцом <a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.sr_LATN">Creative Commons Autorstvo 4.0 Međunarodna Licenca (CC BY 4.0)</a>.
+</p> 
+    
+        </div>
+    </div>
+</div>
+<div id="errors" style="width: 60%;"></div>
+<div class="studio-course-content">
+    <div class="course-requirements homepage-content">
+        <div class="mb-3">
+            <h3> Шта ћеш научити </h3>
+                <ul class="simple" style="max-height: 298px;">
+                    <li> Упознаћеш се са програмирањем 2Д графике у програмском језику Python уз помоћ библиотеке PyGame.</li>
+                    <li> Научићеш како да користите програмирање да бисте нацртали неке основне облике</li>
+                    <li> Научићеш како да нацртате неке занимљивије елементе коришћењем петљи</li>
+                    <li> Научићеш како да укључите слике у своје цртеже</li>
+                    <li> Кроз цртње и рад са 2Д графиком, продубићеш своје знање о основним концептима програмирања у Пајтону и добићете прилику да на занимљив начин вежбате програмирање</li>
+                    
+                </ul>
+        <div class="see-more-reqs" id="seeMoreReqs">прикажи више</div><div class="see-less-reqs" id="seeLessReqs">мање</div></div>
+        <div class="section">
+            <h3>Потребне ствари за курс</h3>
+            <ul class="simple">
+                <li> Имаш инсталиран Python 3.6 или новији</li>
+                <li> Познавање основа Python-а (на нивоу шестог разреда)</li>
+                
+            </ul>
+        </div>
+    </div>
+<div class="course-tableofcontent">
+    <h3> Садржај </h3>
+    
+    <div>
+    <label>1. Рачунарство - Увод у Pygame</label>
+    <span>
+    </span>     
+    <span><i class="fas fa-file-alt"></i> 2 лекција</span> 
+    </div>
+    
+    <div>
+    <label>2. Координатни систем</label>
+    <span>
+    </span>     
+    <span><i class="fas fa-file-alt"></i> 3 лекција</span> 
+    </div>
+    
+    <div>
+    <label>3. Боје</label>
+    <span>
+    </span>     
+    <span><i class="fas fa-file-alt"></i> 3 лекција</span> 
+    </div>
+    
+    <div>
+    <label>4. Дужи</label>
+    <span>
+    </span>     
+    <span><i class="fas fa-file-alt"></i> 3 лекција</span> 
+    </div>
+    
+    <div>
+    <label>5. Правоугаоници и елипсе</label>
+    <span>
+    </span>     
+    <span><i class="fas fa-file-alt"></i> 3 лекција</span> 
+    </div>
+    
+    <div>
+    <label>6. Кругови и многоуглови</label>
+    <span>
+    </span>     
+    <span><i class="fas fa-file-alt"></i> 3 лекција</span> 
+    </div>
+    
+    <div>
+    <label>7. Симетрично пресликане координате</label>
+    <span>
+    </span>     
+    <span><i class="fas fa-file-alt"></i> 3 лекција</span> 
+    </div>
+    
+    <div>
+    <label>8. Релативно задавање координата и димензија</label>
+    <span>
+    </span>     
+    <span><i class="fas fa-file-alt"></i> 4 лекција</span> 
+    </div>
+    
+    <div>
+    <label>9. Релативно задавање координата - утврђивање</label>
+    <span>
+    </span>     
+    <span><i class="fas fa-file-alt"></i> 3 лекција</span> 
+    </div>
+    
+    <div>
+    <label>10. Слике и текст</label>
+    <span>
+    </span>     
+    <span><i class="fas fa-file-alt"></i> 2 лекција</span> 
+    </div>
+    
+    <div>
+    <label>11. Цртање уз помоћ петљи</label>
+    <span>
+    </span>     
+    <span><i class="fas fa-file-alt"></i> 4 лекција</span> 
+    </div>
+    
+    <div>
+    <label>12. Цртање уз помоћ петљи 2</label>
+    <span>
+    </span>     
+    <span><i class="fas fa-file-alt"></i> 3 лекција</span> 
+    </div>
+    
+    <div>
+    <label>13. Гранање</label>
+    <span>
+    </span>     
+    <span><i class="fas fa-file-alt"></i> 4 лекција</span> 
+    </div>
+    
+    <div>
+    <label>14. Угнежђене петље</label>
+    <span>
+    </span>     
+    <span><i class="fas fa-file-alt"></i> 4 лекција</span> 
+    </div>
+    
+    <div>
+    <label>15. Цртање уз помоћ петљи - обнављање</label>
+    <span>
+    </span>     
+    <span><i class="fas fa-file-alt"></i> 1 лекција</span> 
+    </div>
+    
+    <div>
+    <label>16. Завршни квиз</label>
+    <span>
+    </span>     
+    <span><i class="fas fa-file-alt"></i> 1 лекција</span> 
+    </div>
+    </div>
 
 
   </body>

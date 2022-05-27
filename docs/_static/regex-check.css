@@ -1,0 +1,156 @@
+.regex-check{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: auto;
+    overflow: hidden;
+    width: 100%;
+}
+
+.blue:nth-child(2n+1){
+    background-color: rgb(178, 212, 224);
+}
+
+.blue:nth-child(2n){
+    background-color: rgb(9, 161, 212);
+}
+
+.regex-input{
+    border: 1px solid black;
+    border-radius: 3px;
+    box-sizing: border-box;
+    font-family: inherit;
+    font-size: 19px;
+    line-height: 19px;
+    outline: 0;
+    padding: 10px 10px 0px;
+    width: 100%;
+    resize: none;
+    height: 40px;
+}
+
+.test-text{
+    position: relative;
+}
+
+.regex-text{
+    width: calc(100% - 4px);
+    position:absolute;
+    top:0%;
+    height: 500px;
+    pointer-events: none;
+    font-family: inherit;
+    font-size: 20px !important;
+    line-height: 20px !important;
+    word-wrap: break-word;
+    padding-left: 4px;
+    padding-top: 5px;
+    white-space: pre-wrap;
+    tab-size: 1.6em;
+}
+
+.regex-text span{
+    font-size: 20px;
+    line-height: 20px;
+}
+
+.hidden-ta{
+    color:transparent;
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 3px;
+    box-sizing: border-box;
+    font-family: inherit;
+    font-size: 20px;
+    line-height: 20px;
+    outline: 0;
+    width: 100%;
+    height: 500px;
+    resize: none;
+    caret-color: black;
+}
+
+.hidden-ta::selection{
+    background-color: #CBE69E;
+}
+
+
+.title{
+
+    color: #344f71;
+    font-weight: 600;
+    margin: 0 0 7px;
+    padding: 0 0 4px;
+    text-transform: uppercase;
+}
+
+.editor-wrapper{
+    margin-top: 20px;
+}
+
+.flags{
+    width: 30%;
+    position: relative;
+    float: right;
+    border-bottom: 1px solid #344f71;
+}
+
+.flag-markers{
+    position: relative;
+    float: right;
+    letter-spacing: 5px;
+}
+
+.cheat-sheet{
+    position:  absolute;
+    display: none;
+}
+
+.sol-button{
+    border: 1px solid black;
+    position: relative;
+    float: right;
+    width: 30%;
+    text-align: center;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    line-height: 25px;
+    cursor: pointer;
+}
+
+.test-button{
+    border: 1px solid black;
+    position: relative;
+    float: right;
+    width: 30%;
+    text-align: center;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    line-height: 25px;
+    cursor: pointer;
+    margin-left: 10px !important;
+}
+
+.eol{
+    width: 4px;
+    height: 17px;
+    display: inline-block;
+    position: relative;
+    bottom: -1px;
+}
+
+.correct{
+    color:#18bc9c !important; 
+}
+
+.incorrect{
+    color: red !important;
+}
+
+.msg-testing{
+    width: 30%;
+    float:left;
+    margin-top: 10px;
+    font-size: 20px !important;
+}

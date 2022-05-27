@@ -378,13 +378,29 @@ MultipleChoice.prototype.getSubmittedOpts = function () {
         if (buttonObjs[i].checked) {
             given = buttonObjs[i].value;
             this.givenArray.push(given);
-            this.feedbackString += '<li value="' + (i + 1) + '">' + this.feedbackList[i] + "</li>";
             this.givenlog += given + ",";
-            this.singlefeedback = this.feedbackList[i];
         }
     }
     this.givenArray.sort();
-};
+    this.scoreMCMASubmission()
+    if (this.feedbackList.every(feedback => feedback == "") && this.correct){
+        this.feedbackString += '<li value="1">' + $.i18n("msg_mchoice_correct_answer") + "</li>"
+    }
+        if (this.feedbackList.every(feedback => feedback == "") && !this.correct){
+        this.feedbackString += '<li value="1">' + $.i18n("msg_mchoice_incorrect_answer") + "</li>"
+    }
+    for (var i = 0; i < buttonObjs.length; i++) {
+        if (buttonObjs[i].checked) {
+            if(this.feedbackList[i] !== "" && ((!this.correctIndexList.includes(i) && !this.correct) || (this.correctIndexList.includes(i) && this.correct)))
+                this.feedbackString += '<li value="' + (i + 1) + '">' + this.feedbackList[i] + "</li>"
+            this.singlefeedback = this.feedbackList[i];
+        }
+    }
+    if (this.feedbackString == "")
+        this.feedbackString = this.correct ?  $.i18n("msg_mchoice_correct_answer") : $.i18n("msg_mchoice_incorrect_answer");
+    if (this.singlefeedback == "")
+        this.singlefeedback = this.correct ?  $.i18n("msg_mchoice_correct_answer") : $.i18n("msg_mchoice_incorrect_answer");
+}
 
 MultipleChoice.prototype.scoreMCMASubmission = function () {
     this.correctCount = 0;
@@ -428,13 +444,14 @@ MultipleChoice.prototype.renderMCMAFeedBack = function () {
     var feedbackText = this.feedbackString;
 
     if (this.correct) {
-        $(this.feedBackDiv).html($.i18n("msg_mchoice_correct_answer"));
+        $(this.feedBackDiv).html(feedbackText);
         $(this.feedBackDiv).attr("class", "alert alert-success");
     } else {
-        $(this.feedBackDiv).html($.i18n("msg_mchoice_incorrect_answer"));
+        $(this.feedBackDiv).html(feedbackText);
         $(this.feedBackDiv).attr("class", "alert alert-danger");
     }
 };
+
 
 MultipleChoice.prototype.processMCMFSubmission = function (logFlag) {
     // Called when the submit button is clicked

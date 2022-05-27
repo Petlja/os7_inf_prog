@@ -1,0 +1,145 @@
+.modal-sim{
+    margin: auto;
+    width: min-content;
+}
+
+.pycode{
+    display: flex;
+}
+
+.variable-label {
+    margin-left: 10px;
+}
+
+.variable-input {
+    width: 70px;
+    margin-left: 5px;
+}
+
+.variable-input::-webkit-inner-spin-button, 
+.variable-input::-webkit-outer-spin-button {  
+
+   opacity: 1;
+
+}
+
+.sim-canvas {
+    border: 1px solid lightgray;
+    margin-top: 10px;
+}
+
+.modal-lg {
+    max-width: 80%;
+}
+
+.editor{
+    width:500px;
+    height: auto;
+    border-radius: 2px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    border-top: 5px solid #18bc9c;
+    padding-top:10px;
+}
+
+.btn-py{
+    margin:auto;
+    display: flex;
+    width: max-content;
+}
+.btn-reset{
+    position: relative;
+    width: max-content;
+    float:right;
+    opacity: 0;
+}
+.btn-reset.show {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+  }
+
+
+.control-py{
+    width: 100%;
+    margin-bottom: 5px;
+    display: flex;
+}
+
+.out{
+    border: 1px solid #18bc9c;
+    margin-bottom: 15px;
+    width: 100%;
+    background: white;
+    min-width: 780px;
+    height: 75px;
+}
+.out:focus{
+    border: 1px solid #18bc9c;
+}
+
+.err{
+    border: 1px solid red;
+    width: 100%;
+    padding-bottom: 5px;
+    background: white;
+    min-width: 780px;
+    height: 75px;
+}
+.err:focus{
+    border: 1px solid red
+}
+
+.modal {
+    position: fixed !important; 
+    top: 0 !important;
+    left: 0!important;
+    z-index: 1050!important;
+    display: none!important;
+    width: 100%!important;
+    height: 100%!important;
+    overflow: hidden!important;
+    outline: 0!important;
+  }
+  .modal.fade .modal-dialog {
+    transition:-webkit-transform .3s ease-out!important;
+    transition:transform .3s ease-out!important;
+    transition:transform .3s ease-out,-webkit-transform .3s ease-out!important;
+    -webkit-transform:translate(0,-25%)!important;
+    transform:translate(0,-25%)!important
+   }
+   .modal.show .modal-dialog {
+    -webkit-transform:translate(0,0)!important;
+    transform:translate(0,0)!important
+   }
+   .modal-dialog-centered {
+    display:-webkit-box!important;
+    display:-ms-flexbox!important;
+    display:flex!important;
+    -webkit-box-align:center!important;
+    -ms-flex-align:center!important;
+    align-items:center!important;
+    min-height:calc(100% - (.5rem * 2))!important;
+   }
+.modal-backdrop
+{
+    opacity:0.5 !important;
+}
+
+body.modal-open {
+    overflow: visible;
+}
+
+.modal-body-py{
+    width: max-content !important;
+}
+.modal-content-py{
+    width: max-content !important;
+}
+
+
+@media only screen and (max-width: 900px) {
+    .btn-success {
+        width: 100%;
+        margin-bottom: 5px !important;
+        margin-right: 10px;
+    }
+}

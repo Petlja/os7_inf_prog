@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="sr-Cyrl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>7. 3. Квиз - симетрија</title>
+    <link rel="stylesheet" type="text/css" href="../_static/activecode.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/codemirror.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/clickable.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pytutor.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/modal-basic.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/datafile.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/dragndrop.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/fitb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/matrixeq.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/parsons.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/lib/prettify.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/poll.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/showEval.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/tabbedstuff.css" />
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/video.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/webgldemo.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/webglinteractive.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/karel.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/notes.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/simanim.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pycode.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/p5js.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/gallery.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/dbDirective.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/associations.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/regex-check.css" />
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" type="text/css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-4.0.0-dist/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/flatly.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/petlja-course.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/nbstyle.css" type="text/css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/runestonebase.js"></script>
+    <script type="text/javascript" src="../_static/skulpt.min.js"></script>
+    <script type="text/javascript" src="../_static/skulpt-stdlib.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    <script type="text/javascript" src="../_static/jquery.highlight.js"></script>
+    <script type="text/javascript" src="../_static/bookfuncs.js"></script>
+    <script type="text/javascript" src="../_static/codemirror.js"></script>
+    <script type="text/javascript" src="../_static/xml.js"></script>
+    <script type="text/javascript" src="../_static/css.js"></script>
+    <script type="text/javascript" src="../_static/python.js"></script>
+    <script type="text/javascript" src="../_static/htmlmixed.js"></script>
+    <script type="text/javascript" src="../_static/javascript.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/CLDRPluralRuleParser.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.messagestore.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.fallbacks.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.language.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.parser.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.bidi.js"></script>
+    <script type="text/javascript" src="../_static/activecode-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/activecode-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/activecode.js"></script>
+    <script type="text/javascript" src="../_static/clike.js"></script>
+    <script type="text/javascript" src="../_static/timed_activecode.js"></script>
+    <script type="text/javascript" src="../_static/animationbase.js"></script>
+    <script type="text/javascript" src="../_static/mchoice.js"></script>
+    <script type="text/javascript" src="../_static/timedmc.js"></script>
+    <script type="text/javascript" src="../_static/timed.js"></script>
+    <script type="text/javascript" src="../_static/mchoice-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/mchoice-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/clickable.js"></script>
+    <script type="text/javascript" src="../_static/timedclickable.js"></script>
+    <script type="text/javascript" src="../_static/d3.v2.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery.ba-bbq.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery.jsPlumb-1.3.10-all-min.js"></script>
+    <script type="text/javascript" src="../_static/pytutor.js"></script>
+    <script type="text/javascript" src="../_static/codelens.js"></script>
+    <script type="text/javascript" src="../_static/skulpt.min.js"></script>
+    <script type="text/javascript" src="../_static/skulpt-stdlib.js"></script>
+    <script type="text/javascript" src="../_static/datafile.js"></script>
+    <script type="text/javascript" src="../_static/dragndrop.js"></script>
+    <script type="text/javascript" src="../_static/timeddnd.js"></script>
+    <script type="text/javascript" src="../_static/dragndrop-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/dragndrop-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/fitb.js"></script>
+    <script type="text/javascript" src="../_static/timedfitb.js"></script>
+    <script type="text/javascript" src="../_static/fitb-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/fitb-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/matrixeq.js"></script>
+    <script type="text/javascript" src="../_static/lib/prettify.js"></script>
+    <script type="text/javascript" src="../_static/lib/hammer.min.js"></script>
+    <script type="text/javascript" src="../_static/parsons.js"></script>
+    <script type="text/javascript" src="../_static/parsons-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/parsons-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/timedparsons.js"></script>
+    <script type="text/javascript" src="../_static/poll.js"></script>
+    <script type="text/javascript" src="../_static/reveal.js"></script>
+    <script type="text/javascript" src="../_static/shortanswer.js"></script>
+    <script type="text/javascript" src="../_static/timed_shortanswer.js"></script>
+    <script type="text/javascript" src="../_static/showEval.js"></script>
+    <script type="text/javascript" src="../_static/tabbedstuff.js"></script>
+    <script type="text/javascript" src="../_static/runestonevideo.js"></script>
+    <script type="text/javascript" src="../_static/webglinteractive.js"></script>
+    <script type="text/javascript" src="../_static/FileSaver.min.js"></script>
+    <script type="text/javascript" src="../_static/Blob.js"></script>
+    <script type="text/javascript" src="../_static/karelCorner.js"></script>
+    <script type="text/javascript" src="../_static/karelRobot.js"></script>
+    <script type="text/javascript" src="../_static/karelWorld.js"></script>
+    <script type="text/javascript" src="../_static/karelRobotDrawer.js"></script>
+    <script type="text/javascript" src="../_static/karelUI.js"></script>
+    <script type="text/javascript" src="../_static/karel.js"></script>
+    <script type="text/javascript" src="../_static/karel-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/karel-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/notes.js"></script>
+    <script type="text/javascript" src="../_static/pygamelib-init.js"></script>
+    <script type="text/javascript" src="../_static/blockly/blockly_compressed.js"></script>
+    <script type="text/javascript" src="../_static/blockly/blocks_compressed.js"></script>
+    <script type="text/javascript" src="../_static/blockly/python_compressed.js"></script>
+    <script type="text/javascript" src="../_static/blockly/msg-sr.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/utilities.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/python_errors.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/ast_node_visitor.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/abstract_interpreter.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/pytifa.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/abstract_interpreter_definitions.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/python_to_blockly.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/imported.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/blocks/class.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/blocks/comment.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/blocks/comprehensions.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/blocks/dict.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/blocks/if.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/blocks/io.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/blocks/lists.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/blocks/sets.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/blocks/loops.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/blocks/parking.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/blocks/tuple.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/blocks/turtles.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/blocks/text.js"></script>
+    <script type="text/javascript" src="../_static/blockpy-modal.js"></script>
+    <script type="text/javascript" src="../_static/simanim.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/pyodide/v0.16.1/full/pyodide.js"></script>
+    <script type="text/javascript" src="../_static/pycode.js"></script>
+    <script type="text/javascript" src="//toolness.github.io/p5.js-widget/p5-widget.js"></script>
+    <script type="text/javascript" src="../_static/p5js.js"></script>
+    <script type="text/javascript" src="../_static/gallery.js"></script>
+    <script type="text/javascript" src="../_static/dbDirective.js"></script>
+    <script type="text/javascript" src="../_static/sql.js"></script>
+    <script type="text/javascript" src="../_static/associations.js"></script>
+    <script type="text/javascript" src="../_static/associations-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/associations-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/regex-check.js"></script>
+    <script type="text/javascript" src="../_static/regex-check-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/regex-check-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/translations.js"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="../_static/jquery-ui-1.10.3.custom.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery-fix.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-4.0.0-dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
+    <script type="text/javascript" src="../_static/waypoints.min.js"></script>
+    <script type="text/javascript" src="../_static/rangy-core.js"></script>
+    <script type="text/javascript" src="../_static/rangy-textrange.js"></script>
+    <script type="text/javascript" src="../_static/rangy-cssclassapplier.js"></script>
+    <script type="text/javascript" src="../_static/user-highlights.js"></script>
+    <script type="text/javascript" src="../_static/jquery.idle-timer.js"></script>
+    <script type="text/javascript" src="../_static/processing-1.4.1.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery.hotkey.js"></script>
+    <script type="text/javascript" src="../_static/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="../_static/course-errors.js"></script>
+    <script type="text/javascript" src="../_static/petlja.js"></script>
+    <script type="text/javascript" src="../_static/require.js"></script>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <link rel="shortcut icon" href="../_static/favicon.ico" type="image/ico" />
+    <script type="text/javascript">
+      eBookConfig = {};
+      eBookConfig.host = 'http://127.0.0.1:8000' ? 'http://127.0.0.1:8000' : 'http://127.0.0.1:8000';
+      eBookConfig.app = eBookConfig.host + '/runestone';
+      eBookConfig.ajaxURL = eBookConfig.app + '/ajax/';
+      eBookConfig.course = 'Информатика и рачунарство за седми разред';
+      eBookConfig.logLevel = '0';
+      eBookConfig.loginRequired = 'false';
+      eBookConfig.build_info = "";
+      eBookConfig.isLoggedIn = false;
+      eBookConfig.useRunestoneServices = false;
+      eBookConfig.python3 = true;
+      eBookConfig.basecourse = 'Информатика и рачунарство за седми разред';
+      eBookConfig.runestone_version = '';
+      eBookConfig.imagesDir = '../_images/';
+      eBookConfig.staticDir = '../_static/';
+      if (typeof (Sk) != "undefined")
+        Sk.imgPath = eBookConfig.imagesDir;
+    </script>
+
+  </head>
+
+  <body>
+
+
+
+<div id="navbar" class="content-header">
+  <div class="right-side-nav">
+    
+    <div id="usefulLinksToggle" class="useful-links-toggle">
+        <a class="dropdown-toggle dropdown-toggle-burger" role="button" href="#" id="usefulLinksDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-bars fa-2x"></i>
+        </a>
+        <div class="dropdown-menu dropdown-nav-links shadow-lg" aria-labelledby="usefulLinksDropdown" x-placement="bottom-start" style="position: absolute; transform: translate3d(-55px, 32px, 0px); top: 0px; left: 0px; will-change: transform;">
+          <div class="links-title"> Корисни линкови</div>
+          <div class="useful-link">
+            <a href="https://petljamediastorage.blob.core.windows.net/root/Media/Default/Help/Uputstvo%20Python%20pygame.pdf" target="_blank">Упутство за инсталацију Пајтона и библиотеке Пајгејм</a></div>
+          <div class="useful-link">
+            <a href="https://petljamediastorage.blob.core.windows.net/root/Media/Default/Help/cheatsheet.pdf" target="_blank">Синтаксни подсетник за Пајтон</a></div>
+          <div class="useful-link">
+            <a href="https://algora.petlja.org/" target="_blank">Наш форум - Алгора</a></div>
+          
+        </div>
+    </div>
+
+    
+</div>
+
+<div class="left-side-nav">
+  <div class="course-logo-nav">
+      <a target="_blank" href="https://petlja.org">
+          <img src="../_static/img/petlja-logo-wt.svg" alt="petlja.org" id="lightPetljaLogo">
+      </a>
+  </div>
+  <div class="course-logo-nav-kabinet">
+      <a target="_blank" href="https://petlja.org/net.kabinet">
+          <img src="../_static/img/netkabinet-logo-strelica-wt.svg" alt="petlja.org" id="lightNetKabinetLogo">
+      </a>
+  </div>
+</div>
+
+
+<div class="content-header-label" id = "content-header-label" href="../">Програмирање графике помоћу Пајгејм</div>
+
+</div>
+
+
+
+
+<div class="petljaCourseContainer">
+
+<div class="petljaCourseContent">
+  
+           <div class="tableOfContent">
+            <h5> Садржај </h5>
+            </div>
+           <div>
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-предговор>
+                    <h5>1. Рачунарство - Увод у Pygame</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../предговор/предговор.html><div class="studioLecture" id=activity-предговор><i class="fas fa-file-alt activity-icon"></i>1.1. Увод у Pygame</div></a>
+                <a href=../предговор/основна_структура_програма.html><div class="studioLecture" id=activity-основна_структура_програма><i class="fas fa-file-alt activity-icon"></i>1.2. Основна структура Пајгејм програма</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-Координатни%20систем>
+                    <h5>2. Координатни систем</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../Координатни%20систем/torke_liste_podsetnik.html><div class="studioLecture" id=activity-torke_liste_podsetnik><i class="fas fa-file-alt activity-icon"></i>2.1. Подсетник на Пајтон - Торке и листе</div></a>
+                <a href=../Координатни%20систем/koordinatni_sistem.html><div class="studioLecture" id=activity-koordinatni_sistem><i class="fas fa-file-alt activity-icon"></i>2.2. Координатни систем</div></a>
+                <a href=../Координатни%20систем/тест_координатни_систем.html><div class="studioLecture" id=activity-тест_координатни_систем><i class="far fa-question-circle activity-icon"></i>2.3. Квиз - координатни систем</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-Боје>
+                    <h5>3. Боје</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../Боје/funkcije_varijable_podsetnik.html><div class="studioLecture" id=activity-funkcije_varijable_podsetnik><i class="fas fa-file-alt activity-icon"></i>3.1. Подсетник на Пајтон - функције и варијабле</div></a>
+                <a href=../Боје/Boje.html><div class="studioLecture" id=activity-Boje><i class="fas fa-file-alt activity-icon"></i>3.2. Боје</div></a>
+                <a href=../Боје/boje_kviz.html><div class="studioLecture" id=activity-boje_kviz><i class="far fa-question-circle activity-icon"></i>3.3. Квиз боје</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-Дужи>
+                    <h5>4. Дужи</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../Дужи/duzi.html><div class="studioLecture" id=activity-duzi><i class="fas fa-file-alt activity-icon"></i>4.1. Дужи</div></a>
+                <a href=../Дужи/duzi_zadatak.html><div class="studioLecture" id=activity-duzi_zadatak><i class="fas fa-file-alt activity-icon"></i>4.2. Домаћи задатак</div></a>
+                <a href=../Дужи/duzi_kviz.html><div class="studioLecture" id=activity-duzi_kviz><i class="far fa-question-circle activity-icon"></i>4.3. Квиз - дужи</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-Правоугаоници%20и%20елипсе>
+                    <h5>5. Правоугаоници и елипсе</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../Правоугаоници%20и%20елипсе/pravougaonici_elipse.html><div class="studioLecture" id=activity-pravougaonici_elipse><i class="fas fa-file-alt activity-icon"></i>5.1. Цртање облика - правоугаоници и елипсе</div></a>
+                <a href=../Правоугаоници%20и%20елипсе/pravougaonici_elipse_zadatak.html><div class="studioLecture" id=activity-pravougaonici_elipse_zadatak><i class="fas fa-file-alt activity-icon"></i>5.2. Домаћи задатак</div></a>
+                <a href=../Правоугаоници%20и%20елипсе/pravougaonici_elipse_test.html><div class="studioLecture" id=activity-pravougaonici_elipse_test><i class="far fa-question-circle activity-icon"></i>5.3. Квиз - правоугаоници и елипсе</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-Кругови%20и%20многоуглови>
+                    <h5>6. Кругови и многоуглови</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../Кругови%20и%20многоуглови/Krugovi_mnogoulgovi.html><div class="studioLecture" id=activity-Krugovi_mnogoulgovi><i class="fas fa-file-alt activity-icon"></i>6.1. Цртање облика - кругови и многоуглови</div></a>
+                <a href=../Кругови%20и%20многоуглови/Krugovi_mnogouglovi_zadatak.html><div class="studioLecture" id=activity-Krugovi_mnogouglovi_zadatak><i class="fas fa-file-alt activity-icon"></i>6.2. Домаћи задатак</div></a>
+                <a href=../Кругови%20и%20многоуглови/Krugovi_mnogouglovi_test.html><div class="studioLecture" id=activity-Krugovi_mnogouglovi_test><i class="far fa-question-circle activity-icon"></i>6.3. Квиз - кругови и многоуглови</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-Симетрично%20пресликане%20координате>
+                    <h5>7. Симетрично пресликане координате</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../Симетрично%20пресликане%20координате/simetrija.html><div class="studioLecture" id=activity-simetrija><i class="fas fa-file-alt activity-icon"></i>7.1. Симетрично пресликане координате</div></a>
+                <a href=../Симетрично%20пресликане%20координате/simetrija_zadatak.html><div class="studioLecture" id=activity-simetrija_zadatak><i class="fas fa-file-alt activity-icon"></i>7.2. Домаћи задатак</div></a>
+                <a href=../Симетрично%20пресликане%20координате/simetrija_test.html><div class="studioLecture" id=activity-simetrija_test><i class="far fa-question-circle activity-icon"></i>Квиз - симетрија</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-Релативно%20задавање%20координата%20и%20димензија>
+                    <h5>8. Релативно задавање координата и димензија</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../Релативно%20задавање%20координата%20и%20димензија/Pajton_podsetnik_definisanje_funkcija.html><div class="studioLecture" id=activity-Pajton_podsetnik_definisanje_funkcija><i class="fas fa-file-alt activity-icon"></i>8.1. Пајтон подсетник - дефинисање функција</div></a>
+                <a href=../Релативно%20задавање%20координата%20и%20димензија/skaliranje.html><div class="studioLecture" id=activity-skaliranje><i class="fas fa-file-alt activity-icon"></i>8.2. Релативне координате и димензије</div></a>
+                <a href=../Релативно%20задавање%20координата%20и%20димензија/zadatak_relativne_koordinate.html><div class="studioLecture" id=activity-zadatak_relativne_koordinate><i class="fas fa-file-alt activity-icon"></i>8.3. Домаћи задатак</div></a>
+                <a href=../Релативно%20задавање%20координата%20и%20димензија/relativne_koordinate_test.html><div class="studioLecture" id=activity-relativne_koordinate_test><i class="far fa-question-circle activity-icon"></i>8.4. Квиз - релативне координате и димензије</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-Релативно%20задавање%20координата%20-%20утврђивање>
+                    <h5>9. Релативно задавање координата - утврђивање</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../Релативно%20задавање%20координата%20-%20утврђивање/relativne_koordinate_utvrdjivanje.html><div class="studioLecture" id=activity-relativne_koordinate_utvrdjivanje><i class="fas fa-file-alt activity-icon"></i>9.1. Релативне координате утврђивање</div></a>
+                <a href=../Релативно%20задавање%20координата%20-%20утврђивање/zadatak_relativne_koordinate_utvrdjivanje.html><div class="studioLecture" id=activity-zadatak_relativne_koordinate_utvrdjivanje><i class="fas fa-file-alt activity-icon"></i>9.2. Домаћи задатак</div></a>
+                <a href=../Релативно%20задавање%20координата%20-%20утврђивање/relativne_koordinate_test2.html><div class="studioLecture" id=activity-relativne_koordinate_test2><i class="far fa-question-circle activity-icon"></i>9.3. Квиз - релативне координате и димензије</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-Слике%20и%20текст>
+                    <h5>10. Слике и текст</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../Слике%20и%20текст/slike.html><div class="studioLecture" id=activity-slike><i class="fas fa-file-alt activity-icon"></i>10.1. Слике и текст</div></a>
+                <a href=../Слике%20и%20текст/slike_test.html><div class="studioLecture" id=activity-slike_test><i class="far fa-question-circle activity-icon"></i>10.2. Квиз - слике и текст</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-Цртање%20уз%20помоћ%20петљи>
+                    <h5>11. Цртање уз помоћ петљи</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../Цртање%20уз%20помоћ%20петљи/pajton_podsetnik_petlje.html><div class="studioLecture" id=activity-pajton_podsetnik_petlje><i class="fas fa-file-alt activity-icon"></i>11.1. Пајтон подсетник - петље</div></a>
+                <a href=../Цртање%20уз%20помоћ%20петљи/petlje.html><div class="studioLecture" id=activity-petlje><i class="fas fa-file-alt activity-icon"></i>11.2. Цртање облика помоћу петљи</div></a>
+                <a href=../Цртање%20уз%20помоћ%20петљи/petlje_zadatak.html><div class="studioLecture" id=activity-petlje_zadatak><i class="fas fa-file-alt activity-icon"></i>11.3. Домаћи задатак - петље</div></a>
+                <a href=../Цртање%20уз%20помоћ%20петљи/petlje_test.html><div class="studioLecture" id=activity-petlje_test><i class="far fa-question-circle activity-icon"></i>11.4. Квиз - цртање облика помоћу петљи</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-Цртање%20уз%20помоћ%20петљи%202>
+                    <h5>12. Цртање уз помоћ петљи 2</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../Цртање%20уз%20помоћ%20петљи%202/petlje2.html><div class="studioLecture" id=activity-petlje2><i class="fas fa-file-alt activity-icon"></i>12.1. Цртање облика помоћу петљи</div></a>
+                <a href=../Цртање%20уз%20помоћ%20петљи%202/petlje2_zadatak.html><div class="studioLecture" id=activity-petlje2_zadatak><i class="fas fa-file-alt activity-icon"></i>12.2. Домаћи задатак</div></a>
+                <a href=../Цртање%20уз%20помоћ%20петљи%202/petlje2_test.html><div class="studioLecture" id=activity-petlje2_test><i class="far fa-question-circle activity-icon"></i>12.3. Квиз - петље 2</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-Гранање>
+                    <h5>13. Гранање</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../Гранање/pajton_podsetnik_grananje.html><div class="studioLecture" id=activity-pajton_podsetnik_grananje><i class="fas fa-file-alt activity-icon"></i>13.1. Пајон подсетник гранање</div></a>
+                <a href=../Гранање/grananje.html><div class="studioLecture" id=activity-grananje><i class="fas fa-file-alt activity-icon"></i>13.2. Гранање</div></a>
+                <a href=../Гранање/grananje_zadatak.html><div class="studioLecture" id=activity-grananje_zadatak><i class="fas fa-file-alt activity-icon"></i>13.3. Домаћи задатак</div></a>
+                <a href=../Гранање/grananje_test.html><div class="studioLecture" id=activity-grananje_test><i class="far fa-question-circle activity-icon"></i>13.4. Квиз - гранање</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-Угнежђене%20петље>
+                    <h5>14. Угнежђене петље</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../Угнежђене%20петље/pajton_podsetnik_ugnjezdene.html><div class="studioLecture" id=activity-pajton_podsetnik_ugnjezdene><i class="fas fa-file-alt activity-icon"></i>14.1. Пајтон подсетник - угнежђене петље</div></a>
+                <a href=../Угнежђене%20петље/petlje_ugnjezdene.html><div class="studioLecture" id=activity-petlje_ugnjezdene><i class="fas fa-file-alt activity-icon"></i>14.2. Угњежђене петље</div></a>
+                <a href=../Угнежђене%20петље/petlje_ugnjezdene_zadatak.html><div class="studioLecture" id=activity-petlje_ugnjezdene_zadatak><i class="fas fa-file-alt activity-icon"></i>14.3. Домаћи задатак</div></a>
+                <a href=../Угнежђене%20петље/petlje_ugnjezdene_test.html><div class="studioLecture" id=activity-petlje_ugnjezdene_test><i class="far fa-question-circle activity-icon"></i>14.4. Квиз - угнежђене петље</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-Цртање%20уз%20помоћ%20петљи%20-%20обнављање>
+                    <h5>15. Цртање уз помоћ петљи - обнављање</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../Цртање%20уз%20помоћ%20петљи%20-%20обнављање/ugnjezdene_petlje_obnavljanje.html><div class="studioLecture" id=activity-ugnjezdene_petlje_obnavljanje><i class="fas fa-file-alt activity-icon"></i>15.1. Цртање уз помоћ петљи - обнављање</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-завршни_тест>
+                    <h5>16. Завршни квиз</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../завршни_тест/zavrsni_test.html><div class="studioLecture" id=activity-zavrsni_test><i class="far fa-question-circle activity-icon"></i>16.1 Завршни квиз</div></a>
+                </div>
+            </div>
+                </div>
+</div>
+
+
+
+<div class="lectureContent">
+
+  <div id="errors">
+  </div>
+  
+  <div class="lectureContentMaterial">
+  
+    <div id="main-content">
+    
+  <div class="section" id="id1">
+<h1>7. 3. Квиз - симетрија<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="id2">
+<h2>Питање 1.<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+
+<div class="course-box course-box-problem course-content">
+<ul data-component="dragndrop" id="pygame_quiz_koordinate_upari_simetricne">
+    <span data-component="question">Q-54: Повежи тачке са њима симетричним тачкама у односу на усправну или водоравну осу симетрије
+прозора који је широк и висок по 400 пиксела.</span>
+	<span data-component=feedback>Покушај поново!</span>
+
+    <li data-component="draggable" id="pygame_quiz_koordinate_upari_simetricne_drag1">(30, 40)</li>
+    <li data-component="dropzone" for="pygame_quiz_koordinate_upari_simetricne_drag1">(370, 40)</li>
+
+    <li data-component="draggable" id="pygame_quiz_koordinate_upari_simetricne_drag2">(120, 40)</li>
+    <li data-component="dropzone" for="pygame_quiz_koordinate_upari_simetricne_drag2">(280, 40)</li>
+
+    <li data-component="draggable" id="pygame_quiz_koordinate_upari_simetricne_drag3">(170, 40)</li>
+    <li data-component="dropzone" for="pygame_quiz_koordinate_upari_simetricne_drag3">(230, 40)</li>
+
+    <li data-component="draggable" id="pygame_quiz_koordinate_upari_simetricne_drag4">(40, 80)</li>
+    <li data-component="dropzone" for="pygame_quiz_koordinate_upari_simetricne_drag4">(40, 320)</li>
+</ul></div></div>
+<div class="section" id="id3">
+<h2>Питање 2.<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+
+        <div class="course-box course-box-question course-content">
+        <div data-component="fillintheblank" id="pygame_quiz_simetricno_oko_vertikale">
+            <p>Ако је прозор ширине 300 пиксела, које су координате тачке
+која је симетрична тачки (100, 100) у односу на вертикалну
+осу симетрије прозора (резултат напиши у облику уређеног пара)?</p>
+<input type="text">
+        <script type="application/json">
+            [[{"regex": "^ *\\(200,[ +]*100\\) *$", "regexFlags": "", "feedback": "<p>\u0422\u0430\u0447\u043d\u043e!</p>\n"}, {"regex": "^ *\\(200,[ +]*[0-9]+\\) *$", "regexFlags": "", "feedback": "<p>\u041f\u0430\u0436\u0459\u0438\u0432\u0438\u0458\u0435 \u0438\u0437\u0440\u0430\u0447\u0443\u043d\u0430\u0458 \u043a\u043e\u043e\u0440\u0434\u0438\u043d\u0430\u0442\u0443 y.</p>\n"}, {"regex": "^ *\\([0-9]+,[ +]*100\\) *$", "regexFlags": "", "feedback": "<p>\u041f\u0430\u0436\u0459\u0438\u0432\u0438\u0458\u0435 \u0438\u0437\u0440\u0430\u0447\u0443\u043d\u0430\u0458 \u043a\u043e\u043e\u0440\u0434\u0438\u043d\u0430\u0442\u0443 x.</p>\n"}, {"regex": "^ *\\([0-9]+,[ +]*[0-9]+\\) *$", "regexFlags": "", "feedback": "<p>\u041f\u0430\u0436\u0459\u0438\u0432\u0438\u0458\u0435 \u0438\u0437\u0440\u0430\u0447\u0443\u043d\u0430\u0458 \u043e\u0431\u0435 \u043a\u043e\u043e\u0440\u0434\u0438\u043d\u0430\u0442\u0435.</p>\n"}, {"regex": "^ *.* *$", "regexFlags": "", "feedback": "<p>\u0420\u0435\u0437\u0443\u043b\u0442\u0430\u0442 \u0437\u0430\u043f\u0438\u0448\u0438 \u0443 \u043e\u0431\u043b\u0438\u043a\u0443 \u0443\u0440\u0435\u0452\u0435\u043d\u043e\u0433 \u043f\u0430\u0440\u0430.</p>\n"}]]
+        </script>
+
+        </div>
+        </div>
+            </div>
+<div class="section" id="id4">
+<h2>Питање 3.<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+
+        <div class="course-box course-box-question course-content">
+        <div data-component="fillintheblank" id="pygame_quiz_simetricno_oko_horizontale">
+            <p>Ако је прозор висине 300 пиксела, које су координате тачке која је
+симетрична тачки (100, 100) у односу на хоризонталну осу симетрије
+прозора (резултат напиши у облику уређеног пара)?</p>
+<input type="text">
+        <script type="application/json">
+            [[{"regex": "^ *\\(100,[ +]*200\\) *$", "regexFlags": "", "feedback": "<p>\u0422\u0430\u0447\u043d\u043e!</p>\n"}, {"regex": "^ *\\(100,[ +]*[0-9]+\\) *$", "regexFlags": "", "feedback": "<p>\u041f\u0430\u0436\u0459\u0438\u0432\u0438\u0458\u0435 \u0438\u0437\u0440\u0430\u0447\u0443\u043d\u0430\u0458 \u043a\u043e\u043e\u0440\u0434\u0438\u043d\u0430\u0442\u0443 y.</p>\n"}, {"regex": "^ *\\([0-9]+,[ +]*200\\) *$", "regexFlags": "", "feedback": "<p>\u041f\u0430\u0436\u0459\u0438\u0432\u0438\u0458\u0435 \u0438\u0437\u0440\u0430\u0447\u0443\u043d\u0430\u0458 \u043a\u043e\u043e\u0440\u0434\u0438\u043d\u0430\u0442\u0443 x.</p>\n"}, {"regex": "^ *\\([0-9]+,[ +]*[0-9]+\\) *$", "regexFlags": "", "feedback": "<p>\u041f\u0430\u0436\u0459\u0438\u0432\u0438\u0458\u0435 \u0438\u0437\u0440\u0430\u0447\u0443\u043d\u0430\u0458 \u043e\u0431\u0435 \u043a\u043e\u043e\u0440\u0434\u0438\u043d\u0430\u0442\u0435.</p>\n"}, {"regex": "^ *.* *$", "regexFlags": "", "feedback": "<p>\u0420\u0435\u0437\u0443\u043b\u0442\u0430\u0442 \u0437\u0430\u043f\u0438\u0448\u0438 \u0443 \u043e\u0431\u043b\u0438\u043a\u0443 \u0443\u0440\u0435\u0452\u0435\u043d\u043e\u0433 \u043f\u0430\u0440\u0430.</p>\n"}]]
+        </script>
+
+        </div>
+        </div>
+            </div>
+<div class="section" id="id5">
+<h2>Питање 4.<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+
+            <div class="course-box course-box-question course-content">
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="trouglovi">
+            <p>Q-55: Шта ће исцртати следеће две функције у прозору ширине 300 пиксела и висине 300 пиксела?</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">pg</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">polygon</span><span class="p">(</span><span class="n">prozor</span><span class="p">,</span> <span class="n">pg</span><span class="o">.</span><span class="n">Color</span><span class="p">(</span><span class="s2">&quot;gray&quot;</span><span class="p">),</span> <span class="p">[(</span><span class="mi">50</span><span class="p">,</span> <span class="mi">100</span><span class="p">),</span> <span class="p">(</span><span class="mi">150</span><span class="p">,</span> <span class="mi">100</span><span class="p">),</span> <span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="mi">50</span><span class="p">)])</span>
+<span class="n">pg</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">polygon</span><span class="p">(</span><span class="n">prozor</span><span class="p">,</span> <span class="n">pg</span><span class="o">.</span><span class="n">Color</span><span class="p">(</span><span class="s2">&quot;gray&quot;</span><span class="p">),</span> <span class="p">[(</span><span class="mi">50</span><span class="p">,</span> <span class="mi">200</span><span class="p">),</span> <span class="p">(</span><span class="mi">150</span><span class="p">,</span> <span class="mi">200</span><span class="p">),</span> <span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="mi">250</span><span class="p">)])</span>
+</pre></div>
+</div>
+<p>Изабери тачан одговор:</p>
+
+            <li data-component="answer"  id="trouglovi_opt_a">Два троугла симетрично пресликана у односу на вертикалну осу симетрије прозора</li><li data-component="feedback" id="trouglovi_opt_a">Нетачно</li>
+            
+            <li data-component="answer" data-correct id="trouglovi_opt_b">Два троугла симетрично пресликана у односу на хоризонталну осу симетрије прозора</li><li data-component="feedback" id="trouglovi_opt_b">Тачно</li>
+            
+            <li data-component="answer"  id="trouglovi_opt_c">Два несиметрична троулга</li><li data-component="feedback" id="trouglovi_opt_c">Нетачно</li>
+            
+            <li data-component="answer"  id="trouglovi_opt_d">Два симетрично пресликана троугла који се додирују</li><li data-component="feedback" id="trouglovi_opt_d">Нетачно</li>
+            
+
+            </ul>
+            </div>
+            </div>
+<div class="section" id="id6">
+<h2>Питање 5.<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
+
+            <div class="course-box course-box-question course-content">
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="elipse_simetrija">
+            <p>Q-56: Дата линија програма исцртава једну елипсу. Ако је прозор је ширине 300 пиксела и висине 300 пиксела, која од понуђених функција ће исцртати елипсу симетричну већ нацртаној у односу на вертикалну осу симетрије прозора?</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">pg</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">ellipse</span><span class="p">(</span><span class="n">prozor</span><span class="p">,</span> <span class="n">pg</span><span class="o">.</span><span class="n">Color</span><span class="p">(</span><span class="s2">&quot;gray&quot;</span><span class="p">),</span> <span class="p">(</span><span class="mi">50</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">80</span><span class="p">)</span> <span class="p">)</span>
+</pre></div>
+</div>
+<p>Изабери тачан одговор:</p>
+
+            <li data-component="answer" data-correct id="elipse_simetrija_opt_a">pg.draw.ellipse(prozor, pg.Color("gray"), (200, 100, 50, 80) )</li><li data-component="feedback" id="elipse_simetrija_opt_a">Тачно</li>
+            
+            <li data-component="answer"  id="elipse_simetrija_opt_b">pg.draw.ellipse(prozor, pg.Color("gray"), (250, 100, 50, 80) )</li><li data-component="feedback" id="elipse_simetrija_opt_b">Нетачно</li>
+            
+            <li data-component="answer"  id="elipse_simetrija_opt_c">pg.draw.ellipse(prozor, pg.Color("gray"), (50, 200, 50, 80) )</li><li data-component="feedback" id="elipse_simetrija_opt_c">Нетачно</li>
+            
+            <li data-component="answer"  id="elipse_simetrija_opt_d">pg.draw.ellipse(prozor, pg.Color("gray"), (100, 180, 50, 80) )</li><li data-component="feedback" id="elipse_simetrija_opt_d">Нетачно</li>
+            
+
+            </ul>
+            </div>
+            </div>
+<div class="section" id="id7">
+<h2>Питање 6.<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h2>
+
+            <div class="course-box course-box-question course-content">
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="pravougaonik_centrirano">
+            <p>Q-57: Коју наредбу можеш употребити како би нацртао правоугаоник ширине 100 и висине 50 коме је центар у тачки (120, 120)?</p>
+<p>Изабери тачан одговор:</p>
+
+            <li data-component="answer"  id="pravougaonik_centrirano_opt_a">pg.draw.rect(prozor, boja, (100, 100, 100, 50))</li><li data-component="feedback" id="pravougaonik_centrirano_opt_a">Нетачно</li>
+            
+            <li data-component="answer" data-correct id="pravougaonik_centrirano_opt_b">pg.draw.rect(prozor, boja, (70, 95, 100, 50))</li><li data-component="feedback" id="pravougaonik_centrirano_opt_b">Тачно</li>
+            
+            <li data-component="answer"  id="pravougaonik_centrirano_opt_c">pg.draw.rect(prozor, boja, (120, 120, 100, 50))</li><li data-component="feedback" id="pravougaonik_centrirano_opt_c">Нетачно</li>
+            
+            <li data-component="answer"  id="pravougaonik_centrirano_opt_d">pg.draw.rect(prozor, boja, (280, 280, 100, 50))</li><li data-component="feedback" id="pravougaonik_centrirano_opt_d">Нетачно</li>
+            
+
+            </ul>
+            </div>
+            </div>
+<div class="section" id="id8">
+<h2>Питање 7.<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h2>
+
+            <div class="course-box course-box-question course-content">
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="centriran_pravougaonik">
+            <p>Q-58: Који од следећих правоугаоника је центриран у правоугаоник који исцртава следећа функција?</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">pg</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">rect</span><span class="p">(</span><span class="n">prozor</span><span class="p">,</span> <span class="n">pg</span><span class="o">.</span><span class="n">Color</span><span class="p">(</span><span class="s2">&quot;gray&quot;</span><span class="p">),</span> <span class="p">(</span><span class="mi">150</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">40</span><span class="p">))</span>
+</pre></div>
+</div>
+<p>Изабери тачан одговор:</p>
+
+            <li data-component="answer"  id="centriran_pravougaonik_opt_a">pg.draw.rect(prozor, pg.Color("blue"), (100, 50, 100, 40))</li><li data-component="feedback" id="centriran_pravougaonik_opt_a">Нетачно</li>
+            
+            <li data-component="answer"  id="centriran_pravougaonik_opt_b">pg.draw.rect(prozor, pg.Color("blue"), (150, 100 , 80, 20))</li><li data-component="feedback" id="centriran_pravougaonik_opt_b">Нетачно</li>
+            
+            <li data-component="answer"  id="centriran_pravougaonik_opt_c">pg.draw.rect(prozor, pg.Color("blue"), (50, 60 , 80, 20))</li><li data-component="feedback" id="centriran_pravougaonik_opt_c">Нетачно</li>
+            
+            <li data-component="answer" data-correct id="centriran_pravougaonik_opt_d">pg.draw.rect(prozor, pg.Color("blue"), (160, 110 , 80, 20))</li><li data-component="feedback" id="centriran_pravougaonik_opt_d">Тачно</li>
+            
+
+            </ul>
+            </div>
+            </div>
+</div>
+
+
+    </div>
+    
+    <div>
+<div class="lecture-prev-next-toggle">
+  <a  href="simetrija_zadatak.html" id="prevLectureLink" class="lecture-toggler-arrows"><i class="fas fa-arrow-left fa"></i> <span> Претходна лекција </span> </a>
+  
+  <a id="nextLectureLink" class="lecture-toggler-arrows"><span> Следећа лекција</span>  <i class="fas fa-arrow-right fa"></i> </a>
+</div>
+
+<script type="text/javascript">
+  $('#relations-prev').tooltip({'placement':'right', 'selector': '', 'delay': { show: 100, hide: 50}});
+  $('#relations-next').tooltip({'placement':'left', 'selector': '', 'delay': { show: 100, hide: 50}});
+</script>
+</div>
+
+    
+  </div>
+</div>
+
+<div class="petljadoc-resources">
+  <span class="pull-left">(Created using  <a href="https://pypi.org/project/Sphinx/">Swinx</a>, <a href="http://runestoneinteractive.org/">RunestoneComponents</a> and <a href="https://github.com/Petlja/PetljaDoc">PetljaDoc</a>) <br> © 2022 Petlja</span>
+</div>
+
+
+<div class="lectureToolbox">
+
+  <label class="font-size-toggle" id="fontSizeToggle">
+
+      <i class="fas fa-font"></i><label>Слова</label>
+  </label>
+  <div class="font-change d-none" id="fontChangeModal">
+      <span class="dec-letter-icon" id="decLetterIcon">A-</span>
+      <label id="currentFontSize">16</label>
+      <span class="inc-letter-icon" id="incLetterIcon">A+</span>
+  </div>
+</div>
+
+</div>
+
+  </body>
+</html>

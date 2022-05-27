@@ -1,0 +1,12 @@
+.p5js-editor{
+    display: flex;
+    justify-content: center;
+}
+
+
+.p5js-container-ss{
+    width: 100%;
+}
+.p5js-resize-ss{
+    width: auto !important;
+}
