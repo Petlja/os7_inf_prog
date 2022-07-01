@@ -53,7 +53,7 @@ description:
     - text: Наш форум - Алгора
       href: https://algora.petlja.org/
 lessons:
-  - title: 1. Рачунарство - Увод у Pygame
+  - title: 1. Програмирање у пајтону - Увод у Pygame
     folder: предговор
     guid: b7caaf4c-34dd-493a-8d04-0bfab446d50c
     description: Прва лекција
