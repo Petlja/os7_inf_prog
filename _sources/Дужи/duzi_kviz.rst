@@ -65,16 +65,17 @@
     :feedback_d: Тачно
     :correct: d
     
-    Нека је прозор димензија 300 x 300. Којом командом ће се исцртати вертикална линија (дебљине 2 пиксела) која дели површину прозора на два потпуно једнака дела?
+    Нека је прозор димензија 300 x 300. Којом командом ће се исцртати вертикална линија (дебљине 1 пиксел) 
+    која се налази на средини прозора и спаја горњу и доњу ивицу прозора?
 
     
 
     .. code::
   
-       1) pygame.draw.line(prozor, pygame.Color("black"), (0, 150), (0, 150), 2)
-       2) pygame.draw.line(prozor, pygame.Color("black"), (0, 149), (0, 149), 2)
-       3) pygame.draw.line(prozor, pygame.Color("black"), (150, 0), (150, 300), 2)
-       4) pygame.draw.line(prozor, pygame.Color("black"), (149, 0), (149, 300), 2)
+       1) pygame.draw.line(prozor, pygame.Color("black"), (0, 150), (0, 150), 1)
+       2) pygame.draw.line(prozor, pygame.Color("black"), (0, 150), (300, 150), 1)
+       3) pygame.draw.line(prozor, pygame.Color("black"), (0, 0), (150, 300), 1)
+       4) pygame.draw.line(prozor, pygame.Color("black"), (150, 0), (150, 300), 1)
 
     Изабери тачан одговор:
 
@@ -128,6 +129,28 @@
 Питање 6.
 ~~~~~~~~~
 
+.. mchoice:: dijag
+    :answer_a: Наредба 1
+    :feedback_a: Нетачно    
+    :answer_b: Наредба 2
+    :feedback_b: Нетачно    
+    :answer_c: Наредба 3
+    :feedback_c: Тачно
+    :correct: c
+    
+    Која од наредних наредби исцртава дијагоналу прозора димензије 150 x 150?
+
+    .. code::
+
+       1) pygame.draw.line(prozor, pygame.Color("black"), (0, 0), (0, 150), 1)
+       2) pygame.draw.line(prozor, pygame.Color("black"), (150, 0), (150, 150), 1)
+       3) pygame.draw.line(prozor, pygame.Color("black"), (0, 150), (150, 0), 1)
+
+    Изабери тачан одговор:
+
+Питање 7.
+~~~~~~~~~
+
 
 .. mchoice:: duz_druga_dijagonala
     :answer_a: слика 1
@@ -154,25 +177,3 @@
 
     Изабери тачан одговор:
 
-Питање 7.
-~~~~~~~~~
-
-
-.. mchoice:: dijag
-    :answer_a: Наредба 1
-    :feedback_a: Нетачно    
-    :answer_b: Наредба 2
-    :feedback_b: Нетачно    
-    :answer_c: Наредба 3
-    :feedback_c: Тачно
-    :correct: c
-    
-    Која од наредних наредби исцртава дијагоналу прозора димензије 150 x 150?
-
-    .. code::
-
-       1) pygame.draw.line(prozor, pygame.Color("black"), (0, 0), (0, 150), 1)
-       2) pygame.draw.line(prozor, pygame.Color("black"), (150, 0), (150, 150), 1)
-       3) pygame.draw.line(prozor, pygame.Color("black"), (0, 150), (150, 0), 1)
-
-    Изабери тачан одговор:
