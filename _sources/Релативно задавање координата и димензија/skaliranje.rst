@@ -310,7 +310,7 @@ sredina_y)``, односно ``(sredina_x, sredina_y)`` и ``(desno, gore)``.
    # crtamo sunce
    pg.draw.circle(prozor, pg.Color("yellow"), (100, 100), 80)
     
-   # procedura koja crta oblak na datoj poziciji, date velicine u datoj
+   # funkcija koja crta oblak na datoj poziciji, date velicine u datoj
    # nijansi sive boje
    def oblak(x, y, r, siva):
        # nijansa sive boje
