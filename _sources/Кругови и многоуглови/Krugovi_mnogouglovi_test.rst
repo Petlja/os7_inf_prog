@@ -122,11 +122,11 @@
    :answer_c: pg.draw.polygon(prozor, boja, [(0, 0), (50, 100), (100, 0)])
    :answer_d: pg.draw.polygon(prozor, boja, [(0, 0), (0, 50), (50, 50), (50,  0)], 4)
    :correct: b, c
-   :feedback_a: Тачно
-   :feedback_b: Покушај поново
-   :feedback_c: Покушај поново
-   :feedback_d: Тачно
+   :feedback_a: Покушај поново
+   :feedback_b: Тачно
+   :feedback_c: Тачно
+   :feedback_d: Покушај поново
 
    Који од наредних полигона се не може нацртати помоћу више позива
-   функције ``pg.draw.line``?
+   функције ``pg.draw.line`` јер нема контуру?
 
