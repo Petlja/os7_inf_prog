@@ -34,4 +34,8 @@
    # tekst koji se nalazi posle znaka "#" zove se komentar i on se ne izvršava
 
 .. infonote::
-   Препоручујемо ти да током рада користиш и наш `Синтаксни подсетник за Пајтон <https://petljamediastorage.blob.core.windows.net/root/Media/Default/Help/cheatsheet.pdf>`__ ако ти икад затреба да се подсетиш ових ствари.
+   Препоручујемо ти да током рада користиш и наш 
+   `Синтаксни подсетник за Пајтон <https://petljamediastorage.blob.core.windows.net/root/Media/Default/Help/cheatsheet.pdf>`__ 
+   ако ти икад затреба да се подсетиш ових ствари.
+   Такође, може ти бити корисно да погледаш 
+   `мале задатке са употребом листи <https://petlja.org/biblioteka/r/lekcije/python-zbirka-malih-zadataka/liste>`__.
