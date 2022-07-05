@@ -128,13 +128,13 @@ lessons:
         file: duzi_kviz.rst
         description: #opciono
         guid: 92306241-4bbb-44e6-82fa-f6b883b80032
-  - title: 5. Правоугаоници и елипсе
+  - title: 5. Квадрати, правоугаоници и елипсе
     folder: Правоугаоници и елипсе
     guid: 93c99d9f-3421-426c-abb9-3e50cf271b73
     description:  Četvrta lekcija - pravougaonici i elipse 
     activities:
       - type: reading
-        title: 5.1. Цртање облика - правоугаоници
+        title: 5.1. Цртање облика - квадрати и правоугаоници
         file: pravougaonici.rst
         description: #opciono
         guid: dc49e87f-93b3-4c6b-8717-bcc0a8dab9c0
