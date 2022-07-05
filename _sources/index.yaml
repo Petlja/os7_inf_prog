@@ -159,17 +159,22 @@ lessons:
     description:  Krugovi i mnogouglovi
     activities:
       - type: reading
-        title: 6.1. Цртање облика - кругови и многоуглови
-        file: Krugovi_mnogoulgovi.rst
+        title: 6.1. Цртање облика - кругови
+        file: Krugovi.rst
         description: #opciono
         guid: 9ae897b8-5715-4dd6-802e-1652e5496688
       - type: reading
-        title: 6.2. Домаћи задатак
+        title: 6.2. Цртање облика - многоуглови
+        file: mnogouglovi.rst
+        description: #opciono
+        guid: 4932bc09-ca0d-44be-836d-c9e9fcca413a
+      - type: reading
+        title: 6.3. Домаћи задатак
         file: Krugovi_mnogouglovi_zadatak.rst
         description: #opciono
         guid: 4e282f13-59fc-4106-b190-baf9fc45a54d
       - type: quiz
-        title: 6.3. Квиз - кругови и многоуглови
+        title: 6.4. Квиз - кругови и многоуглови
         file: Krugovi_mnogouglovi_test.rst
         description: #opciono
         guid: 54bb214b-46c2-4318-9623-411210b9dc2c
