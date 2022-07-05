@@ -134,17 +134,22 @@ lessons:
     description:  Četvrta lekcija - pravougaonici i elipse 
     activities:
       - type: reading
-        title: 5.1. Цртање облика - правоугаоници и елипсе
-        file: pravougaonici_elipse.rst
+        title: 5.1. Цртање облика - правоугаоници
+        file: pravougaonici.rst
         description: #opciono
         guid: dc49e87f-93b3-4c6b-8717-bcc0a8dab9c0
       - type: reading
-        title: 5.2. Домаћи задатак
+        title: 5.2. Цртање облика - елипсе
+        file: elipse.rst
+        description: #opciono
+        guid: cb864629-9b77-4812-a463-607edae9f675
+      - type: reading
+        title: 5.3. Домаћи задатак
         file: pravougaonici_elipse_zadatak.rst
         description: #opciono
         guid: a62d1383-c81a-4f33-961d-ff45c60e42f5
       - type: quiz
-        title: 5.3. Квиз - правоугаоници и елипсе
+        title: 5.4. Квиз - правоугаоници и елипсе
         file: pravougaonici_elipse_test.rst
         description: #opciono
         guid: 5c853e2f-4563-4db0-a19e-461f9b85d203
