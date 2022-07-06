@@ -214,12 +214,17 @@ lessons:
         description: #opciono
         guid: 3772cb99-eec9-4e90-8c42-8d22e4c90fc9
       - type: reading
-        title: 8.3. Домаћи задатак
+        title: 8.3. Вежбање
+        file: vezbanje.rst
+        description: #opciono
+        guid: 26fe7f87-f24b-4529-8cce-86bca36d0d7c
+      - type: reading
+        title: 8.4. Домаћи задатак
         file: zadatak_relativne_koordinate.rst
         description: #opciono
         guid: 914f5cf5-98d0-4014-bdbe-7ee5f9ae6dc4
       - type: quiz
-        title: 8.4. Квиз - релативне координате и димензије
+        title: 8.5. Квиз - релативне координате и димензије
         file: relativne_koordinate_test.rst
         description: #opciono
         guid: 05d3035a-0971-4e4d-a874-e8ccd7d4df7e
