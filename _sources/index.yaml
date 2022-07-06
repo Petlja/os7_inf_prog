@@ -258,8 +258,13 @@ lessons:
         file: slike.rst
         description: #opciono
         guid: e2a30a14-4137-4924-b860-101e3e7d4420
+      - type: reading
+        title: 10.2. Вежбање
+        file: slike_vezbanje.rst
+        description: #opciono
+        guid: d1f2e7a5-cb99-4c3d-999a-9c730265b1f5
       - type: quiz
-        title: 10.2. Квиз - слике и текст
+        title: 10.3. Квиз - слике и текст
         file: slike_test.rst
         description: #opciono
         guid: 48403868-9bb7-4257-bece-f3ef99f02b3d
