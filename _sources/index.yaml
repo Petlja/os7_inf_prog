@@ -382,9 +382,9 @@ lessons:
         title: 16.1 Завршни квиз
         file: zavrsni_test.rst
         description: #opciono
-        guid: 6c2a4646-4568-41bb-9354-dea265874cc7     
-
-
+        guid: 6c2a4646-4568-41bb-9354-dea265874cc7            
+#archived-lessons:
+#  - guid: d8c185e1-cde0-4355-9e4b-84c1784e25d8
 
 
 
