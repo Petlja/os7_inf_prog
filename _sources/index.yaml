@@ -299,13 +299,13 @@ lessons:
     description: Crtanje u petljama 2
     activities:
       - type: reading
-        title: 12.1. Цртање облика помоћу петљи
-        file: petlje2.rst
+        title: 12.1. Употреба генератора случајних бројева
+        file: petlje2_random.rst
         description: #opciono
         guid: a848cd14-cb6f-4b16-8b03-a1841841312c  
       - type: reading
-        title: 12.2. Домаћи задатак
-        file: petlje2_zadatak.rst
+        title: 12.2. Правилно распоређивање боја
+        file: petlje2_pravilno.rst
         description: #opciono
         guid: 1bfd9aa9-2dc3-4908-97ec-04647820d1ff 
       - type: quiz
