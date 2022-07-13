@@ -96,8 +96,8 @@
    :playtask:
    :includexsrc: _includes/if_krug.py
 
-   # bojimo pozadinu prozora u zuto
-   prozor.fill(pg.Color("yellow"))
+   # bojimo pozadinu prozora u belo
+   prozor.fill(pg.Color("white"))
 
    pun_krug = ??? # Upisi ovde True pa pokreni, a zatim False pa ponovo pokreni
 
@@ -117,3 +117,14 @@
    :enablecopy:
    :playtask:
    :includexsrc: _includes/if_macka.py
+
+   prozor.fill(pg.Color("green"))
+
+   macka = ??? # Upisi ovde True pa pokreni, a zatim False pa ponovo pokreni
+
+   if macka:
+       slika = pg.image.load("macka.png")
+       prozor.blit(slika,(150 - slika.get_width()//2, 150 - slika.get_height()//2))
+   else:
+       slika = pg.image.load("mouse.png")
+       prozor.blit(slika,(150 - slika.get_width()//2, 150 - slika.get_height()//2))

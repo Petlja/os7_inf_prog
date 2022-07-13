@@ -9,8 +9,8 @@ prozor = pygamebg.open_window(sirina, visina, "Pun Krug / Kruznica")
 # -*- acsection: main -*-
 
 
-# bojimo pozadinu prozora u zuto
-prozor.fill(pg.Color("yellow"))
+# bojimo pozadinu prozora u belo
+prozor.fill(pg.Color("white"))
 
 pun_krug = True
 

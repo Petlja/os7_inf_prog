@@ -4,20 +4,22 @@ import pygame as pg
 import pygamebg
 
 (sirina, visina) = (300, 300) # otvaramo prozor
-prozor = pygamebg.open_window(sirina, visina, "Baloni")
+prozor = pygamebg.open_window(sirina, visina, "Macka / Mis")
 
 # -*- acsection: main -*-
 
 
-# bojimo pozadinu prozora u zuto
-prozor.fill(pg.Color("yellow"))
+# bojimo pozadinu prozora u zeleno
+prozor.fill(pg.Color("green"))
 
-kvadrat = True
+macka = True
 
-if kvadrat:
-    pg.draw.rect(prozor, pg.Color("blue"), (100, 100, 100, 100), 3)
+if macka:
+    slika = pg.image.load("macka.png")
+    prozor.blit(slika,(150 - slika.get_width()//2, 150 - slika.get_height()//2))
 else:
-    pg.draw.circle(prozor, pg.Color("blue"), (150, 150), 50, 3)
+    slika = pg.image.load("mouse.png")
+    prozor.blit(slika,(150 - slika.get_width()//2, 150 - slika.get_height()//2))
 
 # -*- acsection: after-main -*-
 
