@@ -84,7 +84,9 @@
       prozor = pygamebg.open_window(sirina, visina, "slika_test")
       prozor.fill(pg.Color("white"))
       slika = pg.image.load("slika.png")
-      ???
+
+      # ??? на ово место треба да дође наредба коју изаберете 
+
       prozor.blit(slika, (x, y))
       pg.quit()
 
