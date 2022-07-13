@@ -11,7 +11,7 @@ prozor = pygamebg.open_window(sirina, visina, "Baloni")
 def nasumicna_boja():
     return (random.randint(0, 255), random.randint(0, 255),  random.randint(0, 255))
 
-# bojimo pozadinu prozora u crno
+# bojimo pozadinu prozora u zuto
 prozor.fill(pg.Color("yellow"))
 
 broj_balona = 5

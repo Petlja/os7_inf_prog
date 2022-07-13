@@ -67,13 +67,53 @@
     У зависности од њене вредности у центру екрана се црта квадрат (за вредност *True*) а за вредност 
     *False* у центру екрана се црта круг.
 
+.. activecode:: if_kvadrat
+   :nocodelens:
+   :modaloutput: 
+   :enablecopy:
+   :playtask:
+   :includexsrc: _includes/if_kvadrat.py
+
+   prozor.fill(pg.Color("yellow")) # bojimo pozadinu prozora u zuto
+
+   kvadrat = ??? # Upisi ovde True pa pokreni, a zatim False pa ponovo pokreni
+
+   if kvadrat:
+       pg.draw.rect(prozor, pg.Color("blue"), (100, 100, 100, 100), 3)
+   else:
+       pg.draw.circle(prozor, pg.Color("blue"), (150, 150), 50, 3)
+
 
 .. questionnote::
     Напиши програм који садржи логичку променљиву која се зове *pun_krug* постављену на *True* или *False*.
     У зависности од њене вредности у центру екрана се црта обојен krug (за вредност *True*) или само кружница
     (за вредност *False*)
 
+.. activecode:: if_krug
+   :nocodelens:
+   :modaloutput: 
+   :enablecopy:
+   :playtask:
+   :includexsrc: _includes/if_krug.py
+
+   # bojimo pozadinu prozora u zuto
+   prozor.fill(pg.Color("yellow"))
+
+   pun_krug = ??? # Upisi ovde True pa pokreni, a zatim False pa ponovo pokreni
+
+   if pun_krug:
+       pg.draw.circle(prozor, pg.Color("blue"), (150, 150), 50)
+   else:
+       pg.draw.circle(prozor, pg.Color("blue"), (150, 150), 50, 3)
+
 .. questionnote::
     Напиши програм који садржи логичку променљиву која се зове *macka* постављену на *True* или *False*.
     У зависности од њене вредности у центру екрана се црта мачка (за вредност *True*) а за вредност 
     *False* у центру екрана се црта пас.
+
+.. activecode:: if_macka
+   :nocodelens:
+   :modaloutput: 
+   :enablecopy:
+   :playtask:
+   :includexsrc: _includes/if_macka.py
