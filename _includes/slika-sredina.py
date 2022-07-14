@@ -18,12 +18,5 @@ prozor.blit(slika, (x, y))
 
 # -*- acsection: after-main -*-
 
-# ažuriramo prikaz sadržaja ekrana
-pg.display.update()
-
-# čekamo da korisnik isključi prozor
-#while pg.event.wait().type != pg.QUIT:
-#    pass
-
-# isključivanje rada biblioteke PyGame
-pg.quit()
+# prikazujemo prozor i cekamo da ga korisnik iskljuci
+pygamebg.wait_loop()
