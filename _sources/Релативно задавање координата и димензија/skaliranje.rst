@@ -15,7 +15,7 @@
 
    prozor.fill(pg.Color("white"))
    pg.draw.rect(prozor, pg.Color("red"), (100, 100, 100, 100))
-   pg.draw.circle(prozor, pg.Color("blue"), (150, 150), 50)
+   pg.draw.circle(prozor, pg.Color("blue"), (150, 150), ???) # unesite poluprecnik kruga
 
 .. infonote::
    Често цртеж желимо да прилагодимо тако што ћемо га *скалирати*
