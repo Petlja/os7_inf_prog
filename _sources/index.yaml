@@ -204,12 +204,17 @@ lessons:
     description: Релативне координате
     activities:
       - type: reading
+        title: 8.1. Повећавање и смањивање објекта, центрирање
+        file: skaliranje_objekta.rst
+        description: #opciono
+        guid: 01d29a52-12db-4fd2-8065-ab5e0cc9e4b5
+      - type: reading
         title: 8.1. Пајтон подсетник - дефинисање функција
         file: Pajton_podsetnik_definisanje_funkcija.rst
         description: #opciono
         guid: 9da95bb0-42ce-4eb7-abb9-15ebfd8c20a5
       - type: reading
-        title: 8.2. Релативне координате и димензије
+        title: 8.2. Повећавање и смањивање цртежа, центрирање
         file: skaliranje.rst
         description: #opciono
         guid: 3772cb99-eec9-4e90-8c42-8d22e4c90fc9
