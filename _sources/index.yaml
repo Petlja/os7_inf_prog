@@ -204,30 +204,25 @@ lessons:
     description: Релативне координате
     activities:
       - type: reading
-        title: 8.1. Повећавање и смањивање објекта, центрирање
+        title: 8.1. Пајтон подсетник - дефинисање функција
+        file: Pajton_podsetnik_definisanje_funkcija.rst
+        description: #opciono
+        guid: d3ad1962-ab0f-4e5d-9160-7e1f29ed7d96
+      - type: reading
+        title: 8.2. Повећавање и смањивање објекта, центрирање
         file: skaliranje_objekta.rst
         description: #opciono
         guid: 01d29a52-12db-4fd2-8065-ab5e0cc9e4b5
       - type: reading
-        title: 8.1. Пајтон подсетник - дефинисање функција
-        file: Pajton_podsetnik_definisanje_funkcija.rst
-        description: #opciono
-        guid: 9da95bb0-42ce-4eb7-abb9-15ebfd8c20a5
-      - type: reading
-        title: 8.2. Повећавање и смањивање цртежа, центрирање
+        title: 8.3. Повећавање и смањивање цртежа, центрирање
         file: skaliranje.rst
         description: #opciono
         guid: 3772cb99-eec9-4e90-8c42-8d22e4c90fc9
       - type: reading
-        title: 8.3. Вежбање
-        file: vezbanje.rst
+        title: 8.4. Домаћи задатак
+        file: domaci_zadatak_relativne_koordinate.rst
         description: #opciono
         guid: 26fe7f87-f24b-4529-8cce-86bca36d0d7c
-      - type: reading
-        title: 8.4. Домаћи задатак
-        file: zadatak_relativne_koordinate.rst
-        description: #opciono
-        guid: 914f5cf5-98d0-4014-bdbe-7ee5f9ae6dc4
       - type: quiz
         title: 8.5. Квиз - релативне координате и димензије
         file: relativne_koordinate_test.rst
@@ -245,7 +240,7 @@ lessons:
         guid: c4a4e338-75c8-459a-9e45-3144d00bfffe
       - type: reading
         title: 9.2. Домаћи задатак
-        file: zadatak_relativne_koordinate_utvrdjivanje.rst
+        file: zadatak_relativne_koordinate.rst
         description: #opciono
         guid: a1437b8d-62d5-4cdc-9829-c1c73584f778
       - type: quiz
