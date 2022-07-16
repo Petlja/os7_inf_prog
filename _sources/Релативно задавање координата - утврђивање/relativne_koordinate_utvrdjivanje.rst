@@ -1,58 +1,11 @@
 9.1. Релативне координате утврђивање
 ====================================
 
-На прошлом часу смо се упознали са релативно задатим координатама и
-предностима тог механизма цртања. Утврдимо ово кроз још неколико
-примера.
+Упознали са релативно задатим координатама и
+предностима тог механизма цртања. Утврдимо ово кроз примере који следе.
 
 Примери
 -------
-
-
-Кућа - положај
-''''''''''''''
-
-Рецимо да сте написали овај програм, а циљ вам је да преправите
-програм тако да кућица може једноставно да се премешта:
-
-.. activecode:: PyGame_house_detailed_fixed
-    :nocodelens:
-    :enablecopy:
-    :modaloutput:
-    :includesrc: _includes/kuca_2d_apsolutno.py
-
-Нека је главна тачка (сидро) :code:`(x, y) = (50, 150)`. Довршите
-започето преправљање програма у пољу испод, у коме се цртање обавља у
-функцији :code:`kuca(x, y, boja_zidova)`. Када се уверите да цртежи у
-два програма изгледају исто (осим што су прозори различите величине),
-замените позив :code:`kuca(50, 150, pg.Color("khaki"))` са следећа четири,
-да бисте добили слику као кад се кликне на дугме "Прикажи пример":
-
-.. code::
-
-    kuca(150,  90, pg.Color(220, 220, 220))
-    kuca(220, 130, pg.Color("white"))
-    kuca(350, 160, (255,255,150))
-    kuca( 50, 150, pg.Color("khaki"))
-
-.. activecode:: PyGame_house_detailed_movable
-    :nocodelens:
-    :enablecopy:
-    :modaloutput:
-    :playtask: 
-    :includexsrc: _includes/kuca_2d_relativno.py
-   
-    prozor.fill(pg.Color("darkgreen")) # bojimo pozadinu ekrana u tamno zeleno
-
-    def kuca(x, y, boja_zidova):
-        pg.draw.polygon(prozor, pg.Color("red"), [(x, y), (x+???, y-???), (x+140, y)]) # krov
-        pg.draw.rect(prozor, boja_zidova,       (x,       y,     140, 100))   # kuca
-        pg.draw.rect(prozor, pg.Color("brown"), (x + ???, y + ???,  30,  30)) # levi prozor
-        pg.draw.rect(prozor, pg.Color("brown"), (x + ???, y + ???, ???, ???)) # desni prozor
-        pg.draw.rect(prozor, pg.Color("brown"), (x + ???, y + ???, ???, ???)) # vrata
-        
-    kuca( 50, 150, pg.Color("khaki"))
-
 
 Саобраћајни знак од једнакостраничних троуглова
 '''''''''''''''''''''''''''''''''''''''''''''''
