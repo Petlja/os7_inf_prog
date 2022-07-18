@@ -66,6 +66,13 @@
    Напиши програм који црта главу мачке. Глава мачке је потпуно
    симетрична у односу на средину прозора и то се може искористити! 
 
+
+.. ifonote::
+   Највећи део посла овде већ је урађен како би ти помогли. Твој посао је да 
+   додаш пет наредби за цртање на предвиђена места. Објашњење које следи односи се на 
+   цртање комплетног цртежа и служи да би ти помогло да схватиш симетрије као и да
+   урадиш свој делић посла.
+
 Уши ове мачке могу да се прикажу као попуњени троуглови. Како се уши
 надовезују на главу, по два темена сваког троугла могу да буду
 изабрана са више слободе (довољно је да буду негде у глави). Осим два
@@ -94,20 +101,20 @@
 
    pg.draw.circle(prozor, pg.Color("gray"), (150, 160), 100) # glava
    pg.draw.polygon(prozor, pg.Color("gray"), [(50, 30), (70, 100), (110, 100)]) # levo uvo
-   ??? # desno uvo
+   pg.draw.polygon(prozor, pg.Color("gray"), [(250, 30), (230, 100), (190, 100)]) # desno uvo
    pg.draw.ellipse(prozor, pg.Color("yellow"), ( 90, 110, 40, 60)) # levo oko
    ??? # desno oko
    pg.draw.ellipse(prozor, pg.Color("green"),  (105, 135, 20, 30)) # leva zenica
    ??? # desna zenica
    pg.draw.ellipse(prozor, pg.Color("darkgray"),  (80, 180, 70, 30)) # levi deo njuske
    ??? # desni deo njuske
-   pg.draw.circle(prozor, pg.Color("black"), (150, 190), 10) # vrh njuske
+   ??? # vrh njuske
    pg.draw.line(prozor, pg.Color("black"), (90, 190), (20, 160), 2) # levi gornji brk
    pg.draw.line(prozor, pg.Color("black"), (90, 195), (20, 195), 2) # levi srednji brk
    pg.draw.line(prozor, pg.Color("black"), (90, 200), (20, 220), 2) # levi donji brk
-   ??? # desni gornji brk
+   pg.draw.line(prozor, pg.Color("black"), (210, 190), (280, 160), 2) # desni gornji brk
    ??? # desni srednji brk
-   ??? # desni donji brk
+   pg.draw.line(prozor, pg.Color("black"), (210, 200), (280, 220), 2) # desni donji brk
 
 
 .. reveal:: PyGame_practice1a_cat_reveal
