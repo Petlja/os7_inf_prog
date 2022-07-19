@@ -58,7 +58,7 @@
 
    # bojimo pozadinu prozora u belu
    ???
-   # crtamo kvadrat u centru prozora širine 100 i visine 100 piksela
+   # crtamo crveni kvadrat u centru prozora širine 100 i visine 100 piksela
    pg.draw.rect(prozor, ???, (100, 100, ???, ???), 5)
 
 
