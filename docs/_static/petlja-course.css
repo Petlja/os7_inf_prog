@@ -50,6 +50,7 @@ a:hover {
 
 .course-box-problem {
 	border-top: 5px solid #18bc9c;
+	overflow: hidden;
 }
 
 .course-box-success {

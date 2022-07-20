@@ -24,13 +24,9 @@
     <link rel="stylesheet" type="text/css" href="../_static/webglinteractive.css" />
     <link rel="stylesheet" type="text/css" href="../_static/karel.css" />
     <link rel="stylesheet" type="text/css" href="../_static/notes.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/simanim.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/pycode.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/p5js.css" />
     <link rel="stylesheet" type="text/css" href="../_static/gallery.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/dbDirective.css" />
     <link rel="stylesheet" type="text/css" href="../_static/associations.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/regex-check.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/editor.css" />
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" type="text/css" />
@@ -119,46 +115,14 @@
     <script type="text/javascript" src="../_static/karel-i18n.sr-Cyrl.js"></script>
     <script type="text/javascript" src="../_static/notes.js"></script>
     <script type="text/javascript" src="../_static/pygamelib-init.js"></script>
-    <script type="text/javascript" src="../_static/blockly/blockly_compressed.js"></script>
-    <script type="text/javascript" src="../_static/blockly/blocks_compressed.js"></script>
-    <script type="text/javascript" src="../_static/blockly/python_compressed.js"></script>
-    <script type="text/javascript" src="../_static/blockly/msg-sr.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/utilities.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/python_errors.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/ast_node_visitor.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/abstract_interpreter.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/pytifa.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/abstract_interpreter_definitions.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/python_to_blockly.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/imported.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/class.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/comment.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/comprehensions.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/dict.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/if.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/io.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/lists.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/sets.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/loops.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/parking.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/tuple.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/turtles.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/text.js"></script>
-    <script type="text/javascript" src="../_static/blockpy-modal.js"></script>
-    <script type="text/javascript" src="../_static/simanim.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/pyodide/v0.16.1/full/pyodide.js"></script>
-    <script type="text/javascript" src="../_static/pycode.js"></script>
-    <script type="text/javascript" src="//toolness.github.io/p5.js-widget/p5-widget.js"></script>
-    <script type="text/javascript" src="../_static/p5js.js"></script>
     <script type="text/javascript" src="../_static/gallery.js"></script>
-    <script type="text/javascript" src="../_static/dbDirective.js"></script>
-    <script type="text/javascript" src="../_static/sql.js"></script>
     <script type="text/javascript" src="../_static/associations.js"></script>
     <script type="text/javascript" src="../_static/associations-i18n.en.js"></script>
     <script type="text/javascript" src="../_static/associations-i18n.sr-Cyrl.js"></script>
-    <script type="text/javascript" src="../_static/regex-check.js"></script>
-    <script type="text/javascript" src="../_static/regex-check-i18n.en.js"></script>
-    <script type="text/javascript" src="../_static/regex-check-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/editor.js"></script>
+    <script type="text/javascript" src="../_static/jszip.js"></script>
+    <script type="text/javascript" src="../_static/editor-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/editor-i18n.sr-Cyrl.js"></script>
     <script type="text/javascript" src="../_static/translations.js"></script>
     <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/javascript" src="../_static/jquery-ui-1.10.3.custom.min.js"></script>
@@ -261,7 +225,7 @@
            <div>
                 <div class="courseContentsSection">
                 <div class="lecture-div courseContentsSectionHeadline" id=lecture-предговор>
-                    <h5>1. Рачунарство - Увод у Pygame</h5>
+                    <h5>1. Програмирање у пајтону - Увод у Pygame</h5>
                     <i class="fas fa-angle-down caret-position "> </i>
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
@@ -308,13 +272,14 @@
                 
                 <div class="courseContentsSection">
                 <div class="lecture-div courseContentsSectionHeadline" id=lecture-Правоугаоници%20и%20елипсе>
-                    <h5>5. Правоугаоници и елипсе</h5>
+                    <h5>5. Квадрати, правоугаоници и елипсе</h5>
                     <i class="fas fa-angle-down caret-position "> </i>
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
-                <div class="courseContentsSubSection d-none"><a href=../Правоугаоници%20и%20елипсе/pravougaonici_elipse.html><div class="studioLecture" id=activity-pravougaonici_elipse><i class="fas fa-file-alt activity-icon"></i>5.1. Цртање облика - правоугаоници и елипсе</div></a>
-                <a href=../Правоугаоници%20и%20елипсе/pravougaonici_elipse_zadatak.html><div class="studioLecture" id=activity-pravougaonici_elipse_zadatak><i class="fas fa-file-alt activity-icon"></i>5.2. Домаћи задатак</div></a>
-                <a href=../Правоугаоници%20и%20елипсе/pravougaonici_elipse_test.html><div class="studioLecture" id=activity-pravougaonici_elipse_test><i class="far fa-question-circle activity-icon"></i>5.3. Квиз - правоугаоници и елипсе</div></a>
+                <div class="courseContentsSubSection d-none"><a href=../Правоугаоници%20и%20елипсе/pravougaonici.html><div class="studioLecture" id=activity-pravougaonici><i class="fas fa-file-alt activity-icon"></i>5.1. Цртање облика - квадрати и правоугаоници</div></a>
+                <a href=../Правоугаоници%20и%20елипсе/elipse.html><div class="studioLecture" id=activity-elipse><i class="fas fa-file-alt activity-icon"></i>5.2. Цртање облика - елипсе</div></a>
+                <a href=../Правоугаоници%20и%20елипсе/pravougaonici_elipse_zadatak.html><div class="studioLecture" id=activity-pravougaonici_elipse_zadatak><i class="fas fa-file-alt activity-icon"></i>5.3. Домаћи задатак</div></a>
+                <a href=../Правоугаоници%20и%20елипсе/pravougaonici_elipse_test.html><div class="studioLecture" id=activity-pravougaonici_elipse_test><i class="far fa-question-circle activity-icon"></i>5.4. Квиз - правоугаоници и елипсе</div></a>
                 </div>
             </div>
                 
@@ -324,9 +289,10 @@
                     <i class="fas fa-angle-down caret-position "> </i>
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
-                <div class="courseContentsSubSection d-none"><a href=../Кругови%20и%20многоуглови/Krugovi_mnogoulgovi.html><div class="studioLecture" id=activity-Krugovi_mnogoulgovi><i class="fas fa-file-alt activity-icon"></i>6.1. Цртање облика - кругови и многоуглови</div></a>
-                <a href=../Кругови%20и%20многоуглови/Krugovi_mnogouglovi_zadatak.html><div class="studioLecture" id=activity-Krugovi_mnogouglovi_zadatak><i class="fas fa-file-alt activity-icon"></i>6.2. Домаћи задатак</div></a>
-                <a href=../Кругови%20и%20многоуглови/Krugovi_mnogouglovi_test.html><div class="studioLecture" id=activity-Krugovi_mnogouglovi_test><i class="far fa-question-circle activity-icon"></i>6.3. Квиз - кругови и многоуглови</div></a>
+                <div class="courseContentsSubSection d-none"><a href=../Кругови%20и%20многоуглови/Krugovi.html><div class="studioLecture" id=activity-Krugovi><i class="fas fa-file-alt activity-icon"></i>6.1. Цртање облика - кругови</div></a>
+                <a href=../Кругови%20и%20многоуглови/mnogouglovi.html><div class="studioLecture" id=activity-mnogouglovi><i class="fas fa-file-alt activity-icon"></i>6.2. Цртање облика - многоуглови</div></a>
+                <a href=../Кругови%20и%20многоуглови/Krugovi_mnogouglovi_zadatak.html><div class="studioLecture" id=activity-Krugovi_mnogouglovi_zadatak><i class="fas fa-file-alt activity-icon"></i>6.3. Домаћи задатак</div></a>
+                <a href=../Кругови%20и%20многоуглови/Krugovi_mnogouglovi_test.html><div class="studioLecture" id=activity-Krugovi_mnogouglovi_test><i class="far fa-question-circle activity-icon"></i>6.4. Квиз - кругови и многоуглови</div></a>
                 </div>
             </div>
                 
@@ -349,9 +315,10 @@
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
                 <div class="courseContentsSubSection d-none"><a href=../Релативно%20задавање%20координата%20и%20димензија/Pajton_podsetnik_definisanje_funkcija.html><div class="studioLecture" id=activity-Pajton_podsetnik_definisanje_funkcija><i class="fas fa-file-alt activity-icon"></i>8.1. Пајтон подсетник - дефинисање функција</div></a>
-                <a href=../Релативно%20задавање%20координата%20и%20димензија/skaliranje.html><div class="studioLecture" id=activity-skaliranje><i class="fas fa-file-alt activity-icon"></i>8.2. Релативне координате и димензије</div></a>
-                <a href=../Релативно%20задавање%20координата%20и%20димензија/zadatak_relativne_koordinate.html><div class="studioLecture" id=activity-zadatak_relativne_koordinate><i class="fas fa-file-alt activity-icon"></i>8.3. Домаћи задатак</div></a>
-                <a href=../Релативно%20задавање%20координата%20и%20димензија/relativne_koordinate_test.html><div class="studioLecture" id=activity-relativne_koordinate_test><i class="far fa-question-circle activity-icon"></i>8.4. Квиз - релативне координате и димензије</div></a>
+                <a href=../Релативно%20задавање%20координата%20и%20димензија/skaliranje_objekta.html><div class="studioLecture" id=activity-skaliranje_objekta><i class="fas fa-file-alt activity-icon"></i>8.2. Повећавање и смањивање објекта, центрирање</div></a>
+                <a href=../Релативно%20задавање%20координата%20и%20димензија/skaliranje.html><div class="studioLecture" id=activity-skaliranje><i class="fas fa-file-alt activity-icon"></i>8.3. Повећавање и смањивање цртежа, центрирање</div></a>
+                <a href=../Релативно%20задавање%20координата%20и%20димензија/domaci_zadatak_relativne_koordinate.html><div class="studioLecture" id=activity-domaci_zadatak_relativne_koordinate><i class="fas fa-file-alt activity-icon"></i>8.4. Домаћи задатак</div></a>
+                <a href=../Релативно%20задавање%20координата%20и%20димензија/relativne_koordinate_test.html><div class="studioLecture" id=activity-relativne_koordinate_test><i class="far fa-question-circle activity-icon"></i>8.5. Квиз - релативне координате и димензије</div></a>
                 </div>
             </div>
                 
@@ -362,7 +329,7 @@
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
                 <div class="courseContentsSubSection d-none"><a href=../Релативно%20задавање%20координата%20-%20утврђивање/relativne_koordinate_utvrdjivanje.html><div class="studioLecture" id=activity-relativne_koordinate_utvrdjivanje><i class="fas fa-file-alt activity-icon"></i>9.1. Релативне координате утврђивање</div></a>
-                <a href=../Релативно%20задавање%20координата%20-%20утврђивање/zadatak_relativne_koordinate_utvrdjivanje.html><div class="studioLecture" id=activity-zadatak_relativne_koordinate_utvrdjivanje><i class="fas fa-file-alt activity-icon"></i>9.2. Домаћи задатак</div></a>
+                <a href=../Релативно%20задавање%20координата%20-%20утврђивање/zadatak_relativne_koordinate.html><div class="studioLecture" id=activity-zadatak_relativne_koordinate><i class="fas fa-file-alt activity-icon"></i>9.2. Домаћи задатак</div></a>
                 <a href=../Релативно%20задавање%20координата%20-%20утврђивање/relativne_koordinate_test2.html><div class="studioLecture" id=activity-relativne_koordinate_test2><i class="far fa-question-circle activity-icon"></i>9.3. Квиз - релативне координате и димензије</div></a>
                 </div>
             </div>
@@ -374,7 +341,8 @@
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
                 <div class="courseContentsSubSection d-none"><a href=../Слике%20и%20текст/slike.html><div class="studioLecture" id=activity-slike><i class="fas fa-file-alt activity-icon"></i>10.1. Слике и текст</div></a>
-                <a href=../Слике%20и%20текст/slike_test.html><div class="studioLecture" id=activity-slike_test><i class="far fa-question-circle activity-icon"></i>10.2. Квиз - слике и текст</div></a>
+                <a href=../Слике%20и%20текст/slike_vezbanje.html><div class="studioLecture" id=activity-slike_vezbanje><i class="fas fa-file-alt activity-icon"></i>10.2. Вежбање</div></a>
+                <a href=../Слике%20и%20текст/slike_test.html><div class="studioLecture" id=activity-slike_test><i class="far fa-question-circle activity-icon"></i>10.3. Квиз - слике и текст</div></a>
                 </div>
             </div>
                 
@@ -397,8 +365,8 @@
                     <i class="fas fa-angle-down caret-position "> </i>
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
-                <div class="courseContentsSubSection d-none"><a href=../Цртање%20уз%20помоћ%20петљи%202/petlje2.html><div class="studioLecture" id=activity-petlje2><i class="fas fa-file-alt activity-icon"></i>12.1. Цртање облика помоћу петљи</div></a>
-                <a href=../Цртање%20уз%20помоћ%20петљи%202/petlje2_zadatak.html><div class="studioLecture" id=activity-petlje2_zadatak><i class="fas fa-file-alt activity-icon"></i>12.2. Домаћи задатак</div></a>
+                <div class="courseContentsSubSection d-none"><a href=../Цртање%20уз%20помоћ%20петљи%202/petlje2_random.html><div class="studioLecture" id=activity-petlje2_random><i class="fas fa-file-alt activity-icon"></i>12.1. Употреба генератора случајних бројева</div></a>
+                <a href=../Цртање%20уз%20помоћ%20петљи%202/petlje2_pravilno.html><div class="studioLecture" id=activity-petlje2_pravilno><i class="fas fa-file-alt activity-icon"></i>12.2. Правилно распоређивање боја</div></a>
                 <a href=../Цртање%20уз%20помоћ%20петљи%202/petlje2_test.html><div class="studioLecture" id=activity-petlje2_test><i class="far fa-question-circle activity-icon"></i>12.3. Квиз - петље 2</div></a>
                 </div>
             </div>
@@ -464,28 +432,55 @@
     
   <div class="section" id="id1">
 <h1>10.1. Слике и текст<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+
+    <div class="course-box course-box-info">
+        <div class="course-content">
+            <p>
 <p>Поред цртања облика, Пајгејм омогућује да се у програме укључе и слике, као и да се исписује текст. У овој лекцији научићете да у своје програме укључите слике и прикажемо текст у прозору.</p>
+
+    </p></div></div>
 <div class="section" id="id2">
 <h2>Приказ слика<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
 <p>Сада сте научили да цртате помоћу геометријских облика, па можемо да
-вам откријемо једну тајну. Ако сте раније користити Scratch, знате
+вам откријемо једну тајну. Ако сте раније користили Scratch, знате
 колико је интересантно било када сте ликове у прозору могли да
 представљате сличицама (било унапред понуђеним, било преузетим са
-интернета). И PyGame нуди ту функционалност и то често бива
-једноставније него цртање помоћу геометријских облика.</p>
-<p>Претпоставићемо да на располагању имамо слику мачке у датотеци
-<code class="docutils literal notranslate"><span class="pre">macka.png</span></code>. Ако овај програм покрећеш на свом рачунару (на пример,
+интернета). И Пајгејм нуди ту могућност што често бива
+једноставније него да сами цртамо.</p>
+<p>Претпоставићемо да имамо слику мачке у датотеци
+<code class="docutils literal notranslate"><span class="pre">macka.png</span></code>.</p>
+
+    <div data-component="reveal" id="слика_ИДЛЕ"   data-showtitle="Ако радиш у програму IDLE" data-hidetitle="Сакриј">
+    
+    <div class="course-box course-box-info">
+        <div class="course-content">
+            <p>
+<p>Ако овај програм покрећеш на свом рачунару (на пример,
 из окружења IDLE) потребно је да слику преузмеш и снимиш на исто место
 на коме је снимљена и изворна датотека Python програма (датотека са
 екстензијом <code class="docutils literal notranslate"><span class="pre">py</span></code>).</p>
-<img alt="../_images/macka.png" class="align-center" src="../_images/macka.png" />
+
+    </p></div></div>
+
+    </div>
+    <img alt="../_images/macka.png" class="align-center" src="../_images/macka.png" />
 <p>Први корак је да се слика учита. То се ради помоћу функције
 <code class="docutils literal notranslate"><span class="pre">pg.image.load</span></code> којој се као параметар наводи назив датотеке са
-сликом (то су обично датотеке са екстензијама <code class="docutils literal notranslate"><span class="pre">png</span></code> или <code class="docutils literal notranslate"><span class="pre">jpg</span></code>).
-После учитавања слике могуће је позвати <code class="docutils literal notranslate"><span class="pre">convert()</span></code> да би се слика
+сликом (то су обично датотеке са екстензијама <code class="docutils literal notranslate"><span class="pre">png</span></code> или <code class="docutils literal notranslate"><span class="pre">jpg</span></code>).</p>
+
+    <div data-component="reveal" id="конвертовање"   data-showtitle="Сазнај више" data-hidetitle="Сакриј">
+    
+    <div class="course-box course-box-info">
+        <div class="course-content">
+            <p>
+<p>После учитавања слике могуће је позвати <code class="docutils literal notranslate"><span class="pre">convert()</span></code> да би се слика
 превела из формата у којем је записана у датотеци у формат који је
 погодан за приказивање у прозору.</p>
-<p>Други корак је приказ учитане сличице у прозору (једном учитана слика
+
+    </p></div></div>
+
+    </div>
+    <p>Други корак је приказ учитане сличице у прозору (једном учитана слика
 се може приказивати и на више места). То радимо помоћу функције
 <code class="docutils literal notranslate"><span class="pre">prozor.blit</span></code> којој се као параметри наводе учитана слика и позиција
 на коју ће се поставити њено горње лево теме (ако наведемо координате
@@ -549,30 +544,46 @@ pg.quit()
 </div>
 <div class="section" id="id3">
 <h2>Приказ текста<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
-<p>PyGame омогућава и да се у прозору пише текст. Тексту је могуће
-задавати боју, фонт, величину и положај. Размотримо наредни пример
-који у горњем левом углу прозора исписује поруку <code class="docutils literal notranslate"><span class="pre">Zdravo</span> <span class="pre">svete!</span></code>.</p>
-<p>Приказ текста захтева неколико корака.</p>
-<p>Прво, потребно је одабрати фонт којим ће се текст исписивати. Најлакше
-је да употребимо функцију <code class="docutils literal notranslate"><span class="pre">pg.font.SysFont</span></code> која прима два
-параметра: назив системског фонта (инсталираног на нивоу оперативног
-система) и његову величину. Уместо системског фонта могуће је навести
-и неку датотеку са фонтом (то су обично <code class="docutils literal notranslate"><span class="pre">.ttf</span></code> или <code class="docutils literal notranslate"><span class="pre">.otf</span></code>
-датотеке) и тада се користи функција <code class="docutils literal notranslate"><span class="pre">pg.font.Font</span></code>, али то нећемо у
-наставку користити.</p>
-<p>Други корак је да се креира сличица (прецизније објекат типа
-<code class="docutils literal notranslate"><span class="pre">Surface</span></code>) која представља нацртани текст. То можемо једноставно
-урадити функцијом <code class="docutils literal notranslate"><span class="pre">font.render</span></code> где је <code class="docutils literal notranslate"><span class="pre">font</span></code> објекат фонта
-креиран у претходном кораку, а параметри функције су редом ниска
-(стринг) која представља текст који се исписује, логичка вредност која
-одређује да ли ће се цртати лепшим линијама (тј. користити такозвана
-техника антиалијасинга) и на крају боја којом ће се текст исписивати.</p>
-<p>Процедура је надаље потпуно идентична као и у случају слике. У трећем
-кораку добијену сличицу можемо поставити на било коју позицију у
-прозору (па и на више њих). То радимо као и са свим другим сличицама,
-помоћу функције <code class="docutils literal notranslate"><span class="pre">prozor.blit</span></code> чији је први параметар сличица, а
-други координате на које ће бити постављен горњи леви угао слике
-тј. текста.</p>
+
+    <div class="course-box course-box-info">
+        <div class="course-content">
+            <p>
+<p>Пајгејм омогућава и да се у прозору пише текст. Тексту је могуће
+задавати боју, фонт, величину и положај. Приказ текста захтева три корака.</p>
+
+    </p></div></div>
+<p><strong>Прво</strong>, потребно је одабрати фонт којим ће се текст исписивати помоћу функције <code class="docutils literal notranslate"><span class="pre">pg.font.SysFont</span></code>
+која прима два параметра: назив фонта (инсталираног у оперативном систему) и његову величину.</p>
+<p><strong>Други корак</strong> је да се креира сличица која представља нацртани текст
+функцијом <code class="docutils literal notranslate"><span class="pre">font.render</span></code> где је <code class="docutils literal notranslate"><span class="pre">font</span></code>
+креиран у претходном кораку, а параметри функције су редом текст који се исписује (ниска),
+логичка вредност која одређује да ли ће се цртати лепшим линијама (<em>True за ДА</em>)
+и на крају боја текста.</p>
+<p>У <strong>трећем кораку</strong> добијену сличицу можемо поставити на жељену позицију у
+прозору помоћу функције <code class="docutils literal notranslate"><span class="pre">prozor.blit</span></code> чији је први параметар сличица, а други координате на које
+ће бити постављен горњи леви угао слике тј. текста.</p>
+
+    <div data-component="reveal" id="фонтови"   data-showtitle="Сазнај више" data-hidetitle="Сакриј">
+    
+    <div class="course-box course-box-info">
+        <div class="course-content">
+            <p>
+<p>Уместо системског фонта могуће је навести и неку датотеку са фонтом (то су обично <code class="docutils literal notranslate"><span class="pre">.ttf</span></code> или <code class="docutils literal notranslate"><span class="pre">.otf</span></code>
+датотеке) и тада се користи функција <code class="docutils literal notranslate"><span class="pre">pg.font.Font</span></code>, али то нећемо у наставку користити.</p>
+
+    </p></div></div>
+
+    </div>
+    
+    <div class="course-box course-box-special">
+        <div class="course-content">
+            <h4 class="carbox-title">
+                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
+            </h4>
+            <p>
+<p>Размотримо наредни пример који у горњем левом углу прозора исписује поруку <code class="docutils literal notranslate"><span class="pre">Zdravo</span> <span class="pre">svete!</span></code>.</p>
+
+    </p></div></div>
 
 <div data-childcomponent="pisanje_teksta" class="course-box course-box-problem course-content">
 
@@ -658,12 +669,17 @@ pg.quit()
 
     </p></div></div>
 <img alt="../_images/macka.png" class="align-center" src="../_images/macka.png" />
+
+    <div class="course-box course-box-info">
+        <div class="course-content">
+            <p>
 <p>Да би се слика приказала на средини прозора, очитавамо прво њене
 димензије. То можемо урадити помоћу функција <code class="docutils literal notranslate"><span class="pre">get_width()</span></code> и
 <code class="docutils literal notranslate"><span class="pre">get_height()</span></code>, које враћају ширину и висину слике. Координате се
 онда добијају као половина разлике између димензија прозора и димензија
-слике која се приказује (сличица је центрирана јер се празан простор
-равномерно распоређује са обе њене стране).</p>
+слике која се приказује (сличица је центрирана јер је центар слике у центру прозора).</p>
+
+    </p></div></div>
 
 <div data-childcomponent="ucitavanje_i_prikaz_slike_sredina" class="course-box course-box-problem course-content">
 
@@ -691,15 +707,8 @@ prozor.blit(slika, (x, y))
 
 # -*- acsection: after-main -*-
 
-# ažuriramo prikaz sadržaja ekrana
-pg.display.update()
-
-# čekamo da korisnik isključi prozor
-#while pg.event.wait().type != pg.QUIT:
-#    pass
-
-# isključivanje rada biblioteke PyGame
-pg.quit()
+# prikazujemo prozor i cekamo da ga korisnik iskljuci
+pygamebg.wait_loop()
 "   >
 
 
@@ -719,13 +728,22 @@ pg.quit()
 да тај текст буде центриран у средини прозора.</p>
 
     </p></div></div>
-<p>Пошто желимо да текст буде центриран, ту позицију можемо израчунати
-тако што одредимо прво ширину и висину текста. За то можемо поново
-употребити функције <code class="docutils literal notranslate"><span class="pre">get_width()</span></code> и <code class="docutils literal notranslate"><span class="pre">get_height()</span></code> као и у случају
-слике, а можемо употребити и функцију <code class="docutils literal notranslate"><span class="pre">font.size()</span></code> чији је
-параметар ниска чија се величина одређује. Координате левог угла се
-онда одређују на исти начин као и у случају слике.</p>
+<p>Када од текста направимо сличицу како смо описали, можемо поново
+употребити функције <code class="docutils literal notranslate"><span class="pre">get_width()</span></code> и <code class="docutils literal notranslate"><span class="pre">get_height()</span></code> да бисмо је центрирали као и у случају
+слике. Координате левог угла се онда одређују на исти начин као и у случају слике.</p>
 
+    <div data-component="reveal" id="величина_фонта"   data-showtitle="Сазнај више" data-hidetitle="Сакриј">
+    
+    <div class="course-box course-box-info">
+        <div class="course-content">
+            <p>
+<p>За одређивање ширине и висине текста можемо употребити и функцију <code class="docutils literal notranslate"><span class="pre">font.size()</span></code> чији је
+параметар ниска чија се величина одређује.</p>
+
+    </p></div></div>
+
+    </div>
+    
 <div data-childcomponent="font_sredina" class="course-box course-box-problem course-content">
 
 <textarea data-component="activecode" id=font_sredina data-lang="python" 

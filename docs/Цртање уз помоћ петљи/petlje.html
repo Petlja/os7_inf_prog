@@ -24,13 +24,9 @@
     <link rel="stylesheet" type="text/css" href="../_static/webglinteractive.css" />
     <link rel="stylesheet" type="text/css" href="../_static/karel.css" />
     <link rel="stylesheet" type="text/css" href="../_static/notes.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/simanim.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/pycode.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/p5js.css" />
     <link rel="stylesheet" type="text/css" href="../_static/gallery.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/dbDirective.css" />
     <link rel="stylesheet" type="text/css" href="../_static/associations.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/regex-check.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/editor.css" />
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" type="text/css" />
@@ -119,46 +115,14 @@
     <script type="text/javascript" src="../_static/karel-i18n.sr-Cyrl.js"></script>
     <script type="text/javascript" src="../_static/notes.js"></script>
     <script type="text/javascript" src="../_static/pygamelib-init.js"></script>
-    <script type="text/javascript" src="../_static/blockly/blockly_compressed.js"></script>
-    <script type="text/javascript" src="../_static/blockly/blocks_compressed.js"></script>
-    <script type="text/javascript" src="../_static/blockly/python_compressed.js"></script>
-    <script type="text/javascript" src="../_static/blockly/msg-sr.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/utilities.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/python_errors.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/ast_node_visitor.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/abstract_interpreter.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/pytifa.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/abstract_interpreter_definitions.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/python_to_blockly.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/imported.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/class.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/comment.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/comprehensions.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/dict.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/if.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/io.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/lists.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/sets.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/loops.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/parking.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/tuple.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/turtles.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/text.js"></script>
-    <script type="text/javascript" src="../_static/blockpy-modal.js"></script>
-    <script type="text/javascript" src="../_static/simanim.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/pyodide/v0.16.1/full/pyodide.js"></script>
-    <script type="text/javascript" src="../_static/pycode.js"></script>
-    <script type="text/javascript" src="//toolness.github.io/p5.js-widget/p5-widget.js"></script>
-    <script type="text/javascript" src="../_static/p5js.js"></script>
     <script type="text/javascript" src="../_static/gallery.js"></script>
-    <script type="text/javascript" src="../_static/dbDirective.js"></script>
-    <script type="text/javascript" src="../_static/sql.js"></script>
     <script type="text/javascript" src="../_static/associations.js"></script>
     <script type="text/javascript" src="../_static/associations-i18n.en.js"></script>
     <script type="text/javascript" src="../_static/associations-i18n.sr-Cyrl.js"></script>
-    <script type="text/javascript" src="../_static/regex-check.js"></script>
-    <script type="text/javascript" src="../_static/regex-check-i18n.en.js"></script>
-    <script type="text/javascript" src="../_static/regex-check-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/editor.js"></script>
+    <script type="text/javascript" src="../_static/jszip.js"></script>
+    <script type="text/javascript" src="../_static/editor-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/editor-i18n.sr-Cyrl.js"></script>
     <script type="text/javascript" src="../_static/translations.js"></script>
     <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/javascript" src="../_static/jquery-ui-1.10.3.custom.min.js"></script>
@@ -261,7 +225,7 @@
            <div>
                 <div class="courseContentsSection">
                 <div class="lecture-div courseContentsSectionHeadline" id=lecture-предговор>
-                    <h5>1. Рачунарство - Увод у Pygame</h5>
+                    <h5>1. Програмирање у пајтону - Увод у Pygame</h5>
                     <i class="fas fa-angle-down caret-position "> </i>
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
@@ -308,13 +272,14 @@
                 
                 <div class="courseContentsSection">
                 <div class="lecture-div courseContentsSectionHeadline" id=lecture-Правоугаоници%20и%20елипсе>
-                    <h5>5. Правоугаоници и елипсе</h5>
+                    <h5>5. Квадрати, правоугаоници и елипсе</h5>
                     <i class="fas fa-angle-down caret-position "> </i>
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
-                <div class="courseContentsSubSection d-none"><a href=../Правоугаоници%20и%20елипсе/pravougaonici_elipse.html><div class="studioLecture" id=activity-pravougaonici_elipse><i class="fas fa-file-alt activity-icon"></i>5.1. Цртање облика - правоугаоници и елипсе</div></a>
-                <a href=../Правоугаоници%20и%20елипсе/pravougaonici_elipse_zadatak.html><div class="studioLecture" id=activity-pravougaonici_elipse_zadatak><i class="fas fa-file-alt activity-icon"></i>5.2. Домаћи задатак</div></a>
-                <a href=../Правоугаоници%20и%20елипсе/pravougaonici_elipse_test.html><div class="studioLecture" id=activity-pravougaonici_elipse_test><i class="far fa-question-circle activity-icon"></i>5.3. Квиз - правоугаоници и елипсе</div></a>
+                <div class="courseContentsSubSection d-none"><a href=../Правоугаоници%20и%20елипсе/pravougaonici.html><div class="studioLecture" id=activity-pravougaonici><i class="fas fa-file-alt activity-icon"></i>5.1. Цртање облика - квадрати и правоугаоници</div></a>
+                <a href=../Правоугаоници%20и%20елипсе/elipse.html><div class="studioLecture" id=activity-elipse><i class="fas fa-file-alt activity-icon"></i>5.2. Цртање облика - елипсе</div></a>
+                <a href=../Правоугаоници%20и%20елипсе/pravougaonici_elipse_zadatak.html><div class="studioLecture" id=activity-pravougaonici_elipse_zadatak><i class="fas fa-file-alt activity-icon"></i>5.3. Домаћи задатак</div></a>
+                <a href=../Правоугаоници%20и%20елипсе/pravougaonici_elipse_test.html><div class="studioLecture" id=activity-pravougaonici_elipse_test><i class="far fa-question-circle activity-icon"></i>5.4. Квиз - правоугаоници и елипсе</div></a>
                 </div>
             </div>
                 
@@ -324,9 +289,10 @@
                     <i class="fas fa-angle-down caret-position "> </i>
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
-                <div class="courseContentsSubSection d-none"><a href=../Кругови%20и%20многоуглови/Krugovi_mnogoulgovi.html><div class="studioLecture" id=activity-Krugovi_mnogoulgovi><i class="fas fa-file-alt activity-icon"></i>6.1. Цртање облика - кругови и многоуглови</div></a>
-                <a href=../Кругови%20и%20многоуглови/Krugovi_mnogouglovi_zadatak.html><div class="studioLecture" id=activity-Krugovi_mnogouglovi_zadatak><i class="fas fa-file-alt activity-icon"></i>6.2. Домаћи задатак</div></a>
-                <a href=../Кругови%20и%20многоуглови/Krugovi_mnogouglovi_test.html><div class="studioLecture" id=activity-Krugovi_mnogouglovi_test><i class="far fa-question-circle activity-icon"></i>6.3. Квиз - кругови и многоуглови</div></a>
+                <div class="courseContentsSubSection d-none"><a href=../Кругови%20и%20многоуглови/Krugovi.html><div class="studioLecture" id=activity-Krugovi><i class="fas fa-file-alt activity-icon"></i>6.1. Цртање облика - кругови</div></a>
+                <a href=../Кругови%20и%20многоуглови/mnogouglovi.html><div class="studioLecture" id=activity-mnogouglovi><i class="fas fa-file-alt activity-icon"></i>6.2. Цртање облика - многоуглови</div></a>
+                <a href=../Кругови%20и%20многоуглови/Krugovi_mnogouglovi_zadatak.html><div class="studioLecture" id=activity-Krugovi_mnogouglovi_zadatak><i class="fas fa-file-alt activity-icon"></i>6.3. Домаћи задатак</div></a>
+                <a href=../Кругови%20и%20многоуглови/Krugovi_mnogouglovi_test.html><div class="studioLecture" id=activity-Krugovi_mnogouglovi_test><i class="far fa-question-circle activity-icon"></i>6.4. Квиз - кругови и многоуглови</div></a>
                 </div>
             </div>
                 
@@ -349,9 +315,10 @@
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
                 <div class="courseContentsSubSection d-none"><a href=../Релативно%20задавање%20координата%20и%20димензија/Pajton_podsetnik_definisanje_funkcija.html><div class="studioLecture" id=activity-Pajton_podsetnik_definisanje_funkcija><i class="fas fa-file-alt activity-icon"></i>8.1. Пајтон подсетник - дефинисање функција</div></a>
-                <a href=../Релативно%20задавање%20координата%20и%20димензија/skaliranje.html><div class="studioLecture" id=activity-skaliranje><i class="fas fa-file-alt activity-icon"></i>8.2. Релативне координате и димензије</div></a>
-                <a href=../Релативно%20задавање%20координата%20и%20димензија/zadatak_relativne_koordinate.html><div class="studioLecture" id=activity-zadatak_relativne_koordinate><i class="fas fa-file-alt activity-icon"></i>8.3. Домаћи задатак</div></a>
-                <a href=../Релативно%20задавање%20координата%20и%20димензија/relativne_koordinate_test.html><div class="studioLecture" id=activity-relativne_koordinate_test><i class="far fa-question-circle activity-icon"></i>8.4. Квиз - релативне координате и димензије</div></a>
+                <a href=../Релативно%20задавање%20координата%20и%20димензија/skaliranje_objekta.html><div class="studioLecture" id=activity-skaliranje_objekta><i class="fas fa-file-alt activity-icon"></i>8.2. Повећавање и смањивање објекта, центрирање</div></a>
+                <a href=../Релативно%20задавање%20координата%20и%20димензија/skaliranje.html><div class="studioLecture" id=activity-skaliranje><i class="fas fa-file-alt activity-icon"></i>8.3. Повећавање и смањивање цртежа, центрирање</div></a>
+                <a href=../Релативно%20задавање%20координата%20и%20димензија/domaci_zadatak_relativne_koordinate.html><div class="studioLecture" id=activity-domaci_zadatak_relativne_koordinate><i class="fas fa-file-alt activity-icon"></i>8.4. Домаћи задатак</div></a>
+                <a href=../Релативно%20задавање%20координата%20и%20димензија/relativne_koordinate_test.html><div class="studioLecture" id=activity-relativne_koordinate_test><i class="far fa-question-circle activity-icon"></i>8.5. Квиз - релативне координате и димензије</div></a>
                 </div>
             </div>
                 
@@ -362,7 +329,7 @@
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
                 <div class="courseContentsSubSection d-none"><a href=../Релативно%20задавање%20координата%20-%20утврђивање/relativne_koordinate_utvrdjivanje.html><div class="studioLecture" id=activity-relativne_koordinate_utvrdjivanje><i class="fas fa-file-alt activity-icon"></i>9.1. Релативне координате утврђивање</div></a>
-                <a href=../Релативно%20задавање%20координата%20-%20утврђивање/zadatak_relativne_koordinate_utvrdjivanje.html><div class="studioLecture" id=activity-zadatak_relativne_koordinate_utvrdjivanje><i class="fas fa-file-alt activity-icon"></i>9.2. Домаћи задатак</div></a>
+                <a href=../Релативно%20задавање%20координата%20-%20утврђивање/zadatak_relativne_koordinate.html><div class="studioLecture" id=activity-zadatak_relativne_koordinate><i class="fas fa-file-alt activity-icon"></i>9.2. Домаћи задатак</div></a>
                 <a href=../Релативно%20задавање%20координата%20-%20утврђивање/relativne_koordinate_test2.html><div class="studioLecture" id=activity-relativne_koordinate_test2><i class="far fa-question-circle activity-icon"></i>9.3. Квиз - релативне координате и димензије</div></a>
                 </div>
             </div>
@@ -374,7 +341,8 @@
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
                 <div class="courseContentsSubSection d-none"><a href=../Слике%20и%20текст/slike.html><div class="studioLecture" id=activity-slike><i class="fas fa-file-alt activity-icon"></i>10.1. Слике и текст</div></a>
-                <a href=../Слике%20и%20текст/slike_test.html><div class="studioLecture" id=activity-slike_test><i class="far fa-question-circle activity-icon"></i>10.2. Квиз - слике и текст</div></a>
+                <a href=../Слике%20и%20текст/slike_vezbanje.html><div class="studioLecture" id=activity-slike_vezbanje><i class="fas fa-file-alt activity-icon"></i>10.2. Вежбање</div></a>
+                <a href=../Слике%20и%20текст/slike_test.html><div class="studioLecture" id=activity-slike_test><i class="far fa-question-circle activity-icon"></i>10.3. Квиз - слике и текст</div></a>
                 </div>
             </div>
                 
@@ -397,8 +365,8 @@
                     <i class="fas fa-angle-down caret-position "> </i>
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
-                <div class="courseContentsSubSection d-none"><a href=../Цртање%20уз%20помоћ%20петљи%202/petlje2.html><div class="studioLecture" id=activity-petlje2><i class="fas fa-file-alt activity-icon"></i>12.1. Цртање облика помоћу петљи</div></a>
-                <a href=../Цртање%20уз%20помоћ%20петљи%202/petlje2_zadatak.html><div class="studioLecture" id=activity-petlje2_zadatak><i class="fas fa-file-alt activity-icon"></i>12.2. Домаћи задатак</div></a>
+                <div class="courseContentsSubSection d-none"><a href=../Цртање%20уз%20помоћ%20петљи%202/petlje2_random.html><div class="studioLecture" id=activity-petlje2_random><i class="fas fa-file-alt activity-icon"></i>12.1. Употреба генератора случајних бројева</div></a>
+                <a href=../Цртање%20уз%20помоћ%20петљи%202/petlje2_pravilno.html><div class="studioLecture" id=activity-petlje2_pravilno><i class="fas fa-file-alt activity-icon"></i>12.2. Правилно распоређивање боја</div></a>
                 <a href=../Цртање%20уз%20помоћ%20петљи%202/petlje2_test.html><div class="studioLecture" id=activity-petlje2_test><i class="far fa-question-circle activity-icon"></i>12.3. Квиз - петље 2</div></a>
                 </div>
             </div>
@@ -482,6 +450,20 @@
 који је корак, па на основу тога позови функцију <code class="docutils literal notranslate"><span class="pre">range</span></code> у оквиру
 петље <code class="docutils literal notranslate"><span class="pre">for</span></code>.</p>
 
+    <div data-component="reveal" id="мердевине_помоћ"   data-showtitle="Помоћ" data-hidetitle="Сакриј помоћ">
+    
+    <div class="course-box course-box-info">
+        <div class="course-content">
+            <p>
+<p>Можемо приметити да се при цртању пречага заправо мења само висина пречага, а све остало је исто.
+Да би мењали висину пречаге потребно је да код цртања леве и десне њене тачке
+мењамо <code class="docutils literal notranslate"><span class="pre">y</span></code> коррдинату (чиме се мења висина) у корацима 50, 100, 150, 200, 250.
+То можемо искористити у <code class="docutils literal notranslate"><span class="pre">range</span></code> делу у оквиру петље <code class="docutils literal notranslate"><span class="pre">for</span></code>.</p>
+
+    </p></div></div>
+
+    </div>
+    
 <div data-childcomponent="PyGame_loop__ladder" class="course-box course-box-problem course-content">
 
 <textarea data-component="activecode" id=PyGame_loop__ladder data-lang="python" 
@@ -565,12 +547,17 @@ pygamebg.wait_loop()
     </div>
     <div class="section" id="id3">
 <h3>Правилно распоређени бројеви<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+
+    <div class="course-box course-box-info">
+        <div class="course-content">
+            <p>
 <p>У оба претходна примера било је потребно да набројимо неки низ
 правилно распоређених бројева. У задатку са круговима то су били
 бројеви 10, 20, …, 100, а у задатку са мердевинама то су били
 бројеви 50, 100, 150, 200, 250.</p>
-<p>У решењима задатка видели смо да је један начин да се то уради петља
-облика</p>
+
+    </p></div></div>
+<p>У решењима задатка видели смо да је један начин да се то уради петља облика</p>
 
 <div data-childcomponent="petlja1" class="course-box course-box-problem course-content">
 
@@ -579,13 +566,12 @@ pygamebg.wait_loop()
     data-audio=''   
              data-passivecode="true"  data-hidehistory=true
        >
-for x in range(x0, xMax+1, dx):
-    ...
+   for x in range(pocetni_x, najveci_x+1, korak):
+         ...
 </textarea>
 </div>
-<p>при чему је било потребно обратити пажњу на то да десни крај није
-укључен у набрајање (узимају се вредности из полуотвореног интервала
-<span class="math notranslate nohighlight">\([x_0, x_{Max}+1) = [x_0, x_{Max}]\)</span>).</p>
+<p>при чему је било потребно обратити пажњу на то да десни крај интервала никада није
+укључен у набрајање па зато узимамо <code class="docutils literal notranslate"><span class="pre">najveci_x+1</span></code> да би и највећи <code class="docutils literal notranslate"><span class="pre">х</span></code> био укључен у петљу.</p>
 <p>Провери да ли ово разумеш тако што ћеш одговорити на следеће питање.</p>
 
 <div class="course-box course-box-problem course-content">
@@ -604,8 +590,9 @@ for x in range(x0, xMax+1, dx):
 
     <li data-component="draggable" id="pygame_quiz_upari_petlje_i_aritmeticke_nizove_drag4">100, 200, 300, 400, 500, 600</li>
     <li data-component="dropzone" for="pygame_quiz_upari_petlje_i_aritmeticke_nizove_drag4">for i in range(100, 600+1, 100)</li>
-</ul></div><p>Наведимо још неколико начина да се исти ефекат постигне. Ако почетак
-обележимо са <span class="math notranslate nohighlight">\(x_0\)</span>, а корак са <span class="math notranslate nohighlight">\(d_x\)</span>, тада су вредности
+</ul></div><div class="section" id="id4">
+<h4>Наведимо још неколико начина да се исти ефекат постигне<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h4>
+<p>Ако сада почетак обележимо са <span class="math notranslate nohighlight">\(x_0\)</span>, а корак са <span class="math notranslate nohighlight">\(d_x\)</span>, тада су вредности
 које исписујемо <span class="math notranslate nohighlight">\(x_0\)</span>, <span class="math notranslate nohighlight">\(x_0 + d_x\)</span>, <span class="math notranslate nohighlight">\(x_0+2d_x\)</span>,
 <span class="math notranslate nohighlight">\(x_0+3d_x\)</span> итд. Ако желимо да набројимо <span class="math notranslate nohighlight">\(n\)</span> ових вредности,
 тада можемо употребити петљу облика</p>
@@ -640,19 +627,26 @@ for i in range(n):
 </div>
 <p>Видећемо да се велики број задатака са цртањем правилно распоређених
 облика може решити применом оваквих петљи.</p>
+
+    <div class="course-box course-box-info">
+        <div class="course-content">
+            <p>
 <p>Нагласимо још и да функција <code class="docutils literal notranslate"><span class="pre">range</span></code> са кораком (са три аргумента)
 прима обавезно целобројне аргументе, па у ситуацијама када корак није
 целобројан њено коришћење није могуће.</p>
+
+    </p></div></div>
 </div>
-<div class="section" id="id4">
-<h3>Хоризонтално и вертикално распоређивање облика<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="id5">
+<h3>Хоризонтално и вертикално распоређивање облика<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
 <p>Често у применама имамо потребу да распоредимо објекте тако да буду
 један до другога, тако да су сви објекти равномерно распоређени,
 тј. тако да су свака два узастопна објекта на истом растојању.</p>
 </div>
 </div>
-<div class="section" id="id5">
-<h2>Хоризонтално распоређени кругови<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id6">
+<h2>Хоризонтално распоређени кругови<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
 
     <div class="course-box course-box-special">
         <div class="course-content">
@@ -810,8 +804,8 @@ for i in range(10):
     </div></blockquote>
 </div>
 </div>
-<div class="section" id="id6">
-<h2>Вертикално распоређени кругови<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id7">
+<h2>Вертикално распоређени кругови<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h2>
 <p>Прикажимо сада како можемо распоредити кругове вертикално.</p>
 
     <div class="course-box course-box-special">
@@ -879,105 +873,6 @@ y = ???   # y koordinata centra tekućeg kruga
 while ???:
     pg.draw.circle(prozor, pg.Color("red"), (sirina // 2, y), r)  # crtamo krug
     y += ???  # centar narednog kruga je udaljen za dy od centra tekućeg kruga
-</textarea>
-</div>
-</div>
-<div class="section" id="id7">
-<h2>Правоугаона мрежа<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h2>
-
-    <div class="course-box course-box-special">
-        <div class="course-content">
-            <h4 class="carbox-title">
-                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
-            </h4>
-            <p>
-<p>Напиши програм који исцртава правоугаону мрежу која се састоји од
-100 правоугаоних поља, распоређених у 10 врста и 10
-колона (исцртати само линије мреже и то хоризонталне линије плавом
-бојом, а вертикалне црвеном, дебљине 5 пиксела).</p>
-
-    </p></div></div>
-<p>Основни задатак је одредити координате x вертикалних линија и
-координате y хоризонталних линија. Ширину једног правоугаоника можемо
-одредити дељењем ширине прозора бројем колона (у нашем случају то је
-10), док висину једног правоугаоника можемо одредити дељењем висине
-прозора бројем врста (то је поново 10). Означимо те димензије са
-<span class="math notranslate nohighlight">\(d_x\)</span> и <span class="math notranslate nohighlight">\(d_y\)</span>. Вертикалне линије се онда налазе на
-растојању <span class="math notranslate nohighlight">\(d_x\)</span>, <span class="math notranslate nohighlight">\(2 d_x\)</span>, <span class="math notranslate nohighlight">\(3 d_x\)</span>, …, <span class="math notranslate nohighlight">\(9
-d_x\)</span> пиксела од леве ивице прозора (то су им координате x). Пошто се
-те линије простиру од врха до дна прозора, координате y крајњих тачака су
-једнаке нули, односно висини прозора. Понављање цртања линија остварујемо,
-наравно, употребом петље <code class="docutils literal notranslate"><span class="pre">for</span></code>, при чему је најбоље да се бројач
-<code class="docutils literal notranslate"><span class="pre">i</span></code> креће од један до девет, јер се тада у кораку <code class="docutils literal notranslate"><span class="pre">i</span></code> црта линија
-од тачке <code class="docutils literal notranslate"><span class="pre">(i*dx,</span> <span class="pre">0)</span></code> до тачке <code class="docutils literal notranslate"><span class="pre">(i*dx,</span> <span class="pre">visina)</span></code>. Цртање
-хоризонталних линија остварујемо веома слично, у независној петљи
-<code class="docutils literal notranslate"><span class="pre">for</span></code> у којој се црта линија од тачке <code class="docutils literal notranslate"><span class="pre">(0,</span> <span class="pre">i*dy)</span></code> до тачке
-<code class="docutils literal notranslate"><span class="pre">(sirina,</span> <span class="pre">i*dy)</span></code>.</p>
-
-<div data-childcomponent="pravougaona_mreza" class="course-box course-box-problem course-content">
-
-<textarea data-component="activecode" id=pravougaona_mreza data-lang="python" 
-      data-timelimit=25000    
-    data-audio=''   
-           data-playtask="true"   data-modaloutput="true" data-hidehistory=true
-      data-includexsrc="# -*- acsection: general-init -*-
-import pygame as pg
-import pygamebg
-
-(sirina, visina) = (400, 300) # otvaramo prozor
-prozor = pygamebg.open_window(sirina, visina, &quot;Pravougaona mreza&quot;)
-
-# -*- acsection: main -*-
-
-# bojimo pozadinu prozora u belo
-prozor.fill(pg.Color(&quot;white&quot;))
-
-brojPodeoka = 10
-dx = sirina / brojPodeoka
-dy = visina / brojPodeoka
-
-# crtamo horizontalne linije
-for i in range(1, brojPodeoka):
-    pg.draw.line(prozor, pg.Color(&quot;blue&quot;), (0, i*dy), (sirina, i*dy), 5)
-
-# crtamo vertikalne linije
-for i in range(1, brojPodeoka):
-    pg.draw.line(prozor, pg.Color(&quot;red&quot;), (i*dx, 0), (i*dx, visina), 5)
-
-# -*- acsection: after-main -*-
-
-# prikazujemo prozor i čekamo da ga korisnik isključi
-pygamebg.wait_loop()
-" data-enablecopy="true">
-# bojimo pozadinu prozora u belo
-prozor.fill(pg.Color("white"))
-
-brojPodeoka = 10
-dx = sirina / brojPodeoka
-dy = ???                   # izračunaj razmak između podeoka po visini
-
-# crtamo horizontalne linije
-for i in range(1, brojPodeoka):
-    pg.draw.line(prozor, pg.Color("blue"), (0, i*dy), (sirina, i*dy), 5)
-
-# dodaj kod koji crta vertikalne linije crvenom bojom
-???
-</textarea>
-</div>
-<p>Још један начин да се одреди координата наредне линије је да се
-координата претходне линије увећа за ширину тј. дужину правоугаоника.</p>
-
-<div data-childcomponent="pravougaona_mreza_alt" class="course-box course-box-problem course-content">
-
-<textarea data-component="activecode" id=pravougaona_mreza_alt data-lang="python" 
-      data-timelimit=25000  data-codelens="true"  
-    data-audio=''   
-             data-passivecode="true"  data-hidehistory=true
-       >
-x = dx
-for i in range(1, brojPodeoka):
-    pg.draw.line(prozor, pg.Color("red"), (x, 0), (x, visina), 5)
-    x += dx
 </textarea>
 </div>
 </div>

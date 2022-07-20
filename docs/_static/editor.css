@@ -1,0 +1,86 @@
+.petlja-editor {
+    position: relative;
+    overflow: hidden;
+}
+
+.petlja-editor .CodeMirror {
+    width: 100%;
+}
+
+.editor-container {
+    float: left;
+    height: 318px;
+    padding-top: 0px;
+    width: 100%;
+    margin-right: 3px !important;
+}
+
+.editor-container label, .title-tab label {
+    background-color: #3d3d3d;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    padding: 5px 10px;
+    color: #fff;
+    margin-bottom: 0px !important;
+}
+
+.editor-iframe {
+    width: calc(50% - 3px);
+    height: 275px;
+    margin-top: 42px;
+    float: left;
+    display: none;
+    margin-bottom: 15px;
+}
+
+.editor-play {
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    padding: 5px 10px;
+    color: #fff !important;
+    margin-bottom: 0px !important;
+    margin-right: 5px;
+    cursor: pointer;
+    float: right;
+    background-color: #18bc9c;
+    border-bottom: 2px solid #18bc9c !important;
+    font-size: 18px !important;
+}
+
+.editor-btn{
+    width: 100%;
+    float:left;
+}
+
+.editor-title {
+    margin-right: 5px !important;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    padding: 5px 10px;
+    color: #fff !important;
+    margin-bottom: 0px !important;
+    margin-right: 5px;
+    cursor: pointer;
+    float: left;
+    background-color: #3d3d3d;
+    border-bottom: 2px solid #666 !important;
+    font-size: 18px !important;
+}
+
+.editor-title:hover {
+    background-color: #3d3d3daa;
+}
+
+.editor-title.active {
+    background-color: #18bc9c;
+    cursor: default;
+    border-bottom: 2px solid #18bc9c !important;
+    font-size: 18px;
+    
+}
+
+.editor-title.active:hover {
+    background-color: #18bc9c;
+}
+
+

@@ -93,8 +93,8 @@ lessons:
   description: Прва лекција
   folder: предговор
   guid: b7caaf4c-34dd-493a-8d04-0bfab446d50c
-  normalized_title: 1. Рачунарство - Увод у Pygame
-  title: 1. Рачунарство - Увод у Pygame
+  normalized_title: 1. Програмирање у пајтону - Увод у Pygame
+  title: 1. Програмирање у пајтону - Увод у Pygame
 - activities:
   - description: ''
     file: torke_liste_podsetnik.html
@@ -172,47 +172,59 @@ lessons:
   title: 4. Дужи
 - activities:
   - description: ''
-    file: pravougaonici_elipse.html
+    file: pravougaonici.html
     guid: dc49e87f-93b3-4c6b-8717-bcc0a8dab9c0
-    src: pravougaonici_elipse.rst
-    title: 5.1. Цртање облика - правоугаоници и елипсе
+    src: pravougaonici.rst
+    title: 5.1. Цртање облика - квадрати и правоугаоници
+    type: reading
+  - description: ''
+    file: elipse.html
+    guid: cb864629-9b77-4812-a463-607edae9f675
+    src: elipse.rst
+    title: 5.2. Цртање облика - елипсе
     type: reading
   - description: ''
     file: pravougaonici_elipse_zadatak.html
     guid: a62d1383-c81a-4f33-961d-ff45c60e42f5
     src: pravougaonici_elipse_zadatak.rst
-    title: 5.2. Домаћи задатак
+    title: 5.3. Домаћи задатак
     type: reading
   - description: ''
     file: pravougaonici_elipse_test.html
     guid: 5c853e2f-4563-4db0-a19e-461f9b85d203
     src: pravougaonici_elipse_test.rst
-    title: 5.3. Квиз - правоугаоници и елипсе
+    title: 5.4. Квиз - правоугаоници и елипсе
     type: quiz
   archived-activities: []
   description: Četvrta lekcija - pravougaonici i elipse
   folder: Правоугаоници и елипсе
   guid: 93c99d9f-3421-426c-abb9-3e50cf271b73
-  normalized_title: 5. Правоугаоници и елипсе
-  title: 5. Правоугаоници и елипсе
+  normalized_title: 5. Квадрати, правоугаоници и елипсе
+  title: 5. Квадрати, правоугаоници и елипсе
 - activities:
   - description: ''
-    file: Krugovi_mnogoulgovi.html
+    file: Krugovi.html
     guid: 9ae897b8-5715-4dd6-802e-1652e5496688
-    src: Krugovi_mnogoulgovi.rst
-    title: 6.1. Цртање облика - кругови и многоуглови
+    src: Krugovi.rst
+    title: 6.1. Цртање облика - кругови
+    type: reading
+  - description: ''
+    file: mnogouglovi.html
+    guid: 4932bc09-ca0d-44be-836d-c9e9fcca413a
+    src: mnogouglovi.rst
+    title: 6.2. Цртање облика - многоуглови
     type: reading
   - description: ''
     file: Krugovi_mnogouglovi_zadatak.html
     guid: 4e282f13-59fc-4106-b190-baf9fc45a54d
     src: Krugovi_mnogouglovi_zadatak.rst
-    title: 6.2. Домаћи задатак
+    title: 6.3. Домаћи задатак
     type: reading
   - description: ''
     file: Krugovi_mnogouglovi_test.html
     guid: 54bb214b-46c2-4318-9623-411210b9dc2c
     src: Krugovi_mnogouglovi_test.rst
-    title: 6.3. Квиз - кругови и многоуглови
+    title: 6.4. Квиз - кругови и многоуглови
     type: quiz
   archived-activities: []
   description: Krugovi i mnogouglovi
@@ -248,27 +260,33 @@ lessons:
 - activities:
   - description: ''
     file: Pajton_podsetnik_definisanje_funkcija.html
-    guid: 9da95bb0-42ce-4eb7-abb9-15ebfd8c20a5
+    guid: d3ad1962-ab0f-4e5d-9160-7e1f29ed7d96
     src: Pajton_podsetnik_definisanje_funkcija.rst
     title: 8.1. Пајтон подсетник - дефинисање функција
+    type: reading
+  - description: ''
+    file: skaliranje_objekta.html
+    guid: 01d29a52-12db-4fd2-8065-ab5e0cc9e4b5
+    src: skaliranje_objekta.rst
+    title: 8.2. Повећавање и смањивање објекта, центрирање
     type: reading
   - description: ''
     file: skaliranje.html
     guid: 3772cb99-eec9-4e90-8c42-8d22e4c90fc9
     src: skaliranje.rst
-    title: 8.2. Релативне координате и димензије
+    title: 8.3. Повећавање и смањивање цртежа, центрирање
     type: reading
   - description: ''
-    file: zadatak_relativne_koordinate.html
-    guid: 914f5cf5-98d0-4014-bdbe-7ee5f9ae6dc4
-    src: zadatak_relativne_koordinate.rst
-    title: 8.3. Домаћи задатак
+    file: domaci_zadatak_relativne_koordinate.html
+    guid: 26fe7f87-f24b-4529-8cce-86bca36d0d7c
+    src: domaci_zadatak_relativne_koordinate.rst
+    title: 8.4. Домаћи задатак
     type: reading
   - description: ''
     file: relativne_koordinate_test.html
     guid: 05d3035a-0971-4e4d-a874-e8ccd7d4df7e
     src: relativne_koordinate_test.rst
-    title: 8.4. Квиз - релативне координате и димензије
+    title: 8.5. Квиз - релативне координате и димензије
     type: quiz
   archived-activities: []
   description: Релативне координате
@@ -284,9 +302,9 @@ lessons:
     title: 9.1. Релативне координате утврђивање
     type: reading
   - description: ''
-    file: zadatak_relativne_koordinate_utvrdjivanje.html
+    file: zadatak_relativne_koordinate.html
     guid: a1437b8d-62d5-4cdc-9829-c1c73584f778
-    src: zadatak_relativne_koordinate_utvrdjivanje.rst
+    src: zadatak_relativne_koordinate.rst
     title: 9.2. Домаћи задатак
     type: reading
   - description: ''
@@ -309,10 +327,16 @@ lessons:
     title: 10.1. Слике и текст
     type: reading
   - description: ''
+    file: slike_vezbanje.html
+    guid: d1f2e7a5-cb99-4c3d-999a-9c730265b1f5
+    src: slike_vezbanje.rst
+    title: 10.2. Вежбање
+    type: reading
+  - description: ''
     file: slike_test.html
     guid: 48403868-9bb7-4257-bece-f3ef99f02b3d
     src: slike_test.rst
-    title: 10.2. Квиз - слике и текст
+    title: 10.3. Квиз - слике и текст
     type: quiz
   archived-activities: []
   description: Слике и текст
@@ -353,16 +377,16 @@ lessons:
   title: 11. Цртање уз помоћ петљи
 - activities:
   - description: ''
-    file: petlje2.html
+    file: petlje2_random.html
     guid: a848cd14-cb6f-4b16-8b03-a1841841312c
-    src: petlje2.rst
-    title: 12.1. Цртање облика помоћу петљи
+    src: petlje2_random.rst
+    title: 12.1. Употреба генератора случајних бројева
     type: reading
   - description: ''
-    file: petlje2_zadatak.html
+    file: petlje2_pravilno.html
     guid: 1bfd9aa9-2dc3-4908-97ec-04647820d1ff
-    src: petlje2_zadatak.rst
-    title: 12.2. Домаћи задатак
+    src: petlje2_pravilno.rst
+    title: 12.2. Правилно распоређивање боја
     type: reading
   - description: ''
     file: petlje2_test.html

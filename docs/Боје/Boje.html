@@ -24,13 +24,9 @@
     <link rel="stylesheet" type="text/css" href="../_static/webglinteractive.css" />
     <link rel="stylesheet" type="text/css" href="../_static/karel.css" />
     <link rel="stylesheet" type="text/css" href="../_static/notes.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/simanim.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/pycode.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/p5js.css" />
     <link rel="stylesheet" type="text/css" href="../_static/gallery.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/dbDirective.css" />
     <link rel="stylesheet" type="text/css" href="../_static/associations.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/regex-check.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/editor.css" />
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" type="text/css" />
@@ -119,46 +115,14 @@
     <script type="text/javascript" src="../_static/karel-i18n.sr-Cyrl.js"></script>
     <script type="text/javascript" src="../_static/notes.js"></script>
     <script type="text/javascript" src="../_static/pygamelib-init.js"></script>
-    <script type="text/javascript" src="../_static/blockly/blockly_compressed.js"></script>
-    <script type="text/javascript" src="../_static/blockly/blocks_compressed.js"></script>
-    <script type="text/javascript" src="../_static/blockly/python_compressed.js"></script>
-    <script type="text/javascript" src="../_static/blockly/msg-sr.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/utilities.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/python_errors.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/ast_node_visitor.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/abstract_interpreter.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/pytifa.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/abstract_interpreter_definitions.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/python_to_blockly.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/imported.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/class.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/comment.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/comprehensions.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/dict.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/if.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/io.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/lists.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/sets.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/loops.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/parking.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/tuple.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/turtles.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/text.js"></script>
-    <script type="text/javascript" src="../_static/blockpy-modal.js"></script>
-    <script type="text/javascript" src="../_static/simanim.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/pyodide/v0.16.1/full/pyodide.js"></script>
-    <script type="text/javascript" src="../_static/pycode.js"></script>
-    <script type="text/javascript" src="//toolness.github.io/p5.js-widget/p5-widget.js"></script>
-    <script type="text/javascript" src="../_static/p5js.js"></script>
     <script type="text/javascript" src="../_static/gallery.js"></script>
-    <script type="text/javascript" src="../_static/dbDirective.js"></script>
-    <script type="text/javascript" src="../_static/sql.js"></script>
     <script type="text/javascript" src="../_static/associations.js"></script>
     <script type="text/javascript" src="../_static/associations-i18n.en.js"></script>
     <script type="text/javascript" src="../_static/associations-i18n.sr-Cyrl.js"></script>
-    <script type="text/javascript" src="../_static/regex-check.js"></script>
-    <script type="text/javascript" src="../_static/regex-check-i18n.en.js"></script>
-    <script type="text/javascript" src="../_static/regex-check-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/editor.js"></script>
+    <script type="text/javascript" src="../_static/jszip.js"></script>
+    <script type="text/javascript" src="../_static/editor-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/editor-i18n.sr-Cyrl.js"></script>
     <script type="text/javascript" src="../_static/translations.js"></script>
     <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/javascript" src="../_static/jquery-ui-1.10.3.custom.min.js"></script>
@@ -261,7 +225,7 @@
            <div>
                 <div class="courseContentsSection">
                 <div class="lecture-div courseContentsSectionHeadline" id=lecture-предговор>
-                    <h5>1. Рачунарство - Увод у Pygame</h5>
+                    <h5>1. Програмирање у пајтону - Увод у Pygame</h5>
                     <i class="fas fa-angle-down caret-position "> </i>
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
@@ -308,13 +272,14 @@
                 
                 <div class="courseContentsSection">
                 <div class="lecture-div courseContentsSectionHeadline" id=lecture-Правоугаоници%20и%20елипсе>
-                    <h5>5. Правоугаоници и елипсе</h5>
+                    <h5>5. Квадрати, правоугаоници и елипсе</h5>
                     <i class="fas fa-angle-down caret-position "> </i>
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
-                <div class="courseContentsSubSection d-none"><a href=../Правоугаоници%20и%20елипсе/pravougaonici_elipse.html><div class="studioLecture" id=activity-pravougaonici_elipse><i class="fas fa-file-alt activity-icon"></i>5.1. Цртање облика - правоугаоници и елипсе</div></a>
-                <a href=../Правоугаоници%20и%20елипсе/pravougaonici_elipse_zadatak.html><div class="studioLecture" id=activity-pravougaonici_elipse_zadatak><i class="fas fa-file-alt activity-icon"></i>5.2. Домаћи задатак</div></a>
-                <a href=../Правоугаоници%20и%20елипсе/pravougaonici_elipse_test.html><div class="studioLecture" id=activity-pravougaonici_elipse_test><i class="far fa-question-circle activity-icon"></i>5.3. Квиз - правоугаоници и елипсе</div></a>
+                <div class="courseContentsSubSection d-none"><a href=../Правоугаоници%20и%20елипсе/pravougaonici.html><div class="studioLecture" id=activity-pravougaonici><i class="fas fa-file-alt activity-icon"></i>5.1. Цртање облика - квадрати и правоугаоници</div></a>
+                <a href=../Правоугаоници%20и%20елипсе/elipse.html><div class="studioLecture" id=activity-elipse><i class="fas fa-file-alt activity-icon"></i>5.2. Цртање облика - елипсе</div></a>
+                <a href=../Правоугаоници%20и%20елипсе/pravougaonici_elipse_zadatak.html><div class="studioLecture" id=activity-pravougaonici_elipse_zadatak><i class="fas fa-file-alt activity-icon"></i>5.3. Домаћи задатак</div></a>
+                <a href=../Правоугаоници%20и%20елипсе/pravougaonici_elipse_test.html><div class="studioLecture" id=activity-pravougaonici_elipse_test><i class="far fa-question-circle activity-icon"></i>5.4. Квиз - правоугаоници и елипсе</div></a>
                 </div>
             </div>
                 
@@ -324,9 +289,10 @@
                     <i class="fas fa-angle-down caret-position "> </i>
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
-                <div class="courseContentsSubSection d-none"><a href=../Кругови%20и%20многоуглови/Krugovi_mnogoulgovi.html><div class="studioLecture" id=activity-Krugovi_mnogoulgovi><i class="fas fa-file-alt activity-icon"></i>6.1. Цртање облика - кругови и многоуглови</div></a>
-                <a href=../Кругови%20и%20многоуглови/Krugovi_mnogouglovi_zadatak.html><div class="studioLecture" id=activity-Krugovi_mnogouglovi_zadatak><i class="fas fa-file-alt activity-icon"></i>6.2. Домаћи задатак</div></a>
-                <a href=../Кругови%20и%20многоуглови/Krugovi_mnogouglovi_test.html><div class="studioLecture" id=activity-Krugovi_mnogouglovi_test><i class="far fa-question-circle activity-icon"></i>6.3. Квиз - кругови и многоуглови</div></a>
+                <div class="courseContentsSubSection d-none"><a href=../Кругови%20и%20многоуглови/Krugovi.html><div class="studioLecture" id=activity-Krugovi><i class="fas fa-file-alt activity-icon"></i>6.1. Цртање облика - кругови</div></a>
+                <a href=../Кругови%20и%20многоуглови/mnogouglovi.html><div class="studioLecture" id=activity-mnogouglovi><i class="fas fa-file-alt activity-icon"></i>6.2. Цртање облика - многоуглови</div></a>
+                <a href=../Кругови%20и%20многоуглови/Krugovi_mnogouglovi_zadatak.html><div class="studioLecture" id=activity-Krugovi_mnogouglovi_zadatak><i class="fas fa-file-alt activity-icon"></i>6.3. Домаћи задатак</div></a>
+                <a href=../Кругови%20и%20многоуглови/Krugovi_mnogouglovi_test.html><div class="studioLecture" id=activity-Krugovi_mnogouglovi_test><i class="far fa-question-circle activity-icon"></i>6.4. Квиз - кругови и многоуглови</div></a>
                 </div>
             </div>
                 
@@ -349,9 +315,10 @@
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
                 <div class="courseContentsSubSection d-none"><a href=../Релативно%20задавање%20координата%20и%20димензија/Pajton_podsetnik_definisanje_funkcija.html><div class="studioLecture" id=activity-Pajton_podsetnik_definisanje_funkcija><i class="fas fa-file-alt activity-icon"></i>8.1. Пајтон подсетник - дефинисање функција</div></a>
-                <a href=../Релативно%20задавање%20координата%20и%20димензија/skaliranje.html><div class="studioLecture" id=activity-skaliranje><i class="fas fa-file-alt activity-icon"></i>8.2. Релативне координате и димензије</div></a>
-                <a href=../Релативно%20задавање%20координата%20и%20димензија/zadatak_relativne_koordinate.html><div class="studioLecture" id=activity-zadatak_relativne_koordinate><i class="fas fa-file-alt activity-icon"></i>8.3. Домаћи задатак</div></a>
-                <a href=../Релативно%20задавање%20координата%20и%20димензија/relativne_koordinate_test.html><div class="studioLecture" id=activity-relativne_koordinate_test><i class="far fa-question-circle activity-icon"></i>8.4. Квиз - релативне координате и димензије</div></a>
+                <a href=../Релативно%20задавање%20координата%20и%20димензија/skaliranje_objekta.html><div class="studioLecture" id=activity-skaliranje_objekta><i class="fas fa-file-alt activity-icon"></i>8.2. Повећавање и смањивање објекта, центрирање</div></a>
+                <a href=../Релативно%20задавање%20координата%20и%20димензија/skaliranje.html><div class="studioLecture" id=activity-skaliranje><i class="fas fa-file-alt activity-icon"></i>8.3. Повећавање и смањивање цртежа, центрирање</div></a>
+                <a href=../Релативно%20задавање%20координата%20и%20димензија/domaci_zadatak_relativne_koordinate.html><div class="studioLecture" id=activity-domaci_zadatak_relativne_koordinate><i class="fas fa-file-alt activity-icon"></i>8.4. Домаћи задатак</div></a>
+                <a href=../Релативно%20задавање%20координата%20и%20димензија/relativne_koordinate_test.html><div class="studioLecture" id=activity-relativne_koordinate_test><i class="far fa-question-circle activity-icon"></i>8.5. Квиз - релативне координате и димензије</div></a>
                 </div>
             </div>
                 
@@ -362,7 +329,7 @@
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
                 <div class="courseContentsSubSection d-none"><a href=../Релативно%20задавање%20координата%20-%20утврђивање/relativne_koordinate_utvrdjivanje.html><div class="studioLecture" id=activity-relativne_koordinate_utvrdjivanje><i class="fas fa-file-alt activity-icon"></i>9.1. Релативне координате утврђивање</div></a>
-                <a href=../Релативно%20задавање%20координата%20-%20утврђивање/zadatak_relativne_koordinate_utvrdjivanje.html><div class="studioLecture" id=activity-zadatak_relativne_koordinate_utvrdjivanje><i class="fas fa-file-alt activity-icon"></i>9.2. Домаћи задатак</div></a>
+                <a href=../Релативно%20задавање%20координата%20-%20утврђивање/zadatak_relativne_koordinate.html><div class="studioLecture" id=activity-zadatak_relativne_koordinate><i class="fas fa-file-alt activity-icon"></i>9.2. Домаћи задатак</div></a>
                 <a href=../Релативно%20задавање%20координата%20-%20утврђивање/relativne_koordinate_test2.html><div class="studioLecture" id=activity-relativne_koordinate_test2><i class="far fa-question-circle activity-icon"></i>9.3. Квиз - релативне координате и димензије</div></a>
                 </div>
             </div>
@@ -374,7 +341,8 @@
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
                 <div class="courseContentsSubSection d-none"><a href=../Слике%20и%20текст/slike.html><div class="studioLecture" id=activity-slike><i class="fas fa-file-alt activity-icon"></i>10.1. Слике и текст</div></a>
-                <a href=../Слике%20и%20текст/slike_test.html><div class="studioLecture" id=activity-slike_test><i class="far fa-question-circle activity-icon"></i>10.2. Квиз - слике и текст</div></a>
+                <a href=../Слике%20и%20текст/slike_vezbanje.html><div class="studioLecture" id=activity-slike_vezbanje><i class="fas fa-file-alt activity-icon"></i>10.2. Вежбање</div></a>
+                <a href=../Слике%20и%20текст/slike_test.html><div class="studioLecture" id=activity-slike_test><i class="far fa-question-circle activity-icon"></i>10.3. Квиз - слике и текст</div></a>
                 </div>
             </div>
                 
@@ -397,8 +365,8 @@
                     <i class="fas fa-angle-down caret-position "> </i>
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
-                <div class="courseContentsSubSection d-none"><a href=../Цртање%20уз%20помоћ%20петљи%202/petlje2.html><div class="studioLecture" id=activity-petlje2><i class="fas fa-file-alt activity-icon"></i>12.1. Цртање облика помоћу петљи</div></a>
-                <a href=../Цртање%20уз%20помоћ%20петљи%202/petlje2_zadatak.html><div class="studioLecture" id=activity-petlje2_zadatak><i class="fas fa-file-alt activity-icon"></i>12.2. Домаћи задатак</div></a>
+                <div class="courseContentsSubSection d-none"><a href=../Цртање%20уз%20помоћ%20петљи%202/petlje2_random.html><div class="studioLecture" id=activity-petlje2_random><i class="fas fa-file-alt activity-icon"></i>12.1. Употреба генератора случајних бројева</div></a>
+                <a href=../Цртање%20уз%20помоћ%20петљи%202/petlje2_pravilno.html><div class="studioLecture" id=activity-petlje2_pravilno><i class="fas fa-file-alt activity-icon"></i>12.2. Правилно распоређивање боја</div></a>
                 <a href=../Цртање%20уз%20помоћ%20петљи%202/petlje2_test.html><div class="studioLecture" id=activity-petlje2_test><i class="far fa-question-circle activity-icon"></i>12.3. Квиз - петље 2</div></a>
                 </div>
             </div>
@@ -466,13 +434,34 @@
 <h1>3.2. Боје<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="id2">
 <h2>Избор „готових” боја<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
-<p>Са бојама си се у свету рачунара до сада сигурно сусрео/сусрела користећи неки од програма за цртање, као што је рецимо Бојанка (Paint). Ако погледамо опције за боје које овај програм нуди, видећеш да ти нуди могућност да за цртање изабереш неку од боја које су унапред припремљене за тебе. Довољно је да кликнеш на квадратић са бојом из горњег менија и моћи ћеш да је користиш.</p>
+<p>Са бојама си се сигурно сусрео/сусрела користећи Бојанку (Paint).
+У њој постоји могућност да изабереш боју којом ћеш цртати. Довољно је да кликнеш на
+квадратић са бојом из горњег менија и боја је спремна да је користиш!</p>
 <a class="reference internal image-reference" href="../_images/paint3.jpg"><img alt="../_images/paint3.jpg" class="align-center" src="../_images/paint3.jpg" style="width: 700px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-<p>Исто тако, и Пајгејм ти нуди могућност да користиш различите боје. Све облике можеш цртати у разним бојама, а приметићеш да је често неопходно задати боју одређеном елементу. Најлакши начин да нешто обојимо у Пајгејму је помоћу функције <code class="docutils literal notranslate"><span class="pre">pg.Color</span></code>. Ова функција као аргумент има ниску која представља назив боје на енглеском. Посматрај коришћење ове функције као да у Бојанки изаберемо неку од понуђених боја. Разлика је у томе што не кликнемо на квадратић у коме се боја налази, него у програму употребимо функцију и као њен аругмент наведемо име боје.</p>
-<p>Ако функцију <code class="docutils literal notranslate"><span class="pre">pg.Color</span></code> употребимо са аргументом <code class="docutils literal notranslate"><span class="pre">'blue'</span></code>, жељени елемент ће бити обојен у плаво, за жуту ћемо употребити <code class="docutils literal notranslate"><span class="pre">'yellow'</span></code>, за зелену <code class="docutils literal notranslate"><span class="pre">'green'</span></code> и слично. Хајде да то сада испробамо. Унеси неку од ових боја уместо три знака питања у програм испод и кликни на ’Покрени програм’. Прво смо употребили функцију <code class="docutils literal notranslate"><span class="pre">prozor.fill</span></code> чији је једини параметар боја (Пајтон очекује да се у загради након <code class="docutils literal notranslate"><span class="pre">prozor.fill</span></code> нађе нешто што ће му рећи коју боју да употреби) и која боји цео прозор у задату боју (видећеш, ово ће касније бити корисно за цртање позадине). Онда употребљавамо функцију <code class="docutils literal notranslate"><span class="pre">pg.Color</span></code> и дајемо јој као аргумент ниску са називом боје. Испробај још неколико различитих боја у програму испод, а на крају лекције налази се листа свих боја које ћемо користити.</p>
+<p>Пајгејм такође нуди могућност да користиш различите боје. Све облике можеш цртати у разним бојама.
+Најлакши начин да нешто обојимо у Пајгејму је помоћу функције <code class="docutils literal notranslate"><span class="pre">pg.Color</span></code>. Ова функција као аргумент
+има ниску која представља назив боје на енглеском.
+Посматрај коришћење ове функције као да у Бојанки изаберемо неку од понуђених боја. Разлика је у томе што не
+кликнемо на квадратић у коме се боја налази, него у програму употребимо функцију и као њен аругмент наведемо
+име боје.</p>
+
+    <div class="course-box course-box-info">
+        <div class="course-content">
+            <p>
+<p>Ако функцију <code class="docutils literal notranslate"><span class="pre">pg.Color</span></code> употребимо са аргументом <code class="docutils literal notranslate"><span class="pre">'blue'</span></code>, жељени елемент ће бити обојен у плаво,
+за жуту ћемо употребити <code class="docutils literal notranslate"><span class="pre">'yellow'</span></code>, за зелену <code class="docutils literal notranslate"><span class="pre">'green'</span></code> и слично.</p>
+
+    </p></div></div>
+<p>Хајде да то сада испробамо.
+Унеси неку од ових боја уместо три знака питања у програм испод и кликни на ’Покрени програм’.
+Прво смо употребили функцију <code class="docutils literal notranslate"><span class="pre">prozor.fill</span></code> чији је једини параметар боја (Пајтон очекује да се у загради
+након <code class="docutils literal notranslate"><span class="pre">prozor.fill</span></code> нађе нешто што ће му рећи коју боју да употреби) и која боји цео прозор у задату боју
+(видећеш, ово ће касније бити корисно за цртање позадине). Онда употребљавамо функцију <code class="docutils literal notranslate"><span class="pre">pg.Color</span></code> и дајемо
+јој као аргумент ниску са називом боје. Испробај још неколико различитих боја у програму испод, а на крају
+лекције налази се листа свих боја које ћемо користити.</p>
 
 <div data-childcomponent="colors" class="course-box course-box-problem course-content">
 
@@ -505,7 +494,9 @@ pygamebg.wait_loop()
         <div class="course-content">
             <p>
 <p>Честе грешке</p>
-<p>Једна грешка коју лако можеш направити приликом задавања боје је да уместо да <code class="docutils literal notranslate"><span class="pre">pg.Color</span></code> напишеш великим словом, напишеш <code class="docutils literal notranslate"><span class="pre">pg.color</span></code> малим словом. Тада ће ти се приказати грешка <code class="docutils literal notranslate"><span class="pre">AttributeError:</span> <span class="pre">''</span> <span class="pre">object</span> <span class="pre">has</span> <span class="pre">no</span> <span class="pre">attribute</span> <span class="pre">'color'</span></code>.</p>
+<p>Једна грешка коју лако можеш направити приликом задавања боје је да уместо да напишеш <code class="docutils literal notranslate"><span class="pre">pg.Color</span></code> (великo
+слово <code class="docutils literal notranslate"><span class="pre">C</span></code>), напишеш <code class="docutils literal notranslate"><span class="pre">pg.color</span></code> (мало слово <code class="docutils literal notranslate"><span class="pre">c</span></code>). Тада ће ти се приказати грешка
+<code class="docutils literal notranslate"><span class="pre">AttributeError:</span> <span class="pre">''</span> <span class="pre">object</span> <span class="pre">has</span> <span class="pre">no</span> <span class="pre">attribute</span> <span class="pre">'color'</span></code>.</p>
 <p>Још једна честа грешка је да назив боје не наведеш под наводницима (на пример, да наведеш <code class="docutils literal notranslate"><span class="pre">pg.Color(white)</span></code>). Тада ће ти се приказати порука <code class="docutils literal notranslate"><span class="pre">NameError:</span> <span class="pre">name</span> <span class="pre">'white'</span> <span class="pre">is</span> <span class="pre">not</span> <span class="pre">defined</span> <span class="pre">on</span> <span class="pre">line</span> <span class="pre">8</span></code>.</p>
 
     </p></div></div>
@@ -514,9 +505,30 @@ pygamebg.wait_loop()
     </div>
 <div class="section" id="id3">
 <h2>Специфичне боје<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
-<p>Иако су нам боје које смо до сада поменули најчешће довољне, понекад пожелимо да употребимо и неку другу боју или нијансу боје која није понуђена. Када то пожелимо да урадимо у Бојанки, кликнемо на <em>Edit colors</em> и отвара се један овакав прозор:</p>
+<p>Иако су нам боје које смо до сада поменули најчешће довољне, понекад пожелимо да употребимо и неку другу боју или
+нијансу боје која није понуђена. Када то пожелимо да урадимо у Бојанки, кликнемо на <em>Edit colors</em> и отвара се један
+овакав прозор:</p>
 <a class="reference internal image-reference" href="../_images/paint2.jpg"><img alt="../_images/paint2.jpg" class="align-center" src="../_images/paint2.jpg" style="width: 600px;" /></a>
-<p>Видећеш да ти је овако доступно много више боја и довољно је да кликнеш у овај квадрат десно у коме су све боје и изабереш тачну нијансу коју желиш. Међутим, када добијеш жељену боју, видећеш и ове бројеве који се појављују доле десно и видећеш да поред њих пише <em>red</em>, <em>green</em> и <em>blue</em>. Погледај шта се дешава са овим бројевима када изабереш неку другу боју. Свакa бојa коју наше око може да види састоји се управо од ове три основне боје. Све боје можемо описати наводећи ова три броја (у овом случају ови бројеви могу имати вредност од 0 до 255), који редом представљају количину црвене, зелене и плаве компоненте у боји коју дефинишемо.</p>
+<p>Видећеш да ти је овако доступно много више боја и довољно је да кликнеш у овај квадрат десно у коме су све боје и
+изабереш тачну нијансу коју желиш. Међутим, када добијеш жељену боју, видећеш и ове бројеве који се појављују доле
+десно и видећеш да поред њих пише <em>red</em>, <em>green</em> и <em>blue</em>. Погледај шта се дешава са овим бројевима када изабереш
+неку другу боју. Свакa бојa коју наше око може да види састоји се управо од ове три основне боје. Све боје можемо
+описати наводећи ова три броја (у овом случају ови бројеви могу имати вредност од 0 до 255), који редом представљају
+количину црвене, зелене и плаве компоненте у боји коју дефинишемо.</p>
+
+    <div class="course-box course-box-info">
+        <div class="course-content">
+            <p>
+<p>Немојте да вас збуни то што је овде зелена боја основна (поред плаве и црвене), а у ликовном када сте цртали темперама
+је то била жута. То је због тога што овде мешамо светлост а у ликовном сте мешали пигменте боје.</p>
+
+    </p></div></div>
+
+    <div data-component="reveal" id="мешање_боја"   data-showtitle="Сазнај више" data-hidetitle="Скупи">
+    
+    <div class="course-box course-box-info">
+        <div class="course-content">
+            <p>
 <p>На пример, комбиновањем црвеног и зеленог светла добија се жуто
 светло, комбиновањем црвеног и плавог љубичасто, а комбиновањем плаве
 и зелене добијамо резедо боју. Комбиновањем светла све три основне боје добија се
@@ -526,7 +538,14 @@ pygamebg.wait_loop()
 екстремно тамна и екстремно светла нијанса сиве).</p>
 <a class="reference internal image-reference" href="../_images/RGB.png"><img alt="../_images/RGB.png" class="align-center" src="../_images/RGB.png" style="width: 200px;" /></a>
 <p>У програмском језику Python, као и у Бојанки (као и у рачунарству уопште), боју можеш представити и тројком бројева и то у облику трочлане уређене торке (нпр. <code class="docutils literal notranslate"><span class="pre">(123,</span> <span class="pre">80,</span> <span class="pre">56)</span></code>) или трочлане листе (нпр. <code class="docutils literal notranslate"><span class="pre">[123,</span> <span class="pre">80,</span> <span class="pre">56]</span></code>). Сети се, када кажемо да је нешто уређено, то значи да је битан редослед елемената - и овде ћемо увек прво наводити компоненту црвене, затим компоненту зелене и на крају компоненту плаве, увек истим редоследом. Торку или листу можеш навести директно као аргумент функције који одговара боји, а можеш је упамтити у променљивој и касније користити више пута.  На пример, доделом <code class="docutils literal notranslate"><span class="pre">REZEDO</span> <span class="pre">=</span> <span class="pre">(0,</span> <span class="pre">255,</span> <span class="pre">255)</span></code> дефинишемо резедo боју (каже се и тиркизна или цијан, а то је у ствари боја светлосне сабље Лука Скајвокера из филма <cite>A New Hope: Star Wars: Episode IV</cite>) наводећи одговарајуће количине црвене, зелене и плаве светлости коју ова боја садржи - пошто је то мешавина плаве и зелене боје у њој нема нимало црвене, а плава и зелена компонента су на максимуму. Након тога, ту боју можемо употребити и у позиву функције (нпр. <code class="docutils literal notranslate"><span class="pre">prozor.fill(REZEDO)</span></code>). Имена тих променљивих не морају бити написана великим словима, али то је добар обичај.</p>
-<p>Све ово ће ти бити јасније када у следећем програму замениш знакове питања бројевима које желиш и кликнеш на <cite>Покрени програм</cite>. Покушај да пронађеш боје о којима смо говорили, а покушај и да унесеш и боје које се налазе у листи на крају лекције. Наравно, обрати пажњу и на то како смо овог пута употребили функцију <code class="docutils literal notranslate"><span class="pre">prozor.fill</span></code>. Довољно је било јој као аргумент дамо листу три броја и она је знала како да прозор обоји у одговарајућу боју.</p>
+
+    </p></div></div>
+
+    </div>
+    <p>Све ово ће ти бити јасније када у следећем програму замениш знакове питања бројевима које желиш и кликнеш на
+<cite>Покрени програм</cite>. На тај начин функцији <code class="docutils literal notranslate"><span class="pre">prozor.fill</span></code> дајеш листу од три броја и она ће прозор обојити у
+одговарајућу боју (добијену мешањем основних боја у количинама које представљају унети бројеви).
+После тога покушај и да унесеш и боје које су набројане испод кода задатка.</p>
 
 <div data-childcomponent="colors_rgb" class="course-box course-box-problem course-content">
 
