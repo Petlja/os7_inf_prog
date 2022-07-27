@@ -58,7 +58,7 @@
    # crtamo sunce
    pg.draw.circle(prozor, pg.Color("yellow"), (100, 100), 80)
     
-   # funkcija koja crta oblak na datoj poziciji, date velicine u datoj
+   # funkcija koja crta oblak na datoj poziciji, date veličine u datoj
    # nijansi sive boje
    def oblak(x, y, r, siva):
        # nijansa sive boje
@@ -66,14 +66,14 @@
        # crtamo oblak od tri kruga
        # centralni veliki krug oblaka
        pg.draw.circle(???, ???, ???, ???)
-       # poluprecnik levog i desnog, manjeg kruga oblaka
+       # poluprečnik levog i desnog, manjeg kruga oblaka
        r_malo = round(5 * r / 8)
        # levi manji krug oblaka
        pg.draw.circle(???, ???, ???, ???)
        # desni manji krug oblaka
        pg.draw.circle(???, ???, ???, ???)
 
-   # crtamo nekoliko oblika razlicite velicine i nijanse
+   # crtamo nekoliko oblika različite veličine i nijanse
    oblak(240, 200, 40, 180)
    oblak(270, 250, 50, 210)
    oblak(230, 100, 50, 230)
