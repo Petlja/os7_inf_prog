@@ -23,5 +23,5 @@ for r in range(10, 101, 10):
 
 # -*- acsection: after-main -*-
 
-# prikazujemo prozor i cekamo da ga korisnik iskljuci
+# prikazujemo prozor i čekamo da ga korisnik isključi
 pygamebg.wait_loop()
