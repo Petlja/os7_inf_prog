@@ -349,7 +349,7 @@ lessons:
         description: #opciono
         guid: 0d1ed898-c9a7-419c-a2d5-22d3f3ff2c2c  
       - type: reading
-        title: 14.2. Угњежђене петље
+        title: 14.2. Угнежђене петље
         file: petlje_ugnjezdene.rst
         description: #opciono
         guid: 847d4f5b-88be-418a-b855-1f44f1fef8cb
