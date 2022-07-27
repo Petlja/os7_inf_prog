@@ -319,7 +319,7 @@ lessons:
     description: Grananje
     activities:
       - type: reading
-        title: 13.1. Пајон подсетник гранање
+        title: 13.1. Пајтон подсетник гранање
         file: pajton_podsetnik_grananje.rst
         description: #opciono
         guid: 23026df6-431e-453b-8c42-ad5961b907ee  
