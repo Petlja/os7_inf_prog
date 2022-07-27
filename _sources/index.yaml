@@ -309,7 +309,7 @@ lessons:
         description: #opciono
         guid: 1bfd9aa9-2dc3-4908-97ec-04647820d1ff 
       - type: quiz
-        title: 12.3. Квиз - петље 2
+        title: 12.3. Квиз - понављање облика коришћењем петљи
         file: petlje2_test.rst
         description: #opciono
         guid: 18d068a9-2f51-4cb0-92e4-5104f10bbaa8
