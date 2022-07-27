@@ -324,7 +324,7 @@ lessons:
         description: #opciono
         guid: 23026df6-431e-453b-8c42-ad5961b907ee  
       - type: reading
-        title: 13.2. Гранање
+        title: 13.2. Комбиновање гранања и петље
         file: grananje.rst
         description: #opciono
         guid: d1f32840-b2d1-482d-8fa3-6613906aa286
