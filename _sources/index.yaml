@@ -209,7 +209,7 @@ lessons:
         description: #opciono
         guid: d3ad1962-ab0f-4e5d-9160-7e1f29ed7d96
       - type: reading
-        title: 8.2. Повећавање и смањивање објекта, центрирање
+        title: 8.2. Повећавање и смањивање једног објекта, центрирање
         file: skaliranje_objekta.rst
         description: #opciono
         guid: 01d29a52-12db-4fd2-8065-ab5e0cc9e4b5
