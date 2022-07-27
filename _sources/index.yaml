@@ -234,7 +234,7 @@ lessons:
     description: Релативне координате утврђивање
     activities:
       - type: reading
-        title: 9.1. Релативне координате утврђивање
+        title: 9.1. Релативне координате - утврђивање
         file: relativne_koordinate_utvrdjivanje.rst
         description: #opciono
         guid: c4a4e338-75c8-459a-9e45-3144d00bfffe
