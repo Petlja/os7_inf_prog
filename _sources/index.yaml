@@ -214,7 +214,7 @@ lessons:
         description: #opciono
         guid: 01d29a52-12db-4fd2-8065-ab5e0cc9e4b5
       - type: reading
-        title: 8.3. Повећавање и смањивање цртежа, центрирање
+        title: 8.3. Релативне координате и димензије
         file: skaliranje.rst
         description: #opciono
         guid: 3772cb99-eec9-4e90-8c42-8d22e4c90fc9
