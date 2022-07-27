@@ -379,7 +379,7 @@ lessons:
     description: завршни тест
     activities:
       - type: quiz
-        title: 16.1 Завршни квиз
+        title: 16.1. Завршни квиз
         file: zavrsni_test.rst
         description: #opciono
         guid: 6c2a4646-4568-41bb-9354-dea265874cc7            
