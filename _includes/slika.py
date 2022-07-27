@@ -7,7 +7,7 @@ prozor = pygamebg.open_window(sirina, visina, "Mackica")
 
 # -*- acsection: main -*-
 
-# učitavamo slicicu iz datoteke macka.png
+# učitavamo sličicu iz datoteke macka.png
 slika = pg.image.load("macka.png")
 # prikazujemo sličicu u gornjem levom uglu prozora
 prozor.blit(slika, (0, 0))
