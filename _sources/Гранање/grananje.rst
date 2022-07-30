@@ -98,7 +98,7 @@ a`. Координата :math:`y` горњег левог темена свак
       :passivecode: true
     
       # prvi kvadrat je zute boje
-      zuto = true
+      zuto = True
       for i in range(0, broj_kvadrata):
           # boju odredjujemo na osnovu istinitosne vrednosti promenljive zuto
           if zuto:
