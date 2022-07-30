@@ -40,7 +40,7 @@
                pg.draw.rect(prozor, ???, (i*sirina_polja, j*visina_polja, sirina_polja, visina_polja))
 
 .. reveal:: sahovska_tabla_resenje
-   :showtitle: Прикажи решење
+   :showtitle: Прикажи помоћ
    :hidetitle: Сакриј решење
 
    Примети да боја зависи од тога да ли је збир ``i+j`` паран или непаран.

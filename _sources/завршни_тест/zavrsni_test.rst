@@ -70,7 +70,6 @@
 ~~~~~~~~~
 
 .. mchoice:: pravougaonik_centrirano_16
-   :multiple_answers:
    :answer_a: pg.draw.rect(prozor, boja, (100, 100, 100, 50))
    :feedback_a: Нетачно    
    :answer_b: pg.draw.rect(prozor, boja, (45, 80, 150, 80))
