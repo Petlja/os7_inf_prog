@@ -2,10 +2,45 @@
 ===========================================
 
 Функцијом ``random.randint(a, b)`` можемо добити насумично одабран цео
-број из интервала :math:`[a, b]`. Ово може бити веома корисно када је
+број из интервала :math:`[a, b]` укључујући бројеве :math:`a` и :math:`b`. 
+Ово може бити веома корисно када је
 потребно да цртеж испунимо са већим бројем неправилно распоређених
-облика. Слично, функцијом ``random.uniform(a, b)`` добијамо насумично
-одабрани реалан број из интервала :math:`[a, b]`. Дакле, укључујући бројеве `a` и `b`.
+облика. 
+
+.. reveal:: реалан_број_из_интервала
+   :showtitle: Сазнај више
+   :hidetitle: Сакриј
+
+   Функцијом ``random.uniform(a, b)`` добијамо насумично
+   одабрани реалан број из интервала :math:`[a, b]`. Дакле, укључујући бројеве `a` и `b`.
+
+Погледај како се круг полупречника 30 пиксела може поставити на насумичну позицију у прозору.
+
+.. activecode:: krug_nasumicno
+   :passivecode: true
+
+   # nasumično određujemo koordinatu x centra kruga a da pri tom bude u prozoru
+   x = random.randint(0, sirina)
+
+   # nasumično određujemo koordinatu y centra kruga a da pri tom bude u prozoru
+   y = random.randint(0, visina)
+
+   # crtamo krug na nasumičnoj poziciji
+   pg.draw.circle(prozor, pg.Color("black"), (x, y),  30)
+
+Хајде сада да применимо ново знање па да поставимо насумично и дужину полупречника круга.
+
+.. activecode:: krug_nasumicno_1
+   :passivecode: true
+
+   x = random.randint(0, sirina)
+   y = random.randint(0, visina)
+
+   # nasumično određujemo dužinu poluprečnika
+   r = random.randint(20, 30)
+
+   # crtamo krug nasumične dužine poluprečnika na nasumičnoj poziciji 
+   pg.draw.circle(prozor, pg.Color("black"), (x, y),  r)
 
 Ноћно небо
 ''''''''''
