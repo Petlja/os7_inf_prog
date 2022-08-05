@@ -41,7 +41,7 @@ n-торка (уређена енторка), али у програмирању
 
    # tekst koji se nalazi posle znaka "#" zove se komentar i on se ne izvršava
 
-.. infonote::
+.. suggestionnote::
    Препоручујемо ти да током рада користиш и наш 
    `Синтаксни подсетник за Пајтон <https://petljamediastorage.blob.core.windows.net/root/Media/Default/Help/cheatsheet.pdf>`__ 
    ако ти икад затреба да се подсетиш ових ствари.
