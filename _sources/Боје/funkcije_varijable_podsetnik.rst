@@ -46,5 +46,5 @@
    #print je takođe funkcija i ona štampa argument koji joj se prosledi
    print(c)
 
-.. infonote::
+.. suggestionnote::
    Као и прошли пут, препоручујемо ти да током рада користиш и наш `Синтаксни подсетник за Пајтон <https://petljamediastorage.blob.core.windows.net/root/Media/Default/Help/cheatsheet.pdf>`__ ако ти икад затреба да се подсетиш ових ствари.
