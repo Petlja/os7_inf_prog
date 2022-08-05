@@ -17,5 +17,5 @@
     :nocodelens:
     :includesrc: _includes/slika.py
 
-.. infonote::
+.. suggestionnote::
     На сличан начин можете се поиграти и са вашим именом тако што ћете га прво претворити у сличицу текста.
