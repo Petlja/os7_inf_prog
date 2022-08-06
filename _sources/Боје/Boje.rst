@@ -55,7 +55,7 @@
    # prikazujemo prozor i čekamo da ga korisnik isključi
    pygamebg.wait_loop()       
    
-.. infonote:: Честе грешке
+.. infonote:: Честе грешке:
       
    Једна грешка коју лако можеш направити приликом задавања боје је да уместо да напишеш ``pg.Color`` (великo
    слово ``C``), напишеш ``pg.color`` (мало слово ``c``). Тада ће ти се приказати грешка 
