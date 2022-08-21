@@ -83,8 +83,10 @@
 На слици можеш видети координате тачака. Тачка :math:`A` је од координатног
 почетка удаљена :math:`50` пиксела по оси :math:`x` и :math:`150` пиксела 
 по оси :math:`y`, зато су координате тачке :math:`A` :math:`= (50, 150)`. На
-исти начин се одређују координате осталих тачака.  Покрени програм и погледај
-слово *А*.
+исти начин се одређују координате осталих тачака.  
+Упиши их у програм
+уместо упитника, а затим покрени програм и провери да ли се добија
+слово А (једну линију смо већ уцртали).
 
 .. activecode:: slovoA
    :nocodelens:
@@ -100,9 +102,29 @@
    # leva kosa linija
    pg.draw.line(prozor, pg.Color("white"), (50, 150), (100, 50), debljina)
    # desna kosa linija
-   pg.draw.line(prozor, pg.Color("white"), (100, 50), (150, 150), debljina)
+   pg.draw.line(prozor, pg.Color("white"), ???, ???, debljina)
    # horizontalna linija po sredini
-   pg.draw.line(prozor, pg.Color("white"), (75, 100), (125, 100), debljina)    
+   pg.draw.line(prozor, pg.Color("white"), ???, ???, debljina)    
+
+.. reveal:: slovoA_resenje
+   :showtitle: Прикажи решење
+   :hidetitle: Сакриј решење
+
+   .. activecode:: slovoA_resenje_1
+      :nocodelens:
+      :includexsrc: _includes/slovo_A.py
+
+      # bojimo pozadinu prozora u sivo
+      prozor.fill(pg.Color("gray"))
+      
+      # debljina linije
+      debljina = 10
+      # leva kosa linija
+      pg.draw.line(prozor, pg.Color("white"), (50, 150), (100, 50), debljina)
+      # desna kosa linija
+      pg.draw.line(prozor, pg.Color("white"), (100, 50), (150, 150), debljina)
+      # horizontalna linija po sredini
+      pg.draw.line(prozor, pg.Color("white"), (75, 100), (125, 100), debljina)
 
 Плус
 ''''
