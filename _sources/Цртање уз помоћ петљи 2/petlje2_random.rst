@@ -73,6 +73,14 @@
    pg.draw.circle(prozor, pg.Color("white"), (100, 100),  30)
    pg.draw.circle(prozor, pg.Color("black"), (???, ???),  30)
 
+.. reveal:: nocno_nebo_1
+   :showtitle: Прикажи решење
+   :hidetitle: Сакриј решење
+
+   .. activecode:: nocno_nebo_resenje
+      :nocodelens:
+      :includesrc: _includes/mesec_i_zvezdice.py
+
    
 Насумичне боје
 ''''''''''''''
@@ -124,3 +132,11 @@
    for i in range(broj_balona):
        centar_polja = i*sirina_polja + sirina_polja / 2
        pg.draw.ellipse(prozor, ???, (???, ???, ???, ???))
+
+.. reveal:: балони_1
+   :showtitle: Прикажи решење
+   :hidetitle: Сакриј решење
+
+   .. activecode:: балони_решење
+      :nocodelens:
+      :includesrc: _includes/baloni.py

@@ -112,19 +112,7 @@
 
    .. activecode:: slovoA_resenje_1
       :nocodelens:
-      :includexsrc: _includes/slovo_A.py
-
-      # bojimo pozadinu prozora u sivo
-      prozor.fill(pg.Color("gray"))
-      
-      # debljina linije
-      debljina = 10
-      # leva kosa linija
-      pg.draw.line(prozor, pg.Color("white"), (50, 150), (100, 50), debljina)
-      # desna kosa linija
-      pg.draw.line(prozor, pg.Color("white"), (100, 50), (150, 150), debljina)
-      # horizontalna linija po sredini
-      pg.draw.line(prozor, pg.Color("white"), (75, 100), (125, 100), debljina)
+      :includesrc: _includes/slovo_A.py
 
 Плус
 ''''
