@@ -4,6 +4,10 @@
 .. infonote::
    Све функције за цртање у библиотеци Pygame почињу са ``pg.draw``.
 
+.. image:: ../../_images/duz.png
+   :width: 200px
+   :align: center    
+
 Дуж :math:`AB` се црта позивом функције ``pg.draw.line``. Позив ове функције изгледа овако: 
 ``pg.draw.line(prozor, boja, (А_x, А_y), (B_x, B_y), debljina)``. 
 Први параметар је прозор на коме желимо да нацртамо дуж (увек ћемо га називати баш ``prozor``). 
@@ -12,10 +16,6 @@
 уређених 
 парова (прво иде координата :math:`x` , a затим координата :math:`y`). 
 Последњи параметар је дебљина линије којом се исцртава дуж, задата у пикселима. 
-
-.. image:: ../../_images/duz.png
-   :width: 200px
-   :align: center    
 
 
 Пример једног позивa функције изгледао би овако: 
@@ -83,9 +83,8 @@
 На слици можеш видети координате тачака. Тачка :math:`A` је од координатног
 почетка удаљена :math:`50` пиксела по оси :math:`x` и :math:`150` пиксела 
 по оси :math:`y`, зато су координате тачке :math:`A` :math:`= (50, 150)`. На
-исти начин ћеш одредити координате осталих тачака.  Упиши их у програм
-уместо упитника, а затим покрени програм и провери да ли се добија
-слово *А* (једну линију смо већ уцртали).
+исти начин се одређују координате осталих тачака.  Покрени програм и погледај
+слово *А*.
 
 .. activecode:: slovoA
    :nocodelens:
@@ -101,9 +100,9 @@
    # leva kosa linija
    pg.draw.line(prozor, pg.Color("white"), (50, 150), (100, 50), debljina)
    # desna kosa linija
-   pg.draw.line(prozor, pg.Color("white"), ???, ???, debljina)
+   pg.draw.line(prozor, pg.Color("white"), (100, 50), (150, 150), debljina)
    # horizontalna linija po sredini
-   pg.draw.line(prozor, pg.Color("white"), ???, ???, debljina)      
+   pg.draw.line(prozor, pg.Color("white"), (75, 100), (125, 100), debljina)    
 
 Плус
 ''''
