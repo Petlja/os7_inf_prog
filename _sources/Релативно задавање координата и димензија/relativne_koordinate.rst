@@ -91,6 +91,13 @@ sredina_y)``, односно ``(sredina_x, sredina_y)`` и ``(desno, gore)``.
    # desna vertikalna linija
    pg.draw.line(prozor, pg.Color("white"), (???, ???), (???, ???), debljina)
 
+.. reveal:: slovoM_1
+  :showtitle: Прикажи решење
+  :hidetitle: Сакриј решење
+
+  .. activecode:: slovoM_resenje
+    :nocodelens:
+    :includesrc: _includes/slovo_M.py
 
 Предност оваквог писања кôда се види када једном напишемо програм који 
 исправно приказује слово М, али је сада потребно да се промени положај или 
