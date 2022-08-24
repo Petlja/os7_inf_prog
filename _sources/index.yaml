@@ -198,7 +198,7 @@ lessons:
         file: simetrija_test.rst
         description: #opciono
         guid: ca890608-6d67-40e1-8e96-1ef385076915
-  - title: 8. Релативно задавање координата и димензија
+  - title: 8. Скалирање, релативно задавање координата и димензија
     folder: Релативно задавање координата и димензија
     guid: 1484255d-c3c8-4a62-ab94-362bf5806b35
     description: Релативне координате
@@ -210,12 +210,12 @@ lessons:
         guid: d3ad1962-ab0f-4e5d-9160-7e1f29ed7d96
       - type: reading
         title: 8.2. Повећавање и смањивање једног објекта, центрирање
-        file: skaliranje_objekta.rst
+        file: skaliranje.rst
         description: #opciono
         guid: 01d29a52-12db-4fd2-8065-ab5e0cc9e4b5
       - type: reading
         title: 8.3. Релативне координате и димензије
-        file: skaliranje.rst
+        file: relativne_koordinate.rst
         description: #opciono
         guid: 3772cb99-eec9-4e90-8c42-8d22e4c90fc9
       - type: reading
