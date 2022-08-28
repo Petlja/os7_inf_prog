@@ -81,6 +81,6 @@
         :align: center 
 
 
-.. learnmorenote::
+.. learnmorenote:: Ако желиш да сазнаш више
 
     Ако ипак желиш да научиш шта значе наредбе у помоћном ("сивом") делу кода и ако желиш да научиш како изгледају Пајгејм програми у којима се не користи библиотека PyGameBg, онда ти саветујемо да прочиташ текст `Испод хаубе: основна структура PyGame програма <https://petlja.org/biblioteka/r/lekcije/pygame-prirucnik/crtanje-cas1_strukturaprograma>`_. Наравно, ако желиш да научиш још нешто о библиотеци Пајгејм, то можеш видети у нашем `Приручнику за седми разред <https://petlja.org/biblioteka/r/lekcije/pygame-prirucnik/pygame>`_.
