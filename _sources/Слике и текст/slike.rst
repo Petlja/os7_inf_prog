@@ -56,9 +56,7 @@
    :includesrc: _includes/slika.py
 
 
-.. topic:: Погледај видео:
-
-   Погледај овај видео и пробај да на свом рачунару напишеш програм који укључује слику. 
+.. topic:: Погледај овај видео и пробај да на свом рачунару напишеш програм који укључује слику. 
    Слику коју смо користили у овом видеу можеш преузети 
    са `овог линка <https://petljamediastorage.blob.core.windows.net/root/Media/Default/Kursevi/informatika_VII/raketa.png>`__ 
 
