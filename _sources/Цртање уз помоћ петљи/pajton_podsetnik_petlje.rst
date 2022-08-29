@@ -64,3 +64,9 @@
    for r in range(10, ???, 10):
        # crtamo krug
        ???
+
+.. suggestionnote::
+
+   Као и увек, препоручујемо ти да током рада користиш и наш `Синтаксни подсетник за Пајтон <https://petljamediastorage.blob.core.windows.net/root/Media/Default/Help/cheatsheet.pdf>`__ ако ти икад затреба да се подсетиш ових ствари.
+   Ако желиш, петљи се можеш подсетити у курсу
+   `Програмирање у Пајтону за шести разред <https://petlja.org/kurs/368/12/2597#id1>`__ 

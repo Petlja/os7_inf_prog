@@ -8,8 +8,8 @@ prozor = pygamebg.open_window(sirina, visina, "Хватање јабука")
 pg.key.set_repeat(10, 10)  # podešavamo dogadjaje tastature
 
 
-korpa  = pg.image.load("korpa.png")   # učitavamo sliku korpe
-jabuka = pg.image.load("jabuka.png")  # učitavamo sliku jabuke
+korpa  = pg.image.load("../_images/korpa.png")   # učitavamo sliku korpe
+jabuka = pg.image.load("../_images/jabuka.png")  # učitavamo sliku jabuke
 zivot  = jabuka   # slicica zivota je slicica jabuke
 
 MAKS_JABUKE = 3 # maksimalni broj jabuka koje mogu biti istovremeno na ekranu

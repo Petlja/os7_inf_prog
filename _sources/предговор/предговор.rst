@@ -69,3 +69,11 @@
    :nocodelens:
    :playtask:
    :includehsrc: _includes/jabuke.py
+
+.. image:: ../../_images/korpa.png
+   :width: 0
+   :height: 0
+
+.. image:: ../../_images/jabuka.png
+   :width: 0
+   :height: 0

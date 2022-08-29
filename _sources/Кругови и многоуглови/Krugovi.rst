@@ -4,7 +4,9 @@
 Библиотека PyGame омогућава и једноставно цртање кругова, коришћењем
 функције ``pg.draw.circle(prozor, boja, (centar_x, centar_y), poluprecnik, debljina_kruznice)``. 
 
-МЕСТО ЗА СКИЦУ
+.. figure:: ../../_images/krug.png
+   :width: 400px
+   :align: center
 
 Параметри функције су редом:
 

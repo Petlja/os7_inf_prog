@@ -128,3 +128,13 @@
    else:
        slika = pg.image.load("mouse.png")
        prozor.blit(slika,(150 - slika.get_width()//2, 150 - slika.get_height()//2))
+
+.. image:: ../../_images/mouse.png
+    :height: 0px
+    :width: 0px
+
+.. suggestionnote::
+
+   Не заборави да током рада можеш користити и наш `Синтаксни подсетник за Пајтон <https://petljamediastorage.blob.core.windows.net/root/Media/Default/Help/cheatsheet.pdf>`__ ако ти икад затреба да се подсетиш ових ствари.
+   Ако желиш, гранања можеш се подсетити у курсу 
+   `Програмирање у Пајтону за шести разред <https://petlja.org/kurs/368/11/2591#id1>`__ 

@@ -4,9 +4,10 @@
 .. infonote::
    Све функције за цртање у библиотеци Pygame почињу са ``pg.draw``.
 
-.. image:: ../../_images/duz.png
-   :width: 200px
+.. figure:: ../../_images/duz.png
+   :width: 400px
    :align: center    
+   :class: screenshot-shadow
 
 Дуж :math:`AB` се црта позивом функције ``pg.draw.line``. Позив ове функције изгледа овако: 
 ``pg.draw.line(prozor, boja, (А_x, А_y), (B_x, B_y), debljina)``. 
@@ -79,7 +80,8 @@
 .. image:: ../../_images/slovoA.png
    :width: 400px   
    :align: center 
-
+   :class: screenshot-shadow
+   
 На слици можеш видети координате тачака. Тачка :math:`A` је од координатног
 почетка удаљена :math:`50` пиксела по оси :math:`x` и :math:`150` пиксела 
 по оси :math:`y`, зато су координате тачке :math:`A` :math:`= (50, 150)`. На

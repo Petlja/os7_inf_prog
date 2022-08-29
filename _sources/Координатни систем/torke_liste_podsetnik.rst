@@ -42,6 +42,9 @@ n-торка (уређена енторка), али у програмирању
    # tekst koji se nalazi posle znaka "#" zove se komentar i on se ne izvršava
 
 .. suggestionnote::
+   
+   Ако желиш, листи и торки можеш се подсетити у курсу 
+   `Програмирање у Пајтону за шести разред <https://petlja.org/kurs/368/14/2605#id1>`__ 
    Препоручујемо ти да током рада користиш и наш 
    `Синтаксни подсетник за Пајтон <https://petljamediastorage.blob.core.windows.net/root/Media/Default/Help/cheatsheet.pdf>`__ 
    ако ти икад затреба да се подсетиш ових ствари.
