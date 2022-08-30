@@ -8,7 +8,7 @@
 ``pg.draw.rect(prozor, boja, (x, y, a, b), debljina_linije)``
 
 .. figure:: ../../_images/pravougaonik01.png
-   :width: 780px
+   :width: 350px
    :align: center
 
 Параметри функције су редом:

@@ -5,7 +5,7 @@
 функције ``pg.draw.circle(prozor, boja, (centar_x, centar_y), poluprecnik, debljina_kruznice)``. 
 
 .. figure:: ../../_images/krug.png
-   :width: 400px
+   :width: 250px
    :align: center
 
 Параметри функције су редом:

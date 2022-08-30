@@ -14,7 +14,7 @@
 ``pg.draw.ellipse(prozor, boja, (x, y, a, b), debljina_linije)``
 
 .. figure:: ../../_images/elipsa02.png
-   :width: 780px
+   :width: 350px
    :align: center
  
 Параметри функције су редом:
