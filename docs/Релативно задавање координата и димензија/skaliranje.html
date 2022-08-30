@@ -474,7 +474,7 @@ import pygame as pg
 import pygamebg
 
 (sirina, visina) = (300, 300) # otvaramo prozor
-prozor = pygamebg.open_window(sirina, visina, &quot;Koncentricni krugovi&quot;)
+prozor = pygamebg.open_window(sirina, visina, &quot;Skaliranje kruga&quot;)
 
 # -*- acsection: main -*-
 
@@ -482,6 +482,7 @@ prozor = pygamebg.open_window(sirina, visina, &quot;Koncentricni krugovi&quot;)
 prozor.fill(pg.Color(&quot;white&quot;))
 # centar kruga je u centru prozora
 centar = (sirina // 2, visina // 2)
+#crtamo krug poluprecnika 30
 pg.draw.circle(prozor, pg.Color(&quot;red&quot;), centar, 30, 5)
 
 # -*- acsection: after-main -*-
@@ -534,7 +535,7 @@ import pygame as pg
 import pygamebg
 
 (sirina, visina) = (300, 300) # otvaramo prozor
-prozor = pygamebg.open_window(sirina, visina, &quot;Koncentricni krugovi&quot;)
+prozor = pygamebg.open_window(sirina, visina, &quot;Slaliranje kvadrata&quot;)
 
 # -*- acsection: main -*-
 
@@ -612,7 +613,7 @@ import pygame as pg
 import pygamebg
 
 (sirina, visina) = (400, 400)
-prozor = pygamebg.open_window(sirina, visina, "Pygame")
+prozor = pygamebg.open_window(sirina, visina, "Skaliranje duži")
 
 # -*- acsection: main -*-
 # bojimo pozadinu prozora u belu
