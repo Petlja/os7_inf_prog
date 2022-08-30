@@ -1,6 +1,7 @@
 .petlja-editor {
     position: relative;
     overflow: hidden;
+    margin-top: 35px;
 }
 
 .petlja-editor .CodeMirror {

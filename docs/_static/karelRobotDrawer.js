@@ -230,7 +230,8 @@ var RobotDrawer = (function () {
 	ctx.fillStyle = "black";
 
         var str = robot.getInfiniteBalls() ? "∞" : robot.getBalls().toString();
-        ctx.fillText(str, pt.x - 5, pt.y + getTextHeight(ctx.font).ascent);
+        if(str !== "0")
+            ctx.fillText(str, pt.x - 5, pt.y + getTextHeight(ctx.font).ascent);
     }
 
     function drawBalls(robot){

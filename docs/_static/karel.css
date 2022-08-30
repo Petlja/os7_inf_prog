@@ -1,6 +1,8 @@
 .karel_section{
 	position: relative;
 	clear:both;
+    overflow: hidden;
+    height: auto;
 }
 .karel_section>* {
 	margin-left: auto;

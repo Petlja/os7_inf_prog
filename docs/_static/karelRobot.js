@@ -4,7 +4,7 @@ var Robot = (function () {
         this.direction = "N";
         this.numBalls = 0;
         this.infiniteBalls = false;
-	this.messagesOn = false;
+	    this.messagesOn = false;
         this.lastMessage = "";
     }
 
@@ -16,9 +16,14 @@ var Robot = (function () {
         r.numBalls = this.numBalls;
         r.infiniteBalls = this.infiniteBalls;
         r.lastMessage = this.lastMessage;
-	r.messagesOn = this.messagesOn;
+	    r.messagesOn = this.messagesOn;
         r.world = this.world.clone();
+        r.chat = this.chat.clone();
         return r;
+    }
+
+    Robot.prototype.setChat = function(c) {
+        this.chat = c;
     }
 
     Robot.prototype.setWorld = function (w) {
@@ -186,11 +191,21 @@ var Robot = (function () {
 
     Robot.prototype.turnMessagesOff = function() {
 	this.messagesOn = false;
-    }
+    };
     
     Robot.prototype.getLastMessage = function () {
         return this.lastMessage;
     };
+
+
+    Robot.prototype.clearMessages = function () {
+        this.chat.clearMessages();
+    }
+    Robot.prototype.showMessage = function (message) {
+        this.chat.showMessage(message);
+        this.lastMessage = message;
+    }
+
 
     return Robot;
 })();

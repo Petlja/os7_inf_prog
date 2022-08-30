@@ -212,7 +212,7 @@ lessons:
     file: mnogouglovi.html
     guid: 4932bc09-ca0d-44be-836d-c9e9fcca413a
     src: mnogouglovi.rst
-    title: 6.2. Цртање облика - многоуглови
+    title: 6.2. Цртање облика - многоуглови (полигони)
     type: reading
   - description: ''
     file: Krugovi_mnogouglovi_zadatak.html
@@ -249,7 +249,7 @@ lessons:
     file: simetrija_test.html
     guid: ca890608-6d67-40e1-8e96-1ef385076915
     src: simetrija_test.rst
-    title: Квиз - симетрија
+    title: 7.3. Квиз - симетрија
     type: quiz
   archived-activities: []
   description: Симетрија
@@ -265,16 +265,16 @@ lessons:
     title: 8.1. Пајтон подсетник - дефинисање функција
     type: reading
   - description: ''
-    file: skaliranje_objekta.html
+    file: skaliranje.html
     guid: 01d29a52-12db-4fd2-8065-ab5e0cc9e4b5
-    src: skaliranje_objekta.rst
-    title: 8.2. Повећавање и смањивање објекта, центрирање
+    src: skaliranje.rst
+    title: 8.2. Повећавање и смањивање једног објекта, центрирање
     type: reading
   - description: ''
-    file: skaliranje.html
+    file: relativne_koordinate.html
     guid: 3772cb99-eec9-4e90-8c42-8d22e4c90fc9
-    src: skaliranje.rst
-    title: 8.3. Повећавање и смањивање цртежа, центрирање
+    src: relativne_koordinate.rst
+    title: 8.3. Релативне координате и димензије
     type: reading
   - description: ''
     file: domaci_zadatak_relativne_koordinate.html
@@ -292,14 +292,14 @@ lessons:
   description: Релативне координате
   folder: Релативно задавање координата и димензија
   guid: 1484255d-c3c8-4a62-ab94-362bf5806b35
-  normalized_title: 8. Релативно задавање координата и димензија
-  title: 8. Релативно задавање координата и димензија
+  normalized_title: 8. Скалирање и центрирање, релативно задавање координата и димензија
+  title: 8. Скалирање и центрирање, релативно задавање координата и димензија
 - activities:
   - description: ''
     file: relativne_koordinate_utvrdjivanje.html
     guid: c4a4e338-75c8-459a-9e45-3144d00bfffe
     src: relativne_koordinate_utvrdjivanje.rst
-    title: 9.1. Релативне координате утврђивање
+    title: 9.1. Релативне координате - утврђивање
     type: reading
   - description: ''
     file: zadatak_relativne_koordinate.html
@@ -392,7 +392,7 @@ lessons:
     file: petlje2_test.html
     guid: 18d068a9-2f51-4cb0-92e4-5104f10bbaa8
     src: petlje2_test.rst
-    title: 12.3. Квиз - петље 2
+    title: 12.3. Квиз - понављање облика коришћењем петљи
     type: quiz
   archived-activities: []
   description: Crtanje u petljama 2
@@ -405,13 +405,13 @@ lessons:
     file: pajton_podsetnik_grananje.html
     guid: 23026df6-431e-453b-8c42-ad5961b907ee
     src: pajton_podsetnik_grananje.rst
-    title: 13.1. Пајон подсетник гранање
+    title: 13.1. Пајтон подсетник гранање
     type: reading
   - description: ''
     file: grananje.html
     guid: d1f32840-b2d1-482d-8fa3-6613906aa286
     src: grananje.rst
-    title: 13.2. Гранање
+    title: 13.2. Комбиновање гранања и петље
     type: reading
   - description: ''
     file: grananje_zadatak.html
@@ -442,7 +442,7 @@ lessons:
     file: petlje_ugnjezdene.html
     guid: 847d4f5b-88be-418a-b855-1f44f1fef8cb
     src: petlje_ugnjezdene.rst
-    title: 14.2. Угњежђене петље
+    title: 14.2. Угнежђене петље
     type: reading
   - description: ''
     file: petlje_ugnjezdene_zadatak.html
@@ -480,7 +480,7 @@ lessons:
     file: zavrsni_test.html
     guid: 6c2a4646-4568-41bb-9354-dea265874cc7
     src: zavrsni_test.rst
-    title: 16.1 Завршни квиз
+    title: 16.1. Завршни квиз
     type: quiz
   archived-activities: []
   description: завршни тест

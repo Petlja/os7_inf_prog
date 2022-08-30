@@ -28,6 +28,88 @@ a:hover {
 	transition: box-shadow 0.25s;
 }
 
+.petlja-problem-box {
+    position: relative;
+    display: block;
+    border-radius: 16px;
+    box-shadow: 7px 7px 10px rgb(202, 202, 202);
+    padding: 24px;
+    max-width: 780px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px;	
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    font-stretch: normal !important;
+    font-style: normal !important;
+    letter-spacing: normal !important;
+    color: #000000;
+    font-family: 'Source Sans Pro' !important;
+}
+
+.petlja-problem-box .image-background {
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	opacity: 0.1;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 10 !important;
+}
+
+.petlja-problem-box div, .petlja-problem-box p {
+	color: #000 !important;
+	margin-bottom: 10px;
+	z-index: 100;
+	position: relative;
+}
+
+.petlja-problem-box button {
+	padding: 8px 16px;
+	border-radius: 18px;
+	margin-right: 10px; 
+	margin-top: 20px;
+}
+
+.petlja-problem-box .alert-danger, 
+.petlja-problem-box .alert-danger:focus {
+	background-color: #FCCED9;
+	color: #F63C51 !important;
+	border: none;
+}
+
+.petlja-problem-box .alert-success,
+.petlja-problem-box .alert-success:focus {
+	background-color: #A9E0D3;
+	color: #16B89A	!important;
+	border: none;
+}
+
+
+
+.petlja-problem-box-icon-holder {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    position: absolute !important;
+    left: calc(50% - 40px);
+    top: -35px;
+    background-color: inherit;
+    box-shadow: 5px 5px 10px rgb(202, 202, 202);
+    z-index: -1 !important;
+}
+
+.petlja-problem-image {
+    position: absolute !important;
+
+}
+
+
+
+
 .course-box .alert-warning {
 	background-color: transparent;
 	border-color: transparent;
@@ -45,12 +127,9 @@ a:hover {
 }
 
 .course-box-question {
-	border-top: 5px solid #fbc02d;
 }
 
 .course-box-problem {
-	border-top: 5px solid #18bc9c;
-	overflow: hidden;
 }
 
 .course-box-success {
@@ -185,6 +264,46 @@ ul:first-child {
 	padding: 10px;
 	margin-bottom: 10px;
 }
+
+.quiz-question .dragndrop-question,
+.quiz-question .parsons-question,
+.quiz-question .petlja-problem-box-icon-holder {
+	background-color: #D9F2ED !important;
+}
+
+.quiz-image {
+    left: calc(50% - 14px);
+    top: -26px;
+    width: 31px;
+}
+
+@media (max-width: 600px) {
+    .quiz-image {
+        left: calc(50% - 13px);
+        top: -32px;
+        width: 27px;
+        height: 45px;
+    }
+    
+}
+
+.petlja-problem-image-quiz {
+	display: none;
+    position: absolute !important;
+}
+
+.quiz-question .petlja-problem-image-quiz {
+	display: block;
+}
+
+.quiz-question .petlja-problem-image {
+	display: none;
+}
+
+.quiz-question .image-background {
+	filter: invert(72%) sepia(26%) saturate(7495%) hue-rotate(124deg) brightness(91%) contrast(83%);
+}
+
 
 @media only screen and (max-width: 900px) {
 	.course-content {
@@ -1143,4 +1262,10 @@ ul:first-child {
 	-moz-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
+  }
+
+  .screenshot-shadow {
+	
+	box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+
   }

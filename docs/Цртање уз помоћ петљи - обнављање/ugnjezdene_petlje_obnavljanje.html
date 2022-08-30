@@ -6,6 +6,7 @@
     <title>15.1. Цртање уз помоћ петљи - обнављање</title>
     <link rel="stylesheet" type="text/css" href="../_static/activecode.css" />
     <link rel="stylesheet" type="text/css" href="../_static/codemirror.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/qchoice.css" />
     <link rel="stylesheet" type="text/css" href="../_static/clickable.css" />
     <link rel="stylesheet" type="text/css" href="../_static/pytutor.css" />
     <link rel="stylesheet" type="text/css" href="../_static/modal-basic.css" />
@@ -108,6 +109,7 @@
     <script type="text/javascript" src="../_static/karelCorner.js"></script>
     <script type="text/javascript" src="../_static/karelRobot.js"></script>
     <script type="text/javascript" src="../_static/karelWorld.js"></script>
+    <script type="text/javascript" src="../_static/karelChat.js"></script>
     <script type="text/javascript" src="../_static/karelRobotDrawer.js"></script>
     <script type="text/javascript" src="../_static/karelUI.js"></script>
     <script type="text/javascript" src="../_static/karel.js"></script>
@@ -290,7 +292,7 @@
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
                 <div class="courseContentsSubSection d-none"><a href=../Кругови%20и%20многоуглови/Krugovi.html><div class="studioLecture" id=activity-Krugovi><i class="fas fa-file-alt activity-icon"></i>6.1. Цртање облика - кругови</div></a>
-                <a href=../Кругови%20и%20многоуглови/mnogouglovi.html><div class="studioLecture" id=activity-mnogouglovi><i class="fas fa-file-alt activity-icon"></i>6.2. Цртање облика - многоуглови</div></a>
+                <a href=../Кругови%20и%20многоуглови/mnogouglovi.html><div class="studioLecture" id=activity-mnogouglovi><i class="fas fa-file-alt activity-icon"></i>6.2. Цртање облика - многоуглови (полигони)</div></a>
                 <a href=../Кругови%20и%20многоуглови/Krugovi_mnogouglovi_zadatak.html><div class="studioLecture" id=activity-Krugovi_mnogouglovi_zadatak><i class="fas fa-file-alt activity-icon"></i>6.3. Домаћи задатак</div></a>
                 <a href=../Кругови%20и%20многоуглови/Krugovi_mnogouglovi_test.html><div class="studioLecture" id=activity-Krugovi_mnogouglovi_test><i class="far fa-question-circle activity-icon"></i>6.4. Квиз - кругови и многоуглови</div></a>
                 </div>
@@ -304,19 +306,19 @@
                 </div>
                 <div class="courseContentsSubSection d-none"><a href=../Симетрично%20пресликане%20координате/simetrija.html><div class="studioLecture" id=activity-simetrija><i class="fas fa-file-alt activity-icon"></i>7.1. Симетрично пресликане координате</div></a>
                 <a href=../Симетрично%20пресликане%20координате/simetrija_zadatak.html><div class="studioLecture" id=activity-simetrija_zadatak><i class="fas fa-file-alt activity-icon"></i>7.2. Домаћи задатак</div></a>
-                <a href=../Симетрично%20пресликане%20координате/simetrija_test.html><div class="studioLecture" id=activity-simetrija_test><i class="far fa-question-circle activity-icon"></i>Квиз - симетрија</div></a>
+                <a href=../Симетрично%20пресликане%20координате/simetrija_test.html><div class="studioLecture" id=activity-simetrija_test><i class="far fa-question-circle activity-icon"></i>7.3. Квиз - симетрија</div></a>
                 </div>
             </div>
                 
                 <div class="courseContentsSection">
                 <div class="lecture-div courseContentsSectionHeadline" id=lecture-Релативно%20задавање%20координата%20и%20димензија>
-                    <h5>8. Релативно задавање координата и димензија</h5>
+                    <h5>8. Скалирање и центрирање, релативно задавање координата и димензија</h5>
                     <i class="fas fa-angle-down caret-position "> </i>
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
                 <div class="courseContentsSubSection d-none"><a href=../Релативно%20задавање%20координата%20и%20димензија/Pajton_podsetnik_definisanje_funkcija.html><div class="studioLecture" id=activity-Pajton_podsetnik_definisanje_funkcija><i class="fas fa-file-alt activity-icon"></i>8.1. Пајтон подсетник - дефинисање функција</div></a>
-                <a href=../Релативно%20задавање%20координата%20и%20димензија/skaliranje_objekta.html><div class="studioLecture" id=activity-skaliranje_objekta><i class="fas fa-file-alt activity-icon"></i>8.2. Повећавање и смањивање објекта, центрирање</div></a>
-                <a href=../Релативно%20задавање%20координата%20и%20димензија/skaliranje.html><div class="studioLecture" id=activity-skaliranje><i class="fas fa-file-alt activity-icon"></i>8.3. Повећавање и смањивање цртежа, центрирање</div></a>
+                <a href=../Релативно%20задавање%20координата%20и%20димензија/skaliranje.html><div class="studioLecture" id=activity-skaliranje><i class="fas fa-file-alt activity-icon"></i>8.2. Повећавање и смањивање једног објекта, центрирање</div></a>
+                <a href=../Релативно%20задавање%20координата%20и%20димензија/relativne_koordinate.html><div class="studioLecture" id=activity-relativne_koordinate><i class="fas fa-file-alt activity-icon"></i>8.3. Релативне координате и димензије</div></a>
                 <a href=../Релативно%20задавање%20координата%20и%20димензија/domaci_zadatak_relativne_koordinate.html><div class="studioLecture" id=activity-domaci_zadatak_relativne_koordinate><i class="fas fa-file-alt activity-icon"></i>8.4. Домаћи задатак</div></a>
                 <a href=../Релативно%20задавање%20координата%20и%20димензија/relativne_koordinate_test.html><div class="studioLecture" id=activity-relativne_koordinate_test><i class="far fa-question-circle activity-icon"></i>8.5. Квиз - релативне координате и димензије</div></a>
                 </div>
@@ -328,7 +330,7 @@
                     <i class="fas fa-angle-down caret-position "> </i>
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
-                <div class="courseContentsSubSection d-none"><a href=../Релативно%20задавање%20координата%20-%20утврђивање/relativne_koordinate_utvrdjivanje.html><div class="studioLecture" id=activity-relativne_koordinate_utvrdjivanje><i class="fas fa-file-alt activity-icon"></i>9.1. Релативне координате утврђивање</div></a>
+                <div class="courseContentsSubSection d-none"><a href=../Релативно%20задавање%20координата%20-%20утврђивање/relativne_koordinate_utvrdjivanje.html><div class="studioLecture" id=activity-relativne_koordinate_utvrdjivanje><i class="fas fa-file-alt activity-icon"></i>9.1. Релативне координате - утврђивање</div></a>
                 <a href=../Релативно%20задавање%20координата%20-%20утврђивање/zadatak_relativne_koordinate.html><div class="studioLecture" id=activity-zadatak_relativne_koordinate><i class="fas fa-file-alt activity-icon"></i>9.2. Домаћи задатак</div></a>
                 <a href=../Релативно%20задавање%20координата%20-%20утврђивање/relativne_koordinate_test2.html><div class="studioLecture" id=activity-relativne_koordinate_test2><i class="far fa-question-circle activity-icon"></i>9.3. Квиз - релативне координате и димензије</div></a>
                 </div>
@@ -367,7 +369,7 @@
                 </div>
                 <div class="courseContentsSubSection d-none"><a href=../Цртање%20уз%20помоћ%20петљи%202/petlje2_random.html><div class="studioLecture" id=activity-petlje2_random><i class="fas fa-file-alt activity-icon"></i>12.1. Употреба генератора случајних бројева</div></a>
                 <a href=../Цртање%20уз%20помоћ%20петљи%202/petlje2_pravilno.html><div class="studioLecture" id=activity-petlje2_pravilno><i class="fas fa-file-alt activity-icon"></i>12.2. Правилно распоређивање боја</div></a>
-                <a href=../Цртање%20уз%20помоћ%20петљи%202/petlje2_test.html><div class="studioLecture" id=activity-petlje2_test><i class="far fa-question-circle activity-icon"></i>12.3. Квиз - петље 2</div></a>
+                <a href=../Цртање%20уз%20помоћ%20петљи%202/petlje2_test.html><div class="studioLecture" id=activity-petlje2_test><i class="far fa-question-circle activity-icon"></i>12.3. Квиз - понављање облика коришћењем петљи</div></a>
                 </div>
             </div>
                 
@@ -377,8 +379,8 @@
                     <i class="fas fa-angle-down caret-position "> </i>
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
-                <div class="courseContentsSubSection d-none"><a href=../Гранање/pajton_podsetnik_grananje.html><div class="studioLecture" id=activity-pajton_podsetnik_grananje><i class="fas fa-file-alt activity-icon"></i>13.1. Пајон подсетник гранање</div></a>
-                <a href=../Гранање/grananje.html><div class="studioLecture" id=activity-grananje><i class="fas fa-file-alt activity-icon"></i>13.2. Гранање</div></a>
+                <div class="courseContentsSubSection d-none"><a href=../Гранање/pajton_podsetnik_grananje.html><div class="studioLecture" id=activity-pajton_podsetnik_grananje><i class="fas fa-file-alt activity-icon"></i>13.1. Пајтон подсетник гранање</div></a>
+                <a href=../Гранање/grananje.html><div class="studioLecture" id=activity-grananje><i class="fas fa-file-alt activity-icon"></i>13.2. Комбиновање гранања и петље</div></a>
                 <a href=../Гранање/grananje_zadatak.html><div class="studioLecture" id=activity-grananje_zadatak><i class="fas fa-file-alt activity-icon"></i>13.3. Домаћи задатак</div></a>
                 <a href=../Гранање/grananje_test.html><div class="studioLecture" id=activity-grananje_test><i class="far fa-question-circle activity-icon"></i>13.4. Квиз - гранање</div></a>
                 </div>
@@ -391,7 +393,7 @@
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
                 <div class="courseContentsSubSection d-none"><a href=../Угнежђене%20петље/pajton_podsetnik_ugnjezdene.html><div class="studioLecture" id=activity-pajton_podsetnik_ugnjezdene><i class="fas fa-file-alt activity-icon"></i>14.1. Пајтон подсетник - угнежђене петље</div></a>
-                <a href=../Угнежђене%20петље/petlje_ugnjezdene.html><div class="studioLecture" id=activity-petlje_ugnjezdene><i class="fas fa-file-alt activity-icon"></i>14.2. Угњежђене петље</div></a>
+                <a href=../Угнежђене%20петље/petlje_ugnjezdene.html><div class="studioLecture" id=activity-petlje_ugnjezdene><i class="fas fa-file-alt activity-icon"></i>14.2. Угнежђене петље</div></a>
                 <a href=../Угнежђене%20петље/petlje_ugnjezdene_zadatak.html><div class="studioLecture" id=activity-petlje_ugnjezdene_zadatak><i class="fas fa-file-alt activity-icon"></i>14.3. Домаћи задатак</div></a>
                 <a href=../Угнежђене%20петље/petlje_ugnjezdene_test.html><div class="studioLecture" id=activity-petlje_ugnjezdene_test><i class="far fa-question-circle activity-icon"></i>14.4. Квиз - угнежђене петље</div></a>
                 </div>
@@ -413,7 +415,7 @@
                     <i class="fas fa-angle-down caret-position "> </i>
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
-                <div class="courseContentsSubSection d-none"><a href=../завршни_тест/zavrsni_test.html><div class="studioLecture" id=activity-zavrsni_test><i class="far fa-question-circle activity-icon"></i>16.1 Завршни квиз</div></a>
+                <div class="courseContentsSubSection d-none"><a href=../завршни_тест/zavrsni_test.html><div class="studioLecture" id=activity-zavrsni_test><i class="far fa-question-circle activity-icon"></i>16.1. Завршни квиз</div></a>
                 </div>
             </div>
                 </div>
@@ -437,25 +439,23 @@
 задатке, већ само одабери оне који ти се из неког разлога највише
 допадају. Пожељно је да сваки задатак урадиш самостално, од почетка до
 краја. Тек ако из више покушаја не успеш, онда потражи помоћ, па
-покушај да допуниш код. Тек ако ни са започетим програмом не можеш да
+покушај да допуниш кôд. Тек ако ни са започетим програмом не можеш да
 решиш задатак, погледај решење.</p>
 <div class="section" id="id2">
 <h2>Задаци<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="id3">
 <h3>Испрекидана линија<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
 
-    <div class="course-box course-box-special">
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
         <div class="course-content">
-            <h4 class="carbox-title">
-                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
-            </h4>
-            <p>
 <p>Напиши програм који по средини прозора исцртава испрекидану линију
 код које је свака линијица обојена насумично одабраном
 бојом. Дужине линијица и размак између њих су једнаки 30 пиксела, а
 дебљина линије је 5 пиксела.</p>
 
-    </p></div></div>
+    </div></div>
 
 <div data-childcomponent="isprekidana_linija" class="course-box course-box-problem course-content">
 
@@ -525,15 +525,13 @@ x = 0
 <div class="section" id="id4">
 <h3>Црта-тачка линија<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
 
-    <div class="course-box course-box-special">
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
         <div class="course-content">
-            <h4 class="carbox-title">
-                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
-            </h4>
-            <p>
-<p>Напиши програм који црта зелену испрекидану линију „црта-тачка”.</p>
+<p>Напиши програм који црта зелену испрекидану линију „црта-тачка“.</p>
 
-    </p></div></div>
+    </div></div>
 
 <div data-childcomponent="crta_tacka" class="course-box course-box-problem course-content">
 
@@ -621,21 +619,19 @@ while ???:
 <div class="section" id="id5">
 <h3>Кругови дуж дијагонале<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
 
-    <div class="course-box course-box-special">
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
         <div class="course-content">
-            <h4 class="carbox-title">
-                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
-            </h4>
-            <p>
 <p>Напиши програм који дуж целе главне дијагонале прозора распоређује
 <span class="math notranslate nohighlight">\(n=10\)</span> једнаких кругова.</p>
 
-    </p></div></div>
+    </div></div>
 <p>Пречници кругова деле главну дијагоналу на <span class="math notranslate nohighlight">\(n\)</span> једнаких делова.
 Полупречник кругова можемо израчунати тако што дужину дијагонале
 поделимо са <span class="math notranslate nohighlight">\(2n\)</span>, а дужину дијагонале можемо израчунати
 Питагорином теоремом као <span class="math notranslate nohighlight">\(\sqrt{s^2 + v^2}\)</span>, где су <span class="math notranslate nohighlight">\(s\)</span> и
-<span class="math notranslate nohighlight">\(v\)</span> ширина тј. висина прозора. На основу Талесове теореме
+<span class="math notranslate nohighlight">\(v\)</span> ширина тј. висина прозора. На основу Талесове теореме,
 пројекције центара кругова на x осу и на y осу
 деле ивице прозора у истом односу у ком центри кругова деле
 дијагоналу. Ако са <span class="math notranslate nohighlight">\(k_x\)</span> означимо <span class="math notranslate nohighlight">\(n\)</span>-ти део ширине
@@ -711,18 +707,16 @@ d_y)\)</span>, где су <span class="math notranslate nohighlight">\(d_x\)</s
 тј. висина прозора. Ако употребимо исте тачке, али их спојимо дужима
 на мало другачији начин, можемо добити веома интересантне шаре.</p>
 
-    <div class="course-box course-box-special">
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
         <div class="course-content">
-            <h4 class="carbox-title">
-                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
-            </h4>
-            <p>
 <p>Напиши програм који дијагонално шпарта прозор у правцу споредне
 дијагонале. Број линија изнад споредне дијагонале (укључујући и њу)
 је <span class="math notranslate nohighlight">\(n=10\)</span> (исто важи и за број линија испод споредне
 дијагонале).</p>
 
-    </p></div></div>
+    </div></div>
 <p>Крајње тачке ових дужи деле сваку од ивица прозора на по <span class="math notranslate nohighlight">\(n\)</span>
 једнаких делова. Стога се растојање <span class="math notranslate nohighlight">\(d_x\)</span> између суседних тачака
 на горњој (и доњој) ивици прозора може израчунати дељењем ширине, а
@@ -736,12 +730,12 @@ d_y)\)</span>, где су <span class="math notranslate nohighlight">\(d_x\)</s
 <code class="docutils literal notranslate"><span class="pre">n</span></code> цртамо дужи које спајају тачке са координатама <code class="docutils literal notranslate"><span class="pre">(i*dx,</span> <span class="pre">0)</span></code> и
 <code class="docutils literal notranslate"><span class="pre">(0,</span> <span class="pre">i*dy)</span></code>. Слично, прва дуж испод дијагонале спаја тачке са
 координатама <span class="math notranslate nohighlight">\((w, d_y)\)</span> и <span class="math notranslate nohighlight">\((d_x, h)\)</span>, друга тачке са
-координатама <span class="math notranslate nohighlight">\((w, 2 d_y)\)</span> и <span class="math notranslate nohighlight">\((2 d_x, h)\)</span> итд.,
+координатама <span class="math notranslate nohighlight">\((w, 2 d_y)\)</span> и <span class="math notranslate nohighlight">\((2 d_x, h)\)</span> итд,
 где <span class="math notranslate nohighlight">\(w\)</span> означава ширину, а <span class="math notranslate nohighlight">\(h\)</span> висину прозора. Дакле, те
 дужи можемо нацртати тако што у петљи у којој бројачка променљива
 <code class="docutils literal notranslate"><span class="pre">i</span></code> мења вредности од 1 до <code class="docutils literal notranslate"><span class="pre">n-1</span></code> цртамо дуж која спаја тачке са
 координатама <code class="docutils literal notranslate"><span class="pre">(sirina,</span> <span class="pre">i*dy)</span></code> и <code class="docutils literal notranslate"><span class="pre">(i*dx,</span> <span class="pre">visina)</span></code>.</p>
-<p>На основу претходне дискусије напиши наредни програм.</p>
+<p>На основу претходне дискусије напиши наредни програм:</p>
 
 <div data-childcomponent="dijagonalno_spartanje" class="course-box course-box-problem course-content">
 
@@ -813,16 +807,14 @@ for i in range(2*n):
 </textarea>
 </div>
 
-    <div class="course-box course-box-special">
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
         <div class="course-content">
-            <h4 class="carbox-title">
-                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
-            </h4>
-            <p>
 <p>Ажурирај претходни програм тако да се додају и дијагонале паралелне
 главној дијагонали исцртане црвеном бојом.</p>
 
-    </p></div></div>
+    </div></div>
 
 <div data-childcomponent="dijagonalno-spartanje-2" class="course-box course-box-problem course-content">
 
@@ -896,18 +888,16 @@ for i in range(n + 1):
 <div class="section" id="id7">
 <h3>Правоугаона мрежа<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h3>
 
-    <div class="course-box course-box-special">
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
         <div class="course-content">
-            <h4 class="carbox-title">
-                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
-            </h4>
-            <p>
 <p>Напиши програм који исцртава правоугаону мрежу која се састоји од
 100 правоугаоних поља, распоређених у 10 врста и 10
 колона (исцртати само линије мреже и то хоризонталне линије плавом
 бојом, а вертикалне црвеном, дебљине 5 пиксела).</p>
 
-    </p></div></div>
+    </div></div>
 <p>Основни задатак је одредити координате x вертикалних линија и
 координате y хоризонталних линија. Ширину једног правоугаоника можемо
 одредити дељењем ширине прозора бројем колона (у нашем случају то је
@@ -971,12 +961,12 @@ dy = ???                   # izračunaj razmak između podeoka po visini
 for i in range(1, brojPodeoka):
     pg.draw.line(prozor, pg.Color("blue"), (0, i*dy), (sirina, i*dy), 5)
 
-# dodaj kod koji crta vertikalne linije crvenom bojom
+# dodaj kôd koji crta vertikalne linije crvenom bojom
 ???
 </textarea>
 </div>
 <p>Још један начин да се одреди координата наредне линије је да се
-координата претходне линије увећа за ширину тј. дужину правоугаоника.</p>
+координата претходне линије увећа за ширину, тј. дужину правоугаоника.</p>
 
 <div data-childcomponent="pravougaona_mreza_alt" class="course-box course-box-problem course-content">
 
@@ -995,21 +985,19 @@ for i in range(1, brojPodeoka):
 <div class="section" id="id8">
 <h3>Шарање ротираним дужима<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h3>
 
-    <div class="course-box course-box-special">
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
         <div class="course-content">
-            <h4 class="carbox-title">
-                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
-            </h4>
-            <p>
 <p>Напиши програм који исцртава шару по прозору која је креирана од
-дужи, како је приказано на слици.</p>
+дужи, како је приказано на слици:</p>
 
-    </p></div></div>
+    </div></div>
 <a class="reference internal image-reference" href="../_images/petlja1.png"><img alt="../_images/petlja1.png" class="align-center" src="../_images/petlja1.png" style="width: 400px;" /></a>
 <p>Иако шара изгледа на први поглед прилично различито, овај програм је
 заправо прилично сличан претходном. Прва дуж спаја тачке се
 координатама <span class="math notranslate nohighlight">\((0, d_y)\)</span> и <span class="math notranslate nohighlight">\((d_x, h)\)</span>, друга спаја тачке са
-координатама <span class="math notranslate nohighlight">\((0, 2d_y)\)</span> и <span class="math notranslate nohighlight">\((2d_x, h)\)</span>, итд., све до дужи
+координатама <span class="math notranslate nohighlight">\((0, 2d_y)\)</span> и <span class="math notranslate nohighlight">\((2d_x, h)\)</span>, итд, све до дужи
 која спаја тачке <span class="math notranslate nohighlight">\((0, (n-1)\cdot d_y)\)</span> и <span class="math notranslate nohighlight">\(((n-1)\cdot d_x,
 h)\)</span>, где је <span class="math notranslate nohighlight">\(h\)</span> висина прозора. Дакле, дужи можемо нацртати у
 петљи у којој се бројачка променљива <code class="docutils literal notranslate"><span class="pre">i</span></code> креће од <code class="docutils literal notranslate"><span class="pre">1</span></code> до <code class="docutils literal notranslate"><span class="pre">n-1</span></code>,
@@ -1017,7 +1005,7 @@ h)\)</span>, где је <span class="math notranslate nohighlight">\(h\)</span>
 и <code class="docutils literal notranslate"><span class="pre">(i*dx,</span> <span class="pre">visina)</span></code>. Ако би се бројач у петљи мењао од <code class="docutils literal notranslate"><span class="pre">0</span></code> до
 <code class="docutils literal notranslate"><span class="pre">n</span></code>, тада би се цртале и прва вертикална и последња хоризонтална дуж
 (oне се не виде, јер се поклапају са ивицама прозора).</p>
-<p>На основу претходне дискусије допуни наредни програм.</p>
+<p>На основу претходне дискусије допуни наредни програм:</p>
 
 <div data-childcomponent="rotirane_duzi" class="course-box course-box-problem course-content">
 
@@ -1065,16 +1053,14 @@ for i in range(1, n):
 </textarea>
 </div>
 
-    <div class="course-box course-box-special">
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
         <div class="course-content">
-            <h4 class="carbox-title">
-                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
-            </h4>
-            <p>
 <p>Допуни претходни програм тако да се сличан шаблон понавља у сва
 четири угла прозора, како је приказано на слици.</p>
 
-    </p></div></div>
+    </div></div>
 <a class="reference internal image-reference" href="../_images/petlja2.png"><img alt="../_images/petlja2.png" class="align-center" src="../_images/petlja2.png" style="width: 400px;" /></a>
 <p>Пажљиво анализирај координате крајњих тачака дужи, уочи правилности,
 експериментиши и покушај тако да дођеш до решења.</p>
@@ -1176,17 +1162,15 @@ for i in range(n + 1):
 <div class="section" id="id9">
 <h3>Крешендо<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h3>
 
-    <div class="course-box course-box-special">
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
         <div class="course-content">
-            <h4 class="carbox-title">
-                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
-            </h4>
-            <p>
 <p>Напиши програм који исцртава 100 паралелних вертикалних линија
 равномерно распоређених ширином прозора, тако да дужина тих линија
 равномерно расте од нуле па до висине прозора.</p>
 
-    </p></div></div>
+    </div></div>
 
 <div data-childcomponent="kresendo" class="course-box course-box-problem course-content">
 
@@ -1271,19 +1255,17 @@ for i in range(brojLinija):
 <div class="section" id="id10">
 <h3>Лоптице<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h3>
 
-    <div class="course-box course-box-special">
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
         <div class="course-content">
-            <h4 class="carbox-title">
-                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
-            </h4>
-            <p>
 <p>Напиши програм који исцртава лоптице хоризонтално распоређене по
 средини висине прозора, које се међусобно додирују, тако да је полупречник
 прве 10 пиксела, а полупречник сваке наредне за 10 пиксела већи од
 претходне. Лоптице су наизменично црвене, зелене, плаве и жуте боје
 (и тако у круг).</p>
 
-    </p></div></div>
+    </div></div>
 
 <div data-childcomponent="loptice.py" class="course-box course-box-problem course-content">
 
@@ -1372,16 +1354,14 @@ while x <= sirina:
 <div class="section" id="id11">
 <h3>Згуснуте линије<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h3>
 
-    <div class="course-box course-box-special">
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
         <div class="course-content">
-            <h4 class="carbox-title">
-                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
-            </h4>
-            <p>
 <p>Нацртај цртеж у ком се 10 усправних линија удаљава једна од друге за размак који је 10% већи од размака претходне две линије. Линије се удаљавају како се
-померамо ка десној страни прозора. Размак између прве две линије је 20 пискела.</p>
+померамо ка десној страни прозора. Размак између прве две линије је 20 пиксела.</p>
 
-    </p></div></div>
+    </div></div>
 
 <div data-childcomponent="zgusnute_linije" class="course-box course-box-problem course-content">
 
@@ -1451,11 +1431,11 @@ for i in range(10):
 правоугаоник од тачке на датој висини, са <span class="math notranslate nohighlight">\(x\)</span> координатом
 једнаком нули. Половину цигле на почетку реда можемо да добијемо тако
 што нацртамо целу циглу померену за <span class="math notranslate nohighlight">\(s \over 2\)</span> улево, то јест
-тако што цртамо правоугаоник од такче на истој висини, али са
+тако што цртамо правоугаоник од тачке на истој висини, али са
 <span class="math notranslate nohighlight">\(x\)</span> координатом једнаком <code class="docutils literal notranslate"><span class="pre">-s</span> <span class="pre">//</span> <span class="pre">2</span></code>. Тако постижемо да се види
-само десна половина цигле. Остаје да решимо када цртамо померену циглу
+само десна половина цигле. Остаје нам да решимо када цртамо померену циглу,
 а када не.</p>
-<p>Једно решење је да место почетка реда цигала чувамо у променљивој,
+<p>Једно од решења је да место почетка реда цигала чувамо у променљивој,
 назовимо је <code class="docutils literal notranslate"><span class="pre">x_poc</span></code>. После сваког исцртаног реда, проверавамо да ли
 променљива <code class="docutils literal notranslate"><span class="pre">x_poc</span></code> има вредност нула или <code class="code docutils literal notranslate"><span class="pre">-s</span> <span class="pre">//</span> <span class="pre">2</span></code>. Коју год
 од ове две вредности променљива имала, доделићемо јој ону другу
@@ -1511,15 +1491,13 @@ for y0 in range(0, visina, v_cigle): # Za svaki red cigala
 <div class="section" id="id13">
 <h3>Тараба<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h3>
 
-    <div class="course-box course-box-special">
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
         <div class="course-content">
-            <h4 class="carbox-title">
-                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
-            </h4>
-            <p>
 <p>Напиши програм који црта сеоску ограду (тарабу).</p>
 
-    </p></div></div>
+    </div></div>
 <p>Сваку притку ограде представићемо у облику многоугла. Да бисмо притке
 могли да цртамо на различитим позицијама, потребно је да координате
 тог многоугла буду задате релативно. Пошто ће све притке бити увек на

@@ -15,3 +15,161 @@
 .rst-level-3{
     border-left-color: #e74c3c;
 }
+
+.note-wrapper {
+    position: relative;
+    display: block;
+    border-radius: 16px;
+    box-shadow: 7px 7px 10px rgb(202, 202, 202);
+    padding: 24px;
+    max-width: 780px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    font-stretch: normal !important;
+    font-style: normal !important;
+    letter-spacing: normal !important;
+    color: #000000;
+    font-family: 'Source Sans Pro' !important;
+}
+
+
+
+.infonote-type {
+    background-color: #BBDEFB;
+}
+
+.infonote-image {
+
+    left: calc(50% - 6px);
+    top: -26px;
+
+}
+
+.suggestionnote-type {
+    background-color: #FFECB3;
+}
+.suggestionnote-image {
+    left: calc(50% - 20px);
+    top: -26px;
+}
+
+.learnmorenote-type {
+    background-color: #FFCDD2;
+    user-select: none;
+}
+
+.learnmorenote-type .course-content p:nth-of-type(1) {
+    cursor: pointer;
+}
+
+    .learnmorenote-type .course-content p:nth-of-type(1)::after {
+        font-family: "Font Awesome 5 Free";
+        content: "\f107";
+        display: inline-block;
+        padding-right: 3px;
+        vertical-align: middle;
+        font-weight: 900;
+        float: right;
+    }
+
+.learnmorenote-type .course-content p.expanded:nth-of-type(1)::after {
+    display: none;
+}
+
+.learnmorenote-type .course-content p:nth-of-type(1)::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f106";
+    display: inline-block;
+    padding-right: 3px;
+    vertical-align: middle;
+    font-weight: 900;
+    float: right;
+    display: none;
+}
+
+.learnmorenote-type .course-content p.expanded:nth-of-type(1)::before {
+    display: inline-block;
+}
+
+.learnmorenote-type .course-content p:not(:nth-of-type(1)) {
+    display: none;
+}
+.learnmorenote-image {
+    left: calc(50% - 28px);
+    top: -26px;
+
+}
+
+.technicalnote-type {
+    background-color: #F5F5F5;
+}
+.technicalnote-image {
+    left: calc(50% - 30px);
+    top: -26px;
+}
+
+
+.questionnote-type {
+    background-color: #D9F2ED;
+}
+
+.questionnote-image {
+    left: calc(50% - 20px);
+    top: -26px;
+    width: 40px;
+}
+
+
+.note-icon-holder {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    position: absolute;
+    left: calc(50% - 40px);
+    top: -35px;
+    background-color: inherit;
+    box-shadow: 5px 5px 10px rgb(202, 202, 202);
+    z-index: -1;
+}
+
+.note-image {
+    position: absolute;
+
+}
+
+@media (max-width: 600px) {
+    
+    .infonote-image {
+        left: calc(50% - 3px);
+        top: -26px;
+        width: 12px;
+        height: 45px;
+    }
+
+    .suggestionnote-image {
+        left: calc(50% - 18px);
+        top: -26px;
+        width: 38px;
+        height: 45px;
+    }
+
+    .learnmorenote-image {
+        left: calc(50% - 21px);
+        top: -26px;
+        width: 45px;
+        height: 45px;
+    
+    }
+
+    .technicalnote-image {
+        left: calc(50% - 22px);
+        top: -26px;
+        width: 45px;
+        height: 45px;
+    }
+}
