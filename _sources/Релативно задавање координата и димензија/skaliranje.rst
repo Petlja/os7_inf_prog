@@ -108,7 +108,7 @@
    import pygamebg
 
    (sirina, visina) = (400, 400)
-   prozor = pygamebg.open_window(sirina, visina, "Pygame")
+   prozor = pygamebg.open_window(sirina, visina, "Skaliranje duži")
 
    # -*- acsection: main -*-
    # bojimo pozadinu prozora u belu
