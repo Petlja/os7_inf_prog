@@ -259,6 +259,7 @@
 
    .. activecode:: centrirani_kvadrati_u_prozoru_reveal_code
       :passivecode:
+      :includexsrc: _includes/centrirani_pravougaonici_u_prozoru.py
 
       pg.draw.rect(prozor, pg.Color("red"), (50, 50, 200, 200))
       pg.draw.rect(prozor, pg.Color("green"), (75, 75, 150, 150))
