@@ -153,6 +153,7 @@
 
    .. activecode:: kucica_reveal_code
       :passivecode:
+      :includexsrc: _includes/kucica.py
 
       # osnova kuće
       pg.draw.rect(prozor, pg.Color("yellow"), (60, 120, 180, 160))
