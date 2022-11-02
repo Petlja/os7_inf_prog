@@ -68,6 +68,7 @@
 .. activecode:: сакупљање_јабука
    :nocodelens:
    :playtask:
+   :timelimit: 60000
    :includehsrc: _includes/jabuke.py
 
 .. image:: ../../_images/korpa.png
