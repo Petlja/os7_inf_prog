@@ -409,7 +409,17 @@ h)`, где је :math:`h` висина прозора. Дакле, дужи м�
 
    .. activecode:: rotirane_duzi_4ugla_resenje_kod
       :passivecode: true
-
+      :includexsrc: _includes/rotirane-duzi2.py
+	
+	
+      prozor.fill(pg.Color("white"))
+    
+      # broj podeoka
+      n = 10
+      # prirastaj
+      dx = sirina / n
+      dy = visina / n	
+      
       # crtamo n linija u donjem levom uglu prozora 
       for i in range(n + 1):
           pg.draw.line(prozor, pg.Color("black"), (0, i*dy), (i*dx, visina), 1)
