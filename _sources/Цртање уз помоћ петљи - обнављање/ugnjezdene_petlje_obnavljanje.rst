@@ -408,7 +408,8 @@ h)`, где је :math:`h` висина прозора. Дакле, дужи м�
    Решење се може добити на следећи начин.
 
    .. activecode:: rotirane_duzi_4ugla_resenje_kod
-      :passivecode: true
+      :nocodelens:
+      :modaloutput:
       :includexsrc: _includes/rotirane-duzi2.py
 	
 	
