@@ -4,8 +4,9 @@ build_info
 pavement.pyc
 _build
 _intermediate
-course.json
+course
 _tmp
 update.py
-override.json
+course.json
 export
+override.json
