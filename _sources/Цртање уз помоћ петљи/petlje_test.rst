@@ -125,13 +125,13 @@
 ~~~~~~~~~
 
 .. mchoice:: for_cikcak
-    :answer_a: кôд 1
+    :answer_a: слика 1
     :feedback_a: Тачно
-    :answer_b: кôд 2
+    :answer_b: слика 2
     :feedback_b: Нетачно    
-    :answer_c: кôд 3
+    :answer_c: слика 3
     :feedback_c: Нетачно    
-    :answer_d: кôд 4
+    :answer_d: слика 4
     :feedback_d: Нетачно    
     :correct: a
     

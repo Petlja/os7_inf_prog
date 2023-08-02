@@ -11,10 +11,10 @@
    (гледан одозго) тако што ћете поделити прозор на :math:`n \times n`
    квадрата и сваки квадрат обојити у насумичну боју.
 
-.. figure:: ../../_images/podijum.jpg
-   :width: 780px   
-   :align: center 
-   :class: screenshot-shadow
+   .. figure:: ../../_images/podijum.jpg
+      :width: 780px   
+      :align: center 
+      :class: screenshot-shadow
    
 Претпоставићемо да на располагању имамо функцију која на насумичан
 начин одабира боју (њу је веома једноставно испрограмирати коришћењем
