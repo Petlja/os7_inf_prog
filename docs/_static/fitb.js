@@ -160,6 +160,8 @@ FITB.prototype.checkLocalStorage = function () {
 };
 
 FITB.prototype.setLocalStorage = function (data) {
+    if (!this.isLocalStorageAvailable())
+        return
     // logs answer to local storage
     this.given_arr = [];
     for (var i = 0; i < this.blankArray.length; i++)
@@ -239,6 +241,8 @@ FITB.prototype.evaluateAnswers = function () {
     } else {
         this.correct = false;
     }
+    if (this.useContentApi)
+        c_API.registerQuestionsAnswer(this.divid, this.correct, given)
     this.setLocalStorage({"correct": (this.correct ? "T" : "F")});
 };
 

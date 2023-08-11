@@ -18,7 +18,8 @@ var Robot = (function () {
         r.lastMessage = this.lastMessage;
 	    r.messagesOn = this.messagesOn;
         r.world = this.world.clone();
-        r.chat = this.chat.clone();
+        if (this.chat)
+            r.chat = this.chat.clone();
         return r;
     }
 

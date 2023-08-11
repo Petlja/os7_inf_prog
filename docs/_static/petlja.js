@@ -112,12 +112,14 @@ window.addEventListener('load', function () {
 	}
     var main = document.getElementsByClassName('lectureContentMaterial')[0]
     var scrollpos = localStorage.getItem('scrollpos');
-    if (scrollpos) main.scrollTop = scrollpos ;
+    if (main && scrollpos){
+        main.scrollTop = scrollpos;
 
-    document.getElementsByClassName('lectureContentMaterial')[0].addEventListener('scroll', function(e) {
-        var main = document.getElementsByClassName('lectureContentMaterial')[0]
-        localStorage.setItem('scrollpos', main.scrollTop);
-    });
+        document.getElementsByClassName('lectureContentMaterial')[0].addEventListener('scroll', function(e) {
+            var main = document.getElementsByClassName('lectureContentMaterial')[0]
+            localStorage.setItem('scrollpos', main.scrollTop);
+        });
+    }
 });
 
 function incrAllFontSize() {

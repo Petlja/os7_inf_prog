@@ -8,7 +8,7 @@ var KarelImages = (function() {
             console.log('Loaded image: ', that.loadedImageCount);
         }
 
-        this.imageNames = ['north', 'south', 'east', 'west', 'ball', 'hole'];
+        this.imageNames = ['north', 'north-balls', 'south', 'south-balls', 'east',  'east-balls', 'west', 'west-balls', 'ball', 'hole'];
         this.imageArray = {};
 
         for (var i = 0; i < this.imageNames.length; i++) {
@@ -101,6 +101,7 @@ var RobotDrawer = (function () {
         this.context.clearRect(0 ,0 ,this.width ,this.height);
         computeScale.call(this, robot);
         drawGrid.call(this, robot);
+        drawWallsTransparent.call(this, robot);
         drawWalls.call(this, robot);
         drawBalls.call(this, robot);
         drawRobot.call(this, robot);
@@ -120,7 +121,7 @@ var RobotDrawer = (function () {
         this.cell_height = this.scale_y;
         this.translate_x = (this.width - this.scale_x * (world.getAvenues()+1)) / 2;
         this.translate_y = (this.height - this.scale_y * (world.getStreets()+1)) / 2;
-        this.wall_width = 3;
+        this.wall_width = 5;
     }
 
     function worldToScreen(avenue, street){
@@ -136,11 +137,61 @@ var RobotDrawer = (function () {
 
         ctx.strokeStyle = "black";
         ctx.lineWidth = this.wall_width;
+        ctx.shadowOffsetX = 0;
+        ctx.shadowOffsetY = 0;
+        ctx.shadowBlur    = 0;
+        
+        ctx.shadowColor   = "gray";
         //west wall
         var pt1 = worldToScreen.call(this, 1,1);
         var pt2 = worldToScreen.call(this, 1, world.getStreets());
         ctx.beginPath();
-        ctx.moveTo(pt1.x-this.cell_width/2, pt2.y-this.cell_height/2);
+        ctx.moveTo(pt1.x-this.cell_width/2, pt2.y-this.cell_height/2 - 2.2);
+        ctx.lineTo(pt1.x-this.cell_width/2, pt1.y+this.cell_height/2 + 2.1);
+        ctx.stroke();
+        //south wall
+        pt1 = worldToScreen.call(this, 1,1);
+        pt2 = worldToScreen.call(this, world.getAvenues(), 1);
+        ctx.beginPath();
+        ctx.moveTo(pt1.x-this.cell_width/2, pt1.y+this.cell_height/2);
+        ctx.lineTo(pt2.x+this.cell_width/2 +2.2, pt1.y+this.cell_height/2);
+        ctx.stroke();
+        for(var s=1;s<=world.getStreets();s++){
+            for(var a=1;a<=world.getAvenues();a++){
+                if(world.checkNSWall(a,s)){
+                    pt1 = worldToScreen.call(this, a, s);
+                    ctx.beginPath();
+                    ctx.moveTo(pt1.x+this.cell_width/2, pt1.y-this.cell_height/2 - 2.3);
+                    ctx.lineTo(pt1.x+this.cell_width/2, pt1.y+this.cell_height/2 + 2.3);
+                    ctx.stroke();
+                }
+                if(world.checkEWWall(a,s)){
+                    pt1 = worldToScreen.call(this, a, s);
+                    ctx.beginPath();
+                    ctx.moveTo(pt1.x-this.cell_width/2, pt1.y-this.cell_height/2);
+                    ctx.lineTo(pt1.x+this.cell_width/2, pt1.y-this.cell_height/2);
+                    ctx.stroke();
+                }
+            }
+        }
+    }
+
+    function drawWallsTransparent(robot){
+        var world = robot.getWorld();
+        var ctx = this.context;
+
+        ctx.strokeStyle = "#a9e0d3";
+        ctx.lineWidth = this.wall_width;
+        ctx.shadowOffsetX = 5;
+        ctx.shadowOffsetY = 5;
+        ctx.shadowBlur    = 7;
+        
+        ctx.shadowColor   = "gray";
+        //west wall
+        var pt1 = worldToScreen.call(this, 1,1);
+        var pt2 = worldToScreen.call(this, 1, world.getStreets());
+        ctx.beginPath();
+        ctx.moveTo(pt1.x-this.cell_width/2, pt2.y-this.cell_height/2 );
         ctx.lineTo(pt1.x-this.cell_width/2, pt1.y+this.cell_height/2);
         ctx.stroke();
         //south wall
@@ -174,10 +225,13 @@ var RobotDrawer = (function () {
         var world = robot.getWorld();
         var ctx = this.context;
 	
-        ctx.strokeStyle = "gray";
-        ctx.fillStyle = "gray";
+        ctx.strokeStyle = "#61ccb7";
+        ctx.fillStyle = "white";
         ctx.lineWidth = 1;
         ctx.font = "15px Arial";
+        ctx.shadowOffsetX = 0;
+        ctx.shadowOffsetY = 0;
+        ctx.shadowBlur    = 0;
         for(var s=1;s<=world.getStreets();s++){
             var pt1 = worldToScreen.call(this, 1, s);
             var pt2 = worldToScreen.call(this, world.getAvenues(), s);
@@ -210,18 +264,20 @@ var RobotDrawer = (function () {
 
         var img;
 
+        var str = robot.getInfiniteBalls() ? "∞" : robot.getBalls().toString();
+
         switch(robot.getDirection()){
             case "E":
-                img = KarelImages.get().images().east;
+                img = KarelImages.get().images()["east" + (str !== "0" ? "-balls" : "")];
                 break;
             case "N":
-                img = KarelImages.get().images().north;
+                img = KarelImages.get().images()["north" + (str !== "0" ? "-balls" : "")];
                 break;
             case "S":
-                img = KarelImages.get().images().south;
+                img = KarelImages.get().images()["south" + (str !== "0" ? "-balls" : "")];
                 break;
             case "W":
-                img = KarelImages.get().images().west;
+                img = KarelImages.get().images()["west" + (str !== "0" ? "-balls" : "")];
                 break;
         }       
 
@@ -229,7 +285,6 @@ var RobotDrawer = (function () {
         ctx.font = (Math.floor(w/3)).toString() + "px Arial";
 	ctx.fillStyle = "black";
 
-        var str = robot.getInfiniteBalls() ? "∞" : robot.getBalls().toString();
         if(str !== "0")
             ctx.fillText(str, pt.x - 5, pt.y + getTextHeight(ctx.font).ascent);
     }
@@ -270,7 +325,7 @@ var RobotDrawer = (function () {
                             break;
                         fontSize--;
                     }
-                    ctx.fillText(nb, pt.x - ctx.measureText(nb).width/2, pt.y + getTextHeight(ctx.font).descent);
+                    ctx.fillText(nb, pt.x - ctx.measureText(nb).width/2 - 2, pt.y + getTextHeight(ctx.font).descent - 1);
                 }
             }
         }

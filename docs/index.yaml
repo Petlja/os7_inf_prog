@@ -80,12 +80,14 @@ lessons:
   - description: ''
     file: предговор.html
     guid: fc0b0a40-55d5-483b-bf50-81460076ec0e
+    normalized_title: 1.1. Увод у Pygame
     src: предговор.rst
     title: 1.1. Увод у Pygame
     type: reading
   - description: ''
     file: основна_структура_програма.html
     guid: 7427b636-12ff-49bd-8374-8ba101f6f8c8
+    normalized_title: 1.2. Основна структура Пајгејм програма
     src: основна_структура_програма.rst
     title: 1.2. Основна структура Пајгејм програма
     type: reading
@@ -99,18 +101,21 @@ lessons:
   - description: ''
     file: torke_liste_podsetnik.html
     guid: 8c8d5fe8-dcb5-44df-967c-c02c71c68917
+    normalized_title: 2.1. Подсетник на Пајтон - Торке и листе
     src: torke_liste_podsetnik.rst
     title: 2.1. Подсетник на Пајтон - Торке и листе
     type: reading
   - description: ''
     file: koordinatni_sistem.html
     guid: 9de0fb11-1373-4850-9921-cbd6d73dbc6b
+    normalized_title: 2.2. Координатни систем
     src: koordinatni_sistem.rst
     title: 2.2. Координатни систем
     type: reading
   - description: ''
     file: тест_координатни_систем.html
     guid: 5f65cfba-e785-4d08-b317-d0703b6b129a
+    normalized_title: 2.3. Квиз - координатни систем
     src: тест_координатни_систем.rst
     title: 2.3. Квиз - координатни систем
     type: quiz
@@ -124,18 +129,21 @@ lessons:
   - description: ''
     file: funkcije_varijable_podsetnik.html
     guid: cc76a4f7-ddfe-4749-8d58-46ae1a89d853
+    normalized_title: 3.1. Подсетник на Пајтон - функције и варијабле
     src: funkcije_varijable_podsetnik.rst
     title: 3.1. Подсетник на Пајтон - функције и варијабле
     type: reading
   - description: ''
     file: Boje.html
     guid: fcea681e-4791-4d4d-aff4-488fd923e9dq
+    normalized_title: 3.2. Боје
     src: Boje.rst
     title: 3.2. Боје
     type: reading
   - description: ''
     file: boje_kviz.html
     guid: 971e3377-252b-4640-aeb0-faff1ac25494
+    normalized_title: 3.3. Квиз боје
     src: boje_kviz.rst
     title: 3.3. Квиз боје
     type: quiz
@@ -149,18 +157,21 @@ lessons:
   - description: ''
     file: duzi.html
     guid: 91f5c315-8997-4a43-a7a3-7a35e48334c5
+    normalized_title: 4.1. Дужи
     src: duzi.rst
     title: 4.1. Дужи
     type: reading
   - description: ''
     file: duzi_zadatak.html
     guid: 49d29442-bae6-459e-b36d-5334f61395e4
+    normalized_title: 4.2. Домаћи задатак
     src: duzi_zadatak.rst
     title: 4.2. Домаћи задатак
     type: reading
   - description: ''
     file: duzi_kviz.html
     guid: 92306241-4bbb-44e6-82fa-f6b883b80032
+    normalized_title: 4.3. Квиз - дужи
     src: duzi_kviz.rst
     title: 4.3. Квиз - дужи
     type: quiz
@@ -174,24 +185,28 @@ lessons:
   - description: ''
     file: pravougaonici.html
     guid: dc49e87f-93b3-4c6b-8717-bcc0a8dab9c0
+    normalized_title: 5.1. Цртање облика - квадрати и правоугаоници
     src: pravougaonici.rst
     title: 5.1. Цртање облика - квадрати и правоугаоници
     type: reading
   - description: ''
     file: elipse.html
     guid: cb864629-9b77-4812-a463-607edae9f675
+    normalized_title: 5.2. Цртање облика - елипсе
     src: elipse.rst
     title: 5.2. Цртање облика - елипсе
     type: reading
   - description: ''
     file: pravougaonici_elipse_zadatak.html
     guid: a62d1383-c81a-4f33-961d-ff45c60e42f5
+    normalized_title: 5.3. Домаћи задатак
     src: pravougaonici_elipse_zadatak.rst
     title: 5.3. Домаћи задатак
     type: reading
   - description: ''
     file: pravougaonici_elipse_test.html
     guid: 5c853e2f-4563-4db0-a19e-461f9b85d203
+    normalized_title: 5.4. Квиз - правоугаоници и елипсе
     src: pravougaonici_elipse_test.rst
     title: 5.4. Квиз - правоугаоници и елипсе
     type: quiz
@@ -205,24 +220,28 @@ lessons:
   - description: ''
     file: Krugovi.html
     guid: 9ae897b8-5715-4dd6-802e-1652e5496688
+    normalized_title: 6.1. Цртање облика - кругови
     src: Krugovi.rst
     title: 6.1. Цртање облика - кругови
     type: reading
   - description: ''
     file: mnogouglovi.html
     guid: 4932bc09-ca0d-44be-836d-c9e9fcca413a
+    normalized_title: 6.2. Цртање облика - многоуглови (полигони)
     src: mnogouglovi.rst
     title: 6.2. Цртање облика - многоуглови (полигони)
     type: reading
   - description: ''
     file: Krugovi_mnogouglovi_zadatak.html
     guid: 4e282f13-59fc-4106-b190-baf9fc45a54d
+    normalized_title: 6.3. Домаћи задатак
     src: Krugovi_mnogouglovi_zadatak.rst
     title: 6.3. Домаћи задатак
     type: reading
   - description: ''
     file: Krugovi_mnogouglovi_test.html
     guid: 54bb214b-46c2-4318-9623-411210b9dc2c
+    normalized_title: 6.4. Квиз - кругови и многоуглови
     src: Krugovi_mnogouglovi_test.rst
     title: 6.4. Квиз - кругови и многоуглови
     type: quiz
@@ -236,18 +255,21 @@ lessons:
   - description: ''
     file: simetrija.html
     guid: 72c0b759-f0d4-4e02-a2d0-66899b33665b
+    normalized_title: 7.1. Симетрично пресликане координате
     src: simetrija.rst
     title: 7.1. Симетрично пресликане координате
     type: reading
   - description: ''
     file: simetrija_zadatak.html
     guid: 6f4d899d-00d1-4877-8a4c-27f3c6daec40
+    normalized_title: 7.2. Домаћи задатак
     src: simetrija_zadatak.rst
     title: 7.2. Домаћи задатак
     type: reading
   - description: ''
     file: simetrija_test.html
     guid: ca890608-6d67-40e1-8e96-1ef385076915
+    normalized_title: 7.3. Квиз - симетрија
     src: simetrija_test.rst
     title: 7.3. Квиз - симетрија
     type: quiz
@@ -261,30 +283,35 @@ lessons:
   - description: ''
     file: Pajton_podsetnik_definisanje_funkcija.html
     guid: d3ad1962-ab0f-4e5d-9160-7e1f29ed7d96
+    normalized_title: 8.1. Пајтон подсетник - дефинисање функција
     src: Pajton_podsetnik_definisanje_funkcija.rst
     title: 8.1. Пајтон подсетник - дефинисање функција
     type: reading
   - description: ''
     file: skaliranje.html
     guid: 01d29a52-12db-4fd2-8065-ab5e0cc9e4b5
+    normalized_title: 8.2. Повећавање и смањивање једног објекта, центрирање
     src: skaliranje.rst
     title: 8.2. Повећавање и смањивање једног објекта, центрирање
     type: reading
   - description: ''
     file: relativne_koordinate.html
     guid: 3772cb99-eec9-4e90-8c42-8d22e4c90fc9
+    normalized_title: 8.3. Релативне координате и димензије
     src: relativne_koordinate.rst
     title: 8.3. Релативне координате и димензије
     type: reading
   - description: ''
     file: domaci_zadatak_relativne_koordinate.html
     guid: 26fe7f87-f24b-4529-8cce-86bca36d0d7c
+    normalized_title: 8.4. Домаћи задатак
     src: domaci_zadatak_relativne_koordinate.rst
     title: 8.4. Домаћи задатак
     type: reading
   - description: ''
     file: relativne_koordinate_test.html
     guid: 05d3035a-0971-4e4d-a874-e8ccd7d4df7e
+    normalized_title: 8.5. Квиз - релативне координате и димензије
     src: relativne_koordinate_test.rst
     title: 8.5. Квиз - релативне координате и димензије
     type: quiz
@@ -298,18 +325,21 @@ lessons:
   - description: ''
     file: relativne_koordinate_utvrdjivanje.html
     guid: c4a4e338-75c8-459a-9e45-3144d00bfffe
+    normalized_title: 9.1. Релативне координате - утврђивање
     src: relativne_koordinate_utvrdjivanje.rst
     title: 9.1. Релативне координате - утврђивање
     type: reading
   - description: ''
     file: zadatak_relativne_koordinate.html
     guid: a1437b8d-62d5-4cdc-9829-c1c73584f778
+    normalized_title: 9.2. Домаћи задатак
     src: zadatak_relativne_koordinate.rst
     title: 9.2. Домаћи задатак
     type: reading
   - description: ''
     file: relativne_koordinate_test2.html
     guid: 32b66c63-ab3d-40a9-856e-b46545b7507a
+    normalized_title: 9.3. Квиз - релативне координате и димензије
     src: relativne_koordinate_test2.rst
     title: 9.3. Квиз - релативне координате и димензије
     type: quiz
@@ -323,18 +353,21 @@ lessons:
   - description: ''
     file: slike.html
     guid: e2a30a14-4137-4924-b860-101e3e7d4420
+    normalized_title: 10.1. Слике и текст
     src: slike.rst
     title: 10.1. Слике и текст
     type: reading
   - description: ''
     file: slike_vezbanje.html
     guid: d1f2e7a5-cb99-4c3d-999a-9c730265b1f5
+    normalized_title: 10.2. Вежбање
     src: slike_vezbanje.rst
     title: 10.2. Вежбање
     type: reading
   - description: ''
     file: slike_test.html
     guid: 48403868-9bb7-4257-bece-f3ef99f02b3d
+    normalized_title: 10.3. Квиз - слике и текст
     src: slike_test.rst
     title: 10.3. Квиз - слике и текст
     type: quiz
@@ -348,24 +381,28 @@ lessons:
   - description: ''
     file: pajton_podsetnik_petlje.html
     guid: 10ee6d4b-60f5-472f-bd0e-3a8ca5ec3b78
+    normalized_title: 11.1. Пајтон подсетник - петље
     src: pajton_podsetnik_petlje.rst
     title: 11.1. Пајтон подсетник - петље
     type: reading
   - description: ''
     file: petlje.html
     guid: 07bb678b-6b48-4a74-8adc-98de2fffd7be
+    normalized_title: 11.2. Цртање облика помоћу петљи
     src: petlje.rst
     title: 11.2. Цртање облика помоћу петљи
     type: reading
   - description: ''
     file: petlje_zadatak.html
     guid: e50427b4-89f3-41ee-959b-4b24152636a8
+    normalized_title: 11.3. Домаћи задатак - петље
     src: petlje_zadatak.rst
     title: 11.3. Домаћи задатак - петље
     type: reading
   - description: ''
     file: petlje_test.html
     guid: 0023f725-e5e6-4b25-b930-31f958c626ac
+    normalized_title: 11.4. Квиз - цртање облика помоћу петљи
     src: petlje_test.rst
     title: 11.4. Квиз - цртање облика помоћу петљи
     type: quiz
@@ -379,18 +416,21 @@ lessons:
   - description: ''
     file: petlje2_random.html
     guid: a848cd14-cb6f-4b16-8b03-a1841841312c
+    normalized_title: 12.1. Употреба генератора случајних бројева
     src: petlje2_random.rst
     title: 12.1. Употреба генератора случајних бројева
     type: reading
   - description: ''
     file: petlje2_pravilno.html
     guid: 1bfd9aa9-2dc3-4908-97ec-04647820d1ff
+    normalized_title: 12.2. Правилно распоређивање боја
     src: petlje2_pravilno.rst
     title: 12.2. Правилно распоређивање боја
     type: reading
   - description: ''
     file: petlje2_test.html
     guid: 18d068a9-2f51-4cb0-92e4-5104f10bbaa8
+    normalized_title: 12.3. Квиз - понављање облика коришћењем петљи
     src: petlje2_test.rst
     title: 12.3. Квиз - понављање облика коришћењем петљи
     type: quiz
@@ -404,24 +444,28 @@ lessons:
   - description: ''
     file: pajton_podsetnik_grananje.html
     guid: 23026df6-431e-453b-8c42-ad5961b907ee
+    normalized_title: 13.1. Пајтон подсетник гранање
     src: pajton_podsetnik_grananje.rst
     title: 13.1. Пајтон подсетник гранање
     type: reading
   - description: ''
     file: grananje.html
     guid: d1f32840-b2d1-482d-8fa3-6613906aa286
+    normalized_title: 13.2. Комбиновање гранања и петље
     src: grananje.rst
     title: 13.2. Комбиновање гранања и петље
     type: reading
   - description: ''
     file: grananje_zadatak.html
     guid: 1eb13a70-5e0a-4e8e-9e50-b17c1613fe22
+    normalized_title: 13.3. Домаћи задатак
     src: grananje_zadatak.rst
     title: 13.3. Домаћи задатак
     type: reading
   - description: ''
     file: grananje_test.html
     guid: 2a273c3d-65e8-41f1-b86c-b2fcba57f138
+    normalized_title: 13.4. Квиз - гранање
     src: grananje_test.rst
     title: 13.4. Квиз - гранање
     type: quiz
@@ -435,24 +479,28 @@ lessons:
   - description: ''
     file: pajton_podsetnik_ugnjezdene.html
     guid: 0d1ed898-c9a7-419c-a2d5-22d3f3ff2c2c
+    normalized_title: 14.1. Пајтон подсетник - угнежђене петље
     src: pajton_podsetnik_ugnjezdene.rst
     title: 14.1. Пајтон подсетник - угнежђене петље
     type: reading
   - description: ''
     file: petlje_ugnjezdene.html
     guid: 847d4f5b-88be-418a-b855-1f44f1fef8cb
+    normalized_title: 14.2. Угнежђене петље
     src: petlje_ugnjezdene.rst
     title: 14.2. Угнежђене петље
     type: reading
   - description: ''
     file: petlje_ugnjezdene_zadatak.html
     guid: 55d215ca-3ee9-4a5f-ab25-ea8dfa8804f4
+    normalized_title: 14.3. Домаћи задатак
     src: petlje_ugnjezdene_zadatak.rst
     title: 14.3. Домаћи задатак
     type: reading
   - description: ''
     file: petlje_ugnjezdene_test.html
     guid: 53daaba2-6557-4104-a637-6bc924eb3a65
+    normalized_title: 14.4. Квиз - угнежђене петље
     src: petlje_ugnjezdene_test.rst
     title: 14.4. Квиз - угнежђене петље
     type: quiz
@@ -466,6 +514,7 @@ lessons:
   - description: ''
     file: ugnjezdene_petlje_obnavljanje.html
     guid: 43bf9a35-1526-49ac-884f-13b0ccbf59bd
+    normalized_title: 15.1. Цртање уз помоћ петљи - обнављање
     src: ugnjezdene_petlje_obnavljanje.rst
     title: 15.1. Цртање уз помоћ петљи - обнављање
     type: reading
@@ -479,6 +528,7 @@ lessons:
   - description: ''
     file: zavrsni_test.html
     guid: 6c2a4646-4568-41bb-9354-dea265874cc7
+    normalized_title: 16.1. Завршни квиз
     src: zavrsni_test.rst
     title: 16.1. Завршни квиз
     type: quiz
