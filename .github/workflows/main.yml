@@ -1,0 +1,41 @@
+name: Publish Workflow
+
+on:
+  push:
+    branches:
+      - publish
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.9'
+
+    - name: Install dependencies
+      run: |
+        pip install petljadoc
+        pip install pyyaml
+
+    - name: Run petljadoc and get courseId
+      id: publish
+      run: |
+        petljadoc publish
+        COURSE_ID=$(python -c "import yaml; data = yaml.safe_load(open('docs/index.yaml')); print(data['courseId'])")
+        echo "::set-output name=courseId::$COURSE_ID"
+
+    - name: Install Azure CLI
+      run: |
+        curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
+
+    - name: Upload to Azure Blob Storage
+      run: |
+        az storage blob upload-batch --source docs --destination publish/${{ steps.publish.outputs.courseId }} --pattern "*" --overwrite
+      env:
+        AZURE_STORAGE_CONNECTION_STRING: ${{ secrets.AZURE_STORAGE_CONNECTION_STRING }}
